@@ -36230,9 +36230,9 @@ per turn.</characteristic>
         <categoryLink targetId="6e7-40c-58d9-e402" id="4dd1-449f-fd9f-359e" primary="false" name="Faction: Adeptus Astartes"/>
       </categoryLinks>
       <profiles>
-        <profile name="Fury of the First" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="edb5-5add-0767-884d">
+        <profile name="Talent For Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="edb5-5add-0767-884d">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, you can ignore any or all modifiers to that attack’s Ballistic Skill or Weapon Skill characteristic and/or to the Hit roll. In addition, each time a model in this unit makes an attack that targets the enemy unit you selected for the Oath of Moment ability this turn, add 1 to the Hit roll</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, if that attack targets battleshocked unit **OR** a unit with less total wounds than this unit; Add 1 to the Wound Roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -36263,7 +36263,7 @@ per turn.</characteristic>
                 <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="65f4-ffea-a150-8396" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
               </entryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Ranged Weapon Option" hidden="false" id="673f-1832-df2b-8519" defaultSelectionEntryId="5e9e-6e42-64e5-8209">
+                <selectionEntryGroup name="Ranged Weapon Option" hidden="false" id="673f-1832-df2b-8519" defaultSelectionEntryId="1324-9c54-2354-df69">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0729-9f77-f6ff-0f0a"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6838-c23c-7b00-cf52"/>
@@ -36286,10 +36286,10 @@ per turn.</characteristic>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="936b-62d4-8eac-5a4e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Volkite Cavitor" hidden="false" id="1324-9c54-2354-df69" type="selectionEntry" targetId="a8ef-7341-f40f-5c81"/>
+                    <entryLink import="true" name="Volkite Cavitor" hidden="false" id="1324-9c54-2354-df69" type="selectionEntry" targetId="a8ef-7341-f40f-5c81" sortIndex="1"/>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Melee Weapon Option" hidden="false" id="f0a3-147b-db74-b409" defaultSelectionEntryId="8ffa-d63e-201-ab45">
+                <selectionEntryGroup name="Melee Weapon Option" hidden="false" id="f0a3-147b-db74-b409" defaultSelectionEntryId="6e32-d5a6-d29b-6395">
                   <entryLinks>
                     <entryLink import="true" name="Nostraman Chainblade" hidden="false" type="selectionEntry" id="9441-fd45-9143-e5a7" targetId="6451-f5e1-7c2d-4234">
                       <entryLinks>
@@ -36333,16 +36333,16 @@ per turn.</characteristic>
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Atramentar Terminator" hidden="false" id="fa78-60a1-b815-a675" defaultAmount="4">
+            <selectionEntry type="model" import="true" name="Atramentar Terminator" hidden="false" id="fa78-60a1-b815-a675" defaultAmount="4" sortIndex="2">
               <selectionEntryGroups>
-                <selectionEntryGroup name="Ranged Weapon Option" hidden="false" id="ed01-fa2a-60f4-e7c9">
+                <selectionEntryGroup name="Ranged Weapon Option" hidden="false" id="ed01-fa2a-60f4-e7c9" defaultSelectionEntryId="1154-c384-f3d7-69f5">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c458-bd6f-bada-0023"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90d7-3adf-fff8-f280"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Heavy Flamer" hidden="false" type="selectionEntry" id="a80c-eec4-61d7-d267" targetId="b3e6-f7a7-8357-2055"/>
-                    <entryLink import="true" name="Volkite Cavitor" hidden="false" id="1154-c384-f3d7-69f5" type="selectionEntry" targetId="a8ef-7341-f40f-5c81"/>
+                    <entryLink import="true" name="Volkite Cavitor" hidden="false" id="1154-c384-f3d7-69f5" type="selectionEntry" targetId="a8ef-7341-f40f-5c81" sortIndex="1"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -36409,7 +36409,13 @@ per turn.</characteristic>
         </modifier>
         <modifier type="set" value="800" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="11" field="selections" scope="95ea-6f31-8315-3c27" childId="13a4-f60c-5449-330e" shared="true" id="c944-01be-45a3-51a1"/>
+            <condition type="greaterThan" value="15" field="selections" scope="95ea-6f31-8315-3c27" childId="13a4-f60c-5449-330e" shared="true" id="c944-01be-45a3-51a1"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="600" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="lessThan" value="16" field="selections" scope="95ea-6f31-8315-3c27" childId="13a4-f60c-5449-330e" shared="true" id="0ab8-f290-2b1c-1700"/>
+            <condition type="greaterThan" value="10" field="selections" scope="95ea-6f31-8315-3c27" childId="13a4-f60c-5449-330e" shared="true" id="289f-f38f-7703-532b"/>
           </conditions>
         </modifier>
       </modifiers>
