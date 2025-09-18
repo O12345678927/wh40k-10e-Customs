@@ -36227,7 +36227,6 @@ per turn.</characteristic>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="ba41-4f6d-5492-f471" primary="true" name="Infantry"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="cd57-a2c5-9cf8-231f" primary="false" name="Imperium"/>
         <categoryLink targetId="740a-892c-8958-defa" id="db2d-e7ab-dd85-5f2c" primary="false" name="Terminator"/>
-        <categoryLink targetId="25f4-2bec-a254-82a7" id="1f71-bcbe-72ee-e121" primary="false" name="Relic Terminator Squad"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="4dd1-449f-fd9f-359e" primary="false" name="Faction: Adeptus Astartes"/>
       </categoryLinks>
       <profiles>
@@ -36322,7 +36321,7 @@ per turn.</characteristic>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
-                <profile name="Relic Terminator Sergeant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ae0e-86d9-b734-7af5">
+                <profile name="Atramentar Trucidor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ae0e-86d9-b734-7af5">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
@@ -36334,7 +36333,7 @@ per turn.</characteristic>
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Atramentar Terminator" hidden="false" id="fa78-60a1-b815-a675">
+            <selectionEntry type="model" import="true" name="Atramentar Terminator" hidden="false" id="fa78-60a1-b815-a675" defaultAmount="4">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Ranged Weapon Option" hidden="false" id="ed01-fa2a-60f4-e7c9">
                   <constraints>
@@ -36348,7 +36347,7 @@ per turn.</characteristic>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="229b-16fc-486f-df5a"/>
+                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="229b-16fc-486f-df5a"/>
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="229b-16fc-486f-df5a">
@@ -36358,7 +36357,7 @@ per turn.</characteristic>
                 </modifier>
               </modifiers>
               <profiles>
-                <profile name="Relic Terminator Squad" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f34c-a40c-b5d7-3a44">
+                <profile name="Atramentar Terminator" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f34c-a40c-b5d7-3a44">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
@@ -36370,8 +36369,14 @@ per turn.</characteristic>
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="Nostraman Chainblade" hidden="false" id="4b41-d088-2d2a-b73a" type="selectionEntry" targetId="6451-f5e1-7c2d-4234"/>
+                <entryLink import="true" name="Nostraman Chainblade" hidden="false" id="4b41-d088-2d2a-b73a" type="selectionEntry" targetId="6451-f5e1-7c2d-4234">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9461-6f20-7c0c-22bf-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9461-6f20-7c0c-22bf-max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
+              <comment>4</comment>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -36384,6 +36389,7 @@ per turn.</characteristic>
         <modifier type="set" value="400" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="95ea-6f31-8315-3c27" childId="13a4-f60c-5449-330e" shared="true" id="ee1e-8b8b-6766-d402"/>
+            <condition type="lessThan" value="11" field="selections" scope="95ea-6f31-8315-3c27" childId="13a4-f60c-5449-330e" shared="true" id="c515-a937-ff5d-a3b4"/>
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
@@ -36399,6 +36405,11 @@ per turn.</characteristic>
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="800" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="atLeast" value="11" field="selections" scope="95ea-6f31-8315-3c27" childId="13a4-f60c-5449-330e" shared="true" id="c944-01be-45a3-51a1"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -36549,6 +36560,24 @@ per turn.</characteristic>
       </profiles>
       <infoLinks>
         <infoLink name="Devastating Wounds" id="8dd4-7c1c-a1f7-92cc" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nostraman Chainblade" hidden="false" id="b8dc-96e7-b611-821f">
+      <profiles>
+        <profile name="Nostraman Chainblade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="613d-5378-bf77-c546">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-Linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="bed9-5f79-ecc0-71eb" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
