@@ -36602,7 +36602,7 @@ per turn.</characteristic>
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Space Marine Bikers" hidden="false" id="cd71-55bb-b615-bb04" defaultSelectionEntryId="48aa-6991-b817-11ac" sortIndex="2">
+        <selectionEntryGroup name="Golden Keshig Squadron" hidden="false" id="cd71-55bb-b615-bb04" defaultSelectionEntryId="48aa-6991-b817-11ac" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Golden Keshig Champion" hidden="false" id="0340-b072-8c13-48a0">
               <constraints>
@@ -36675,7 +36675,8 @@ per turn.</characteristic>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="6090-b5ef-0848-0060"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6090-b5ef-0848-0060"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="4019-9851-c30e-c2b0"/>
               </constraints>
               <profiles>
                 <profile name="Golden Keshig Rider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9559-b7d6-39ce-0b7c">
