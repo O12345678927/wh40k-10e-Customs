@@ -2705,6 +2705,8 @@
     <entryLink import="true" name="Atramentar Flay-Clade" hidden="false" type="selectionEntry" id="8974-5abb-3de7-ecfb" targetId="95ea-6f31-8315-3c27"/>
     <entryLink import="true" name="Golden Keshig Squadron" hidden="false" id="ffb3-7409-86f8-3755" type="selectionEntry" targetId="9bdb-3443-b996-8dde"/>
     <entryLink import="true" name="Phoenix Warden Terminators" hidden="false" id="f3ae-e492-c3c5-4a22" type="selectionEntry" targetId="68e2-ac85-a76b-513f"/>
+    <entryLink import="true" name="Osiron-Magus Dreadnought" hidden="false" id="b26d-b3d2-3e82-efb6" type="selectionEntry" targetId="467c-57fa-a44d-6033"/>
+    <entryLink import="true" name="Iron Circle Maniple" hidden="false" id="189f-e75a-57f6-a82a" type="selectionEntry" targetId="6a86-df0e-45f0-8b5a"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
@@ -36861,8 +36863,18 @@ per turn.</characteristic>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="d496-a570-c129-9f0d" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
-                <entryLink import="true" name="Phoenix Power Spear" hidden="false" id="dc33-2f74-1731-b00a" type="selectionEntry" targetId="1e74-865b-e2d7-ff7c"/>
-                <entryLink import="true" name="Combi-bolter" hidden="false" id="e804-f42a-22c3-9c86" type="selectionEntry" targetId="a6ec-ebc1-6f23-20c4"/>
+                <entryLink import="true" name="Phoenix Power Spear" hidden="false" id="dc33-2f74-1731-b00a" type="selectionEntry" targetId="1e74-865b-e2d7-ff7c">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f49-fa3e-dbbd-2ab1"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c006-fa15-c050-b015"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Combi-bolter" hidden="false" id="e804-f42a-22c3-9c86" type="selectionEntry" targetId="a6ec-ebc1-6f23-20c4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2873-2c54-c4d4-de1d"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="46f6-4750-4272-d129"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <profiles>
                 <profile name="Phoenix Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7e8b-199f-b8d0-e3c1">
