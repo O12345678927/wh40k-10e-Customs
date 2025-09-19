@@ -36349,6 +36349,7 @@ per turn.</characteristic>
               </selectionEntryGroups>
               <constraints>
                 <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="229b-16fc-486f-df5a"/>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="67f7-7993-73be-20a7"/>
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="229b-16fc-486f-df5a">
