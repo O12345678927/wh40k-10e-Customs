@@ -2709,6 +2709,7 @@
     <entryLink import="true" name="Iron Circle Maniple" hidden="false" id="189f-e75a-57f6-a82a" type="selectionEntry" targetId="e6aa-30b5-bd40-854f"/>
     <entryLink import="true" name="Castellax-Achea Automata" hidden="false" id="6ec2-c9e9-17d9-213d" type="selectionEntry" targetId="997a-3c52-f8a9-7695"/>
     <entryLink import="true" name="Gorgon Terminator Squad" hidden="false" id="ce39-0d9c-bb6f-635a" type="selectionEntry" targetId="00cc-be13-fbc2-8124"/>
+    <entryLink import="true" name="Sun Killer Squad" hidden="false" id="fe29-7352-857d-f1d6" type="selectionEntry" targetId="0bc8-2e50-e5af-3518"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
@@ -17678,6 +17679,7 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
                     <entryLink import="true" name="Multi-melta" hidden="false" type="selectionEntry" id="fe6e-e0b5-f50d-14d6" targetId="59c-91b5-f87b-1395"/>
                     <entryLink import="true" name="Plasma Cannon" hidden="false" type="selectionEntry" id="f89c-7801-282c-172" targetId="47ef-a0e2-2cb0-845d"/>
                     <entryLink import="true" name="Missile Launcher" hidden="false" type="selectionEntry" id="3078-bc23-356d-618c" targetId="1c19-102c-9058-c35d"/>
+                    <entryLink import="true" name="Aether-Fire Cannon" hidden="false" id="9cf8-35ca-f8da-29e5" type="selectionEntry" targetId="0ba1-58ff-4401-8d4e"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -37353,7 +37355,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         </profile>
         <profile name="Karceri Battle Shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e1ed-3ee5-a436-c132">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a an attack is allocated to a model with this special rule, with a Damage Characteristic greater than D3; the Damage Characteristic of that attack becomes D3 </characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a an attack is allocated to a model with this special rule, with a Damage Characteristic greater than D3; the Damage Characteristic of that attack becomes D3</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -37545,7 +37547,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
       <profiles>
         <profile name="Psy-Locus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0710-b1df-f837-01a1">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When making a Psychic attack, Friendly units within 6&quot; of this model may draw range and line of sight from this model instead       </characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When making a Psychic attack, Friendly units within 6&quot; of this model may draw range and line of sight from this model instead</characteristic>
           </characteristics>
         </profile>
         <profile name="Castellax-Achea Automata" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a881-d10d-6f00-11f0">
@@ -37705,7 +37707,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
           </characteristics>
         </profile>
         <profile name="➤ Achea Force Claws - Achean Force" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="44e5-ec2c-2e70-ca0d">
@@ -37805,7 +37807,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
       <profiles>
         <profile name="Visage of the Gorgon" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="49bf-5314-87e1-a5b3">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of a phase in which at least one saving throw was made for this unit, roll 1d6 for each unit within 6&quot; of this unit. On a 4+ that unit has the WS and BS of all weapons equipped by that unit worsened by 1 until the start of the turn player&apos;s next command phase              </characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of a phase in which at least one saving throw was made for this unit, roll 1d6 for each unit within 6&quot; of this unit that does not have this Special Rule. On a 4+ that unit has the WS and BS of all weapons equipped by that unit worsened by 1 until the start of the turn player&apos;s next command phase</characteristic>
           </characteristics>
         </profile>
         <profile name="The Flesh Is Weak" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f8f0-557b-ca2f-c4f5">
@@ -38013,6 +38015,321 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
       <categoryLinks>
         <categoryLink name="Melee Weapon" hidden="false" id="2977-2d66-177d-dfc8" targetId="ccdd-3987-11ed-90cd" primary="false"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sun Killer Squad" hidden="false" id="0bc8-2e50-e5af-3518">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="fa59-a88b-c9e2-541d" primary="true" name="Infantry"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="cbf9-f6f3-fa31-2be6" primary="false" name="Grenades"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="e1d2-7e93-b418-e19f" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="2071-5792-21ee-c35e" primary="false" name="Imperium"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Sun Killers" hidden="false" id="51db-bbf2-3007-8c78" defaultSelectionEntryId="624c-c49c-b0a5-9cd4" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Sun Killer" hidden="false" id="cde8-d118-d765-a00a">
+              <constraints>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f71d-511d-7393-8e09"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="d012-188b-bc02-c2f4"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Option" hidden="false" id="f316-7c28-2bc2-1889">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e424-d4b3-0bdf-feb0"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a551-5fe1-ceb2-bc4a"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Sun Killer Multi-melta" hidden="false" type="selectionEntry" id="b7e7-97cc-e6e1-6264" targetId="62ae-396a-a8ae-9e93"/>
+                    <entryLink import="true" name="Sun Killer Plasma Cannon" hidden="false" type="selectionEntry" id="ebd6-abb7-c377-a977" targetId="e171-5de6-7437-79eb"/>
+                    <entryLink import="true" name="Sun Killer Lascannon" hidden="false" type="selectionEntry" id="23d3-a156-b93d-d2db" targetId="e3bf-5228-75e9-3242"/>
+                    <entryLink import="true" name="Sun Killer Volkite Culverin" hidden="false" type="selectionEntry" id="e3a2-5995-d67a-9b48" targetId="e1ef-bc78-a669-0842"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="484f-00e5-c8f7-7172" targetId="18b0-8c2-173f-5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6aa8-3d23-3601-698e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60b6-665c-f10b-0461"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="5b93-7683-a002-9aa7" targetId="b3b-a615-f023-94ef">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5535-a268-0f17-ff41"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3097-5db1-d9ab-7c34"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <profiles>
+                <profile name="Sun Killer" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b605-2c69-454b-08ad">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Novaetor" hidden="false" id="4f57-55d6-afdf-29ea">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9404-0ed0-1389-84bc"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2140-922c-73bd-c4e6"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="0f37-077b-8dc6-6eb6" targetId="b3b-a615-f023-94ef">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9650-5a72-600d-114c"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82ef-247e-10c0-3ad1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="6b06-09de-04ff-fb11" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="6f44-ea33-b6b7-c6f3" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="ad4e-58d8-c453-267e" type="selectionEntry" targetId="18b0-8c2-173f-5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3f2-5509-ec92-824f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9688-d0ee-134c-c62c"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Option" id="ecc1-1c18-4f56-9e6d" hidden="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ac2-ae7d-b415-15c1"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac54-574f-9716-d335"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Sun Killer Multi-melta" hidden="false" id="a9a9-51d6-3abc-f01f" type="selectionEntry" targetId="62ae-396a-a8ae-9e93"/>
+                    <entryLink import="true" name="Sun Killer Plasma Cannon" hidden="false" id="2bec-2b6a-99e4-b60b" type="selectionEntry" targetId="e171-5de6-7437-79eb"/>
+                    <entryLink import="true" name="Sun Killer Lascannon" hidden="false" id="f267-de12-68eb-6229" type="selectionEntry" targetId="e3bf-5228-75e9-3242"/>
+                    <entryLink import="true" name="Sun Killer Volkite Culverin" hidden="false" id="9f40-c60f-34b7-4a35" type="selectionEntry" targetId="e1ef-bc78-a669-0842"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Novaetor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="636f-1312-26f7-5d1a">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="7e6b-2ed2-c877-292a"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="04e5-e31d-f53b-573e"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="300" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="0bc8-2e50-e5af-3518" childId="51db-bbf2-3007-8c78" shared="true" id="763b-e142-d70d-ffb4"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Perfect Hunters" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a2b5-22a9-d118-4d5d">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle; Designate one enemy unit to be the Sun Killer Quarry. When a model in this unit makes an attack that targets the Sun Killer Quarry, you may re-roll a Wound Roll of 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="717e-08ec-a243-aac6"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="3c27-fca9-5ada-7498" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="9479-a6f8-990e-a10c" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="d72e-ca5a-0a6c-c39a" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Oath of Moment" hidden="false" type="rule" id="736b-f0bb-9080-0cfc" targetId="3b76-4053-ece9-6e7d"/>
+        <infoLink name="Templar Vows" id="530f-d024-90c2-327b" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="32d5-f84d-c3aa-d2e6" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="6" field="3c27-fca9-5ada-7498">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="9479-a6f8-990e-a10c">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="d72e-ca5a-0a6c-c39a">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sun Killer Lascannon" hidden="false" id="e3bf-5228-75e9-3242">
+      <infoLinks>
+        <infoLink name="Ignores Cover" hidden="false" type="rule" id="dae7-aa0d-0f01-1f91" targetId="4640-43e7-30b-215a"/>
+        <infoLink name="Heavy" hidden="false" type="rule" id="5fbb-3231-b60f-01c9" targetId="1202-10a8-78e9-4c67"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Sun Killer Lascannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0a44-841a-9b09-ba19">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sun Killer Multi-melta" hidden="false" id="62ae-396a-a8ae-9e93">
+      <profiles>
+        <profile name="Sun Killer Multi-melta" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5263-374f-df8d-576d">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Melta 2, Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignores Cover" hidden="false" type="rule" id="35e6-51c7-7db7-705f" targetId="4640-43e7-30b-215a"/>
+        <infoLink name="Melta" hidden="false" type="rule" id="0d43-a5c3-7cd6-34a1" targetId="7cdb-fb99-44a9-8849"/>
+        <infoLink name="Heavy" hidden="false" type="rule" id="3c5d-7210-cdcd-ec21" targetId="1202-10a8-78e9-4c67"/>
+      </infoLinks>
+      <comment>Heavy</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sun Killer Plasma Cannon" hidden="false" id="e171-5de6-7437-79eb">
+      <profiles>
+        <profile name="➤ Sun Killer Plasma Cannon - Standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1725-9acd-c71d-df06">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Ignores Cover, Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Sun Killer Plasma Cannon - Overcharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e517-39b5-30f5-68e4">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous, Ignores Cover, Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Hazardous" hidden="false" type="rule" id="469a-253e-fe30-1614" targetId="8367-374c-f87-c627"/>
+        <infoLink name="Ignores Cover" hidden="false" type="rule" id="34c5-0450-ca7b-e0fd" targetId="4640-43e7-30b-215a"/>
+        <infoLink name="Heavy" hidden="false" type="rule" id="5512-5519-70cc-dda8" targetId="1202-10a8-78e9-4c67"/>
+        <infoLink name="Blast" hidden="false" type="rule" id="0dff-7c15-c91b-aa91" targetId="6c1f-1cf7-ff25-c99e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sun Killer Volkite Culverin" hidden="false" id="e1ef-bc78-a669-0842" collective="true">
+      <profiles>
+        <profile name="Sun Killer Volkite Culverin" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f0b1-1db4-0f19-aec1">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Ignores Cover, Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy" id="d7bb-9889-04c3-2109" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+        <infoLink name="Devastating Wounds" id="bb45-72b0-7a4f-a20f" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+        <infoLink name="Ignores Cover" id="1b85-1ccd-53d7-4b65" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
