@@ -37360,92 +37360,8 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
             <selectionEntry type="model" import="true" name="Iron Circle Maniple" hidden="false" id="3d9c-ce8d-1aa6-9126">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44c3-a854-e099-dff4"/>
-                <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a4dc-751a-37ed-1536"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a4dc-751a-37ed-1536"/>
               </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Weapon Option" id="52fe-f11c-8ff2-48c8" hidden="false" defaultSelectionEntryId="1390-7a2d-64fc-fd2e">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Auto Boltstorm Gauntlets &amp; Fragstorm Grenade Launcher" hidden="false" id="e3c0-1e68-9cc3-319e">
-                      <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Auto Boltstorm Gauntlets" hidden="false" id="76d9-eec3-3dd7-b4ea">
-                          <profiles>
-                            <profile name="Auto Boltstorm Gauntlets" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8652-09b7-3ba4-f6de">
-                              <characteristics>
-                                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-                                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                                <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                                <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked</characteristic>
-                              </characteristics>
-                            </profile>
-                          </profiles>
-                          <infoLinks>
-                            <infoLink name="Twin-linked" id="e9dd-af4b-2538-164c" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
-                          </infoLinks>
-                          <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="089f-225a-88cd-59e5"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdbb-fd4d-629f-18e1"/>
-                          </constraints>
-                        </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="Fragstorm Grenade Launcher" hidden="false" id="8dc5-c8ba-4b05-bbcd">
-                          <profiles>
-                            <profile name="Fragstorm Grenade Launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="460d-2979-7d6e-e5b1">
-                              <characteristics>
-                                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
-                                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                                <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                                <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
-                              </characteristics>
-                            </profile>
-                          </profiles>
-                          <infoLinks>
-                            <infoLink name="Blast" id="ce52-1068-a180-08f1" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
-                          </infoLinks>
-                          <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1080-697a-4ccd-e03f"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b7a-5618-b0a6-0b77"/>
-                          </constraints>
-                        </selectionEntry>
-                      </selectionEntries>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="445a-a476-859f-266b" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Flamestorm Gauntlets" hidden="false" id="7c9f-5544-93e2-5fe3">
-                      <profiles>
-                        <profile name="Flamestorm Gauntlets" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="84de-5346-fa38-161e">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+1</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent, Twin-linked</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Torrent" id="1f88-7b4f-e66b-08ba" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
-                        <infoLink name="Ignores Cover" id="98ef-3f04-9e3d-da6b" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
-                        <infoLink name="Twin-linked" id="bcbe-1834-8bce-e4b8" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1a9-a96c-ea95-3e61" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1241-825e-57f9-cea5"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8509-7cd1-3a70-8d18"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <profiles>
                 <profile name="Aggressors" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c688-e7fb-e573-fc35">
                   <characteristics>
@@ -37651,6 +37567,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
             <entryLink import="true" name="Achea Force Claws" hidden="false" id="8416-0730-bda7-4052" type="selectionEntry" targetId="6e9a-5dd9-8daf-6ba2">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cc2-33c8-d0b4-5353"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4705-8907-7f8b-b25f"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="0d96-1758-de4a-3afb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
@@ -37658,7 +37575,8 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
             </entryLink>
             <entryLink import="true" name="Asphyx Bolter" hidden="false" id="5565-6d7a-80dc-612f" type="selectionEntry" targetId="04ca-2f9b-c638-8f04">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e373-555f-ed2f-903d"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e373-555f-ed2f-903d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a73-bbca-fde2-c390"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -37682,6 +37600,10 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
                   </entryLinks>
                 </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="061d-1851-33c2-ac06"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6198-9797-6e4a-c190"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
