@@ -2715,6 +2715,7 @@
     <entryLink import="true" name="Ebon Keshig" hidden="false" id="5cda-de50-0d07-eb34" type="selectionEntry" targetId="e0f0-db9e-74d0-70b5"/>
     <entryLink import="true" name="Sagyar Mazan Khan" hidden="false" id="a6ce-295b-bc71-9008" type="selectionEntry" targetId="ced3-7e5d-bfcf-29fc"/>
     <entryLink import="true" name="Khan on Shamshir Jetbike" hidden="false" id="9c4a-b09c-a8a0-4f2c" type="selectionEntry" targetId="edb0-6a49-01a2-9c26"/>
+    <entryLink import="true" name="Olympian Legionaires" hidden="false" id="9bbe-7584-d9b2-5461" type="selectionEntry" targetId="98b6-82d7-bd22-5a8d"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
