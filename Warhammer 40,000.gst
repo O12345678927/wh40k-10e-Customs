@@ -1061,6 +1061,9 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
     <rule id="cd26-1611-860a-91e4" name="One Shot" hidden="false">
       <description>The bearer can only shoot with this weapon once per battle.</description>
     </rule>
+    <rule id="d737-55a6-e8c8-ea02" name="Pinning" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
+      <description>After a unit suffers a wound from a PINNING weapon; That unit must succeed on a leadership check or subtract 1&quot; from its Move characteristic and subtract 1 from Charge rolls made for it.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="fa4e-5ac8-11a6-78d2" name="Fortification" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
