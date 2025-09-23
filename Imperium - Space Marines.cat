@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="154" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="155" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -269,7 +269,7 @@
     <entryLink import="true" name="Librarian" hidden="false" type="selectionEntry" id="b62e-cd23-d338-8142" targetId="78eb-9334-f5c0-6095"/>
     <entryLink import="true" name="Chaplain" hidden="false" type="selectionEntry" id="dfb5-f763-308d-e0d9" targetId="ceb5-55c7-2d49-d952"/>
     <entryLink import="true" name="Reiver Squad" hidden="false" type="selectionEntry" id="72c7-e95f-cade-27d7" targetId="a7ae-e495-683b-7c90"/>
-    <entryLink import="true" name="Captain" hidden="false" type="selectionEntry" id="91e3-a419-8c58-98f5" targetId="6c10-5b51-5bc0-8d2c"/>
+    <entryLink import="true" name="Iron Father" hidden="false" type="selectionEntry" id="91e3-a419-8c58-98f5" targetId="6c10-5b51-5bc0-8d2c"/>
     <entryLink import="true" name="Techmarine" hidden="false" type="selectionEntry" id="c7ef-84b1-fdf5-c5a8" targetId="e671-cd3a-2b03-3954"/>
     <entryLink import="true" name="Repulsor" hidden="false" type="selectionEntry" id="b6f6-3b6d-2508-7c12" targetId="e8e-fc5c-c689-99ca"/>
     <entryLink import="true" name="Scout Sniper Squad [Legends]" hidden="false" type="selectionEntry" id="b90d-26e-4e1e-73ab" targetId="9a96-8de3-f4aa-7497">
@@ -28705,18 +28705,23 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <categoryLink name="Ranged Weapon" hidden="false" id="087f-88dd-5ec5-93c9" targetId="eeda-8544-a2f3-3fab" primary="false"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Captain" hidden="false" id="6c10-5b51-5bc0-8d2c">
+    <selectionEntry type="model" import="true" name="Iron Father" hidden="false" id="6c10-5b51-5bc0-8d2c">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="185"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="2216-f594-1ac3-85eb" primary="true" name="Character"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="2216-f594-1ac3-85eb" primary="false" name="Character"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="d6a8-a50e-babc-5270" primary="false" name="Infantry"/>
-        <categoryLink targetId="2d7f-1892-2fd0-e29c" id="29b9-1b48-3a9e-616b" primary="false" name="Captain"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="9ce8-b8f6-88ff-2fc9" primary="false" name="Grenades"/>
-        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="f16b-de9-d417-4a88" primary="false" name="Imperium"/>
-        <categoryLink targetId="5179-8ede-45e3-49a2" id="2071-c3fe-9f63-9292" primary="false" name="Tacticus"/>
-        <categoryLink targetId="6e7-40c-58d9-e402" id="57cf-55ec-47da-1d02" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="b957-d9cd-ee81-560" id="d3c7-d783-ea68-4228" primary="false" name="Techmarine"/>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="2e28-d31a-e740-818a" primary="true" name="Epic Hero"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="c055-7d2-bf2-51bc" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
@@ -28728,15 +28733,13 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <entryLink import="true" name="Crusade" hidden="false" id="2106-21c1-43fb-fa71" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Finest Hour" type="profile" id="891a-e8c7-6549-4399" targetId="fdf1-64a5-906c-3474"/>
         <infoLink name="Invulnerable Save" hidden="false" type="profile" id="951b-e78a-f956-b70" targetId="db19-dee7-9530-ef0e"/>
         <infoLink name="Leader" type="rule" id="2814-e93f-5a97-a2c6" targetId="b4dd-3e1f-41cb-218f"/>
-        <infoLink id="8a13-952a-4a5-70e5" name="Rites of Battle" hidden="false" targetId="90c7-c55c-21e2-2232" type="profile"/>
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="23b9-915-c3d6-3d21" targetId="3b76-4053-ece9-6e7d"/>
         <infoLink name="Templar Vows" id="cd01-df1f-c140-302e" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
       </infoLinks>
       <profiles>
-        <profile id="c1ba-2289-ba1-9cb8" name="Captain" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+        <profile id="c1ba-2289-ba1-9cb8" name="Iron Father" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
           <modifiers>
             <modifier type="set" field="750a-a2ec-90d3-21fe" value="6">
               <conditions>
@@ -28747,207 +28750,34 @@ You can attach this model to one of the above units even if one Captain, Chapte
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6e66-2c98-4726-d12d">
+        <profile name="Battlesmith" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4183-6b58-f4b0-c375">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
-
-■ Assault Intercessor Squad
-■ Bladeguard Veteran Squad*
-■ Hellblaster Squad*
-■ Infernus Squad
-■ Intercessor Squad
-■ Sternguard Veteran Squad
-■ Company Heroes
-■ Tactical Squad
-
-* This model cannot be attached to a Bladeguard Veteran Squad unless it is equipped with a relic shield, and cannot be attached to a Hellblaster Squad unless it is equipped with a plasma pistol.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start and end of your Movement Phase, you can select one friendly Adeptus Astartes Vehicle within 3&quot; of this model; That model regains up to D3 lost wounds. Each model can only be selected for this ability, or the Blessing of the Omnissiah ability, once per turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cyber-Familiar" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2488-5d1d-87c3-646d">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A model with a cyber-familiar improves its Invulnerable Save by 1 (to a maximum of 3+) or an Invulnerable Save of 6+ if they do not already possess one.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <constraints>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ba1-ce7e-5491-a80b" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ba1-ce7e-5491-a80b" type="max"/>
         <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="2c9d-1117-01bc-2bf1" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="8357-7962-ae40-3759" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="95ae-60cc-9649-6975" includeChildSelections="true"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ccdb-b984-df14-9b54" name="Wargear" hidden="false" collective="false" import="true" defaultSelectionEntryId="c6aa-b3a5-4ff3-e0d3" sortIndex="4">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6492-7e31-51b1-5d9f" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbf2-9881-fa6d-54bd" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="c6aa-b3a5-4ff3-e0d3" name="Bolt Pistol, Master-crafted Bolter, Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
-              <selectionEntryGroups>
-                <selectionEntryGroup id="1591-a4ae-50fb-3c21" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="74b1-e680-e6f1-2845">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e89a-16aa-4550-ec08" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7799-2b9-cba9-f760" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="74b1-e680-e6f1-2845" name="Close combat weapon" hidden="false" collective="false" import="true" targetId="6e7b-4796-0ba3-a2d0" type="selectionEntry">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="02cb-6733-eca9-6ca2" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink id="667f-2fe-d8c8-c6f7" name="Power Fist" hidden="false" collective="false" import="true" targetId="99de-5985-8cb8-f571" type="selectionEntry">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="b0a3-a68a-9758-8fd2" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink id="e77-5303-12ad-cbde" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="ebda-08ed-994a-b579" type="selectionEntry">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="bf75-25e3-3561-6934" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
-                      </entryLinks>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="87a5-6849-3981-d57e" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="b273-b85e-4018-a0cd" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a7c-516b-81d4-8662" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7af4-fba3-4f74-a2a" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="8d5a-6ba4-63d6-bd12" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
-                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="de61-73b1-447e-f9dc" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink id="d3c2-6cd8-5ac7-87f6" name="Master-crafted Bolter" hidden="false" collective="false" import="true" targetId="c3bc-26b4-6fa0-bd39" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bffe-be4f-c1cd-9f7c" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf9-51ba-e5f4-d4be" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="df3a-a555-776b-1017" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
-                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="93e1-aa6b-21a4-0a1d" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
-                  </entryLinks>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pl" typeId="c5fb-5b9b-89f6-86c" value="0"/>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1fd4-9cd4-eda6-baad" name="Heavy Bolt Pistol, Master-crafted power weapon and 1 Relic Shield" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="c552-195a-d3a4-54c" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="ebda-08ed-994a-b579" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abea-59a4-d47-d6d3" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0e6-b0ee-9c0c-7a4" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="8c0a-4653-7b36-6cc5" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
-                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="60d0-4604-6246-d0f6" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink id="3009-ebd0-faf7-259f" name="Relic Shield" hidden="false" collective="false" import="true" targetId="6198-7228-4a39-7926" type="selectionEntry">
-                  <profiles>
-                    <profile id="cbc5-87e5-a711-57f9" name="Relic Shield" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
-                      <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has a Wounds characteristic of 6.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e90a-2083-fbf6-e60"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c3b-8a09-7129-a0d4"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" id="5b84-c97d-68b5-d546" type="selectionEntry" targetId="eca4-d5d2-18a1-01a8">
-                  <entryLinks>
-                    <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="621a-45c9-4c3c-a8cb" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
-                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="d5ed-eceb-24f3-826b" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="10df-58d5-14e3-3410"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="beb5-ec3c-447e-832a"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pl" typeId="c5fb-5b9b-89f6-86c" value="0"/>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Pistol and Melee Weapon" hidden="false" id="94ae-c877-fc3a-a82a">
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Pistol" hidden="false" id="fdce-66b7-9c68-d1f0">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1c1-ec44-4449-3284-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1c1-ec44-4449-3284-max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Neo-volkite Pistol" hidden="false" id="571-84e3-1b2b-6e8">
-                      <profiles>
-                        <profile name="Neo-volkite Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d16c-ac3c-f951-2bd3">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Pistol</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Pistol" hidden="false" type="rule" id="d58e-17e4-4d94-af05" targetId="8bf7-8812-923d-29e4"/>
-                        <infoLink name="Devastating Wounds" hidden="false" type="rule" id="86ce-8a81-aae0-bb33" targetId="be1e-ac8e-1e2c-3528"/>
-                      </infoLinks>
-                      <entryLinks>
-                        <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="5e0e-1a52-4833-a25d" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
-                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="4379-3a0d-5457-4ce5" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
-                      </entryLinks>
-                      <categoryLinks>
-                        <categoryLink name="Ranged Weapon" hidden="false" id="6636-a5b8-edba-3c86" targetId="eeda-8544-a2f3-3fab" primary="false"/>
-                      </categoryLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <entryLinks>
-                    <entryLink id="be25-b3d6-a644-d3d6" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="25c2-104f-fa0c-809e" type="selectionEntry">
-                      <entryLinks>
-                        <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="4b37-7989-1783-32a9" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
-                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="a3cd-2eb8-bf42-9a09" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" id="aed0-90b3-66b2-006d" type="selectionEntry" targetId="eca4-d5d2-18a1-01a8">
-                      <entryLinks>
-                        <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="8a6a-93bf-77d9-b627" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
-                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="2dba-bf8f-f2f3-58e5" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
-                      </entryLinks>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Melee Weapon" hidden="false" id="3cda-f42-c3ed-57ed">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="191e-3049-f059-1654-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="191e-3049-f059-1654-max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="d2a4-170e-4e16-e9e" name="Power Fist" hidden="false" collective="false" import="true" targetId="99de-5985-8cb8-f571" type="selectionEntry">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="3c49-0300-93a8-7221" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink id="c964-1cfb-8795-a9a8" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="ebda-08ed-994a-b579" type="selectionEntry">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="164a-ec3b-262a-d0e3" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
-                      </entryLinks>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntry>
-          </selectionEntries>
+        <selectionEntryGroup name="Wargear" id="b71b-8333-8f06-5f68" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Thunder Hammer" hidden="false" id="0a87-70ed-dca6-89a6" type="selectionEntry" targetId="62ad-da0b-24f7-fe33"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifierGroups>
@@ -39530,7 +39360,7 @@ by 1.</characteristic>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="c11e-f224-2fcc-b9b8" hidden="false" sortIndex="4">
           <entryLinks>
-            <entryLink import="true" name="Kontos Power Lance" hidden="false" id="f538-253b-6965-d57d" type="selectionEntry" targetId="b1d3-81f1-4cc0-4f02">
+            <entryLink import="true" name="Kontos Power Lance" hidden="false" id="f538-253b-6965-d57d" type="selectionEntry" targetId="90e9-befc-45e8-72ee">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b40f-23cb-a250-884a"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5c5-831b-3b8a-5ae1"/>
@@ -39984,6 +39814,338 @@ by 1.</characteristic>
         <infoLink name="Twin-linked" id="2e07-d110-91a6-9f82" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kontos Power Lance" hidden="false" id="90e9-befc-45e8-72ee">
+      <profiles>
+        <profile name="Kontos Power Lance" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d05a-80fd-7c3e-fed0">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">12</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-4</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">4</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lance</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lance" id="bc20-ed3c-af16-2513" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
+      </infoLinks>
+      <comment>Cpt</comment>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Captain" hidden="false" id="81b9-8e61-6cb0-d374">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="28e1-f08a-4432-1c57" primary="true" name="Character"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="0ead-adcf-a1db-09fc" primary="false" name="Infantry"/>
+        <categoryLink targetId="2d7f-1892-2fd0-e29c" id="7101-f059-4645-5556" primary="false" name="Captain"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="8ba9-9d02-0e36-41d6" primary="false" name="Grenades"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="ef7a-11a5-5bc1-dee6" primary="false" name="Imperium"/>
+        <categoryLink targetId="5179-8ede-45e3-49a2" id="6d7f-892d-fd99-c83f" primary="false" name="Tacticus"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="a8f2-0496-6e06-5b96" primary="false" name="Faction: Adeptus Astartes"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="49b8-4f13-d24c-8f47" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
+        <entryLink id="2303-72c2-0c06-a2c3" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c88a-6664-4fc6-a29a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="47c5-0686-29d2-31ec" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Finest Hour" type="profile" id="d806-8a62-1757-2183" targetId="fdf1-64a5-906c-3474"/>
+        <infoLink name="Invulnerable Save" hidden="false" type="profile" id="e0f0-8116-cea2-263d" targetId="db19-dee7-9530-ef0e"/>
+        <infoLink name="Leader" type="rule" id="1db1-c969-1a3c-9159" targetId="b4dd-3e1f-41cb-218f"/>
+        <infoLink id="3427-0a8b-3a26-b371" name="Rites of Battle" hidden="false" targetId="90c7-c55c-21e2-2232" type="profile"/>
+        <infoLink name="Oath of Moment" hidden="false" type="rule" id="ec24-aa7d-e89a-cb19" targetId="3b76-4053-ece9-6e7d"/>
+        <infoLink name="Templar Vows" id="f462-6c02-be95-ef7e" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
+      </infoLinks>
+      <profiles>
+        <profile id="1482-85b2-0f08-0cc2" name="Captain" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <modifiers>
+            <modifier type="set" field="750a-a2ec-90d3-21fe" value="6">
+              <conditions>
+                <condition field="selections" scope="81b9-8e61-6cb0-d374" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6198-7228-4a39-7926" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1795-2a01-b42d-4ba3">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+
+■ Assault Intercessor Squad
+■ Bladeguard Veteran Squad*
+■ Hellblaster Squad*
+■ Infernus Squad
+■ Intercessor Squad
+■ Sternguard Veteran Squad
+■ Company Heroes
+■ Tactical Squad
+
+* This model cannot be attached to a Bladeguard Veteran Squad unless it is equipped with a relic shield, and cannot be attached to a Hellblaster Squad unless it is equipped with a plasma pistol.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc83-d568-f45a-5910" type="max"/>
+        <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="2d32-4b6d-9cb2-93d6" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="34aa-e581-a1c1-f813" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="880d-4a62-129b-35da" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ff11-28fa-36d8-1a28" name="Wargear" hidden="false" collective="false" import="true" defaultSelectionEntryId="c6aa-b3a5-4ff3-e0d3" sortIndex="4">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87e4-9b79-46bb-71fd" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="089a-0b2b-8342-240e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5f71-3024-ee77-8276" name="Bolt Pistol, Master-crafted Bolter, Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="d26d-9173-e14e-934f" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="74b1-e680-e6f1-2845">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f44e-a7e9-6bf5-7209" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b39-050a-91a9-2f28" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="3ef8-074c-be27-ca5d" name="Close combat weapon" hidden="false" collective="false" import="true" targetId="6e7b-4796-0ba3-a2d0" type="selectionEntry">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="5160-fbec-87f1-f374" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink id="18cf-fe00-5b21-51b7" name="Power Fist" hidden="false" collective="false" import="true" targetId="99de-5985-8cb8-f571" type="selectionEntry">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="f15d-0c34-8c2f-6096" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink id="2045-cb24-2f67-f60b" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="ebda-08ed-994a-b579" type="selectionEntry">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="bc96-72aa-4550-0e43" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+                      </entryLinks>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="51dc-6102-645d-af61" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="b273-b85e-4018-a0cd" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="470a-7359-7f27-514d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d703-e337-e002-aadf" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="3a0d-5087-a060-99ea" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="228b-bb5c-ae37-6670" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink id="5069-c369-1c78-e27e" name="Master-crafted Bolter" hidden="false" collective="false" import="true" targetId="c3bc-26b4-6fa0-bd39" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e92d-7833-95e7-a9f9" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de71-3592-6f74-83b3" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="e40f-ae02-5584-a4ce" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="e1e2-3e59-b3a1-4f4b" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pl" typeId="c5fb-5b9b-89f6-86c" value="0"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="033d-d0cc-7d24-8c89" name="Heavy Bolt Pistol, Master-crafted power weapon and 1 Relic Shield" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="1426-8bde-5aca-a047" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="ebda-08ed-994a-b579" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32a4-b815-7a8b-ccc8" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f04-2860-9a5b-ab2c" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="ae3f-08ea-6280-7892" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="3977-0067-3981-184f" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink id="de2c-74df-889a-4bff" name="Relic Shield" hidden="false" collective="false" import="true" targetId="6198-7228-4a39-7926" type="selectionEntry">
+                  <profiles>
+                    <profile id="e2fa-bb64-6a92-1862" name="Relic Shield" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has a Wounds characteristic of 6.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b55-0b5e-8ba0-4278"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b53d-757a-a3ba-d12f"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" id="d77b-fbcf-026d-8383" type="selectionEntry" targetId="eca4-d5d2-18a1-01a8">
+                  <entryLinks>
+                    <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="8663-8b2e-f7e1-a5c9" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                    <entryLink import="true" name="Weapon Upgrades" hidden="false" id="46c6-4aaf-8380-f1d8" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fdbe-f45d-b2ba-8f07"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b91b-8b23-ca8f-8b24"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="pl" typeId="c5fb-5b9b-89f6-86c" value="0"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pistol and Melee Weapon" hidden="false" id="cf24-c20b-826e-8572">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Pistol" hidden="false" id="b96b-95b7-d3b0-7304">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a65-42fe-1935-c23a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ba5-1554-8996-f7b1"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Neo-volkite Pistol" hidden="false" id="20ae-8d31-8cf7-5636">
+                      <profiles>
+                        <profile name="Neo-volkite Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="bb32-0cd4-dc2f-de2d">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Pistol</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Pistol" hidden="false" type="rule" id="659b-52be-832f-78f7" targetId="8bf7-8812-923d-29e4"/>
+                        <infoLink name="Devastating Wounds" hidden="false" type="rule" id="e9ea-3440-0a77-dce8" targetId="be1e-ac8e-1e2c-3528"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="96d3-a211-3557-4d7d" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="cef5-8aea-64fa-38d7" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+                      </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Ranged Weapon" hidden="false" id="53f9-2e6f-6ff2-b066" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                      </categoryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="958f-61f0-ff7c-829a" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="25c2-104f-fa0c-809e" type="selectionEntry">
+                      <entryLinks>
+                        <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="9406-7d05-76ba-55e1" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="b6e3-a6ae-1ead-5ee6" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" id="c7db-1ff7-ce30-3b38" type="selectionEntry" targetId="eca4-d5d2-18a1-01a8">
+                      <entryLinks>
+                        <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="cc21-2299-4fb2-908f" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="3fab-f7d5-0b3b-d66e" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+                      </entryLinks>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Melee Weapon" hidden="false" id="6860-da07-7e66-896e">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8bd-2a68-44ec-5635"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa12-e358-d55f-a18f"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="709d-d268-db17-ff9e" name="Power Fist" hidden="false" collective="false" import="true" targetId="99de-5985-8cb8-f571" type="selectionEntry">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="6d2e-9ac6-a884-b7ce" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink id="7cce-8f10-f6da-b9f9" name="Master-crafted Power Weapon" hidden="false" collective="false" import="true" targetId="ebda-08ed-994a-b579" type="selectionEntry">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Upgrades" hidden="false" id="e5d5-bee8-92fc-d90b" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+                      </entryLinks>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="increment" value="2" field="34aa-e581-a1c1-f813">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="880d-4a62-129b-35da">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="2d32-4b6d-9cb2-93d6">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="8dbe-9f09-d44d-07d6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile id="90c7-c55c-21e2-2232" name="Rites of Battle" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -40041,6 +40203,12 @@ by 1.</characteristic>
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit.</characteristic>
       </characteristics>
+    </profile>
+    <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4fc3-22b3-f05e-9f04">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">4+</characteristic>
+      </characteristics>
+      <comment>3+</comment>
     </profile>
   </sharedProfiles>
   <publications>
