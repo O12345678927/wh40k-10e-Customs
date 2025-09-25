@@ -40124,7 +40124,7 @@ by 1.</characteristic>
       <selectionEntryGroups>
         <selectionEntryGroup name="Breacher Marines" hidden="false" id="1ddc-c8bb-ede9-4622" defaultSelectionEntryId="fc38-382c-98c1-9b3d" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Breacher Marine" hidden="false" id="5e58-0fd4-9d97-9ede">
+            <selectionEntry type="model" import="true" name="Breacher Marine" hidden="false" id="5e58-0fd4-9d97-9ede" sortIndex="2">
               <constraints>
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="0e16-8ab6-8c95-924a"/>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="9990-ddbf-53ef-c558"/>
@@ -40162,7 +40162,7 @@ by 1.</characteristic>
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Breacher Marine Sergeant" hidden="false" id="e053-a6aa-e53b-df02">
+            <selectionEntry type="model" import="true" name="Breacher Marine Sergeant" hidden="false" id="e053-a6aa-e53b-df02" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f525-6d1e-3cfc-dbfd"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="107f-53ef-41cd-2c7c"/>
@@ -40320,7 +40320,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="set" value="150" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="6" field="selections" scope="parent" childId="1ddc-c8bb-ede9-4622" shared="true"/>
+            <condition type="atLeast" value="5" field="selections" scope="parent" childId="5e58-0fd4-9d97-9ede" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -40426,7 +40426,7 @@ by 1.</characteristic>
       <selectionEntryGroups>
         <selectionEntryGroup name="Medusan Immortals" hidden="false" id="3b69-ffc0-5fb3-af29" defaultSelectionEntryId="fc38-382c-98c1-9b3d" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Immortal" hidden="false" id="c845-2f3a-a508-0842">
+            <selectionEntry type="model" import="true" name="Immortal" hidden="false" id="c845-2f3a-a508-0842" sortIndex="2">
               <constraints>
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="46e6-8727-e86e-f17e"/>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="949d-df75-dfe0-5f9c"/>
@@ -40465,7 +40465,7 @@ by 1.</characteristic>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Immortal Sergeant" hidden="false" id="91dc-4b28-dfed-8d7d">
+            <selectionEntry type="model" import="true" name="Immortal Sergeant" hidden="false" id="91dc-4b28-dfed-8d7d" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3cc-76bd-ebbb-ddf8"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b945-8b55-896b-400b"/>
@@ -40611,7 +40611,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="set" value="220" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="6" field="selections" scope="parent" childId="3b69-ffc0-5fb3-af29" shared="true"/>
+            <condition type="atLeast" value="5" field="selections" scope="parent" childId="c845-2f3a-a508-0842" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
