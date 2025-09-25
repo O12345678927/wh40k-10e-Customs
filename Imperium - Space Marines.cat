@@ -40186,37 +40186,37 @@ by 1.</characteristic>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef7e-b6c9-9b8f-245b"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Astartes Chainsword" hidden="false" type="selectionEntry" id="e985-3637-6c71-a271" targetId="efcd-180-d07-b4d6">
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" type="selectionEntry" id="e985-3637-6c71-a271" targetId="efcd-180-d07-b4d6" sortIndex="1">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="539e-623e-8855-708c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="0979-d6d2-6c34-8318" targetId="18b0-8c2-173f-5">
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="0979-d6d2-6c34-8318" targetId="18b0-8c2-173f-5" sortIndex="2">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="dc8c-94a4-93d4-216d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Grav-pistol" hidden="false" type="selectionEntry" id="991a-5209-944e-7ccd" targetId="1f74-a1b-2835-ccdd">
+                    <entryLink import="true" name="Grav-pistol" hidden="false" type="selectionEntry" id="991a-5209-944e-7ccd" targetId="1f74-a1b-2835-ccdd" sortIndex="3">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="5af5-d6f4-24ec-1e0b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Plasma Pistol" hidden="false" type="selectionEntry" id="0adf-c6fe-09ed-65ef" targetId="25c2-104f-fa0c-809e">
+                    <entryLink import="true" name="Plasma Pistol" hidden="false" type="selectionEntry" id="0adf-c6fe-09ed-65ef" targetId="25c2-104f-fa0c-809e" sortIndex="4">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="72f7-f619-6f40-1810" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Power Fist" hidden="false" type="selectionEntry" id="b3ac-c5de-a2d3-405c" targetId="5d22-a8d8-8e57-b8ab">
+                    <entryLink import="true" name="Power Fist" hidden="false" type="selectionEntry" id="b3ac-c5de-a2d3-405c" targetId="5d22-a8d8-8e57-b8ab" sortIndex="5">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="2fe5-2785-3dc2-ea5f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="fcce-9fea-e0a1-1392" targetId="7ead-a4ee-c2e-fcf9">
+                    <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="fcce-9fea-e0a1-1392" targetId="7ead-a4ee-c2e-fcf9" sortIndex="7">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="3df0-d89e-f3c4-48c2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Power Weapon" hidden="false" type="selectionEntry" id="fd17-cdab-e7e5-206e" targetId="a7b6-eeb7-d0e4-b84c">
+                    <entryLink import="true" name="Power Weapon" hidden="false" type="selectionEntry" id="fd17-cdab-e7e5-206e" targetId="a7b6-eeb7-d0e4-b84c" sortIndex="6">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="cdac-7b41-ca7d-0fdf" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -40320,7 +40320,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="set" value="150" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="5" field="selections" scope="parent" childId="5e58-0fd4-9d97-9ede" shared="true"/>
+            <condition type="atLeast" value="6" field="selections" scope="parent" childId="1ddc-c8bb-ede9-4622" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -40418,12 +40418,10 @@ by 1.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Medusan Immortals" hidden="false" id="e39a-28f1-56d1-3edc">
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="6c86-27b2-6e42-ef92" primary="false" name="Infantry"/>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="fd77-b528-4155-bebd" primary="true" name="Battleline"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="6c86-27b2-6e42-ef92" primary="true" name="Infantry"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="90c6-36d3-0f6a-b4f8" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="ca76-242d-1da6-f865" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="e7dc-0db8-4a6d-74f6" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="2740-ec68-77ee-2830" id="14b5-e663-9caa-e6b8" primary="false" name="Tactical Squad"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Medusan Immortals" hidden="false" id="3b69-ffc0-5fb3-af29" defaultSelectionEntryId="fc38-382c-98c1-9b3d" sortIndex="2">
@@ -40449,7 +40447,7 @@ by 1.</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                     <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -40572,7 +40570,7 @@ by 1.</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                     <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -40595,7 +40593,7 @@ by 1.</characteristic>
         <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="b31d-14e5-488c-18dd" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="b31d-14e5-488c-18dd" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="b9d6-3af0-fb2f-e5e4" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="297e-990d-1e05-5166" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="5a38-a0ff-4d40-f28c" includeChildSelections="true"/>
@@ -40613,7 +40611,7 @@ by 1.</characteristic>
         </modifier>
         <modifier type="set" value="220" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="5" field="selections" scope="parent" childId="c845-2f3a-a508-0842" shared="true"/>
+            <condition type="atLeast" value="6" field="selections" scope="parent" childId="3b69-ffc0-5fb3-af29" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
