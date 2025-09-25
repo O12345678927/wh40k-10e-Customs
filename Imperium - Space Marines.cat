@@ -40177,14 +40177,6 @@ by 1.</characteristic>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="a93f-c50c-8371-27e2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
-                <entryLink import="true" name="Twin Lightning Claws" hidden="false" type="selectionEntry" id="330c-08aa-b0b6-18c9" targetId="8bd8-a0de-a0b9-a72e">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0f0-b27e-8218-6810"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="0148-fafc-7a00-5452" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
                 <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="44a2-5546-5b4c-1bec" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
               </entryLinks>
               <selectionEntryGroups>
@@ -40464,10 +40456,14 @@ by 1.</characteristic>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon 1" id="1dd0-a100-8ff5-7faf" hidden="false">
                   <entryLinks>
-                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="98bb-01d1-9a70-232e" type="selectionEntry" targetId="bfe9-3520-54d3-9a90"/>
-                    <entryLink import="true" name="Astartes Shotgun" hidden="false" id="c825-8208-f894-995f" type="selectionEntry" targetId="d430-47fb-4be3-14f5"/>
-                    <entryLink import="true" name="Volkite Charger" hidden="false" id="acbd-bd3f-3d94-2714" type="selectionEntry" targetId="0e27-3a19-466a-a661"/>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="98bb-01d1-9a70-232e" type="selectionEntry" targetId="bfe9-3520-54d3-9a90" sortIndex="1"/>
+                    <entryLink import="true" name="Astartes Shotgun" hidden="false" id="c825-8208-f894-995f" type="selectionEntry" targetId="d430-47fb-4be3-14f5" sortIndex="2"/>
+                    <entryLink import="true" name="Volkite Charger" hidden="false" id="acbd-bd3f-3d94-2714" type="selectionEntry" targetId="0e27-3a19-466a-a661" sortIndex="3"/>
                   </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cdf3-812e-7d91-0cc5-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdf3-812e-7d91-0cc5-max"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
@@ -40484,14 +40480,6 @@ by 1.</characteristic>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="ea5d-73c9-27fa-dcb2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
-                <entryLink import="true" name="Twin Lightning Claws" hidden="false" type="selectionEntry" id="e4e1-5706-d3a9-52ad" targetId="8bd8-a0de-a0b9-a72e">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38ef-cce9-67c4-a9a9"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="4cd2-2da7-9396-1d11" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
                 <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="2aa5-7f06-d0e9-aff6" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
