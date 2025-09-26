@@ -40157,8 +40157,6 @@ by 1.</characteristic>
         <categoryLink targetId="e338-111e-d0c6-b687" id="395a-f497-ba29-b241" primary="true" name="Battleline"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="d88a-7b7f-6e93-ed9b" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="77b7-a9c6-7b97-f38c" primary="false" name="Imperium"/>
-        <categoryLink targetId="5179-8ede-45e3-49a2" id="83a6-6cb2-c942-5c06" primary="false" name="Tacticus"/>
-        <categoryLink targetId="7b57-816b-44b2-65ec" id="95b5-73bb-9e35-3e0a" primary="false" name="Intercessor Squad"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="c143-3773-4875-834b" primary="false" name="Faction: Adeptus Astartes"/>
       </categoryLinks>
       <profiles>
@@ -40194,22 +40192,17 @@ by 1.</characteristic>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon 1" hidden="false" id="ee60-9373-10b1-5495" defaultSelectionEntryId="fd17-cf82-6413-f1d7" flatten="false">
                   <entryLinks>
-                    <entryLink import="true" name="Hand Flamer" hidden="false" type="selectionEntry" id="dec6-f566-4f8b-edaf" targetId="9dc6-6ad8-818e-db2e">
+                    <entryLink import="true" name="Hand Flamer" hidden="false" type="selectionEntry" id="dec6-f566-4f8b-edaf" targetId="9dc6-6ad8-818e-db2e" sortIndex="3">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="cd9e-af92-4abd-ea1a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Plasma Pistol" hidden="false" type="selectionEntry" id="6c92-b14f-5ab7-1a85" targetId="25c2-104f-fa0c-809e">
+                    <entryLink import="true" name="Plasma Pistol" hidden="false" type="selectionEntry" id="6c92-b14f-5ab7-1a85" targetId="25c2-104f-fa0c-809e" sortIndex="2">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="08f2-41d1-9b83-210b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Astartes Chainsword" hidden="false" type="selectionEntry" id="4178-1efc-973d-a8ec" targetId="c1b9-f39d-7390-d4cb">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="5c8e-cf4b-46bc-a203" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Bolt Rifle" hidden="false" type="selectionEntry" id="879f-64ce-6527-8f0b" targetId="6155-c404-a228-cb72">
+                    <entryLink import="true" name="Bolt Rifle" hidden="false" type="selectionEntry" id="879f-64ce-6527-8f0b" targetId="6155-c404-a228-cb72" sortIndex="1">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="7a7f-c9f4-55c7-d21a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -40226,27 +40219,27 @@ by 1.</characteristic>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db37-e722-4788-1117"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Power Weapon" hidden="false" type="selectionEntry" id="3ae5-5b4e-f6fb-7251" targetId="50dd-3e76-d993-4d1a">
+                    <entryLink import="true" name="Power Weapon" hidden="false" type="selectionEntry" id="3ae5-5b4e-f6fb-7251" targetId="50dd-3e76-d993-4d1a" sortIndex="3">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="c980-2c45-371e-5970" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Astartes Chainsword" hidden="false" type="selectionEntry" id="b739-3c3b-27e8-9e93" targetId="c1b9-f39d-7390-d4cb">
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" type="selectionEntry" id="b739-3c3b-27e8-9e93" targetId="c1b9-f39d-7390-d4cb" sortIndex="2">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="04db-d95b-a06e-da53" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Power Fist" hidden="false" type="selectionEntry" id="46c1-d6d7-6be5-5559" targetId="f8d8-7e77-4b71-faac">
+                    <entryLink import="true" name="Power Fist" hidden="false" type="selectionEntry" id="46c1-d6d7-6be5-5559" targetId="f8d8-7e77-4b71-faac" sortIndex="4">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="881f-401e-51e6-e74a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="1b61-fcfa-d9f5-4aa5" targetId="4913-96d4-2b1f-2c21">
+                    <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="1b61-fcfa-d9f5-4aa5" targetId="4913-96d4-2b1f-2c21" sortIndex="5">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="8c17-d2bb-41d9-3969" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="a52d-899c-5202-7337" targetId="6c7d-af5b-482-6fbe">
+                    <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="a52d-899c-5202-7337" targetId="6c7d-af5b-482-6fbe" sortIndex="1">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="4a70-8904-c5fb-91eb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -40411,12 +40404,9 @@ by 1.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Medusan Immortals" hidden="false" id="1c1d-e73e-1a39-f1bf">
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="8623-eb96-6e74-1d78" primary="false" name="Infantry"/>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="ffd4-06e7-640c-ac6c" primary="true" name="Battleline"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="8623-eb96-6e74-1d78" primary="true" name="Infantry"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="3512-bb37-9a9e-927d" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="1807-c66b-9efd-47bf" primary="false" name="Imperium"/>
-        <categoryLink targetId="5179-8ede-45e3-49a2" id="52d7-db12-f2ae-420e" primary="false" name="Tacticus"/>
-        <categoryLink targetId="7b57-816b-44b2-65ec" id="d0d6-1e8a-1fa7-8052" primary="false" name="Intercessor Squad"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="36a2-8921-8b4f-8e32" primary="false" name="Faction: Adeptus Astartes"/>
       </categoryLinks>
       <profiles>
@@ -40448,27 +40438,22 @@ by 1.</characteristic>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon 1" hidden="false" id="41ab-51ac-5b16-3b02" defaultSelectionEntryId="fd17-cf82-6413-f1d7" flatten="false">
                   <entryLinks>
-                    <entryLink import="true" name="Hand Flamer" hidden="false" type="selectionEntry" id="e895-a341-8112-3e08" targetId="9dc6-6ad8-818e-db2e">
+                    <entryLink import="true" name="Hand Flamer" hidden="false" type="selectionEntry" id="e895-a341-8112-3e08" targetId="9dc6-6ad8-818e-db2e" sortIndex="3">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="a2f2-9bb7-e4ad-cae2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Plasma Pistol" hidden="false" type="selectionEntry" id="801e-b05a-401e-14d3" targetId="25c2-104f-fa0c-809e">
+                    <entryLink import="true" name="Plasma Pistol" hidden="false" type="selectionEntry" id="801e-b05a-401e-14d3" targetId="25c2-104f-fa0c-809e" sortIndex="4">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="2165-5d03-71ca-6f62" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Astartes Chainsword" hidden="false" type="selectionEntry" id="8ff5-1923-4ba4-b1e0" targetId="c1b9-f39d-7390-d4cb">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="88b3-af7b-52af-6454" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Bolt Rifle" hidden="false" type="selectionEntry" id="c48c-9558-2735-435b" targetId="6155-c404-a228-cb72">
+                    <entryLink import="true" name="Bolt Rifle" hidden="false" type="selectionEntry" id="c48c-9558-2735-435b" targetId="6155-c404-a228-cb72" sortIndex="2">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="59e0-087d-c9cd-e560" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Volkite Charger" hidden="false" id="fa4f-d597-d0d4-e84a" type="selectionEntry" targetId="0e27-3a19-466a-a661"/>
+                    <entryLink import="true" name="Volkite Charger" hidden="false" id="fa4f-d597-d0d4-e84a" type="selectionEntry" targetId="0e27-3a19-466a-a661" sortIndex="5"/>
                   </entryLinks>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ee4-ee25-5fcc-f997"/>
@@ -40674,12 +40659,9 @@ by 1.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Phalanx Warders" hidden="false" id="a416-1960-c64b-e74b">
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="ad44-1c3a-f616-ac6c" primary="false" name="Infantry"/>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="bf43-ceb4-ba2e-1714" primary="true" name="Battleline"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="ad44-1c3a-f616-ac6c" primary="true" name="Infantry"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="e1f4-f936-fa80-d164" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="2f7e-4cd9-2189-e00a" primary="false" name="Imperium"/>
-        <categoryLink targetId="5179-8ede-45e3-49a2" id="f1e2-8331-8ba1-4aca" primary="false" name="Tacticus"/>
-        <categoryLink targetId="7b57-816b-44b2-65ec" id="cf0c-5d4c-0a70-3618" primary="false" name="Intercessor Squad"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="2f32-a7d5-7b7b-9a84" primary="false" name="Faction: Adeptus Astartes"/>
       </categoryLinks>
       <profiles>
@@ -40846,7 +40828,14 @@ by 1.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="160" field="51b2-306e-1021-d207">
