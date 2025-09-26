@@ -28727,8 +28727,18 @@ You can attach this model to one of the above units even if one Captain, Chapte
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="b71b-8333-8f06-5f68" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Thunder Hammer" hidden="false" id="0a87-70ed-dca6-89a6" type="selectionEntry" targetId="62ad-da0b-24f7-fe33"/>
-            <entryLink import="true" name="Archeotech Pistol" hidden="false" id="46a6-a825-69a3-92df" type="selectionEntry" targetId="57d8-5693-fbd9-dd05"/>
+            <entryLink import="true" name="Thunder Hammer" hidden="false" id="0a87-70ed-dca6-89a6" type="selectionEntry" targetId="62ad-da0b-24f7-fe33">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e3a-79d7-d91f-fba3-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e3a-79d7-d91f-fba3-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Archeotech Pistol" hidden="false" id="46a6-a825-69a3-92df" type="selectionEntry" targetId="57d8-5693-fbd9-dd05">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="62b9-c597-9e8b-034b-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62b9-c597-9e8b-034b-max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -40158,13 +40168,12 @@ by 1.</characteristic>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the End of the Movement Phase, if this Unit did not disembark from a Transport this phase and has moved less than 3&quot;, you can select one of the following abilities to be active until the Start of your next Movement Phase;
 
 ■ Models in this Unit count as remaining stationary
-■ Increase the T Characteristic of Models in this Unit by 1
-</characteristic>
+■ Increase the T Characteristic of Models in this Unit by 1</characteristic>
           </characteristics>
         </profile>
         <profile name="Invulnerable Save (5+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ef3c-9324-3aac-275d">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"> 5+ </characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">5+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -40410,7 +40419,7 @@ by 1.</characteristic>
         </profile>
         <profile name="Invulnerable Save (5+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="740f-fbc6-c656-9923">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"> 5+ </characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">5+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -40665,7 +40674,7 @@ by 1.</characteristic>
         </profile>
         <profile name="Invulnerable Save (5+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="82bc-4006-9d40-e5cf">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"> 5+ </characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">5+</characteristic>
           </characteristics>
         </profile>
       </profiles>
