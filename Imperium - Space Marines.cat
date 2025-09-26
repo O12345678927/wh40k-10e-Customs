@@ -2718,6 +2718,7 @@
     <entryLink import="true" name="Olympian Legionaires" hidden="false" id="9bbe-7584-d9b2-5461" type="selectionEntry" targetId="98b6-82d7-bd22-5a8d"/>
     <entryLink import="true" name="Breacher Squad" hidden="false" id="77ed-e711-006c-6094" type="selectionEntry" targetId="0f68-5b18-b869-5ab0"/>
     <entryLink import="true" name="Medusan Immortals" hidden="false" id="769e-7371-2eaa-c852" type="selectionEntry" targetId="1c1d-e73e-1a39-f1bf"/>
+    <entryLink import="true" name="Phalanx Warders" hidden="false" id="8c32-187a-b06c-a05b" type="selectionEntry" targetId="a416-1960-c64b-e74b"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
