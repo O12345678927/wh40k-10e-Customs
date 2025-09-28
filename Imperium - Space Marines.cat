@@ -2719,6 +2719,7 @@
     <entryLink import="true" name="Breacher Squad" hidden="false" id="77ed-e711-006c-6094" type="selectionEntry" targetId="0f68-5b18-b869-5ab0"/>
     <entryLink import="true" name="Medusan Immortals" hidden="false" id="769e-7371-2eaa-c852" type="selectionEntry" targetId="1c1d-e73e-1a39-f1bf"/>
     <entryLink import="true" name="Phalanx Warders" hidden="false" id="8c32-187a-b06c-a05b" type="selectionEntry" targetId="a416-1960-c64b-e74b"/>
+    <entryLink import="true" name="Huscarl Retinue" hidden="false" id="fa1f-c482-7004-1974" type="selectionEntry" targetId="6d29-cc3c-5fc4-0028"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
@@ -40819,7 +40820,7 @@ by 1.</characteristic>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Phalanx Warder" hidden="false" id="2e64-5ba7-1f38-a4a2" collective="false" sortIndex="2">
               <constraints>
-                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="485c-5242-daa4-4578"/>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="485c-5242-daa4-4578"/>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="55b4-85bb-5813-258b"/>
               </constraints>
               <entryLinks>
@@ -41229,6 +41230,10 @@ by 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fdcd-7620-5b79-9383-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdcd-7620-5b79-9383-max"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Leaders - Breacher Squads" hidden="false" id="0601-ee4c-ad86-c28a">
       <profiles>
@@ -41238,6 +41243,10 @@ by 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd03-b919-6219-fe94-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd03-b919-6219-fe94-max"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
