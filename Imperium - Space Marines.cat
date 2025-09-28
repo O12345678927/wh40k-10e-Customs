@@ -40864,7 +40864,7 @@ by 1.</characteristic>
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="5813-c7da-6973-bdd9" includeChildSelections="false"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="5813-c7da-6973-bdd9" includeChildSelections="false"/>
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="3d2d-5e20-e87c-f5ba" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
@@ -41054,7 +41054,12 @@ by 1.</characteristic>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="0eee-b641-2ddf-c3f2" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
-                <entryLink import="true" name="Solarite Power Gauntlet" hidden="false" id="ca94-da29-21e5-f4be" type="selectionEntry" targetId="35d0-ed55-e686-665c"/>
+                <entryLink import="true" name="Solarite Power Gauntlet" hidden="false" id="ca94-da29-21e5-f4be" type="selectionEntry" targetId="35d0-ed55-e686-665c">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61a4-8112-64d3-9f54-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61a4-8112-64d3-9f54-max"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Vigil-Pattern Storm Shield" hidden="false" id="13bb-7ba2-26cd-d83f" type="selectionEntry" targetId="6545-28c4-33e7-b07c">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3dc2-7af4-0f0c-d953-min"/>
