@@ -41284,7 +41284,8 @@ by 1.</characteristic>
         </profile>
         <profile name="Tactical Flexibility" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1606-78ff-a514-3e64">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one Unit from your army with this ability may use it when that Unit is targeted with a Stratagem; Reduce the CP cost of that use of that Stratagem by 1CP.
+Each Unit may only use this Ability once per Battle</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -41612,7 +41613,8 @@ by 1.</characteristic>
         </profile>
         <profile name="Tactical Flexibility" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="685e-62d8-5bfc-7602">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one Unit from your army with this ability may use it when that Unit is targeted with a Stratagem; Reduce the CP cost of that use of that Stratagem by 1CP.
+Each Unit may only use this Ability once per Battle</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -41839,7 +41841,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         </modifier>
       </modifiers>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Dark Furies" hidden="false" id="6181-7651-106b-6930" sortIndex="2">
+        <selectionEntryGroup name="Dark Furies" hidden="false" id="6181-7651-106b-6930" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Fury" hidden="false" id="3032-2a9e-df98-ecd6">
               <constraints>
@@ -41911,6 +41913,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="c72d-5b8b-bbe9-e073" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Leaders - Jump Squads" hidden="false" id="6731-f654-2c85-ee9b" type="selectionEntry" targetId="6599-e23e-ef3c-1475" sortIndex="2"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -42026,7 +42029,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <infoLink name="Templar Vows" id="5627-87d0-20ae-2d72" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Mor Deythan" hidden="false" id="fba0-fbb8-390b-e080" sortIndex="2">
+        <selectionEntryGroup name="Mor Deythan" hidden="false" id="fba0-fbb8-390b-e080" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Mor Deythan Shade" hidden="false" id="2a6c-58c5-0402-6b46" sortIndex="1">
               <constraints>
@@ -42132,6 +42135,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="992a-d47a-bd8a-1243" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Leaders - Stealthy" hidden="false" id="99a0-7438-e603-4f97" type="selectionEntry" targetId="deca-c1ea-dc09-b26d" sortIndex="2"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -42222,6 +42226,32 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="210f-d02d-a170-4076" targetId="eeda-8544-a2f3-3fab" primary="false"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Leaders - Jump Squads" hidden="false" id="6599-e23e-ef3c-1475">
+      <profiles>
+        <profile name="Leaders" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7df1-59a6-7791-8cd5">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a Model from your army with the Leader Ability can be attached to a Vanguard Veteran w/ Jump Pack or Assault Intercessor w/ Jump Pack Unit, it can be attached to this Unit instead</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c8ce-deb7-125e-60b8"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c6c-6210-9f4e-a1d8"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Leaders - Stealthy" hidden="false" id="deca-c1ea-dc09-b26d">
+      <profiles>
+        <profile name="Leaders" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3810-9451-b7d3-1686">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a Model from your army with the Leader Ability can be attached to a PHOBOS Unit, it can be attached to this Unit instead</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c97e-dee8-a372-7b20"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0235-514b-b9ac-c269"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
