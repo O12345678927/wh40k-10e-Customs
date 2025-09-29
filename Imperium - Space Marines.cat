@@ -36492,6 +36492,7 @@ per turn.</characteristic>
         <categoryLink targetId="6e7-40c-58d9-e402" id="6e62-7be5-983d-6274" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="8ec7-5d5d-7332-211a" primary="false" name="Fly"/>
         <categoryLink targetId="5c0e-2250-dd3a-1df9" id="7548-2e5b-3f42-77b4" primary="false" name="Faction: White Scars"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="abb4-952d-6733-b462" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
@@ -36941,11 +36942,11 @@ per turn.</characteristic>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="dbd4-63-af05-998" id="c03a-0ef5-bdea-f12a" primary="true" name="Vehicle"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="c03a-0ef5-bdea-f12a" primary="false" name="Vehicle"/>
         <categoryLink targetId="a820-cf8-f29d-7b06" id="ea99-7dd5-b390-233c" primary="false" name="Dreadnought"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="db64-55bf-b608-5b1d" primary="false" name="Walker"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="86de-7467-9976-953c" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="c36f-740a-65e5-4ccf" primary="false" name="Character"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="c36f-740a-65e5-4ccf" primary="true" name="Character"/>
         <categoryLink targetId="7002-1fbb-7571-e8e7" id="cf80-f007-cd77-6f92" primary="false" name="Faction: Thousand Sons"/>
         <categoryLink targetId="e169-ce70-ee9d-cecc" id="bb63-186f-418d-d810" primary="false" name="CUSTOM"/>
       </categoryLinks>
@@ -38978,6 +38979,7 @@ by 1.</characteristic>
         <categoryLink targetId="740a-892c-8958-defa" id="593e-be9b-e8df-403e" primary="false" name="Terminator"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="4150-007d-9974-a3b2" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="5c0e-2250-dd3a-1df9" id="0789-a631-a6f7-57a5" primary="false" name="Faction: White Scars"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="5761-40db-c3be-378a" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="ce8b-17b0-b58e-dc51"/>
@@ -39189,6 +39191,7 @@ by 1.</characteristic>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="054c-d751-e0c8-14bd" primary="false" name="Imperium"/>
         <categoryLink targetId="740a-892c-8958-defa" id="24f7-c3f5-a925-2967" primary="false" name="Terminator"/>
         <categoryLink targetId="5c0e-2250-dd3a-1df9" id="e9e0-0fb5-d8e3-6542" primary="false" name="Faction: White Scars"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="04e7-ac3b-83a3-69a5" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="8f58-5df1-2e5b-c89a" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
@@ -39317,6 +39320,7 @@ by 1.</characteristic>
         <categoryLink targetId="6e7-40c-58d9-e402" id="228a-6b69-fc90-d034" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="14a0-40c9-2748-ae6e" id="879d-8f2d-1280-406a" primary="false" name="Mounted"/>
         <categoryLink targetId="5c0e-2250-dd3a-1df9" id="0b9c-1c26-bf72-5df9" primary="false" name="Faction: White Scars"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="8757-b5a0-b409-ee7d" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <profiles>
         <profile name="Khan on Shamshir Jetbike" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit" id="b4f6-ed5b-15be-1d00">
@@ -40200,6 +40204,7 @@ by 1.</characteristic>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="d88a-7b7f-6e93-ed9b" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="77b7-a9c6-7b97-f38c" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="c143-3773-4875-834b" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="06f1-8ce5-88ba-a327" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <profiles>
         <profile name="Slow and Purposeful" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="710a-81a3-cf47-b9e0">
@@ -43011,6 +43016,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <categoryLink targetId="13bf-2bee-3ae0-b414" id="cdf9-ca83-c2b1-a584" primary="false" name="Psyker"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="0bae-99d3-b1c6-6a9f" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="5c0e-2250-dd3a-1df9" id="8a6b-7032-d6f3-a0e8" primary="false" name="Faction: White Scars"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="9a0e-e40c-65ef-f660" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Leader" type="rule" id="a192-0f1e-4d74-fcc0" targetId="b4dd-3e1f-41cb-218f"/>
