@@ -2724,6 +2724,9 @@
     <entryLink import="true" name="Invictarus Suzerain Squad" hidden="false" id="279a-bfbd-2ad9-e239" type="selectionEntry" targetId="818a-4c2a-c2e4-c68f"/>
     <entryLink import="true" name="Mor Deythan Squad" hidden="false" id="5938-e044-ae93-b9c8" type="selectionEntry" targetId="3832-5a91-54b9-05eb"/>
     <entryLink import="true" name="Dark Fury Squad" hidden="false" id="1675-789f-bb76-750d" type="selectionEntry" targetId="76ee-91fd-bce4-5a63"/>
+    <entryLink import="true" name="Firedrake Terminator Squad" hidden="false" id="0af4-5e87-9a21-e376" type="selectionEntry" targetId="72f2-82a7-8975-3735"/>
+    <entryLink import="true" name="Pyroclast Squad" hidden="false" id="2f9f-71d8-68aa-4328" type="selectionEntry" targetId="80d7-a91b-5eea-b802"/>
+    <entryLink import="true" name="Pyroclast Squad - Vi" hidden="false" id="1ffc-53ba-8b8b-008d" type="selectionEntry" targetId="7b8c-68a8-4497-4838"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
@@ -36872,7 +36875,7 @@ per turn.</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Pinning" id="684b-bc09-89c9-809e" hidden="false" type="rule" targetId="d737-55a6-e8c8-ea02"/>
+        <infoLink name="Pinning [X]" id="684b-bc09-89c9-809e" hidden="false" type="rule" targetId="d737-55a6-e8c8-ea02"/>
         <infoLink name="Rapid Fire" id="bd60-ef35-0b58-2b92" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
       </infoLinks>
     </selectionEntry>
@@ -39756,7 +39759,7 @@ by 1.</characteristic>
         <categoryLink name="Bolt Weapon" hidden="false" id="55b2-19fe-74eb-90bd" targetId="1c08-e7e4-55b9-8e30" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Pinning" id="e034-d5e5-e205-2995" hidden="false" type="rule" targetId="d737-55a6-e8c8-ea02"/>
+        <infoLink name="Pinning [X]" id="e034-d5e5-e205-2995" hidden="false" type="rule" targetId="d737-55a6-e8c8-ea02"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Shrapnel Pistol" hidden="false" id="eaa7-695c-1662-98ac" collective="true">
@@ -39778,7 +39781,7 @@ by 1.</characteristic>
         <categoryLink name="Bolt Weapon" hidden="false" id="f07a-acca-a81f-b29d" targetId="1c08-e7e4-55b9-8e30" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Pinning" id="0cde-be87-0100-ca4c" hidden="false" type="rule" targetId="d737-55a6-e8c8-ea02"/>
+        <infoLink name="Pinning [X]" id="0cde-be87-0100-ca4c" hidden="false" type="rule" targetId="d737-55a6-e8c8-ea02"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gravis Shrapnel Cannon" hidden="false" id="6e91-aa4f-577e-c80f" collective="true">
@@ -39796,7 +39799,7 @@ by 1.</characteristic>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Pinning" id="b48f-5a60-745a-9a8f" hidden="false" type="rule" targetId="d737-55a6-e8c8-ea02"/>
+        <infoLink name="Pinning [X]" id="b48f-5a60-745a-9a8f" hidden="false" type="rule" targetId="d737-55a6-e8c8-ea02"/>
         <infoLink name="Twin-linked" id="2e07-d110-91a6-9f82" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
       </infoLinks>
     </selectionEntry>
@@ -41653,7 +41656,7 @@ Each Unit may only use this Ability once per Battle</characteristic>
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
                     <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
