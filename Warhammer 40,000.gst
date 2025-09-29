@@ -492,6 +492,13 @@
       <comment>Category to be used to ignore characteristic changes by other upgrades</comment>
     </categoryEntry>
     <categoryEntry name="Pistol Weapon" id="1db0-c6b5-19db-8d0c" hidden="true"/>
+    <categoryEntry id="54ae-4ac6-8776-9b5e" name="Faction: Iron Warriors" hidden="false"/>
+    <categoryEntry id="233a-aaf1-392d-6313" name="Faction: Night Lords" hidden="false"/>
+    <categoryEntry id="cce6-0071-67df-c4e7" name="Faction: Black Legion" hidden="false"/>
+    <categoryEntry id="292d-727a-ecee-c0d4" name="Faction: Alpha Legion" hidden="false"/>
+    <categoryEntry id="ff4e-e9f5-ed72-9272" name="Faction: Word Bearers" hidden="false"/>
+    <categoryEntry id="3c13-9a7b-4fc5-ab91" name="Faction: Emperor&apos;s Children" hidden="false"/>
+    <categoryEntry id="e169-ce70-ee9d-cecc" name="CUSTOM" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
@@ -1062,7 +1069,7 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
       <description>The bearer can only shoot with this weapon once per battle.</description>
     </rule>
     <rule id="d737-55a6-e8c8-ea02" name="Pinning [X]" publicationId="48fc-15aa-b307-9443" page="Custom" hidden="false">
-      <description>After an INFANTRY Unit suffers a wound from a PINNING weapon; That Unit must succeed on a Leadership test or become Pinned.
+      <description>After a Unit (excluding MONSTERS and VEHICLES) suffers a wound from a PINNING weapon; That Unit must succeed on a Leadership test or become Pinned.
 While a Unit is Pinned subtract X&quot; from their Move characteristic and subtract X from Charge rolls made for it until the end of your Opponent&apos;s next Turn.</description>
     </rule>
   </sharedRules>

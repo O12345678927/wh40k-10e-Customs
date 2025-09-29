@@ -28686,6 +28686,7 @@ You can attach this model to one of the above units even if one Captain, Chapte
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="d6a8-a50e-babc-5270" primary="false" name="Infantry"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="9ce8-b8f6-88ff-2fc9" primary="false" name="Grenades"/>
         <categoryLink targetId="b957-d9cd-ee81-560" id="d3c7-d783-ea68-4228" primary="false" name="Techmarine"/>
+        <categoryLink targetId="b88e-1b0c-b79f-5cdf" id="1a2b-ec0f-8657-f339" primary="false" name="Faction: Iron Hands"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="c055-7d2-bf2-51bc" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
@@ -36040,6 +36041,8 @@ per turn.</characteristic>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="cd57-a2c5-9cf8-231f" primary="false" name="Imperium"/>
         <categoryLink targetId="740a-892c-8958-defa" id="db2d-e7ab-dd85-5f2c" primary="false" name="Terminator"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="4dd1-449f-fd9f-359e" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="233a-aaf1-392d-6313" id="e4c0-5788-be79-9f14" primary="false" name="Faction: Night Lords"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="d85a-9ad5-b19c-5b6a" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <profiles>
         <profile name="Talent For Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="edb5-5add-0767-884d">
@@ -36488,6 +36491,7 @@ per turn.</characteristic>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="628d-4ff5-1afe-01d2" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="6e62-7be5-983d-6274" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="8ec7-5d5d-7332-211a" primary="false" name="Fly"/>
+        <categoryLink targetId="5c0e-2250-dd3a-1df9" id="7548-2e5b-3f42-77b4" primary="false" name="Faction: White Scars"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
@@ -36632,8 +36636,9 @@ per turn.</characteristic>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="9226-4abb-42e2-e6d4" primary="true" name="Infantry"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="2851-fe65-3183-432a" primary="false" name="Imperium"/>
         <categoryLink targetId="740a-892c-8958-defa" id="d279-b172-c31e-5b53" primary="false" name="Terminator"/>
-        <categoryLink targetId="25f4-2bec-a254-82a7" id="f1ae-5417-0f5b-8f25" primary="false" name="Relic Terminator Squad"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="654a-1833-8733-fa9d" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="3c13-9a7b-4fc5-ab91" id="f6da-63f4-2134-6718" primary="false" name="Faction: Emperor&apos;s Children"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="bb22-c76e-6127-2d68" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <profiles>
         <profile name="Skill Unmatched" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5694-0075-b491-ff76">
@@ -36871,7 +36876,7 @@ per turn.</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 3</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 3, Pinning 1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -36941,6 +36946,8 @@ per turn.</characteristic>
         <categoryLink targetId="6dda-e157-334d-e93a" id="db64-55bf-b608-5b1d" primary="false" name="Walker"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="86de-7467-9976-953c" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="c36f-740a-65e5-4ccf" primary="false" name="Character"/>
+        <categoryLink targetId="7002-1fbb-7571-e8e7" id="cf80-f007-cd77-6f92" primary="false" name="Faction: Thousand Sons"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="bb63-186f-418d-d810" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="6f71-4cd8-6138-aa09" hidden="false" sortIndex="2">
@@ -37156,6 +37163,8 @@ per turn.</characteristic>
         <categoryLink targetId="6e7-40c-58d9-e402" id="dac1-6d1c-f560-7004" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="dbd4-63-af05-998" id="7cfe-d0f1-88e6-97d2" primary="true" name="Vehicle"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="7e19-4967-ad06-7ac6" primary="false" name="Walker"/>
+        <categoryLink targetId="54ae-4ac6-8776-9b5e" id="323f-7b36-97e0-597a" primary="false" name="Faction: Iron Warriors"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="d9a7-afa7-6bbf-8723" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="e8b6-f421-a72c-fa86"/>
@@ -37353,6 +37362,8 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <categoryLink targetId="6dda-e157-334d-e93a" id="a11f-2ad5-c146-d070" primary="false" name="Walker"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="f93e-d354-bd16-cef7" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="13bf-2bee-3ae0-b414" id="088a-7768-58bd-3b3d" primary="false" name="Psyker"/>
+        <categoryLink targetId="7002-1fbb-7571-e8e7" id="a957-cfed-1b99-fa1a" primary="false" name="Faction: Thousand Sons"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="ef55-2303-fc0f-3984" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="20c8-87b5-2ab0-64ca" targetId="b68a-5ded-65ac-98c">
@@ -37622,6 +37633,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <categoryLink targetId="740a-892c-8958-defa" id="30d4-3659-c215-2cab" primary="false" name="Terminator"/>
         <categoryLink targetId="25f4-2bec-a254-82a7" id="8c73-7b3b-ed08-8d01" primary="false" name="Relic Terminator Squad"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="1e42-ef88-eeda-3fd7" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="b88e-1b0c-b79f-5cdf" id="d01b-31ef-e999-5ad2" primary="false" name="Faction: Iron Hands"/>
       </categoryLinks>
       <profiles>
         <profile name="Visage of the Gorgon" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="49bf-5314-87e1-a5b3">
@@ -37728,11 +37740,6 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <modifier type="set" value="400" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="00cc-be13-fbc2-8124" childId="d0be-6a54-9bb2-c4d4" shared="true" id="5d46-cdb2-aa44-aaec"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="582a-1609-92f0-1fa8" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
@@ -37852,6 +37859,8 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="cbf9-f6f3-fa31-2be6" primary="false" name="Grenades"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="e1d2-7e93-b418-e19f" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="2071-5792-21ee-c35e" primary="false" name="Imperium"/>
+        <categoryLink targetId="3c13-9a7b-4fc5-ab91" id="8ef6-cca6-e2ac-ca70" primary="false" name="Faction: Emperor&apos;s Children"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="3af6-f92f-0aff-75ad" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Sun Killers" hidden="false" id="51db-bbf2-3007-8c78" defaultSelectionEntryId="624c-c49c-b0a5-9cd4" sortIndex="2">
@@ -38159,6 +38168,8 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <categoryLink targetId="5179-8ede-45e3-49a2" id="0c11-783e-1f3b-4039" primary="false" name="Tacticus"/>
         <categoryLink targetId="930d-2875-125b-a65e" id="07cf-9696-5052-0506" primary="false" name="Bladeguard Veteran Squad"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="6d24-9696-b627-fd8b" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="7002-1fbb-7571-e8e7" id="56aa-b434-74a0-6816" primary="false" name="Faction: Thousand Sons"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="8f32-9a06-c1a9-a9d3" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <profiles>
         <profile name="Mindsong of Blades [PSYCHIC]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a4ed-5dbb-4f17-1ab7">
@@ -38471,6 +38482,8 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <categoryLink targetId="802a-a287-ac94-38a0" id="04cd-06db-14bf-d5c6" primary="false" name="Devastator Squad"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="4723-fa89-0d8a-7e02" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="13bf-2bee-3ae0-b414" id="3358-9820-b502-8347" primary="false" name="Psyker"/>
+        <categoryLink targetId="7002-1fbb-7571-e8e7" id="6e3b-318e-2238-9d41" primary="false" name="Faction: Thousand Sons"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="6f67-32d6-147e-bbad" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Metjari" hidden="false" id="809c-dd7c-b2a0-69f1" defaultSelectionEntryId="624c-c49c-b0a5-9cd4" sortIndex="2">
@@ -38964,6 +38977,7 @@ by 1.</characteristic>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="dba9-429c-5b19-319e" primary="false" name="Imperium"/>
         <categoryLink targetId="740a-892c-8958-defa" id="593e-be9b-e8df-403e" primary="false" name="Terminator"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="4150-007d-9974-a3b2" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="5c0e-2250-dd3a-1df9" id="0789-a631-a6f7-57a5" primary="false" name="Faction: White Scars"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="ce8b-17b0-b58e-dc51"/>
@@ -39174,6 +39188,7 @@ by 1.</characteristic>
         <categoryLink targetId="6e7-40c-58d9-e402" id="c767-6860-800b-cfa7" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="054c-d751-e0c8-14bd" primary="false" name="Imperium"/>
         <categoryLink targetId="740a-892c-8958-defa" id="24f7-c3f5-a925-2967" primary="false" name="Terminator"/>
+        <categoryLink targetId="5c0e-2250-dd3a-1df9" id="e9e0-0fb5-d8e3-6542" primary="false" name="Faction: White Scars"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="8f58-5df1-2e5b-c89a" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
@@ -39301,6 +39316,7 @@ by 1.</characteristic>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="8a3b-9e62-757f-6e0e" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="228a-6b69-fc90-d034" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="14a0-40c9-2748-ae6e" id="879d-8f2d-1280-406a" primary="false" name="Mounted"/>
+        <categoryLink targetId="5c0e-2250-dd3a-1df9" id="0b9c-1c26-bf72-5df9" primary="false" name="Faction: White Scars"/>
       </categoryLinks>
       <profiles>
         <profile name="Khan on Shamshir Jetbike" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit" id="b4f6-ed5b-15be-1d00">
@@ -39501,6 +39517,8 @@ by 1.</characteristic>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="0d6d-6268-0d8c-3618" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="b3c0-c2e8-66a5-e94f" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="36a2-690d-1830-0e6c" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="1567-edb5-f5ab-0c69" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="54ae-4ac6-8776-9b5e" id="09a3-2020-25a3-29ec" primary="false" name="Faction: Iron Warriors"/>
       </categoryLinks>
       <profiles>
         <profile name="Objective Secured" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1df7-3ab8-2764-75c1">
@@ -39751,7 +39769,7 @@ by 1.</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pinning</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pinning 1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -39773,7 +39791,7 @@ by 1.</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pinning</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pinning 1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -39795,7 +39813,7 @@ by 1.</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pinning, Twin-Linked</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pinning 2, Twin-Linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -40480,6 +40498,7 @@ by 1.</characteristic>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="3512-bb37-9a9e-927d" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="1807-c66b-9efd-47bf" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="36a2-8921-8b4f-8e32" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="b88e-1b0c-b79f-5cdf" id="d323-3840-6159-4eff" primary="false" name="Faction: Iron Hands"/>
       </categoryLinks>
       <profiles>
         <profile name="The Flesh is Weak" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9e8b-c3db-fba2-a811">
@@ -40758,6 +40777,8 @@ by 1.</characteristic>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="e1f4-f936-fa80-d164" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="2f7e-4cd9-2189-e00a" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="2f32-a7d5-7b7b-9a84" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="97aa-d0e4-71c7-96c3" id="f1b3-ed84-8ff6-71a7" primary="false" name="Faction: Imperial Fists"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="a53c-0b11-2011-4cc0" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <profiles>
         <profile name="Lockstep" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="06b7-7afa-30ed-e16f">
@@ -41030,6 +41051,8 @@ by 1.</characteristic>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="ebdb-2e75-a97b-6727" primary="true" name="Infantry"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="7c7d-4b34-f757-1c8e" primary="false" name="Imperium"/>
         <categoryLink targetId="740a-892c-8958-defa" id="1aba-81b5-b619-a48d" primary="false" name="Terminator"/>
+        <categoryLink targetId="97aa-d0e4-71c7-96c3" id="3e3f-f6b2-2c15-38de" primary="false" name="Faction: Imperial Fists"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="b7cf-b8cd-a25c-4f1e" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <profiles>
         <profile name="Unflinching Bulwark" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="742b-b29d-7689-9684">
@@ -41275,6 +41298,7 @@ by 1.</characteristic>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="d465-e6a8-1209-338c" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="1251-9c8f-1f67-5fc2" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="942a-a56a-9147-f868" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="1a2d-2f00-c054-4dcb" id="ecda-80a1-b56b-450a" primary="false" name="Faction: Ultramarines"/>
       </categoryLinks>
       <profiles>
         <profile name="Hammer of Wrath" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="48e6-15d0-416a-f95f">
@@ -41604,6 +41628,7 @@ Each Unit may only use this Ability once per Battle</characteristic>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="ab49-9771-1923-a45c" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="dfa9-2b4a-0e86-6b14" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="8031-9f82-2245-b3e6" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="1a2d-2f00-c054-4dcb" id="9172-5057-0c65-da8f" primary="false" name="Faction: Ultramarines"/>
       </categoryLinks>
       <profiles>
         <profile name="Lords of Ultramar" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c63b-8c6e-690f-b122">
@@ -41813,6 +41838,8 @@ Each Unit may only use this Ability once per Battle</characteristic>
         <categoryLink targetId="6e7-40c-58d9-e402" id="b2ff-cb17-8569-1831" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="dda2-bb0a-215e-ad9c" id="6c93-56a8-348d-5e3e" primary="false" name="Jump Pack"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="5525-0b36-6f9e-c244" primary="false" name="Fly"/>
+        <categoryLink targetId="84b7-7194-3b84-1b0c" id="7a34-9a72-4283-ac55" primary="false" name="Faction: Raven Guard"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="c5cc-e433-79b0-d0c8" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <profiles>
         <profile name="Choosers of the Slain" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7e43-1e08-526e-5f0e">
@@ -42126,6 +42153,8 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="db60-303c-2f9b-6684" primary="false" name="Grenades"/>
         <categoryLink targetId="7295-ed65-8ff4-7a5f" id="972b-8da1-7134-decd" primary="false" name="Phobos"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="d506-6677-7be5-f33b" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="b12c-f833-80bc-0a63" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="84b7-7194-3b84-1b0c" id="e654-4176-d589-aece" primary="false" name="Faction: Raven Guard"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="e7fb-4a4a-d7d3-22e9"/>
@@ -42258,8 +42287,9 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="8e7d-5c13-c65e-9b96" primary="true" name="Infantry"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="46da-7327-cecb-2d8d" primary="false" name="Imperium"/>
         <categoryLink targetId="740a-892c-8958-defa" id="dca9-5459-a9f0-ce77" primary="false" name="Terminator"/>
-        <categoryLink targetId="25f4-2bec-a254-82a7" id="09f4-778d-b08c-a352" primary="false" name="Relic Terminator Squad"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="dda9-89d5-c59b-a757" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="65e4-13-4fa8-b36c" id="adc1-ecad-2716-4ba9" primary="false" name="Faction: Salamanders"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="a067-7d45-053c-d0ce" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <profiles>
         <profile name="Forge-Craft of Nocturne" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="da89-7b71-af98-e78e">
@@ -42366,11 +42396,6 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <modifier type="set" value="400" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="72f2-82a7-8975-3735" childId="fb09-4e64-9da3-0d83" shared="true" id="ef4b-88e7-329b-e197"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="cbd0-024c-dd75-52d3" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
@@ -42590,8 +42615,8 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="b642-b957-9d69-18d6" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="e363-8dbf-c0f6-85e5" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="2147-179b-87f1-75e1" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="5179-8ede-45e3-49a2" id="4921-9dca-bc9e-47b5" primary="false" name="Tacticus"/>
-        <categoryLink targetId="5fe6-20de-df8d-8e92" id="c9e1-b564-db1a-7355" primary="false" name="Infernus Squad"/>
+        <categoryLink targetId="65e4-13-4fa8-b36c" id="3889-b51e-0454-95c5" primary="false" name="Faction: Salamanders"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="9e58-62c7-2add-06c5" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
@@ -42842,8 +42867,6 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="d062-ce30-50a0-b076" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="d19f-825c-6ebe-4eb9" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="9355-87b8-ed62-cba3" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="5179-8ede-45e3-49a2" id="ab60-f669-07d5-afca" primary="false" name="Tacticus"/>
-        <categoryLink targetId="5fe6-20de-df8d-8e92" id="ebc7-efb5-ef99-afb4" primary="false" name="Infernus Squad"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
@@ -42987,8 +43010,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="c659-38a2-aeec-4bde" primary="false" name="Imperium"/>
         <categoryLink targetId="13bf-2bee-3ae0-b414" id="cdf9-ca83-c2b1-a584" primary="false" name="Psyker"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="0bae-99d3-b1c6-6a9f" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="5179-8ede-45e3-49a2" id="97cc-80fc-5931-6310" primary="false" name="Tacticus"/>
-        <categoryLink targetId="2c02-e616-7038-bcd7" id="cbab-3ab2-ac9e-fcf6" primary="false" name="Librarian"/>
+        <categoryLink targetId="5c0e-2250-dd3a-1df9" id="8a6b-7032-d6f3-a0e8" primary="false" name="Faction: White Scars"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Leader" type="rule" id="a192-0f1e-4d74-fcc0" targetId="b4dd-3e1f-41cb-218f"/>
