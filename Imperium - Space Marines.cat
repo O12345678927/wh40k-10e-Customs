@@ -2721,6 +2721,7 @@
     <entryLink import="true" name="Phalanx Warders" hidden="false" id="8c32-187a-b06c-a05b" type="selectionEntry" targetId="a416-1960-c64b-e74b"/>
     <entryLink import="true" name="Huscarl Retinue" hidden="false" id="fa1f-c482-7004-1974" type="selectionEntry" targetId="6d29-cc3c-5fc4-0028"/>
     <entryLink import="true" name="Praetorian Breacher Squad" hidden="false" id="5138-7e5f-319f-4c8e" type="selectionEntry" targetId="6e61-a19c-62a0-06f8"/>
+    <entryLink import="true" name="Invictarus Suzerain Squad" hidden="false" id="279a-bfbd-2ad9-e239" type="selectionEntry" targetId="818a-4c2a-c2e4-c68f"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
@@ -41262,12 +41263,14 @@ by 1.</characteristic>
         <categoryLink targetId="6e7-40c-58d9-e402" id="942a-a56a-9147-f868" primary="false" name="Faction: Adeptus Astartes"/>
       </categoryLinks>
       <profiles>
-        <profile name="Slow and Purposeful" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="48e6-15d0-416a-f95f">
+        <profile name="Hammer of Wrath" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="48e6-15d0-416a-f95f">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the End of the Movement Phase, if this Unit made a Normal Move of less than 3&quot;, you can select one of the following abilities to be active until the Start of your next Movement Phase;
-
-■ Models in this Unit count as remaining stationary
-■ Increase the T Characteristic of Models in this Unit by 1</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit: for each 4+, that enemy unit suffers 1 mortal wound.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tactical Flexibility" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1606-78ff-a514-3e64">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -41519,7 +41522,7 @@ by 1.</characteristic>
         <profile name="Legatine Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7463-3378-eab1-29a1">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-4</characteristic>
@@ -41532,7 +41535,7 @@ by 1.</characteristic>
         <categoryLink name="Melee Weapon" hidden="false" id="dfb4-5636-8cdd-3ee9" targetId="ccdd-3987-11ed-90cd" primary="false"/>
         <categoryLink name="Power Weapon" hidden="false" id="84f9-473e-e878-0434" targetId="72a2-ff76-451c-9d12" primary="false"/>
       </categoryLinks>
-      <comment>A5 WS2+</comment>
+      <comment>A3 WS2+</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="90e7-a23f-a458-95ad">
       <profiles>
