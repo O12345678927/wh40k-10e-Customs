@@ -36215,12 +36215,12 @@ per turn.</characteristic>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="800" field="51b2-306e-1021-d207">
+        <modifier type="set" value="650" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="15" field="selections" scope="95ea-6f31-8315-3c27" childId="13a4-f60c-5449-330e" shared="true" id="c944-01be-45a3-51a1"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="600" field="51b2-306e-1021-d207">
+        <modifier type="set" value="580" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="lessThan" value="16" field="selections" scope="95ea-6f31-8315-3c27" childId="13a4-f60c-5449-330e" shared="true" id="0ab8-f290-2b1c-1700"/>
             <condition type="greaterThan" value="10" field="selections" scope="95ea-6f31-8315-3c27" childId="13a4-f60c-5449-330e" shared="true" id="289f-f38f-7703-532b"/>
@@ -41795,7 +41795,7 @@ by 1.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dark Fury Squad" hidden="false" id="76ee-91fd-bce4-5a63">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -41809,10 +41809,8 @@ by 1.</characteristic>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="e381-7622-0c26-cd6a" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="d551-c51a-18fd-c84b" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="b2ff-cb17-8569-1831" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="17c0-599-955a-bdab" id="cfbd-5cae-aaeb-8857" primary="false" name="Vanguard Veteran Squad with Jump Packs"/>
         <categoryLink targetId="dda2-bb0a-215e-ad9c" id="6c93-56a8-348d-5e3e" primary="false" name="Jump Pack"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="5525-0b36-6f9e-c244" primary="false" name="Fly"/>
-        <categoryLink name="Vanguard Veteran Squad" hidden="false" id="8b61-fd37-dfc5-61ad" targetId="c7d2-a98d-4ad2-c426" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Choosers of the Slain" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7e43-1e08-526e-5f0e">
@@ -41828,7 +41826,7 @@ by 1.</characteristic>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="5ecb-1c01-05e2-c8ad" includeChildSelections="true"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="340" field="51b2-306e-1021-d207">
+        <modifier type="set" value="280" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="76ee-91fd-bce4-5a63" childId="6181-7651-106b-6930" shared="true" id="50c7-e438-5f97-8135"/>
           </conditions>
@@ -41847,32 +41845,6 @@ by 1.</characteristic>
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="5b9c-9316-6010-361e"/>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="6a6d-ef5b-d3e0-26fc"/>
               </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Pistol Option" hidden="false" id="8665-84f6-9b47-c54e" defaultSelectionEntryId="fcfb-fd68-abbc-3ed3">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Storm Shield" hidden="false" id="bf63-faf5-571c-d40e">
-                      <profiles>
-                        <profile name="Storm Shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="403c-2a2b-c667-8348">
-                          <characteristics>
-                            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has a 4+ invulnerable save</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9854-f484-c94a-7a63"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b61-cc84-d57a-4633"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Plasma Pistol" hidden="false" type="selectionEntry" id="c902-91bf-bb73-bc06" targetId="25c2-104f-fa0c-809e"/>
-                    <entryLink import="true" name="Inferno Pistol" hidden="false" type="selectionEntry" id="69c1-bde2-10c2-ee6b" targetId="d8bf-e17f-d6fa-b7e8"/>
-                    <entryLink import="true" name="Hand Flamer" hidden="false" type="selectionEntry" id="8205-7599-4748-07a2" targetId="9dc6-6ad8-818e-db2e"/>
-                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="c238-4930-ea42-5400" type="selectionEntry" targetId="18b0-8c2-173f-5"/>
-                    <entryLink import="true" name="Grav-pistol" hidden="false" id="ac6e-512c-dc00-addc" type="selectionEntry" targetId="5c5f-bb5a-eb8a-5460"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <profiles>
                 <profile name="Fury" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7fb5-66eb-eb12-ed46">
                   <characteristics>
@@ -41911,52 +41883,6 @@ by 1.</characteristic>
                 </entryLink>
                 <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="005f-5425-61da-9a8a" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
               </entryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Pistol Option" hidden="false" id="e68e-a9b5-7840-2453" defaultSelectionEntryId="3920-2e53-55d7-7b50">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Storm Shield" hidden="false" id="ec45-e6f3-1a22-6c21">
-                      <profiles>
-                        <profile name="Storm Shield" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7aac-0ae6-21c3-4eda">
-                          <characteristics>
-                            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer has a 4+ invulnerable save</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8c1-0cfc-85de-f136"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86ef-324c-4e47-8836"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="4433-0b4a-3897-8cf9" targetId="18b0-8c2-173f-5">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="00e0-c2b9-d48a-d858" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma Pistol" hidden="false" type="selectionEntry" id="327a-31eb-ace9-34cd" targetId="25c2-104f-fa0c-809e">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="9899-3f46-caa7-6c2f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Inferno Pistol" hidden="false" type="selectionEntry" id="a3db-b627-d837-a364" targetId="d8bf-e17f-d6fa-b7e8">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="ba61-dbf9-222e-f006" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Hand Flamer" hidden="false" type="selectionEntry" id="0a51-fd57-784b-51ce" targetId="9dc6-6ad8-818e-db2e">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="7886-d711-4e59-03c6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Grav-pistol" hidden="false" id="5c1b-f425-6b16-04e1" type="selectionEntry" targetId="5c5f-bb5a-eb8a-5460">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="cf90-7f7e-0aa9-8dc1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <profiles>
                 <profile name="Chooser of the Slain" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f55e-5b38-3596-061e">
                   <characteristics>
@@ -42102,7 +42028,7 @@ by 1.</characteristic>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1dd-8e82-0322-0680"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="bc7a-5989-1480-d67c" targetId="6c7d-af5b-482-6fbe">
+                <entryLink import="true" name="Astartes Chainsword" hidden="false" type="selectionEntry" id="bc7a-5989-1480-d67c" targetId="bfe9-3520-54d3-9a90">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fea5-b96f-d010-e62f"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03d4-0545-f304-cc8f"/>
