@@ -36695,6 +36695,18 @@ per turn.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Wargear Option" id="fe73-77bb-7df3-1c27" hidden="false" defaultSelectionEntryId="c36c-f133-92bf-cad1">
+                  <entryLinks>
+                    <entryLink import="true" name="Sonic Lance" hidden="false" id="c36c-f133-92bf-cad1" type="selectionEntry" targetId="e491-13a4-b3b4-d0e8"/>
+                    <entryLink import="true" name="Sonic Shrieker" hidden="false" id="c995-fb0c-e140-33b0" type="selectionEntry" targetId="6036-5c2d-8e2a-0565"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0405-b742-2c94-cc15-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0405-b742-2c94-cc15-max"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Phoenix Warden" hidden="false" id="f1de-565e-f26f-ae73">
               <entryLinks>
@@ -36835,7 +36847,7 @@ per turn.</characteristic>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-Infantry 5+, Devastating Wounds</characteristic>
@@ -41324,12 +41336,6 @@ by 1.</characteristic>
                   </entryLinks>
                 </entryLink>
                 <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="5d8c-e899-08e7-5f2a" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
-                <entryLink import="true" name="Close combat weapon" hidden="false" id="8f97-4635-07a7-ae1d" type="selectionEntry" targetId="b3b-a615-f023-94ef">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="404b-3a33-dd94-55c1"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d6c-657f-cfb6-1754"/>
-                  </constraints>
-                </entryLink>
                 <entryLink import="true" name="Boarding Shield" hidden="false" id="39ce-8dc5-074e-a252" type="selectionEntry" targetId="2150-cce0-774f-c6da">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="705d-aa13-3de8-e978"/>
@@ -41754,6 +41760,36 @@ by 1.</characteristic>
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sonic Lance" hidden="false" id="e491-13a4-b3b4-d0e8">
+      <profiles>
+        <profile name="Sonic Lance" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2ae6-d67e-1188-cb60">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">2</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Devastating Wounds" hidden="false" type="rule" id="1099-9dc7-715a-66ce" targetId="be1e-ac8e-1e2c-3528"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Ranged Weapon" hidden="false" id="355f-9345-81ef-ea38" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sonic Shrieker" hidden="false" id="6036-5c2d-8e2a-0565">
+      <profiles>
+        <profile name="Sonic Shrieker" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8f57-7166-7650-c7dd">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this Model ends a Charge Move, you may select one Enemy Unit within Engagement Range of this Model; That Unit subtracts 1 from all Melee Hit Rolls until the end of the Fight Phase</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
