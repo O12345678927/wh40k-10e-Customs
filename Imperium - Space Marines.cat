@@ -41815,7 +41815,8 @@ by 1.</characteristic>
       <profiles>
         <profile name="Choosers of the Slain" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7e43-1e08-526e-5f0e">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the Start of the Battle, select one Enemy Unit to be Sentenced. Each time a Model in this Unit makes an attack that targets a Sentenced Unit; this Unit scores Critical Hits on a 5+ and those attacks have the Precision Ability</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the Start of the Battle one Unit from your Army can use this Ability; you may select one Enemy Unit to be Sentenced.
+Each time a Model in this Unit makes an attack that targets a Sentenced Unit; this Unit scores Critical Hits on a 5+ and those attacks have the Precision Ability</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -42012,6 +42013,16 @@ by 1.</characteristic>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, when this Unit is selected to make a Shooting Attack, you can activate this Ability; until the end of the shooting phase successful Wound Rolls of 4+ improve the AP Characteristic of that Attack by 2</characteristic>
           </characteristics>
         </profile>
+        <profile name="Ravenlord&apos;s Judgement" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="82e2-aaf2-c6b1-f21c">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this Unit makes an Attack that targets a Sentenced Unit; successful Wound Rolls of 4+ improve the AP Characteristic of that Attack by 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sentenced" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ed3e-1d28-7ec6-b1e1">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the Start of the Battle, if your Army Faction is RAVEN GUARD; Select one Unit from the Enemy Army to be Sentenced</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Infiltrators" hidden="false" type="rule" id="6207-807b-09ca-4fa8" targetId="c05d-f4c3-f091-4938"/>
@@ -42117,7 +42128,6 @@ by 1.</characteristic>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="db60-303c-2f9b-6684" primary="false" name="Grenades"/>
         <categoryLink targetId="7295-ed65-8ff4-7a5f" id="972b-8da1-7134-decd" primary="false" name="Phobos"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="d506-6677-7be5-f33b" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="ad98-e844-f9ec-7551" id="ea84-1cfa-e625-43c8" primary="false" name="Eliminator Squad"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="e7fb-4a4a-d7d3-22e9"/>
