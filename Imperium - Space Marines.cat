@@ -37187,6 +37187,11 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a an attack is allocated to a model with this special rule, with a Damage Characteristic greater than D3; the Damage Characteristic of that attack becomes D3</characteristic>
           </characteristics>
         </profile>
+        <profile name="Bulky [3]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a607-8b04-b192-311d">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Iron Circle Maniple" hidden="false" id="e802-a843-5cb7-cbe1" sortIndex="2">
@@ -37275,6 +37280,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
       <infoLinks>
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="3511-dab6-e69e-d62d" targetId="3b76-4053-ece9-6e7d"/>
         <infoLink name="Templar Vows" id="94cb-6610-4b04-74dd" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
+        <infoLink name="Bulky [3]" id="fcda-c680-17c6-f079" hidden="false" type="profile" targetId="6db6-046f-eed9-ec0d"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -40299,12 +40305,6 @@ by 1.</characteristic>
                   </entryLinks>
                 </entryLink>
                 <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="579b-f780-52d6-c63f" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
-                <entryLink import="true" name="Close combat weapon" hidden="false" id="9741-7bb8-7723-839f" type="selectionEntry" targetId="b3b-a615-f023-94ef">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0563-0a53-571b-7a5e-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0563-0a53-571b-7a5e-max"/>
-                  </constraints>
-                </entryLink>
                 <entryLink import="true" name="Boarding Shield" hidden="false" id="ed8e-00ab-9758-2027" type="selectionEntry" targetId="2150-cce0-774f-c6da">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="878a-310a-c4ad-fb83-min"/>
@@ -42499,12 +42499,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
       <profiles>
         <profile name="Dragon&apos;s Breath" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="018f-ea14-01a9-f58c">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this Unit is targeted for the Fire Overwatch Stratagem; Double the A Characteristic of Weapons in this Unit</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Cutting Arcs" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fd86-2691-d488-0783">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an Attack is made by a Model in this Unit, targeting a MONSTER or VEHICLE Unit, with the Pyroclast Flame Projector - Focused profile; you can reroll the Wound Roll</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this Unit is targeted for the Fire Overwatch Stratagem; Double the A Characteristic of Weapons in this Unit until that Stratagem resolves</characteristic>
           </characteristics>
         </profile>
         <profile name="Mantle of Ash" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="05fb-6538-e255-ec6f">

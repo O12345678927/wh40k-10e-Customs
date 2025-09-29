@@ -1086,6 +1086,11 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12&quot; of this model, increase the cost of that use of that Stratagem by 1CP.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Bulky [X]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6db6-046f-eed9-ec0d">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapon Modifications" id="f9da-852a-d7f0-92e9" hidden="false">
