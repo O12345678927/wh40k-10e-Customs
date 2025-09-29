@@ -42466,7 +42466,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Pyroclast Squad" hidden="false" id="80d7-a91b-5eea-b802">
       <profiles>
-        <profile name="Wall of Death" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="018f-ea14-01a9-f58c">
+        <profile name="Dragon&apos;s Breath" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="018f-ea14-01a9-f58c">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this Unit is targeted for the Fire Overwatch Stratagem; Double the A Characteristic of Weapons in this Unit</characteristic>
           </characteristics>
@@ -42718,7 +42718,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Pyroclast Squad - Vi" hidden="false" id="7b8c-68a8-4497-4838">
       <profiles>
-        <profile name="Wall of Death" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7cd0-3190-1d65-bb68">
+        <profile name="Curtain of Death" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7cd0-3190-1d65-bb68">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a Model in this Unit makes an attack, that does not target a MONSTER or VEHICLE Unit, with the Pyroclast Flame Projector - Dispersed profile; you can reroll the Wound Roll</characteristic>
           </characteristics>
@@ -42936,6 +42936,37 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         </modifierGroup>
       </modifierGroups>
       <comment>vi_olence on tts discord</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pyroclast Flame Projector - V" hidden="false" id="810e-6d48-d00f-34b7">
+      <profiles>
+        <profile name="➤ Pyroclast Flame Projector - Focused" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="023f-f5ad-fc4b-e317">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Pyroclast Flame Projector - Dispersed" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8f72-5da0-ce32-8774">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Torrent, Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignores Cover" hidden="false" type="rule" id="90e8-331d-ae3c-961c" targetId="4640-43e7-30b-215a"/>
+        <infoLink name="Melta" hidden="false" type="rule" id="286d-37c6-8896-076f" targetId="7cdb-fb99-44a9-8849"/>
+        <infoLink name="Torrent" hidden="false" type="rule" id="94d8-82ac-54db-96d4" targetId="5edf-d619-23e0-9b56"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
