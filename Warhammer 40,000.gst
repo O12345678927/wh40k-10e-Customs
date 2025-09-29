@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Heresy Customs" revision="60" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Heresy Customs" revision="75" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -1061,8 +1061,9 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
     <rule id="cd26-1611-860a-91e4" name="One Shot" hidden="false">
       <description>The bearer can only shoot with this weapon once per battle.</description>
     </rule>
-    <rule id="d737-55a6-e8c8-ea02" name="Pinning" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
-      <description>After a unit suffers a wound from a PINNING weapon; That unit must succeed on a leadership check or subtract 1&quot; from its Move characteristic and subtract 1 from Charge rolls made for it.</description>
+    <rule id="d737-55a6-e8c8-ea02" name="Pinning [X]" publicationId="48fc-15aa-b307-9443" page="Custom" hidden="false">
+      <description>After an INFANTRY Unit suffers a wound from a PINNING weapon; That Unit must succeed on a Leadership test or become Pinned.
+While a Unit is Pinned subtract X&quot; from their Move characteristic and subtract X from Charge rolls made for it until the end of your Opponent&apos;s next Turn.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
