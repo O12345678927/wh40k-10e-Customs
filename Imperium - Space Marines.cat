@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="166" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="167" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -2728,6 +2728,8 @@
     <entryLink import="true" name="Pyroclast Squad" hidden="false" id="2f9f-71d8-68aa-4328" type="selectionEntry" targetId="80d7-a91b-5eea-b802"/>
     <entryLink import="true" name="Pyroclast Squad - Vi" hidden="false" id="1ffc-53ba-8b8b-008d" type="selectionEntry" targetId="7b8c-68a8-4497-4838"/>
     <entryLink import="true" name="Stormseer" hidden="false" id="1020-81d9-2a2e-4341" type="selectionEntry" targetId="471d-8dbe-d564-9bab"/>
+    <entryLink import="true" name="Terror Squad" hidden="false" id="f757-0e2c-da10-bba0" type="selectionEntry" targetId="5685-aa69-b1bc-a594"/>
+    <entryLink import="true" name="Night Raptors" hidden="false" id="1137-1913-d4e4-f79d" type="selectionEntry" targetId="eff6-d1e5-8202-d186"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
@@ -2772,6 +2774,11 @@
 ■ Aggressor Squad
 ■ Eradicator Squad
 ■ Heavy Intercessor Squad</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f180-fa76-5662-7b0f">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3763,6 +3770,11 @@
 
 ■ Assault Intercessors with Jump Packs
 ■ Vanguard Veteran Squad with Jump Packs</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dea5-d9b5-8f84-9883">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5086,6 +5098,11 @@
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit is within range of an objective marker you control, each time an attack with a Damage characteristic of 1 is allocated to a model in 
 this unit, add 1 to any armour saving throw made against that attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7284-6823-8f22-1bba">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7765,6 +7782,11 @@ Strategic Reserves.</characteristic>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit ends a Charge move, until the end of the turn, melee weapons equipped by models in this unit have the [LETHAL HITS] ability.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e62b-327b-caa9-7d70">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="1440-b1db-a707-84e2"/>
@@ -8959,6 +8981,11 @@ bearer can be moved during that move</characteristic>
 by 1.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1ae7-4a72-2b0d-d443">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Aggressors" hidden="false" id="72d4-ff18-9328-2bce" sortIndex="2">
@@ -9314,6 +9341,11 @@ by 1.</characteristic>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit ends a Charge move, each enemy unit within Engagement Range of this unit must take a Battle-shock test.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d148-32f9-2e95-e77f">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="dea6-bfb-6225-7317" primary="true" name="Infantry"/>
@@ -9606,6 +9638,11 @@ by 1.</characteristic>
         <profile name="Fury of the First" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fe56-a10f-5d2-2e1a">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack that targets your Oath of Moment target, add 1 to the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a2c8-dd1f-fff2-ba4a">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9957,6 +9994,11 @@ by 1.</characteristic>
         <profile name="Fury of the First" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="875d-2faf-5c2e-4b9">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, you can ignore any or all modifiers to that attack’s Ballistic Skill or Weapon Skill characteristic and/or to the Hit roll. In addition, each time a model in this unit makes an attack that targets the enemy unit you selected for the Oath of Moment ability this turn, add 1 to the Hit roll</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3ff8-6157-fbe8-e5be">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -13605,6 +13647,11 @@ by 1.</characteristic>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it and roll one D6 for each model in this unit: for each 4+, that enemy unit suffers 1 mortal wound.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2932-38ef-0e5e-d0d4">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="8b4a-fe5d-7858-f8f8" targetId="7cb5-dd6b-dd87-ad3b"/>
@@ -15148,6 +15195,11 @@ by 1.</characteristic>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks made with an accelerator autocannon. Until the start of your next turn, while this unit is on the battlefield, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="be65-89fa-4b9e-4b72">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Suppressors" hidden="false" id="ab58-1ce6-4f05-262a" sortIndex="2">
@@ -15572,6 +15624,11 @@ by 1.</characteristic>
         <profile name="Meteoric Descent" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="93be-2ff0-7890-946b">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Movement phase, when this unit is set up on the battlefield using the Deep Strike ability, it can perform a meteoric descent. If it does, this unit can be set up anywhere on the battlefield that is more than 6&quot; horizontally away from all enemy units, but until the end of the turn, it is not eligible to declare a charge.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bulky [4]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="be43-4672-4509-7fa2">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -17508,6 +17565,11 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
         <profile name="Total Obliteration" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4d12-6568-2ca8-dbf7">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ranged attack made by a model in this unit targets a Monster or Vehicle model, you can re-roll the Hit roll, you can re-roll the Wound roll and you can re-roll the Damage roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0720-36ec-3f2d-cd84">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -25220,6 +25282,11 @@ model is within 12&quot;.</characteristic>
 ■ Vanguard Veteran Squad with Jump Packs</characteristic>
           </characteristics>
         </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="51eb-df38-f90b-2673">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="d385-d865-325c-2795" hidden="false" sortIndex="4">
@@ -25985,6 +26052,11 @@ weapons equipped by models in this model’s unit have the [DEVASTATING WOUNDS]
 
 ■ Assault Intercessors with Jump Packs
 ■ Vanguard Veteran Squad with Jump Packs</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1567-40ec-61e8-b4c3">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -27244,6 +27316,11 @@ You can attach this model to one of the above units even if one Captain, Chapte
 ■ Heavy Intercessor Squad
 
 You can attach this model to one of the above units even if one Captain or Chapter Master model has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="19ee-c551-d468-e4e1">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -34713,6 +34790,11 @@ per turn.</characteristic>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit ends a Charge move, select one enemy unit within Engagement Range of it, then roll one D6 for each model in this unit that is within Engagement Range of that enemy unit: for each 4+, that enemy unit suffers 1 mortal wound.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fc9b-3f16-6529-0c79">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="bb81-2d2d-7c2e-afef" targetId="3b76-4053-ece9-6e7d"/>
@@ -36047,7 +36129,12 @@ per turn.</characteristic>
       <profiles>
         <profile name="Talent For Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="edb5-5add-0767-884d">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, if that attack targets battleshocked unit **OR** a unit with less total wounds than this unit; Add 1 to the Wound Roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, if that attack targets a Battleshocked Unit, Pinned Unit **OR** a Unit with less current Wounds than this unit; add 1 to the Wound Roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1ef2-d935-469e-f627">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -36058,10 +36145,11 @@ per turn.</characteristic>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="bca8-6cd6-f5de-a639" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Deep Strike" hidden="false" type="rule" id="106b-76e9-158b-7850" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Fear [2]" hidden="false" type="rule" id="106b-76e9-158b-7850" targetId="8012-1f19-b0b7-c525"/>
         <infoLink name="Invulnerable Save" hidden="false" type="profile" id="5cb8-87e1-b46e-ffe2" targetId="db19-dee7-9530-ef0e"/>
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="d340-f943-4b84-777a" targetId="3b76-4053-ece9-6e7d"/>
         <infoLink name="Templar Vows" id="58d2-7ccf-52af-ec31" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
+        <infoLink name="Deep Strike" hidden="false" type="rule" id="02c9-4328-1dbb-93d2" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
@@ -36106,7 +36194,7 @@ per turn.</characteristic>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Melee Weapon Option" hidden="false" id="f0a3-147b-db74-b409" defaultSelectionEntryId="6e32-d5a6-d29b-6395">
                   <entryLinks>
-                    <entryLink import="true" name="Nostraman Chainblade" hidden="false" type="selectionEntry" id="9441-fd45-9143-e5a7" targetId="6451-f5e1-7c2d-4234">
+                    <entryLink import="true" name="Nostraman Chainglaive" hidden="false" type="selectionEntry" id="9441-fd45-9143-e5a7" targetId="b8dc-96e7-b611-821f">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="45c2-e6a3-ee97-3820" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -36185,7 +36273,7 @@ per turn.</characteristic>
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="Nostraman Chainblade" hidden="false" id="4b41-d088-2d2a-b73a" type="selectionEntry" targetId="6451-f5e1-7c2d-4234">
+                <entryLink import="true" name="Nostraman Chainglaive" hidden="false" id="4b41-d088-2d2a-b73a" type="selectionEntry" targetId="b8dc-96e7-b611-821f">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9461-6f20-7c0c-22bf-min"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9461-6f20-7c0c-22bf-max"/>
@@ -36325,17 +36413,18 @@ per turn.</characteristic>
         <profile name="Nostraman Chainblade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0b7a-c685-e842-98d4">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
-            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-Linked</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-Linked, Sustained Hits 1</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Twin-linked" id="e9b2-cc95-ae43-1c2e" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+        <infoLink name="Sustained Hits" id="e9b2-cc95-ae43-1c2e" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+        <infoLink name="Twin-linked" id="5d0e-c772-d63d-b476" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Volkite Cavitor" hidden="false" id="a8ef-7341-f40f-5c81" collective="true">
@@ -36356,22 +36445,23 @@ per turn.</characteristic>
         <infoLink name="Devastating Wounds" id="8dd4-7c1c-a1f7-92cc" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Nostraman Chainblade" hidden="false" id="b8dc-96e7-b611-821f">
+    <selectionEntry type="upgrade" import="true" name="Nostraman Chainglaive" hidden="false" id="b8dc-96e7-b611-821f">
       <profiles>
         <profile name="Nostraman Chainblade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="613d-5378-bf77-c546">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-Linked</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-Linked, Sustained Hits 1</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Twin-linked" id="bed9-5f79-ecc0-71eb" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+        <infoLink name="Sustained Hits" id="bed9-5f79-ecc0-71eb" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+        <infoLink name="Twin-linked" id="9392-8562-9c56-a827" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Golden Keshig Squadron" hidden="false" id="9bdb-3443-b996-8dde">
@@ -37189,7 +37279,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         </profile>
         <profile name="Bulky [3]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a607-8b04-b192-311d">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -37280,7 +37370,6 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
       <infoLinks>
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="3511-dab6-e69e-d62d" targetId="3b76-4053-ece9-6e7d"/>
         <infoLink name="Templar Vows" id="94cb-6610-4b04-74dd" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
-        <infoLink name="Bulky [3]" id="fcda-c680-17c6-f079" hidden="false" type="profile" targetId="6db6-046f-eed9-ec0d"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -37651,6 +37740,11 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <profile name="The Flesh Is Weak" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f8f0-557b-ca2f-c4f5">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have the Feel No Pain 5+ Ability</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fd5c-7807-b1f2-14ea">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -41065,6 +41159,11 @@ by 1.</characteristic>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an Enemy Unit ends a Move within Engagement Range of this Unit; Increase the T Characteristic of Models in this Unit by 1 until the start of your next Command Phase.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5400-fc96-b0a5-b1f2">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="cae2-b02d-8e9e-b779"/>
@@ -41853,6 +41952,11 @@ Each Unit may only use this Ability once per Battle</characteristic>
 Each time a Model in this Unit makes an attack that targets a Sentenced Unit; this Unit scores Critical Hits on a 5+ and those attacks have the Precision Ability</characteristic>
           </characteristics>
         </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2631-cd61-9a48-65f1">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="e034-b7a7-0343-e9b6"/>
@@ -42305,6 +42409,11 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <profile name="It Will Not Die" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="687f-5761-0d38-ee4b">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the End of each of your Turns, roll 1D6 for each of your Models with this Special Rule; on a 5+ that Model regains one lost Wound</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dfa1-5575-86ac-c803">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -43064,8 +43173,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         </profile>
         <profile name="Call of the Wind" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="065f-8d8f-25c3-fd66">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command Phase you may target one WHITE SCARS Unit (excluding MONSTERS or VEHICLES) within 12&quot; of, and visible to, this Model. Make a Leadership Test; if the Test fails, until the end of the Turn increase the M Characteristic of Models in that Unit by 2&quot;. Otherwise Increase the M Characteristic of Models in that Unit by 4&quot; until the end of the Turn.
-</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command Phase you may target one WHITE SCARS Unit (excluding MONSTERS or VEHICLES) within 12&quot; of, and visible to, this Model. Make a Leadership Test; if the Test fails, until the end of the Turn increase the M Characteristic of Models in that Unit by 2&quot;. Otherwise Increase the M Characteristic of Models in that Unit by 4&quot; until the end of the Turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -43238,6 +43346,548 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <categoryLink name="Psychic Weapon" hidden="false" id="a02a-5840-2355-6c18" targetId="4546-4a0c-b3be-e84c" primary="false"/>
         <categoryLink name="Ranged Weapon" hidden="false" id="d59a-e0b5-efc3-3d66" targetId="eeda-8544-a2f3-3fab" primary="false"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Night Raptors" hidden="false" id="eff6-d1e5-8202-d186">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Night Raptors" hidden="false" id="10ea-51d3-4402-8be7" defaultSelectionEntryId="a5d5-538c-a88f-e7ea" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Huntmaster" hidden="false" id="f8d2-a094-5b6b-1247" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d3a-75b9-6071-ad93"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a22b-a844-c16f-afd9"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon 1" hidden="false" id="1c57-81df-67c6-33e3" defaultSelectionEntryId="f00b-3094-bd6-fc6a">
+                  <entryLinks>
+                    <entryLink import="true" name="Hand Flamer" hidden="false" type="selectionEntry" id="7906-8d57-cc12-7cd7" targetId="9dc6-6ad8-818e-db2e">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="9619-a955-4e18-c959" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma Pistol" hidden="false" type="selectionEntry" id="f547-b341-c924-ce86" targetId="25c2-104f-fa0c-809e">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="a0ab-eeb9-059a-e23d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" type="selectionEntry" id="332a-78c9-daf5-c4ac" targetId="83a1-feb8-d495-aa28">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="d83d-55f8-3db0-b6b6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d62-7b95-3c32-8371"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a87-2b76-f086-2435"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Weapon 2" hidden="false" id="73c1-09cc-6b55-612f" defaultSelectionEntryId="3c01-7cec-8182-16b2">
+                  <entryLinks>
+                    <entryLink import="true" name="Nostraman Chainblade" hidden="false" type="selectionEntry" id="d1aa-7e98-d5f1-817a" targetId="6451-f5e1-7c2d-4234">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="e9d5-75d2-6b93-5b6f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Nostraman Chainglaive" hidden="false" type="selectionEntry" id="c44c-04cf-6ffb-3207" targetId="b8dc-96e7-b611-821f">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="8ecb-4f0f-38ae-6d1c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Escaton Power Claw" hidden="false" type="selectionEntry" id="c9f3-efc0-da02-030e" targetId="d390-eb9a-ee8c-402c">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="d740-a225-f3a3-d4f6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1866-532b-7368-5c62"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c82-049d-5800-94c7"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="efc9-6c4f-b97b-9ac6" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
+              </entryLinks>
+              <profiles>
+                <profile name="Night Raptor Huntmaster" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="58a3-2229-00b7-c4a6">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Night Raptor" hidden="false" id="0c99-3b95-4acb-235f" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="14" field="selections" scope="parent" shared="true" id="3743-99a0-d0ee-524b"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Nostraman Chainblade" hidden="false" type="selectionEntry" id="bef6-b297-131e-f682" targetId="6451-f5e1-7c2d-4234">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6941-f77b-9e94-825d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="387a-9df2-1c31-ade5"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" type="selectionEntry" id="8159-edbd-d332-f120" targetId="83a1-feb8-d495-aa28">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9816-cd60-2829-8056"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8b7-2954-5e80-3131"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <profiles>
+                <profile name="Night Raptor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="889d-d9f5-6b1d-c9d5">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="4cf4-59dd-e833-01ba"/>
+            <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="26e6-f033-8d29-ed1d"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Bloody Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="84ca-731c-bb0c-764c">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this Unit declares a Charge targeting a unit that is Battleshocked or Pinned; Add 1 to the charge roll and if the Charge is successful then all Melee Weapons equipped by models in this unit increase the A Characteristic by 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="247c-2ee6-e202-67b6">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Preysight" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7539-966f-1e83-2c31">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit makes a Melee Attack that targets a Unit with the Feel No Pain Ability; that Feel No Pain Ability cannot be used</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Oath of Moment" hidden="false" type="rule" id="de91-d1d3-6f5e-6cd3" targetId="3b76-4053-ece9-6e7d"/>
+        <infoLink name="Fear [1]" hidden="false" type="rule" id="9281-b050-460f-eb96" targetId="8012-1f19-b0b7-c525"/>
+        <infoLink name="Templar Vows" id="3094-af94-6e50-bbe5" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
+        <infoLink name="Deep Strike" hidden="false" type="rule" id="402b-d89d-6f65-2e88" targetId="7cb5-dd6b-dd87-ad3b"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="7e2d-79df-76da-8fc9" primary="true" name="Infantry"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="3018-740f-cbde-48e2" primary="false" name="Grenades"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="ee9f-1bf9-36ce-4f2f" primary="false" name="Imperium"/>
+        <categoryLink targetId="c619-2086-bbcf-69c9" id="bfa3-04e6-932e-0053" primary="false" name="Fly"/>
+        <categoryLink targetId="dda2-bb0a-215e-ad9c" id="3dbb-2730-b9d0-cbe7" primary="false" name="Jump Pack"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="f7a6-3dbf-ff33-2d50" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="233a-aaf1-392d-6313" id="3686-fccc-cd01-8d27" primary="false" name="Faction: Night Lords"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="185"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="370" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="eff6-d1e5-8202-d186" childId="10ea-51d3-4402-8be7" shared="true" id="20b6-295f-d0ee-7ffd" includeChildSelections="true"/>
+            <condition type="lessThan" value="11" field="selections" scope="eff6-d1e5-8202-d186" childId="10ea-51d3-4402-8be7" shared="true" id="b4c5-fcc9-f401-50d7" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="520" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="atLeast" value="11" field="selections" scope="eff6-d1e5-8202-d186" childId="10ea-51d3-4402-8be7" shared="true" id="e943-63f5-4b2f-d021" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="98f1-2153-008e-e336"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="6ab9-692d-c464-8532" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="1fce-cf79-baf2-8e49" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="e243-ba83-3110-4c21" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="3040-fc25-bc6a-eef1" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="6" field="6ab9-692d-c464-8532">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="1fce-cf79-baf2-8e49">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="e243-ba83-3110-4c21">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Terror Squad" hidden="false" id="5685-aa69-b1bc-a594">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="13be-21eb-b892-7db5" primary="true" name="Infantry"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="13c2-be92-9b54-2475" primary="false" name="Grenades"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="eeb9-0b0f-a6f6-9338" primary="false" name="Imperium"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="626a-aa59-f281-8c15" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="f0fc-55bd-4c52-d3b7" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="233a-aaf1-392d-6313" id="13c5-5886-01f6-1e73" primary="false" name="Faction: Night Lords"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Terror Squad" hidden="false" id="5279-7e22-a708-ec38" defaultSelectionEntryId="624c-c49c-b0a5-9cd4" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Executioner" hidden="false" id="8d2a-1ca2-d945-cc1d" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ccc2-6779-23a9-44f1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Rotor Cannon" hidden="false" type="selectionEntry" id="ca8b-0c28-ca99-63d0" targetId="1b5e-f8d6-5551-34fe">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac16-04bd-68f1-86dc"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="827f-1277-4244-81a2"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Nostraman Chainblade" hidden="false" type="selectionEntry" id="c151-5b5a-94ed-c797" targetId="6451-f5e1-7c2d-4234">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78a5-7fc7-6680-7b33"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5af5-9522-13f9-6ea4"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <profiles>
+                <profile name="Executioner" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b2b7-f5ac-32ea-c28b">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Headsman" hidden="false" id="6ccc-f880-c12b-0834" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7298-c562-22a1-6d7c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="882b-ba12-d909-c970"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="a8f7-0e47-b98a-f4d6" targetId="b3b-a615-f023-94ef">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85e8-cf82-931f-6ddd"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="980d-c119-bc11-b351"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="12fa-a00c-8beb-f1c0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="615e-26f8-ce97-34a1" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon 1" hidden="false" id="35cb-2f61-6701-43c8" defaultSelectionEntryId="15a0-95fc-f8f5-f2eb">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a4be-4515-6bfa-ac2c"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="752e-f8c7-0081-80c5"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" type="selectionEntry" id="3e79-33ec-7ca7-e644" targetId="efcd-180-d07-b4d6">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="19d7-11ab-6763-0d6b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" type="selectionEntry" id="2f78-cb13-324c-4c57" targetId="18b0-8c2-173f-5">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="a48b-4f61-637d-5fef" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Grav-pistol" hidden="false" type="selectionEntry" id="4e6d-26b2-c791-f62b" targetId="1f74-a1b-2835-ccdd">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="d8d2-127a-8ea1-b3c7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma Pistol" hidden="false" type="selectionEntry" id="a39a-0b3d-a96e-6d43" targetId="25c2-104f-fa0c-809e">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="0fdc-feb0-e345-c6cf" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Power Fist" hidden="false" type="selectionEntry" id="c264-fc60-daf6-6e7e" targetId="5d22-a8d8-8e57-b8ab">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="6752-a9fa-39fd-933b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="b905-b356-b428-561e" targetId="7ead-a4ee-c2e-fcf9">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="a0c3-9932-ca41-dd64" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Power Weapon" hidden="false" type="selectionEntry" id="e765-dd15-de4b-779e" targetId="a7b6-eeb7-d0e4-b84c">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="e70c-f782-80f4-78ae" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Weapon 2" hidden="false" id="d9e5-c4f2-24ae-b62a" defaultSelectionEntryId="add8-664e-adee-3412">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2775-78e6-1d6a-26fc"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb51-eda8-4542-bf14"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" type="selectionEntry" id="750d-2797-8434-b336" targetId="efcd-180-d07-b4d6">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="f8fd-a4b0-c816-2b8c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Storm Bolter" hidden="false" type="selectionEntry" id="1ece-998e-5e3e-f09e" targetId="eb61-5cd0-5242-74cc">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="683b-bc30-40a2-969e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Power Fist" hidden="false" type="selectionEntry" id="e055-aaaf-1c6f-34ad" targetId="5d22-a8d8-8e57-b8ab">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="939c-0547-17da-6609" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="5895-b0ad-9b04-c898" targetId="7ead-a4ee-c2e-fcf9">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="47df-96d6-389d-26ab" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Power Weapon" hidden="false" type="selectionEntry" id="4afb-0245-7ff0-a27b" targetId="a7b6-eeb7-d0e4-b84c">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="7370-fff0-e168-d64c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Boltgun" hidden="false" type="selectionEntry" id="71ee-cb20-623d-b52d" targetId="beac-9df8-7247-c8ab">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="4d45-4394-6b41-39c3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Combi-weapon" hidden="false" type="selectionEntry" id="92e7-3777-fe7a-daad" targetId="2c13-8cdd-f66b-bcae">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="f8f2-d278-fa55-aa79" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <profiles>
+                <profile name="Devastator Sergeant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6e85-ed5d-0540-4774">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d256-ffb9-4e9e-41cd"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="b74d-c2e2-0d69-2fa1"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="240" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="5685-aa69-b1bc-a594" childId="5279-7e22-a708-ec38" shared="true" id="abfb-4551-4345-8214"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="94bb-3284-ee14-57a1" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Bloody Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fdf7-8e83-fac5-1af4">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this Unit declares a Charge targeting a unit that is Battleshocked or Pinned; Add 1 to the charge roll and if the Charge is successful then all Melee Weapons equipped by models in this unit increase the A Characteristic by 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cruel Volleys" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="72ae-6555-0d57-b8e3">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a Model in this Unit makes an Attack; if a Critical Hit is scored, that attack has the PRECISION Ability</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="7a93-c8ce-5afd-8669"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="6486-b3b0-5a9a-ffb6" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="5eaa-24f5-f0b6-1075" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="0809-a792-34c3-ad9d" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Oath of Moment" hidden="false" type="rule" id="0e6c-a92c-4932-d898" targetId="3b76-4053-ece9-6e7d"/>
+        <infoLink name="Templar Vows" id="e86a-7818-e09d-2354" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
+        <infoLink name="Fear [1]" hidden="false" type="rule" id="5ac2-4bc6-f7e0-37d6" targetId="8012-1f19-b0b7-c525"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="0d9a-d698-599e-07d0" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="6" field="6486-b3b0-5a9a-ffb6">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="5eaa-24f5-f0b6-1075">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="0809-a792-34c3-ad9d">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rotor Cannon" hidden="false" id="1b5e-f8d6-5551-34fe" collective="true">
+      <profiles>
+        <profile name="Shrapnel Bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="daf8-8e8e-a7c1-4bc8">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">30&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pinning 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Ranged Weapon" hidden="false" id="334b-887a-fef4-1a30" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Bolt Weapon" hidden="false" id="55bc-2b6c-00ae-aed0" targetId="1c08-e7e4-55b9-8e30" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Pinning [X]" id="76a4-577c-3c93-b532" hidden="false" type="rule" targetId="d737-55a6-e8c8-ea02"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>

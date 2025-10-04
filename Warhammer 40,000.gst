@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Heresy Customs" revision="75" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Heresy Customs" revision="76" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -1071,6 +1071,12 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
     <rule id="d737-55a6-e8c8-ea02" name="Pinning [X]" publicationId="48fc-15aa-b307-9443" page="Custom" hidden="false">
       <description>After a Unit (excluding MONSTERS and VEHICLES) suffers a wound from a PINNING weapon; That Unit must succeed on a Leadership test or become Pinned.
 While a Unit is Pinned subtract X&quot; from their Move characteristic and subtract X from Charge rolls made for it until the end of your Opponent&apos;s next Turn.</description>
+    </rule>
+    <rule id="0d78-1b42-e281-1e0a" name="Bulky [X]" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
+      <description>Models with the Bulky [X] Ability take up X spaces when inside a transport</description>
+    </rule>
+    <rule id="8012-1f19-b0b7-c525" name="Fear [X]" publicationId="48fc-15aa-b307-9443" page="32" hidden="false">
+      <description>Units with this ability provide a negative modifier to leadership tests equal to X to enemy Units within 6&quot;</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
