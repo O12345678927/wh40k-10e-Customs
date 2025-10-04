@@ -44535,15 +44535,15 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tyrant Rocket Launcher" hidden="false" id="099d-c202-dc3d-f98c">
       <profiles>
-        <profile name="➤ Tyrant Rocket Launcher - Frag" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e326-6b18-eba4-332d">
+        <profile name="➤ Tyrant Rocket Launcher - Shrapnel" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e326-6b18-eba4-332d">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">4D3</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Pinning 1</characteristic>
           </characteristics>
         </profile>
         <profile name="➤ Tyrant Rocket Launcher - Krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b44d-5246-5979-9570">
@@ -44571,7 +44571,8 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
       </profiles>
       <infoLinks>
         <infoLink name="Anti-" hidden="false" type="rule" id="b90b-67d6-1b71-0cd5" targetId="4111-82e3-9444-e942"/>
-        <infoLink name="Blast" hidden="false" type="rule" id="6b7a-8d5e-e9f4-8fde" targetId="6c1f-1cf7-ff25-c99e"/>
+        <infoLink name="Pinning [X]" hidden="false" type="rule" id="6b7a-8d5e-e9f4-8fde" targetId="d737-55a6-e8c8-ea02"/>
+        <infoLink name="Blast" hidden="false" type="rule" id="a4a5-0367-810b-9ced" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
       <comment>BS 4+</comment>
     </selectionEntry>
