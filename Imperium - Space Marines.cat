@@ -43944,8 +43944,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
 ■ Intercessor Squad
 ■ Sternguard Veteran Squad
 ■ Company Heroes
-■ Tactical Squad
-</characteristic>
+■ Tactical Squad</characteristic>
           </characteristics>
         </profile>
         <profile name="The Better Part of Valour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6778-3003-4b9c-6220">
@@ -44323,7 +44322,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
       <profiles>
         <profile name="Omni-Scope" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eee9-5899-90dd-79cf">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per Battle Round, if an Enemy Unit ends a move within 24&quot; and visible to this Unit&apos;s Siege Master; this Unit may make a Shooting attack at that Enemy Unit. While doing so, Worsen the BS Characteristic of Ranged Weapons equipped by Models in this Unit by 2</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per Battle Round, if an Enemy Unit ends a move within 24&quot; and visible to this Unit&apos;s Siege Master; this Unit may make a Shooting attack at that Enemy Unit. While doing so, Worsen the BS Characteristic of Ranged Weapons equipped by Models in this Unit by 1</characteristic>
           </characteristics>
         </profile>
         <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9609-2589-9df8-8576">
@@ -44537,29 +44536,29 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">4D3</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
           </characteristics>
         </profile>
-        <profile name="➤ Missile Launcher - Krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b44d-5246-5979-9570">
+        <profile name="➤ Tyrant Rocket Launcher - Krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b44d-5246-5979-9570">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
           </characteristics>
         </profile>
-        <profile name="➤ Missile Launcher - Flak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6eed-9669-cca6-091e">
+        <profile name="➤ Tyrant Rocket Launcher - Flak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6eed-9669-cca6-091e">
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
@@ -44571,7 +44570,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <infoLink name="Anti-" hidden="false" type="rule" id="b90b-67d6-1b71-0cd5" targetId="4111-82e3-9444-e942"/>
         <infoLink name="Blast" hidden="false" type="rule" id="6b7a-8d5e-e9f4-8fde" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
-      <comment>BS 3+</comment>
+      <comment>BS 4+</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
