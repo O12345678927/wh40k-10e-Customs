@@ -43750,11 +43750,6 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Bloody Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fdf7-8e83-fac5-1af4">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this Unit declares a Charge targeting a unit that is Battleshocked or Pinned; Add 1 to the charge roll and if the Charge is successful then all Melee Weapons equipped by models in this unit increase the A Characteristic by 1</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Sever the Head" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="72ae-6555-0d57-b8e3">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a Model in this Unit makes an Attack; if a Critical Hit is scored, that attack has the PRECISION Ability</characteristic>
@@ -43763,6 +43758,11 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <profile name="Fear [1]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3a3d-ac51-e1a3-8d53">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an enemy Unit is within 6&quot; of this Unit; Subtract X from leadership tests made for that Unit</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Talent For Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b4a3-d084-6fcc-6459">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, if that attack targets a Battleshocked Unit, Pinned Unit **OR** a Unit with less current Wounds than this unit; add 1 to the Wound Roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
