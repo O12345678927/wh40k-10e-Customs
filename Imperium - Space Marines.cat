@@ -193,7 +193,7 @@
     <entryLink import="true" name="Bladeguard Ancient" hidden="false" type="selectionEntry" id="b596-18b1-d905-fd1d" targetId="9ca5-e5f4-f85d-bcca"/>
     <entryLink import="true" name="Bladeguard Veteran Squad" hidden="false" type="selectionEntry" id="be1a-7188-94e5-3cfe" targetId="7044-bf1-f949-c32d"/>
     <entryLink import="true" name="Brutalis Dreadnought" hidden="false" type="selectionEntry" id="f6b9-71b1-297a-c13a" targetId="1c00-9398-b9e7-446a"/>
-    <entryLink import="true" name="Captain in Gravis Armour" hidden="false" type="selectionEntry" id="152d-fdb1-dfcd-2251" targetId="1d56-1cc3-de57-10e2"/>
+    <entryLink import="true" name="Captain" hidden="false" type="selectionEntry" id="152d-fdb1-dfcd-2251" targetId="81b9-8e61-6cb0-d374"/>
     <entryLink import="true" name="Captain in Phobos Armour" hidden="false" type="selectionEntry" id="2632-9483-b17f-ff52" targetId="a976-7cd5-9657-d91a"/>
     <entryLink import="true" name="Captain in Terminator Armour" hidden="false" type="selectionEntry" id="5e35-ae82-23e4-bcef" targetId="dc24-dd64-5d97-df3c"/>
     <entryLink import="true" name="Captain on Bike [Legends]" hidden="false" type="selectionEntry" id="3497-256c-f286-a424" targetId="faf9-bf62-8eb5-a3cb"/>
@@ -2733,6 +2733,7 @@
     <entryLink import="true" name="Jadhek Clanlord" hidden="false" id="dcc0-a953-7c26-0e40" type="selectionEntry" targetId="6604-f628-23a7-7e59"/>
     <entryLink import="true" name="Jadhek Clanlord w/ Jump Pack" hidden="false" id="90aa-c487-2a50-ed3c" type="selectionEntry" targetId="17c3-54d6-391b-ee03"/>
     <entryLink import="true" name="Tyrant Siege Terminators" hidden="false" id="5507-7563-d20a-677a" type="selectionEntry" targetId="e418-2b92-9011-3ed1"/>
+    <entryLink import="true" name="Captain in Gravis Armour" hidden="false" type="selectionEntry" id="322d-b7c2-6a8a-a228" targetId="1d56-1cc3-de57-10e2"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
@@ -39810,6 +39811,7 @@ by 1.</characteristic>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="5d0e-f272-725a-fe12" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Leaders - Breacher Squads" hidden="false" id="8728-f189-a609-1287" type="selectionEntry" targetId="0601-ee4c-ad86-c28a"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -44461,6 +44463,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="6b55-ba19-ab58-f440" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Leaders - Termi Squads" hidden="false" id="f74f-393d-5ce9-efe2" type="selectionEntry" targetId="66de-ca54-9e49-3799"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
