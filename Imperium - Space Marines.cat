@@ -39755,10 +39755,16 @@ by 1.</characteristic>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45b1-e34f-25e2-a137"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Shrapnel Pistol" hidden="false" type="selectionEntry" id="97bb-ef28-8b61-d582" targetId="eaa7-695c-1662-98ac" collective="false">
+                <entryLink import="true" name="Shrapnel Bolter" hidden="false" type="selectionEntry" id="97bb-ef28-8b61-d582" targetId="e971-98b4-a2f7-1dc3" collective="false">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4818-0140-3520-2ffa"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd09-8ca7-3a0c-ffa4"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Shrapnel Pistol" hidden="false" type="selectionEntry" id="5f8f-dd81-1f76-f34e" targetId="eaa7-695c-1662-98ac" collective="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f1c-0f54-f87e-5f27"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="920f-fd97-768a-6868"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -39774,19 +39780,6 @@ by 1.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Weapon Option" id="31bd-2050-82c2-e5b6" hidden="false">
-                  <entryLinks>
-                    <entryLink import="true" name="Shrapnel Bolter" hidden="false" id="6621-c19f-3834-ec14" type="selectionEntry" targetId="e971-98b4-a2f7-1dc3">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85b4-c4fc-21e5-6e46"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9eb5-560b-4fcb-2cf0"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Boltgun" hidden="false" id="2e4f-48a3-d818-b5c0" type="selectionEntry" targetId="beac-9df8-7247-c8ab"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
           <constraints>
