@@ -2730,6 +2730,7 @@
     <entryLink import="true" name="Stormseer" hidden="false" id="1020-81d9-2a2e-4341" type="selectionEntry" targetId="471d-8dbe-d564-9bab"/>
     <entryLink import="true" name="Terror Squad" hidden="false" id="f757-0e2c-da10-bba0" type="selectionEntry" targetId="5685-aa69-b1bc-a594"/>
     <entryLink import="true" name="Night Raptors" hidden="false" id="1137-1913-d4e4-f79d" type="selectionEntry" targetId="eff6-d1e5-8202-d186"/>
+    <entryLink import="true" name="Jadhek Clanlord" hidden="false" id="dcc0-a953-7c26-0e40" type="selectionEntry" targetId="6604-f628-23a7-7e59"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
