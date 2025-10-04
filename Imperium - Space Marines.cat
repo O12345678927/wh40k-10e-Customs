@@ -37276,10 +37276,9 @@ per turn.</characteristic>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6e7-40c-58d9-e402" id="dac1-6d1c-f560-7004" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="dbd4-63-af05-998" id="7cfe-d0f1-88e6-97d2" primary="true" name="Vehicle"/>
-        <categoryLink targetId="6dda-e157-334d-e93a" id="7e19-4967-ad06-7ac6" primary="false" name="Walker"/>
         <categoryLink targetId="54ae-4ac6-8776-9b5e" id="323f-7b36-97e0-597a" primary="false" name="Faction: Iron Warriors"/>
         <categoryLink targetId="e169-ce70-ee9d-cecc" id="d9a7-afa7-6bbf-8723" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="0c6c-8947-7a0c-2f92" primary="true" name="Infantry"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="e8b6-f421-a72c-fa86"/>
