@@ -36157,7 +36157,14 @@ per turn.</characteristic>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="02c9-4328-1dbb-93d2" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Atramentar Terminators" hidden="false" id="13a4-f60c-5449-330e" defaultSelectionEntryId="3d0b-d48a-591d-cd05" sortIndex="3">
@@ -36255,8 +36262,8 @@ per turn.</characteristic>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <constraints>
-                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="229b-16fc-486f-df5a"/>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="67f7-7993-73be-20a7"/>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="229b-16fc-486f-df5a"/>
+                <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="67f7-7993-73be-20a7"/>
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="229b-16fc-486f-df5a">
@@ -36295,7 +36302,7 @@ per turn.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="400" field="51b2-306e-1021-d207">
+        <modifier type="set" value="420" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="95ea-6f31-8315-3c27" childId="13a4-f60c-5449-330e" shared="true" id="ee1e-8b8b-6766-d402"/>
             <condition type="lessThan" value="11" field="selections" scope="95ea-6f31-8315-3c27" childId="13a4-f60c-5449-330e" shared="true" id="c515-a937-ff5d-a3b4"/>
@@ -36311,7 +36318,7 @@ per turn.</characteristic>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="650" field="51b2-306e-1021-d207">
+        <modifier type="set" value="660" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="greaterThan" value="15" field="selections" scope="95ea-6f31-8315-3c27" childId="13a4-f60c-5449-330e" shared="true" id="c944-01be-45a3-51a1"/>
           </conditions>
@@ -43362,19 +43369,19 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a22b-a844-c16f-afd9"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Weapon 1" hidden="false" id="1c57-81df-67c6-33e3" defaultSelectionEntryId="f00b-3094-bd6-fc6a">
+                <selectionEntryGroup name="Weapon 1" hidden="false" id="1c57-81df-67c6-33e3" defaultSelectionEntryId="7906-8d57-cc12-7cd7">
                   <entryLinks>
-                    <entryLink import="true" name="Hand Flamer" hidden="false" type="selectionEntry" id="7906-8d57-cc12-7cd7" targetId="9dc6-6ad8-818e-db2e">
+                    <entryLink import="true" name="Flamer" hidden="false" type="selectionEntry" id="7906-8d57-cc12-7cd7" targetId="469c-6259-59a5-64c1" sortIndex="1">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="9619-a955-4e18-c959" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Plasma Pistol" hidden="false" type="selectionEntry" id="f547-b341-c924-ce86" targetId="25c2-104f-fa0c-809e">
+                    <entryLink import="true" name="Plasma Pistol" hidden="false" type="selectionEntry" id="f547-b341-c924-ce86" targetId="25c2-104f-fa0c-809e" sortIndex="3">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="a0ab-eeb9-059a-e23d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" type="selectionEntry" id="332a-78c9-daf5-c4ac" targetId="83a1-feb8-d495-aa28">
+                    <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" type="selectionEntry" id="332a-78c9-daf5-c4ac" targetId="83a1-feb8-d495-aa28" sortIndex="2">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="d83d-55f8-3db0-b6b6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -43387,17 +43394,17 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Weapon 2" hidden="false" id="73c1-09cc-6b55-612f" defaultSelectionEntryId="3c01-7cec-8182-16b2">
                   <entryLinks>
-                    <entryLink import="true" name="Nostraman Chainblade" hidden="false" type="selectionEntry" id="d1aa-7e98-d5f1-817a" targetId="6451-f5e1-7c2d-4234">
+                    <entryLink import="true" name="Nostraman Chainblade" hidden="false" type="selectionEntry" id="d1aa-7e98-d5f1-817a" targetId="6451-f5e1-7c2d-4234" sortIndex="3">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="e9d5-75d2-6b93-5b6f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Nostraman Chainglaive" hidden="false" type="selectionEntry" id="c44c-04cf-6ffb-3207" targetId="b8dc-96e7-b611-821f">
+                    <entryLink import="true" name="Nostraman Chainglaive" hidden="false" type="selectionEntry" id="c44c-04cf-6ffb-3207" targetId="b8dc-96e7-b611-821f" sortIndex="2">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="8ecb-4f0f-38ae-6d1c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Escaton Power Claw" hidden="false" type="selectionEntry" id="c9f3-efc0-da02-030e" targetId="f2c7-8e10-6c72-79b9">
+                    <entryLink import="true" name="Escaton Power Claw" hidden="false" type="selectionEntry" id="c9f3-efc0-da02-030e" targetId="f2c7-8e10-6c72-79b9" sortIndex="1">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="d740-a225-f3a3-d4f6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -43427,7 +43434,8 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Night Raptor" hidden="false" id="0c99-3b95-4acb-235f" sortIndex="2">
               <constraints>
-                <constraint type="max" value="14" field="selections" scope="parent" shared="true" id="3743-99a0-d0ee-524b"/>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="3743-99a0-d0ee-524b"/>
+                <constraint type="max" value="14" field="selections" scope="parent" shared="true" id="718e-b63c-118c-71d2"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Nostraman Chainblade" hidden="false" type="selectionEntry" id="bef6-b297-131e-f682" targetId="6451-f5e1-7c2d-4234">
@@ -43617,7 +43625,8 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Executioner" hidden="false" id="8d2a-1ca2-d945-cc1d" sortIndex="2">
               <constraints>
-                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="ccc2-6779-23a9-44f1"/>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ccc2-6779-23a9-44f1"/>
+                <constraint type="max" value="14" field="selections" scope="parent" shared="true" id="3f6f-a1ff-9a2a-4a44"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Rotor Cannon" hidden="false" type="selectionEntry" id="ca8b-0c28-ca99-63d0" targetId="1b5e-f8d6-5551-34fe">
@@ -43652,15 +43661,6 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="882b-ba12-d909-c970"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="a8f7-0e47-b98a-f4d6" targetId="b3b-a615-f023-94ef">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85e8-cf82-931f-6ddd"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="980d-c119-bc11-b351"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="12fa-a00c-8beb-f1c0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </entryLink>
                 <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="615e-26f8-ce97-34a1" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
               </entryLinks>
               <selectionEntryGroups>
@@ -43687,23 +43687,23 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Weapon 2" hidden="false" id="d9e5-c4f2-24ae-b62a" defaultSelectionEntryId="750d-2797-8434-b336">
+                <selectionEntryGroup name="Weapon 2" hidden="false" id="d9e5-c4f2-24ae-b62a" defaultSelectionEntryId="5895-b0ad-9b04-c898">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2775-78e6-1d6a-26fc"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb51-eda8-4542-bf14"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Nostraman Chainblade" hidden="false" type="selectionEntry" id="750d-2797-8434-b336" targetId="6451-f5e1-7c2d-4234">
+                    <entryLink import="true" name="Nostraman Chainblade" hidden="false" type="selectionEntry" id="750d-2797-8434-b336" targetId="6451-f5e1-7c2d-4234" sortIndex="3">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="f8fd-a4b0-c816-2b8c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Escaton Power Claw" hidden="false" type="selectionEntry" id="5895-b0ad-9b04-c898" targetId="f2c7-8e10-6c72-79b9">
+                    <entryLink import="true" name="Escaton Power Claw" hidden="false" type="selectionEntry" id="5895-b0ad-9b04-c898" targetId="f2c7-8e10-6c72-79b9" sortIndex="1">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="47df-96d6-389d-26ab" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Nostraman Chainglaive" hidden="false" type="selectionEntry" id="4afb-0245-7ff0-a27b" targetId="b8dc-96e7-b611-821f">
+                    <entryLink import="true" name="Nostraman Chainglaive" hidden="false" type="selectionEntry" id="4afb-0245-7ff0-a27b" targetId="b8dc-96e7-b611-821f" sortIndex="2">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="7370-fff0-e168-d64c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -43755,7 +43755,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this Unit declares a Charge targeting a unit that is Battleshocked or Pinned; Add 1 to the charge roll and if the Charge is successful then all Melee Weapons equipped by models in this unit increase the A Characteristic by 1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Cruel Volleys" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="72ae-6555-0d57-b8e3">
+        <profile name="Sever the Head" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="72ae-6555-0d57-b8e3">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a Model in this Unit makes an Attack; if a Critical Hit is scored, that attack has the PRECISION Ability</characteristic>
           </characteristics>
@@ -43982,9 +43982,9 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
             </selectionEntryGroup>
             <selectionEntryGroup name="Ranged Weapon" id="307f-950a-fba8-3623" hidden="false" defaultSelectionEntryId="2818-c368-4c5a-d30b">
               <entryLinks>
-                <entryLink import="true" name="Escaton Power Claw" hidden="false" id="933b-0b77-c4f2-b7a9" type="selectionEntry" targetId="6128-eaf1-8349-466c" sortIndex="1"/>
-                <entryLink import="true" name="Nostraman Chainglaive" hidden="false" id="8487-d94d-2562-deb2" type="selectionEntry" targetId="cd45-3801-4472-16da" sortIndex="2"/>
-                <entryLink import="true" name="Nostraman Chainblade" hidden="false" id="1e10-8717-a2af-ad4a" type="selectionEntry" targetId="0e7b-8c47-9b86-b50d" sortIndex="3"/>
+                <entryLink import="true" name="Rotor Cannon" hidden="false" id="933b-0b77-c4f2-b7a9" type="selectionEntry" targetId="1b5e-f8d6-5551-34fe" sortIndex="1"/>
+                <entryLink import="true" name="Heavy Bolter" hidden="false" id="8487-d94d-2562-deb2" type="selectionEntry" targetId="d941-c4cd-8b82-c453" sortIndex="2"/>
+                <entryLink import="true" name="Heavy Flamer" hidden="false" id="1e10-8717-a2af-ad4a" type="selectionEntry" targetId="b3e6-f7a7-8357-2055" sortIndex="3"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bbf-7f61-1240-1e4d"/>
