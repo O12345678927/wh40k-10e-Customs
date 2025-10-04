@@ -43396,7 +43396,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="8ecb-4f0f-38ae-6d1c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Escaton Power Claw" hidden="false" type="selectionEntry" id="c9f3-efc0-da02-030e" targetId="d390-eb9a-ee8c-402c">
+                    <entryLink import="true" name="Escaton Power Claw" hidden="false" type="selectionEntry" id="c9f3-efc0-da02-030e" targetId="f2c7-8e10-6c72-79b9">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="d740-a225-f3a3-d4f6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -43529,6 +43529,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="3040-fc25-bc6a-eef1" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Leaders - Jump Squads" hidden="false" id="fae0-7761-a0f0-9c6e" type="selectionEntry" targetId="6599-e23e-ef3c-1475"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -43696,7 +43697,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="f8fd-a4b0-c816-2b8c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="5895-b0ad-9b04-c898" targetId="7ead-a4ee-c2e-fcf9">
+                    <entryLink import="true" name="Escaton Power Claw" hidden="false" type="selectionEntry" id="5895-b0ad-9b04-c898" targetId="f2c7-8e10-6c72-79b9">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="47df-96d6-389d-26ab" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -43776,6 +43777,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="0d9a-d698-599e-07d0" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Leaders - Breacher Squads" hidden="false" id="4e2b-5947-2e33-e955" type="selectionEntry" targetId="0601-ee4c-ad86-c28a"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -43866,6 +43868,257 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
       <infoLinks>
         <infoLink name="Pinning [X]" id="76a4-577c-3c93-b532" hidden="false" type="rule" targetId="d737-55a6-e8c8-ea02"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Escaton Power Claw" hidden="false" id="f2c7-8e10-6c72-79b9">
+      <profiles>
+        <profile name="Escaton Power Claw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="13bb-f006-fbee-3122">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-4</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-Linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="2e75-73b4-52d4-3b4c" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+      </infoLinks>
+      <comment>Sgt</comment>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Jadhek Clanlord" hidden="false" id="6604-f628-23a7-7e59">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="a4f6-fdb1-aecd-150f" primary="true" name="Character"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="c242-1819-30df-0c1d" primary="false" name="Infantry"/>
+        <categoryLink targetId="2d7f-1892-2fd0-e29c" id="224e-4fa1-97a0-88ce" primary="false" name="Captain"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="9357-40ef-f588-8fe5" primary="false" name="Grenades"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="6548-b192-c40c-90a0" primary="false" name="Imperium"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="92a6-e69e-b999-4e7d" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="233a-aaf1-392d-6313" id="b41a-2596-c206-5ee3" primary="false" name="Faction: Night Lords"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="ef8e-b34b-5243-54b4" primary="false" name="CUSTOM"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="a88a-647b-ac7c-aa7d" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
+        <entryLink id="d623-b88e-54c7-2178" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffc9-c451-a39e-2a14" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Crusade" hidden="false" id="822e-07e4-2903-9f07" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Invulnerable Save" hidden="false" type="profile" id="8ed8-8646-0742-65ea" targetId="db19-dee7-9530-ef0e"/>
+        <infoLink name="Leader" type="rule" id="7a9e-2106-8f71-6b63" targetId="b4dd-3e1f-41cb-218f"/>
+        <infoLink name="Oath of Moment" hidden="false" type="rule" id="4c84-3fed-9b46-8ffe" targetId="3b76-4053-ece9-6e7d"/>
+        <infoLink name="Templar Vows" id="2b13-c0c9-8385-907d" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
+      </infoLinks>
+      <profiles>
+        <profile id="2754-5487-0264-f6f2" name="Clanlord" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9118-5319-33de-b80a">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+
+■ Assault Intercessor Squad
+■ Bladeguard Veteran Squad
+■ Hellblaster Squad
+■ Infernus Squad
+■ Intercessor Squad
+■ Sternguard Veteran Squad
+■ Company Heroes
+■ Tactical Squad
+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Better Part of Valour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6778-3003-4b9c-6220">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per Battle, when this Unit is selected as the target of a Charge; You may immediately make a Fallback Move</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Talent For Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e6e0-0503-59f0-b68c">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, if that attack targets a Battleshocked Unit, Pinned Unit **OR** a Unit with less current Wounds than this unit; add 1 to the Wound Roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bloody Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="617c-0135-5e89-9ccc">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this Unit declares a Charge targeting a unit that is Battleshocked or Pinned; Add 1 to the charge roll and if the Charge is successful then all Melee Weapons equipped by models in this unit increase the A Characteristic by 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67d0-1fc0-1123-6409" type="max"/>
+        <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="5417-ffdd-a060-6435" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="4df1-cf80-605c-e6fd" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="bfec-9230-3f6f-a145" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2485-3e9d-c059-3bb2" name="Wargear" hidden="false" collective="false" import="true" defaultSelectionEntryId="c6aa-b3a5-4ff3-e0d3" sortIndex="4">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapon" id="aef7-371b-3125-3766" hidden="false" defaultSelectionEntryId="2818-c368-4c5a-d30b">
+              <entryLinks>
+                <entryLink import="true" name="Escaton Power Claw" hidden="false" id="2818-c368-4c5a-d30b" type="selectionEntry" targetId="6128-eaf1-8349-466c" sortIndex="1"/>
+                <entryLink import="true" name="Nostraman Chainglaive" hidden="false" id="cc75-1778-7c49-b75c" type="selectionEntry" targetId="cd45-3801-4472-16da" sortIndex="2"/>
+                <entryLink import="true" name="Nostraman Chainblade" hidden="false" id="4c4c-3728-defd-115c" type="selectionEntry" targetId="0e7b-8c47-9b86-b50d" sortIndex="3"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8552-5a99-93f9-0353"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a795-08bf-0c65-2119"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Ranged Weapon" id="307f-950a-fba8-3623" hidden="false" defaultSelectionEntryId="2818-c368-4c5a-d30b">
+              <entryLinks>
+                <entryLink import="true" name="Escaton Power Claw" hidden="false" id="933b-0b77-c4f2-b7a9" type="selectionEntry" targetId="6128-eaf1-8349-466c" sortIndex="1"/>
+                <entryLink import="true" name="Nostraman Chainglaive" hidden="false" id="8487-d94d-2562-deb2" type="selectionEntry" targetId="cd45-3801-4472-16da" sortIndex="2"/>
+                <entryLink import="true" name="Nostraman Chainblade" hidden="false" id="1e10-8717-a2af-ad4a" type="selectionEntry" targetId="0e7b-8c47-9b86-b50d" sortIndex="3"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bbf-7f61-1240-1e4d"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4cea-44b4-8409-c9dd"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="increment" value="2" field="4df1-cf80-605c-e6fd">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="bfec-9230-3f6f-a145">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="5417-ffdd-a060-6435">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="8dbe-9f09-d44d-07d6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nostraman Chainblade" hidden="false" id="0e7b-8c47-9b86-b50d" collective="true">
+      <profiles>
+        <profile name="Nostraman Chainblade" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ce24-6a33-20ba-ca2a">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">7</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-Linked, Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Sustained Hits" id="ff0b-99c6-67ae-f4c6" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+        <infoLink name="Twin-linked" id="d1c4-a4a0-9057-48ba" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+      </infoLinks>
+      <comment>Cpt</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Nostraman Chainglaive" hidden="false" id="cd45-3801-4472-16da">
+      <profiles>
+        <profile name="Nostraman Chainglaive" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="322d-7d6c-06e1-2485">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-Linked, Sustained Hits 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Sustained Hits" id="45d9-76fc-3861-4de5" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+        <infoLink name="Twin-linked" id="930f-689b-9516-2fa3" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+      </infoLinks>
+      <comment>Cpt</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Escaton Power Claw" hidden="false" id="6128-eaf1-8349-466c">
+      <profiles>
+        <profile name="Escaton Power Claw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0efd-2940-fcd8-24b2">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-4</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-Linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="7a7d-4eae-74ad-549a" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+      </infoLinks>
+      <comment>Cpt</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
