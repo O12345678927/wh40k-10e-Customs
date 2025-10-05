@@ -44823,7 +44823,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
                 </entryLink>
               </entryLinks>
               <profiles>
-                <profile name="Siege Master" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9ebb-2be9-0f3a-04cd">
+                <profile name="Fulmentarus Decurion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9ebb-2be9-0f3a-04cd">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
@@ -44861,7 +44861,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="d1ad-c119-127a-2df1"/>
               </constraints>
               <profiles>
-                <profile name="Tyrant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5d15-02ca-b56a-4a5b">
+                <profile name="Fulmentarus Terminator" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5d15-02ca-b56a-4a5b">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
