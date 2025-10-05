@@ -44787,7 +44787,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
       <selectionEntryGroups>
         <selectionEntryGroup name="Terminators" hidden="false" id="b177-264f-aa3c-1c66" defaultSelectionEntryId="2-e9c0-140-a1ef" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Siege Master" hidden="false" id="cfdf-4de1-3a8b-9301" sortIndex="1">
+            <selectionEntry type="model" import="true" name="Fulmentarus Decurion" hidden="false" id="cfdf-4de1-3a8b-9301" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9eea-8202-d17e-70e7"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b70-76cd-e511-3794"/>
@@ -44812,7 +44812,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="9c88-d94c-55b4-7317" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
-                <entryLink import="true" name="Tyrant Rocket Launcher" hidden="false" type="selectionEntry" id="8b6d-de03-e77f-c6b4" targetId="099d-c202-dc3d-f98c">
+                <entryLink import="true" name="Fulmentarus Missile Array" hidden="false" type="selectionEntry" id="8b6d-de03-e77f-c6b4" targetId="5ac2-83c5-b00f-f92f">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b430-e88e-313c-704b"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4ef-0b65-97de-5d1c"/>
@@ -44835,7 +44835,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Tyrant" hidden="false" id="481c-49f4-5eb1-3df2" sortIndex="2">
+            <selectionEntry type="model" import="true" name="Fulmentarus Terminator" hidden="false" id="481c-49f4-5eb1-3df2" sortIndex="2">
               <entryLinks>
                 <entryLink import="true" name="Power Fist" hidden="false" type="selectionEntry" id="7be8-d1d1-2566-998d" targetId="f8d8-7e77-4b71-faac">
                   <constraints>
@@ -44849,7 +44849,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f868-731c-0035-51b8"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Tyrant Rocket Launcher" hidden="false" type="selectionEntry" id="36eb-7da1-005a-d614" targetId="099d-c202-dc3d-f98c">
+                <entryLink import="true" name="Fulmentarus Missile Array" hidden="false" type="selectionEntry" id="36eb-7da1-005a-d614" targetId="5ac2-83c5-b00f-f92f">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07c1-3f64-7e9b-5146"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaf5-e9cf-c4ba-d452"/>
