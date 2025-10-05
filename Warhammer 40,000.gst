@@ -499,6 +499,7 @@
     <categoryEntry id="ff4e-e9f5-ed72-9272" name="Faction: Word Bearers" hidden="false"/>
     <categoryEntry id="3c13-9a7b-4fc5-ab91" name="Faction: Emperor&apos;s Children" hidden="false"/>
     <categoryEntry id="e169-ce70-ee9d-cecc" name="CUSTOM" hidden="false"/>
+    <categoryEntry id="5f2d-a178-e358-9c9f" name="Breacher" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">

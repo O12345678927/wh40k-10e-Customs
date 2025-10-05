@@ -40320,6 +40320,7 @@ by 1.</characteristic>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="77b7-a9c6-7b97-f38c" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="c143-3773-4875-834b" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="e169-ce70-ee9d-cecc" id="06f1-8ce5-88ba-a327" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="5f2d-a178-e358-9c9f" id="ade3-2812-29ce-021c" primary="false" name="Breacher"/>
       </categoryLinks>
       <profiles>
         <profile name="Slow and Purposeful" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="710a-81a3-cf47-b9e0">
@@ -40613,6 +40614,7 @@ by 1.</characteristic>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="1807-c66b-9efd-47bf" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="36a2-8921-8b4f-8e32" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="b88e-1b0c-b79f-5cdf" id="d323-3840-6159-4eff" primary="false" name="Faction: Iron Hands"/>
+        <categoryLink targetId="5f2d-a178-e358-9c9f" id="282a-c9d9-6e8b-82c1" primary="false" name="Breacher"/>
       </categoryLinks>
       <profiles>
         <profile name="The Flesh is Weak" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9e8b-c3db-fba2-a811">
@@ -40893,6 +40895,7 @@ by 1.</characteristic>
         <categoryLink targetId="6e7-40c-58d9-e402" id="2f32-a7d5-7b7b-9a84" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="97aa-d0e4-71c7-96c3" id="f1b3-ed84-8ff6-71a7" primary="false" name="Faction: Imperial Fists"/>
         <categoryLink targetId="e169-ce70-ee9d-cecc" id="a53c-0b11-2011-4cc0" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="5f2d-a178-e358-9c9f" id="cd2f-e379-fc1b-9c2d" primary="false" name="Breacher"/>
       </categoryLinks>
       <profiles>
         <profile name="Lockstep" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="06b7-7afa-30ed-e16f">
@@ -41147,7 +41150,7 @@ by 1.</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">14</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-4</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">D6+2</characteristic>
-            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Breacher Charge</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Breacher Charge, One Shot</characteristic>
           </characteristics>
         </profile>
         <profile name="Breacher Charge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="149b-8bf4-6e6d-affb">
@@ -41418,6 +41421,7 @@ by 1.</characteristic>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="1251-9c8f-1f67-5fc2" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="942a-a56a-9147-f868" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="1a2d-2f00-c054-4dcb" id="ecda-80a1-b56b-450a" primary="false" name="Faction: Ultramarines"/>
+        <categoryLink targetId="5f2d-a178-e358-9c9f" id="0787-8bec-6421-b0f3" primary="false" name="Breacher"/>
       </categoryLinks>
       <profiles>
         <profile name="Hammer of Wrath" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="48e6-15d0-416a-f95f">
@@ -41678,7 +41682,7 @@ Each Unit may only use this Ability once per Battle</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-4</characteristic>
-            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
           </characteristics>
         </profile>
@@ -41696,7 +41700,7 @@ Each Unit may only use this Ability once per Battle</characteristic>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-            <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
@@ -41817,7 +41821,7 @@ Each Unit may only use this Ability once per Battle</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -41827,7 +41831,7 @@ Each Unit may only use this Ability once per Battle</characteristic>
         <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="300" field="51b2-306e-1021-d207">
+        <modifier type="set" value="260" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="818a-4c2a-c2e4-c68f" childId="7a0d-2699-7089-acd4" shared="true" id="644b-14a3-8004-1a6f" includeChildSelections="true"/>
           </conditions>
