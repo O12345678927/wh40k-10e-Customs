@@ -2734,6 +2734,7 @@
     <entryLink import="true" name="Jadhek Clanlord w/ Jump Pack" hidden="false" id="90aa-c487-2a50-ed3c" type="selectionEntry" targetId="17c3-54d6-391b-ee03"/>
     <entryLink import="true" name="Tyrant Siege Terminators" hidden="false" id="5507-7563-d20a-677a" type="selectionEntry" targetId="e418-2b92-9011-3ed1"/>
     <entryLink import="true" name="Captain in Gravis Armour" hidden="false" type="selectionEntry" id="322d-b7c2-6a8a-a228" targetId="1d56-1cc3-de57-10e2"/>
+    <entryLink import="true" name="Delegatus" hidden="false" type="selectionEntry" id="c641-bfab-f12e-3124" targetId="334b-8f1a-b42c-1e32"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
@@ -36875,11 +36876,6 @@ per turn.</characteristic>
             <condition type="atLeast" value="6" field="selections" scope="68e2-ac85-a76b-513f" childId="d028-ca6b-5343-45e5" shared="true" id="cbcc-7386-f188-a9e9"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="b377-8e0f-c684-5191" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
           <conditions>
             <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
@@ -44324,7 +44320,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
       <profiles>
         <profile name="Omni-Scope" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eee9-5899-90dd-79cf">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per Battle Round, if an Enemy Unit ends a move within 24&quot; and visible to this Unit&apos;s Siege Master; this Unit may make a Shooting attack at that Enemy Unit. While doing so, Worsen the BS Characteristic of Ranged Weapons equipped by Models in this Unit by 1</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per Battle Round one Unit from your Army can use this Ability, when an Enemy Unit ends a move within 24&quot; and visible to this Unit&apos;s Siege Master; this Unit can make a Shooting attack targeting that Enemy Unit. While doing so, Worsen the BS Characteristic of Ranged Weapons equipped by Models in this Unit by 1</characteristic>
           </characteristics>
         </profile>
         <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9609-2589-9df8-8576">
@@ -44575,6 +44571,170 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <infoLink name="Blast" hidden="false" type="rule" id="a4a5-0367-810b-9ced" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
       <comment>BS 4+</comment>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Delegatus" hidden="false" id="334b-8f1a-b42c-1e32">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="765c-b3ea-fda4-3a04" primary="true" name="Character"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="8c1d-98a6-9567-5272" primary="false" name="Infantry"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="4df8-dc48-541a-a6a6" primary="false" name="Grenades"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="60b6-9447-1c22-c97b" primary="false" name="Imperium"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="f274-cc5b-25bc-3661" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="005d-8d78-f3ee-8a0d" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="1a2d-2f00-c054-4dcb" id="4065-37e8-08a9-a75b" primary="false" name="Faction: Ultramarines"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (5+)" hidden="false" type="profile" id="7be2-c3ee-7ad2-f55a" targetId="30d6-3998-8498-5c22"/>
+        <infoLink name="Leader" type="rule" id="a327-269c-ce5a-97a2" targetId="b4dd-3e1f-41cb-218f"/>
+        <infoLink name="Oath of Moment" hidden="false" type="rule" id="45da-7933-2a20-e951" targetId="3b76-4053-ece9-6e7d"/>
+        <infoLink name="Templar Vows" id="7575-fbfa-5aff-f8c1" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="42c3-a36f-c7b1-80b3" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0aca-db92-cd3c-69da" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="2110-34ca-4217-8415" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="6a89-0144-19b0-c19a" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3407-20a7-80ee-98d5" type="max"/>
+        <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="6add-4918-63a8-0a1a" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="5663-c376-3d1c-abeb" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="2a31-691b-295e-b828" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Delegatus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="75a0-6052-3d67-96e7">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">5+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8d58-c4db-7dfa-40a2">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+
+■ Assault Intercessor Squad
+■ Bladeguard Veteran Squad
+■ Hellblaster Squad
+■ Infernus Squad
+■ Intercessor Squad
+■ Sternguard Veteran Squad
+■ Tactical Squad</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rally the Chapter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8e2e-6948-46b3-d91d">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per Battle, at the start of your Turn, you can make a Leadership Test for this Model to activate this Ability; if passed, until the Start of your next Command Phase, Units from your army that are visible to this Unit automatically pass Leadership Tests made for them</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="increment" value="2" field="5663-c376-3d1c-abeb">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="2a31-691b-295e-b828">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="6add-4918-63a8-0a1a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="8dbe-9f09-d44d-07d6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="cc10-f6c5-c5cd-e103" hidden="false" sortIndex="4">
+          <entryLinks>
+            <entryLink import="true" name="Master-crafted Bolter" hidden="false" id="c11c-cc06-6ce5-aa23" type="selectionEntry" targetId="c3bc-26b4-6fa0-bd39">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="135c-dfb0-e734-1425"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d69a-bd8f-517f-fd4a"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="eb24-c68b-e88b-120f" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="d921-b014-d770-7bf0" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="5dff-6b0b-4d0f-6bf1" type="selectionEntry" targetId="ebda-08ed-994a-b579">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="851e-b43e-57f4-76d6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eea2-ac3c-6ce5-7d60"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="95c6-a8dc-3470-a4f3" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
