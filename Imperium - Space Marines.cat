@@ -38951,7 +38951,12 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c852-d082-4e5d-f5a2" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Banestrike Combi-bolter" hidden="false" id="a38c-63b0-a028-4aad" type="selectionEntry" targetId="dbed-f9e4-d71f-e338"/>
+                <entryLink import="true" name="Banestrike Combi-bolter" hidden="false" id="a38c-63b0-a028-4aad" type="selectionEntry" targetId="dbed-f9e4-d71f-e338">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a144-49a2-d2d3-727d" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8a6-6e51-db66-e60a" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Justaerin Sergeant" hidden="false" id="b15b-b00e-7d79-5e1c" sortIndex="1">
@@ -38970,7 +38975,15 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="ec2e-e0c5-b2a3-a97e" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
-                <entryLink import="true" name="Banestrike Combi-bolter" hidden="false" id="7830-aa6e-462c-5858" type="selectionEntry" targetId="dbed-f9e4-d71f-e338"/>
+                <entryLink import="true" name="Banestrike Combi-bolter" hidden="false" id="7830-aa6e-462c-5858" type="selectionEntry" targetId="dbed-f9e4-d71f-e338">
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="0dc5-e2a9-940e-5899" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d3e-45e7-cc91-1c18" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b51-8698-254b-92a2" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <profiles>
                 <profile name="Justaerin Sergeant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e682-f442-5d5a-66a8">
@@ -45259,7 +45272,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
@@ -45436,7 +45449,7 @@ Each time this Model is selected as the Target of a Charge; subtract 2 from the 
           <characteristics>
             <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
@@ -45456,8 +45469,9 @@ Each time this Model is selected as the Target of a Charge; subtract 2 from the 
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Hazardous" hidden="false" type="rule" id="736a-f115-8ac7-cb0f" targetId="8367-374c-f87-c627"/>
+        <infoLink name="Pinning [X]" hidden="false" type="rule" id="736a-f115-8ac7-cb0f" targetId="d737-55a6-e8c8-ea02"/>
         <infoLink name="Blast" hidden="false" type="rule" id="c243-5efd-3476-9350" targetId="6c1f-1cf7-ff25-c99e"/>
+        <infoLink name="Hazardous" hidden="false" type="rule" id="67a6-c6e2-9122-39c9" targetId="8367-374c-f87-c627"/>
       </infoLinks>
       <rules>
         <rule name="Deadly Aim" id="4cf4-f41a-9c5f-62f6" hidden="false">
