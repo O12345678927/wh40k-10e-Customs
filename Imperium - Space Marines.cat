@@ -38900,6 +38900,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <categoryLink targetId="6e7-40c-58d9-e402" id="c862-896b-c67c-719f" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="740a-892c-8958-defa" id="9cb1-70e2-01e1-a681" primary="false" name="Terminator"/>
         <categoryLink targetId="e169-ce70-ee9d-cecc" id="ebdb-eb7d-25a8-83d3" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="cce6-0071-67df-c4e7" id="9516-252e-9fe1-f73d" primary="false" name="Faction: Black Legion"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="6972-5b19-6645-7242"/>
