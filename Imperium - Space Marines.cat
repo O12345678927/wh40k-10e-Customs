@@ -37787,7 +37787,14 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <infoLink name="Templar Vows" id="4cf6-f946-f4bd-afeb" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Gorgon Terminators" hidden="false" id="d0be-6a54-9bb2-c4d4" defaultSelectionEntryId="3d0b-d48a-591d-cd05" sortIndex="3">
@@ -37864,7 +37871,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="400" field="51b2-306e-1021-d207">
+        <modifier type="set" value="410" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="00cc-be13-fbc2-8124" childId="d0be-6a54-9bb2-c4d4" shared="true" id="5d46-cdb2-aa44-aaec"/>
           </conditions>
@@ -41049,7 +41056,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="135"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -41059,7 +41066,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="225" field="51b2-306e-1021-d207">
+        <modifier type="set" value="270" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="8c32-187a-b06c-a05b" childId="febc-496b-d3f0-6410" shared="true"/>
           </conditions>
@@ -45175,7 +45182,8 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
       <infoLinks>
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="4c6e-fc03-a377-fb6b" targetId="3b76-4053-ece9-6e7d"/>
         <infoLink name="Templar Vows" id="19d0-9d0a-e1aa-1374" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
-        <infoLink name="Feel No Pain" id="baf2-ebc6-6dc0-b133" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+        <infoLink name="Feel No Pain" id="d9fc-c8c1-319e-2531" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+        <infoLink name="Invulnerable Save" id="9146-44dd-8e1f-6320" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="f2a6-d350-f4b8-1557" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
@@ -45337,6 +45345,11 @@ Each time this Model is selected as the Target of a Charge; subtract 2 from the 
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">0</characteristic>
           </characteristics>
         </profile>
+        <profile name="Lone Hunter" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="af7b-020f-37cd-7869">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This Model may never be selected as your WARLORD</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
@@ -45349,7 +45362,7 @@ Each time this Model is selected as the Target of a Charge; subtract 2 from the 
         <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="2fde-ce58-8441-1f17" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2fde-ce58-8441-1f17" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="04a8-d635-f3b4-5c59" includeChildSelections="false"/>
         <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="5ab5-e315-8a38-131a" includeChildSelections="true"/>
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="f2a1-6673-a8bf-5616" includeChildSelections="true"/>
