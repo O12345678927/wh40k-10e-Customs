@@ -2737,7 +2737,7 @@
     <entryLink import="true" name="Delegatus" hidden="false" type="selectionEntry" id="c641-bfab-f12e-3124" targetId="334b-8f1a-b42c-1e32"/>
     <entryLink import="true" name="Fulmentarus Terminator Squad" hidden="false" id="4df9-a5b4-3f13-9dae" type="selectionEntry" targetId="a465-db5a-5915-cfc3"/>
     <entryLink import="true" name="Lernaean Terminator Squad" hidden="false" id="9396-33aa-5dfd-2a11" type="selectionEntry" targetId="48c0-03dc-2039-b855"/>
-    <entryLink import="true" name="Justaerin Terminators" hidden="false" id="b2be-38c3-797e-9c8c" type="selectionEntry" targetId="b9c1-5377-82a3-2887"/>
+    <entryLink import="true" name="Justaerin Honour Guard" hidden="false" id="b2be-38c3-797e-9c8c" type="selectionEntry" targetId="b9c1-5377-82a3-2887"/>
     <entryLink import="true" name="Exodus" hidden="false" id="5e3b-060b-574c-d4e1" type="selectionEntry" targetId="61f4-2c91-96cb-96d0"/>
   </entryLinks>
   <sharedSelectionEntries>
@@ -40347,7 +40347,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
       <profiles>
         <profile name="Slow and Purposeful" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="710a-81a3-cf47-b9e0">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the End of the Movement Phase, if this Unit made a Normal Move of less than 3&quot;, you can select one of the following abilities to be active until the Start of your next Movement Phase;
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the End of the Movement Phase, if this Unit Remained Stationary or made a Normal Move of less than 3&quot;, you can select one of the following abilities to be active until the Start of your next Movement Phase;
 
 ■ Models in this Unit count as remaining stationary
 ■ Increase the T Characteristic of Models in this Unit by 1</characteristic>
@@ -40413,7 +40413,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="881f-401e-51e6-e74a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="1b61-fcfa-d9f5-4aa5" targetId="4913-96d4-2b1f-2c21" sortIndex="5">
+                    <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="1b61-fcfa-d9f5-4aa5" targetId="7ead-a4ee-c2e-fcf9" sortIndex="5">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="8c17-d2bb-41d9-3969" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -40705,7 +40705,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="2175-d924-97ce-b1ed" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
                     </entryLink>
-                    <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="d296-edff-5862-1ecf" targetId="4913-96d4-2b1f-2c21">
+                    <entryLink import="true" name="Thunder Hammer" hidden="false" type="selectionEntry" id="d296-edff-5862-1ecf" targetId="7ead-a4ee-c2e-fcf9">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="bce7-1933-8b44-8b02" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -41475,7 +41475,7 @@ Each Unit may only use this Ability once per Battle</characteristic>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon 1" hidden="false" id="3a4b-6f63-2321-e5a6" defaultSelectionEntryId="fd17-cf82-6413-f1d7" flatten="false">
                   <entryLinks>
-                    <entryLink import="true" name="Legatine Axe" hidden="false" type="selectionEntry" id="7edb-1602-497f-f4fc" targetId="6a22-1c2b-da1f-248b" sortIndex="3">
+                    <entryLink import="true" name="Legatine Axe" hidden="false" type="selectionEntry" id="7edb-1602-497f-f4fc" targetId="a0e9-1bdf-f4f2-0d69" sortIndex="3">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="6bdb-7a13-c008-ce27" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
@@ -41516,14 +41516,14 @@ Each Unit may only use this Ability once per Battle</characteristic>
                 </entryLink>
               </entryLinks>
               <profiles>
-                <profile name="Breacher Sergeant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f956-7d8e-1a18-8168">
+                <profile name="Praetorian Primus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f956-7d8e-1a18-8168">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                     <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -41583,14 +41583,14 @@ Each Unit may only use this Ability once per Battle</characteristic>
                 </entryLink>
               </entryLinks>
               <profiles>
-                <profile name="Breacher Marine" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8203-c925-6b42-60d5">
+                <profile name="Praetorian" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8203-c925-6b42-60d5">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                     <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -45499,6 +45499,26 @@ Each time this Model is selected as the Target of a Charge; subtract 2 from the 
         <categoryLink name="Melee Weapon" hidden="false" id="add1-7e82-bf14-d08a" targetId="ccdd-3987-11ed-90cd" primary="false"/>
         <categoryLink name="Power Weapon" hidden="false" id="c025-a342-4bb7-b9b1" targetId="72a2-ff76-451c-9d12" primary="false"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Legatine Axe" hidden="false" id="a0e9-1bdf-f4f2-0d69">
+      <profiles>
+        <profile name="Legatine Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9042-ac15-6aab-5f06">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-4</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Melee Weapon" hidden="false" id="a74d-0402-ad85-6aa2" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+        <categoryLink name="Power Weapon" hidden="false" id="0d61-5024-e93f-9d69" targetId="72a2-ff76-451c-9d12" primary="false"/>
+      </categoryLinks>
+      <comment>A2 WS2+</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
