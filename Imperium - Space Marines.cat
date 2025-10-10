@@ -37961,9 +37961,10 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
           </characteristics>
+          <comment>A4 WS3</comment>
         </profile>
       </profiles>
       <categoryLinks>
@@ -45281,6 +45282,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precision, Devastating Wounds</characteristic>
           </characteristics>
+          <comment>A3 WS2</comment>
         </profile>
       </profiles>
       <categoryLinks>
