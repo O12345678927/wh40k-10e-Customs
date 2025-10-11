@@ -45323,7 +45323,6 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <categoryLink targetId="4f3a-f0f7-6647-348d" id="ce0a-aede-f6da-6d0a" primary="true" name="Epic Hero"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="fd9a-7f6e-65d5-4056" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
         <entryLink id="fbd4-a625-44c9-74c3" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2"/>
         <entryLink import="true" name="Crusade" hidden="false" id="86d4-a651-8c77-4f78" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
       </entryLinks>
