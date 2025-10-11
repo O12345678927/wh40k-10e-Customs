@@ -45805,11 +45805,10 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="b809-b2a5-014a-b4d3" primary="false" name="Character"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="b809-b2a5-014a-b4d3" primary="true" name="Character"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="5a3f-54cf-8935-6a9a" primary="false" name="Infantry"/>
         <categoryLink targetId="2d7f-1892-2fd0-e29c" id="e53d-8fca-9a8c-8856" primary="false" name="Captain"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="27b3-0b1f-5b51-15db" primary="false" name="Grenades"/>
-        <categoryLink targetId="4f3a-f0f7-6647-348d" id="65cb-0a47-ed1a-c1f6" primary="true" name="Epic Hero"/>
         <categoryLink targetId="292d-727a-ecee-c0d4" id="ee68-e943-b9c5-5c24" primary="false" name="Faction: Alpha Legion"/>
         <categoryLink targetId="e169-ce70-ee9d-cecc" id="04c0-ce2b-e8e5-1f30" primary="false" name="CUSTOM"/>
         <categoryLink targetId="7295-ed65-8ff4-7a5f" id="9854-9e3e-62cf-557e" primary="false" name="Phobos"/>
@@ -45851,7 +45850,8 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         </profile>
         <profile name="Rewards of Treachery" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="150f-3b3c-b328-8c93">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">During Army Creation you may select a single variant of the Astartes (X) special rule other than Astartes (Alpha Legion) . You may include a single unit that is normally only available to Detachments with the variant of the Astartes (X) special rule that was selected.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You may only include one Model with this Special Rule in your Army.
+During Army Creation you may select a single variant of the Astartes (X) special rule other than Astartes (Alpha Legion) . You may include a single unit that is normally only available to Detachments with the variant of the Astartes (X) special rule that was selected.</characteristic>
           </characteristics>
         </profile>
         <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cde2-1833-3252-a752">
