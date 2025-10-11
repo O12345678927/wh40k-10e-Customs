@@ -46128,7 +46128,6 @@ During Army Creation you may select a single variant of the Astartes (X) special
         <profile name="Ravening Madmen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9fbc-9986-f25e-7724">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a Melee Attack targets this Unit; Improve the WS of that Melee Attack to 3+ (this has no effect on attacks that are WS2+)
-
 The first time each Phase a Wound is allocated to a Model in this Unit; change the Damage characteristic of that attack to 0.</characteristic>
           </characteristics>
         </profile>
@@ -46494,7 +46493,12 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="Bolt Pistol" hidden="false" id="25de-700e-2246-abe0" type="selectionEntry" targetId="18b0-8c2-173f-5"/>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="25de-700e-2246-abe0" type="selectionEntry" targetId="18b0-8c2-173f-5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae92-4733-515e-6ea4-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae92-4733-515e-6ea4-max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Rampager Champion" hidden="false" id="09ac-e923-b615-bd97" sortIndex="1">
@@ -46669,7 +46673,7 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
         <profile name="Barb-Hook Lash" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="af51-da08-9cd7-ad27">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
@@ -46727,7 +46731,7 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
         <profile name="Paired Falax Blades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7dd4-acd6-e2f5-00d9">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-            <characteristic name="A" typeId="2337-daa1-6682-b110">7</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
