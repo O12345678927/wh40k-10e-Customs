@@ -42207,11 +42207,6 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this Unit makes an Attack that targets a Sentenced Unit; successful Wound Rolls of 4+ improve the AP Characteristic of that Attack by 2</characteristic>
           </characteristics>
         </profile>
-        <profile name="Sentenced" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="716d-aef8-c232-9eea">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the Start of the Battle, if your Army Faction is RAVEN GUARD; Select one Enemy Unit to be Sentenced</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Infiltrators" hidden="false" type="rule" id="6207-807b-09ca-4fa8" targetId="c05d-f4c3-f091-4938"/>
@@ -45323,7 +45318,6 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <categoryLink targetId="4f3a-f0f7-6647-348d" id="ce0a-aede-f6da-6d0a" primary="true" name="Epic Hero"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="fbd4-a625-44c9-74c3" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2"/>
         <entryLink import="true" name="Crusade" hidden="false" id="86d4-a651-8c77-4f78" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
       </entryLinks>
       <profiles>
@@ -45553,7 +45547,7 @@ Each time this Model is selected as the Target of a Charge; subtract 2 from the 
       <profiles>
         <profile name="Sown Chaos" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d1ca-d977-8249-8b60">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting Phase, after this Unit has shot, select one Enemy Unit that had one or more of its Models Destroyed as a result of this Unit’s Attacks; Each Enemy Unit within 6&quot; and Visible to the selected Unit must make a Battle-Shock Test</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting Phase, after this Unit has shot, select one Enemy Unit that had one or more of its CHARACTER Models Destroyed as a result of this Unit’s Attacks; Each Enemy Unit within 6&quot; and Visible to the selected Unit must make a Battle-Shock Test</characteristic>
           </characteristics>
         </profile>
         <profile name="Lies and Obfuscation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="60bb-e774-c563-2fc7">
