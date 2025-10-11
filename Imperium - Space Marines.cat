@@ -17727,7 +17727,6 @@ Normal move. If it does so, until the end of the turn, this unit is not eligible
                     <entryLink import="true" name="Multi-melta" hidden="false" type="selectionEntry" id="fe6e-e0b5-f50d-14d6" targetId="59c-91b5-f87b-1395"/>
                     <entryLink import="true" name="Plasma Cannon" hidden="false" type="selectionEntry" id="f89c-7801-282c-172" targetId="47ef-a0e2-2cb0-845d"/>
                     <entryLink import="true" name="Missile Launcher" hidden="false" type="selectionEntry" id="3078-bc23-356d-618c" targetId="1c19-102c-9058-c35d"/>
-                    <entryLink import="true" name="Aether-Fire Cannon" hidden="false" id="9cf8-35ca-f8da-29e5" type="selectionEntry" targetId="0ba1-58ff-4401-8d4e"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -42208,6 +42207,11 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this Unit makes an Attack that targets a Sentenced Unit; successful Wound Rolls of 4+ improve the AP Characteristic of that Attack by 2</characteristic>
           </characteristics>
         </profile>
+        <profile name="Sentenced" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="716d-aef8-c232-9eea">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the Start of the Battle, if your Army Faction is RAVEN GUARD; Select one Enemy Unit to be Sentenced</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Infiltrators" hidden="false" type="rule" id="6207-807b-09ca-4fa8" targetId="c05d-f4c3-f091-4938"/>
@@ -45258,9 +45262,9 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Venom Sphere" id="c338-75e5-ce90-d36f" collective="true">
       <profiles>
-        <profile name="Combi-weapon" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" id="0ede-c858-d06b-5cc2">
+        <profile name="Venom Sphere" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" id="0ede-c858-d06b-5cc2">
           <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">9&quot;</characteristic>
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">1</characteristic>
@@ -45563,7 +45567,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
       <selectionEntryGroups>
         <selectionEntryGroup name="Headhunters" hidden="false" id="b570-f839-f0a3-0100" sortIndex="3">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Headhunter Prime" hidden="false" id="aa24-97ac-d859-b560">
+            <selectionEntry type="model" import="true" name="Headhunter Prime" hidden="false" id="aa24-97ac-d859-b560" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0548-42ec-b1da-9e4a"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f089-d72b-5171-e31b"/>
@@ -45597,6 +45601,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="0bc6-dc3c-9159-287c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
+                <entryLink import="true" name="Venom Sphere" hidden="false" id="f8e9-0ffd-fe90-ff2c" type="selectionEntry" targetId="c338-75e5-ce90-d36f"/>
               </entryLinks>
               <profiles>
                 <profile name="Headhunter Prime" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="763b-7a6c-7dd8-c02f">
@@ -45611,7 +45616,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Headhunter" hidden="false" id="8733-8fb5-471f-f2e4">
+            <selectionEntry type="model" import="true" name="Headhunter" hidden="false" id="8733-8fb5-471f-f2e4" sortIndex="2">
               <constraints>
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="d5d4-cef9-34bf-ed14"/>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="6654-d71d-d636-6307"/>
