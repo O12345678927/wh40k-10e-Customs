@@ -37725,12 +37725,13 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
             <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin Linked</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-Linked, Sustained Hits 1</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Twin-linked" id="d1c7-744e-2dad-ac4e" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+        <infoLink name="Sustained Hits" id="d1c7-744e-2dad-ac4e" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+        <infoLink name="Twin-linked" id="5d33-b05c-9fb0-c797" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Asphyx Bolter" hidden="false" id="04ca-2f9b-c638-8f04">
@@ -45167,7 +45168,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="250"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -45177,7 +45178,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="500" field="51b2-306e-1021-d207">
+        <modifier type="set" value="420" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="48c0-03dc-2039-b855" childId="0dae-7913-f0af-df51" shared="true" id="7f28-9fa0-163c-e645" includeChildSelections="true"/>
           </conditions>
