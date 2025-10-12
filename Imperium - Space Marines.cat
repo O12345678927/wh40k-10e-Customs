@@ -37067,6 +37067,7 @@ per turn.</characteristic>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="c36f-740a-65e5-4ccf" primary="true" name="Character"/>
         <categoryLink targetId="7002-1fbb-7571-e8e7" id="cf80-f007-cd77-6f92" primary="false" name="Faction: Thousand Sons"/>
         <categoryLink targetId="e169-ce70-ee9d-cecc" id="bb63-186f-418d-d810" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="13bf-2bee-3ae0-b414" id="c3ba-8928-e77d-9458" primary="false" name="Psyker"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="6f71-4cd8-6138-aa09" hidden="false" sortIndex="3">
