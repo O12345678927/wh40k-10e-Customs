@@ -2741,7 +2741,7 @@
     <entryLink import="true" name="Exodus" hidden="false" id="5e3b-060b-574c-d4e1" type="selectionEntry" targetId="61f4-2c91-96cb-96d0"/>
     <entryLink import="true" name="Headhunter Kill Team" hidden="false" id="fae3-49ea-dbda-3aad" type="selectionEntry" targetId="e612-210c-17eb-3472"/>
     <entryLink import="true" name="Harrowmaster" hidden="false" id="8bbe-b1fa-55ee-2817" type="selectionEntry" targetId="d803-8354-aacd-9f5a"/>
-    <entryLink import="true" name="Red Butcher" hidden="false" id="161e-ea85-df32-bc2b" type="selectionEntry" targetId="b3a0-3c43-72d2-582b"/>
+    <entryLink import="true" name="Red Butchers" hidden="false" id="161e-ea85-df32-bc2b" type="selectionEntry" targetId="b3a0-3c43-72d2-582b"/>
     <entryLink import="true" name="Rampager Squad" hidden="false" id="6f1d-4611-28fb-7181" type="selectionEntry" targetId="c098-83ea-0440-0645"/>
   </entryLinks>
   <sharedSelectionEntries>
@@ -37069,7 +37069,7 @@ per turn.</characteristic>
         <categoryLink targetId="e169-ce70-ee9d-cecc" id="bb63-186f-418d-d810" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear" id="6f71-4cd8-6138-aa09" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Wargear" id="6f71-4cd8-6138-aa09" hidden="false" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Gravis Force Blade" hidden="false" id="0b99-e7e8-cbf4-6558" type="selectionEntry" targetId="fd4e-994c-47e0-1760">
               <constraints>
@@ -37097,6 +37097,7 @@ per turn.</characteristic>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="0e52-aacb-5823-7ca0" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Enhancements" hidden="false" id="3dc8-3210-744c-4001" type="selectionEntryGroup" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="2"/>
       </entryLinks>
       <modifiers>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
@@ -38306,6 +38307,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <categoryLink targetId="6e7-40c-58d9-e402" id="6d24-9696-b627-fd8b" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="7002-1fbb-7571-e8e7" id="56aa-b434-74a0-6816" primary="false" name="Faction: Thousand Sons"/>
         <categoryLink targetId="e169-ce70-ee9d-cecc" id="8f32-9a06-c1a9-a9d3" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="13bf-2bee-3ae0-b414" id="f87a-5055-b238-0687" primary="false" name="Psyker"/>
       </categoryLinks>
       <profiles>
         <profile name="Mindsong of Blades [PSYCHIC]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a4ed-5dbb-4f17-1ab7">
@@ -38323,10 +38325,10 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
       <selectionEntryGroups>
         <selectionEntryGroup name="Khenetai Occult Bladesmen" hidden="false" id="cd7a-9e06-14c9-2ece" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Khenetai Blade" hidden="false" id="c304-1080-7b83-4c8e">
+            <selectionEntry type="model" import="true" name="Khenetai Blade" hidden="false" id="c304-1080-7b83-4c8e" sortIndex="2">
               <constraints>
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="291d-0a02-c11e-460d"/>
-                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5044-fa42-41cd-4c0c"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="5044-fa42-41cd-4c0c"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Heavy Bolt Pistol" hidden="false" type="selectionEntry" id="6218-2272-ec27-9266" targetId="83a1-feb8-d495-aa28">
@@ -38355,7 +38357,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Khenetai Blademaster" hidden="false" id="86ed-bc97-1798-e9d7">
+            <selectionEntry type="model" import="true" name="Khenetai Blademaster" hidden="false" id="86ed-bc97-1798-e9d7" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db6c-c78a-8f57-8d97"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1d5-b8d4-5a26-34a1"/>
@@ -38413,7 +38415,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
           </selectionEntries>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="f598-cbc0-0de3-3eaf"/>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="a379-4bd6-c597-860e"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="a379-4bd6-c597-860e"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -38810,7 +38812,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
       <profiles>
         <profile name="Pyrae Teachings [PSYCHIC]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8289-1eca-e904-8ac8">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Shooting Phase, one unit from your army with this ability can make a Psychic Test - Warp Charge 10; If this power manifests, Ranged Weapons Equipped by models in this unit gain the [Torrent] Ability</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Shooting Phase, one Unit from your Army with this Ability can make a Psychic Test - Warp Charge 10; If this power manifests, PSYCHIC Weapons Equipped by Models in this Unit gain the Torrent Ability until the end of the Phase</characteristic>
           </characteristics>
         </profile>
       </profiles>
