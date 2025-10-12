@@ -45118,10 +45118,10 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
               <profiles>
                 <profile name="Harrower" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b857-3211-f724-7b3f">
                   <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
                   </characteristics>
@@ -45610,7 +45610,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
               <profiles>
                 <profile name="Headhunter Prime" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="763b-7a6c-7dd8-c02f">
                   <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                     <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
@@ -45648,7 +45648,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
               <profiles>
                 <profile name="Headhunter" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="20f3-e61a-1030-f65f">
                   <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                     <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
