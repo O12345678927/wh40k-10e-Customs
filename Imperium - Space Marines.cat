@@ -45572,7 +45572,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f089-d72b-5171-e31b"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Headhunter Banestrike Combi-bolter" hidden="false" type="selectionEntry" id="f705-bb64-5d20-a0a7" targetId="316f-a76e-ca0f-e361" collective="false">
+                <entryLink import="true" name="Banestrike Combi-bolter" hidden="false" type="selectionEntry" id="f705-bb64-5d20-a0a7" targetId="dbed-f9e4-d71f-e338" collective="false">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73ca-51e8-0812-e065"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f2e-e41c-bded-551b"/>
@@ -45600,7 +45600,12 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="0bc6-dc3c-9159-287c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
-                <entryLink import="true" name="Venom Sphere" hidden="false" id="f8e9-0ffd-fe90-ff2c" type="selectionEntry" targetId="c338-75e5-ce90-d36f"/>
+                <entryLink import="true" name="Venom Sphere" hidden="false" id="f8e9-0ffd-fe90-ff2c" type="selectionEntry" targetId="c338-75e5-ce90-d36f">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4c8-c292-9c69-22f4-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4c8-c292-9c69-22f4-max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <profiles>
                 <profile name="Headhunter Prime" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="763b-7a6c-7dd8-c02f">
@@ -45621,7 +45626,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="6654-d71d-d636-6307"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Headhunter Banestrike Combi-bolter" hidden="false" type="selectionEntry" id="2b9b-8b17-0220-1a21" targetId="316f-a76e-ca0f-e361" collective="false">
+                <entryLink import="true" name="Banestrike Combi-bolter" hidden="false" type="selectionEntry" id="2b9b-8b17-0220-1a21" targetId="dbed-f9e4-d71f-e338" collective="false">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5bc-a64c-d6e5-d5b6"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab06-e261-0a52-6fcd"/>
@@ -45778,26 +45783,6 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <categoryLink name="Melee Weapon" hidden="false" id="7903-0c01-2042-1d28" targetId="ccdd-3987-11ed-90cd" primary="false"/>
         <categoryLink name="Power Weapon" hidden="false" id="7f94-09eb-5e9f-212d" targetId="72a2-ff76-451c-9d12" primary="false"/>
       </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Headhunter Banestrike Combi-bolter" hidden="false" id="316f-a76e-ca0f-e361" collective="true">
-      <profiles>
-        <profile name="Banestrike Combi-bolter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6572-b536-489a-111c">
-          <characteristics>
-            <characteristic name="Range" typeId="9896-9419-16a1-92fc">20&quot;</characteristic>
-            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 2, Devastating Wounds, Anti-Character 4+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Devastating Wounds" id="ef27-b725-acba-05a8" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-        <infoLink name="Anti-" id="7e8a-d33c-e7a2-d710" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
-        <infoLink name="Rapid Fire" id="4b65-ef83-41f7-2828" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Harrowmaster" hidden="false" id="d803-8354-aacd-9f5a">
       <costs>
