@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="158" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="5a44-f048-114b-e3ff" name="Imperium - Astra Militarum - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="162" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Aegis Defence Line" hidden="false" id="cb99-456-f100-40ed">
       <categoryLinks>
@@ -842,6 +842,9 @@
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="fbd8-2f3f-1dcb-39d3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="d2bc-90a5-fd88-590d" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1293,6 +1296,11 @@
             <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
           </attributes>
         </profile>
+        <profile name="Earthshaker Rounds" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="883c-f9b4-c57c-b535">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, if one or more of those attacks made with its earthshaker cannon scored a hit against an enemy **^^Infantry^^** unit, until the start of your next Shooting phase, that unit is shaken. While a unit is shaken, subtract 2&quot; from its Move characteristic and subtract 2 from Charge rolls made for it.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Damaged: 1-4 Wounds Remaining" hidden="false" type="profile" id="cad9-424e-9397-7172" targetId="a626-b90a-cf43-68b4"/>
@@ -1390,14 +1398,13 @@
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Indirect Fire, Pinning [2]</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Indirect Fire,</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Pinning [2]" id="8206-21e2-5a51-77ed" hidden="false" type="rule" targetId="d737-55a6-e8c8-ea02"/>
+                <infoLink name="Blast" id="8206-21e2-5a51-77ed" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
                 <infoLink name="Indirect Fire" id="59d7-5d07-c2a3-89a6" hidden="false" type="rule" targetId="4ddd-4e29-acdd-5e6d"/>
-                <infoLink name="Blast" id="5b49-45f8-c33a-cc31" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b72f-fe56-9e5d-ae0a"/>
@@ -4434,6 +4441,9 @@
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="f9bd-5cad-39a8-759a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="67fb-ce24-b01b-2268" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4634,13 +4644,6 @@
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Melta 6</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -4650,6 +4653,9 @@
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="927c-9104-a522-57a7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="1e86-de61-97cb-30ac" targetId="4986-bf86-beb4-13ac" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4826,6 +4832,9 @@
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="2ee0-3a31-3739-f57c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="a173-b573-b7b8-a4f3" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -5936,6 +5945,9 @@
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="77b6-e920-dc0b-5115" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="d3fc-a308-3139-bf8b" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5999,7 +6011,7 @@
         </infoLink>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Wargear Options" id="1a5a-444f-59aa-e0a6" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Wargear" id="1a5a-444f-59aa-e0a6" hidden="false" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Hunter-killer missile" hidden="false" id="337a-1dcc-3ff7-711c" type="selectionEntry" targetId="37aa-e4f5-30bd-c59c" sortIndex="1">
               <constraints>
@@ -6083,18 +6095,14 @@
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="7634-1fc1-9d5e-7ed4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="1f16-bcfc-26c8-c40a" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Melta cannon" hidden="false" id="5883-9161-a6-ce2">
                   <infoLinks>
@@ -6112,23 +6120,15 @@
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Melta 4</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="eb08-0a60-f5e5-0045" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="b070-022d-40b0-2fd3" targetId="e993-e086-6de1-12af" primary="false"/>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="6e68-779d-991a-1b74" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -8171,6 +8171,9 @@
           <infoLinks>
             <infoLink name="Extra Attacks" hidden="false" type="rule" id="c31f-c04b-1262-af95" targetId="115b-79dc-f723-d761"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Extra Attacks Weapon" hidden="false" id="3931-5dc4-807e-2f65" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -8355,6 +8358,9 @@
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="fb7d-452a-048b-52a9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="f346-9a70-6445-b734" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -8912,13 +8918,6 @@
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Melta 2</characteristic>
                           </characteristics>
-                          <modifiers>
-                            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
                         </profile>
                       </profiles>
                       <infoLinks>
@@ -8928,6 +8927,9 @@
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="1cdb-fbae-8d21-6215" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="6c3b-7fb8-86d6-8caa" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Plasma cannon" hidden="false" id="3845-704c-f117-d6c9" collective="false">
                       <profiles>
@@ -8962,6 +8964,9 @@
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="e1a4-9962-7b5d-b883" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="aec4-f1e2-cbfd-e4b7" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -9336,35 +9341,6 @@ This model cannot be selected as your **^^Warlord^^** and cannot be given Enhanc
             </selectionEntryGroup>
             <selectionEntryGroup name="Ripper Gun" id="850-b82c-9d30-e539" hidden="false" defaultSelectionEntryId="30cb-2c22-c869-45b8">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Grenadier gauntlet" hidden="false" id="d079-c0d2-6735-7fba">
-                  <profiles>
-                    <profile name="Grenadier gauntlet" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3323-b3c-5246-9afe">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Blast" id="c471-b201-7519-626f" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
-                  </infoLinks>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="Weapon Upgrades" id="2cbd-3441-426e-6e4b" hidden="false" flatten="true">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="f667-944e-7240-788c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="c720-a4ca-b9d6-78d3" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                  <categoryLinks>
-                    <categoryLink name="Ranged Weapon" hidden="false" id="def4-7cda-6e09-3e55" targetId="eeda-8544-a2f3-3fab" primary="false"/>
-                  </categoryLinks>
-                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Bullgryn maul" hidden="false" id="03e6-eb5c-2a4c-f5cb">
                   <profiles>
                     <profile name="Bullgryn maul" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="89a5-cc5f-be46-bf81">
@@ -9403,6 +9379,16 @@ This model cannot be selected as your **^^Warlord^^** and cannot be given Enhanc
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="9902-b1d9-1c61-752f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="222c-0257-3181-1e0a" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </entryLink>
+                <entryLink import="true" name="Grenadier gauntlet" hidden="false" id="e326-d368-9bed-1c1d" type="selectionEntry" targetId="4c19-7a93-f2d6-30e9">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon Upgrades" id="2cbd-3441-426e-6e4b" hidden="false" flatten="true">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="f667-944e-7240-788c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="c720-a4ca-b9d6-78d3" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -9816,6 +9802,13 @@ This model cannot be selected as your **^^Warlord^^** and cannot be given Enhanc
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Devastating Wounds, Psychic</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
                 <profile name="➤ Psychic maelstrom - focused witchfire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d2db-177e-115e-afe">
                   <characteristics>
@@ -9877,6 +9870,7 @@ This model cannot be selected as your **^^Warlord^^** and cannot be given Enhanc
               <categoryLinks>
                 <categoryLink name="Psychic Weapon" hidden="false" id="2063-ee22-9811-d86b" targetId="4546-4a0c-b3be-e84c" primary="false"/>
                 <categoryLink name="Melee Weapon" hidden="false" id="2eb9-781c-e899-6865" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="805b-ecc7-757f-b212" targetId="4986-bf86-beb4-13ac" primary="false"/>
               </categoryLinks>
               <infoLinks>
                 <infoLink name="Psychic" id="1edb-d772-b775-ce7d" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
@@ -9969,6 +9963,9 @@ This model cannot be selected as your **^^Warlord^^** and cannot be given Enhanc
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="6ec4-f66c-0191-395a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="7fed-47a4-33a1-6a9e" targetId="4986-bf86-beb4-13ac" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -10437,6 +10434,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="8af2-928d-019c-4637" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="560e-4a0a-6576-0349" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -12542,6 +12540,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="26e2-460d-dbdc-7a6c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="743d-b479-6a87-3a35" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Taurox gatling cannon" hidden="false" id="8c87-8197-6367-4a23">
                       <profiles>
@@ -12577,6 +12578,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Twin-linked</characteristic>
                           </characteristics>
+                          <modifiers>
+                            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
                         </profile>
                         <profile name="➤ Taurox missile launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="47ba-9c1a-c13a-776b">
                           <characteristics>
@@ -12588,6 +12596,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked</characteristic>
                           </characteristics>
+                          <modifiers>
+                            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
                         </profile>
                       </profiles>
                       <infoLinks>
@@ -13737,6 +13752,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="9cce-eaa3-4450-4b9e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="e928-ead3-d095-ad5e" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -13848,6 +13866,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <comment>BS4+</comment>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="4917-3a69-e82b-6caf" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Pistol Weapon" hidden="false" id="a5d0-2df7-b760-ad5c" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="1cd4-7b86-8d9d-bb46">
@@ -13884,13 +13903,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -13899,6 +13911,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="da5d-4f24-9d93-536b" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="d9f1-a253-a4bb-8dac" targetId="e993-e086-6de1-12af" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="a2c9-3bb4-6675-5c79">
@@ -13932,6 +13945,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="➤ Missile launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2972-9250-9ff9-f942">
           <characteristics>
@@ -13943,6 +13963,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -13970,6 +13997,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <infoLink name="Heavy" hidden="false" type="rule" id="b871-a126-9016-c8cc" targetId="1202-10a8-78e9-4c67"/>
         <infoLink name="Indirect Fire" hidden="false" type="rule" id="a0e7-1db0-9022-6922" targetId="4ddd-4e29-acdd-5e6d"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="7aed-bad4-7a51-4641" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="abf2-656d-322e-3c7e">
       <profiles>
@@ -14002,6 +14032,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <comment>BS4+</comment>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="a223-7986-ecf3-9077" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Pistol Weapon" hidden="false" id="2f64-4b2b-2f4e-7306" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Demolisher battle cannon" hidden="false" id="164f-8726-ff6d-35df">
@@ -14023,6 +14054,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="237c-e517-b78f-974d" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="75e0-9678-e3f4-1335" targetId="4986-bf86-beb4-13ac" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Eradicator nova cannon" hidden="false" id="4a0f-4867-de5d-3fa3">
@@ -14160,6 +14192,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="7a0b-34ff-0292-a675" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Pistol Weapon" hidden="false" id="3ac4-f170-6ea8-6169" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="7934-5223-153f-104e">
@@ -14228,6 +14261,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="3681-8ae6-a69f-9528" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="2d4c-020a-43d6-f2b9" targetId="4986-bf86-beb4-13ac" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy stubber" hidden="false" id="d20f-db4b-d083-7c0a">
@@ -14284,13 +14318,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -14298,6 +14325,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="82a7-8f4a-2275-d043" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="3bb6-b591-ba2d-c3ab" targetId="4986-bf86-beb4-13ac" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Storm bolter" hidden="false" id="65b3-173f-4e96-13a5">
@@ -14420,6 +14448,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="➤ Grenade launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="dec8-f6c8-5cbb-cae">
           <characteristics>
@@ -14431,6 +14466,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -14456,6 +14498,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <infoLink name="Melta" hidden="false" type="rule" id="7d45-e862-fed1-91b3" targetId="7cdb-fb99-44a9-8849"/>
       </infoLinks>
       <comment>BS4+</comment>
+      <categoryLinks>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="8141-2719-8a78-07dc" targetId="4986-bf86-beb4-13ac" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="8e6c-4de8-8cec-ddde">
       <profiles>
@@ -14520,19 +14565,15 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Ignores Cover" hidden="false" type="rule" id="4314-b84f-aac5-6ec1" targetId="4640-43e7-30b-215a"/>
         <infoLink name="Torrent" hidden="false" type="rule" id="b4e-f11f-2e36-9b5" targetId="5edf-d619-23e0-9b56"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="d5ee-46fe-177e-2718" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Medi-pack" hidden="false" id="b9c9-d718-30ba-a99a">
       <profiles>
@@ -14630,13 +14671,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -14644,6 +14678,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <infoLink name="Torrent" hidden="false" type="rule" id="399b-669e-9c55-31ca" targetId="5edf-d619-23e0-9b56"/>
       </infoLinks>
       <comment>Collective</comment>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="30ce-ed51-3b62-e741" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="d0dc-eb53-4dc1-c69e" collective="true">
       <profiles>
@@ -14688,13 +14725,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -14703,6 +14733,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <comment>BS4+</comment>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="aa27-a3ea-ba6d-4309" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="f25b-ad24-3f12-c3ff" targetId="4986-bf86-beb4-13ac" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Grenade launcher" hidden="false" id="56dc-438-2698-6a6a" collective="true">
@@ -14717,6 +14748,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="➤ Grenade launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d1c6-270-1737-1ba9">
           <characteristics>
@@ -14728,6 +14766,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -14929,6 +14974,10 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <infoLinks>
         <infoLink name="Pistol" hidden="false" type="rule" id="2197-ac3f-4585-6f02" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Ranged Weapon" hidden="false" id="2def-f51e-08ba-0640" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Pistol Weapon" hidden="false" id="d998-983f-883a-7bd8" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ripper gun" hidden="false" id="e383-791c-b4cf-e0be" collective="true">
       <infoLinks>
@@ -15026,6 +15075,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lance</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="➤ Hunting lance - melta tip" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="aee-99bd-e0ba-f642">
           <characteristics>
@@ -15037,6 +15093,18 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="3254-9fe6-d824-513e">D6</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lance</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="84a7-ad58-2a81-91b0" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -15060,6 +15128,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <infoLinks>
         <infoLink name="Extra Attacks" hidden="false" type="rule" id="36d2-d96c-8c1f-9bb7" targetId="115b-79dc-f723-d761"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Extra Attacks Weapon" hidden="false" id="9a12-8c4f-7944-df92" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Multi-laser" hidden="false" id="866e-e876-1f61-2022">
       <profiles>
@@ -15145,13 +15216,6 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent, Twin-linked</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -15159,6 +15223,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <infoLink name="Ignores Cover" hidden="false" type="rule" id="c820-69b2-2863-c9b5" targetId="4640-43e7-30b-215a"/>
         <infoLink name="Torrent" hidden="false" type="rule" id="1321-d8be-d23c-1416" targetId="5edf-d619-23e0-9b56"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="5b7a-83a8-2cf1-7071" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin heavy bolter" hidden="false" id="d5d2-be01-7a54-78c3">
       <profiles>
@@ -17254,6 +17321,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="6dae-6b67-d2f3-ecc3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="3aa5-a5fd-5951-c7ab" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -18645,6 +18715,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy, Ignores Cover, Indirect Fire</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
                 <profile name="➤ Praetor launcher - foehammer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7167-c780-f355-1df5">
                   <characteristics>
@@ -19043,6 +19120,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="4901-0238-9520-15f3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="11c4-85ec-6399-de74" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -19749,13 +19829,16 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-FLY 2+</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Fly 2+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="d81f-d0f3-ec3a-62a9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="fdd4-055f-6deb-058f" targetId="4986-bf86-beb4-13ac" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -19904,6 +19987,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="c785-90b6-0644-6ad6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="93aa-3af7-e7c1-70d7" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Vulture hellstrike rack" hidden="false" id="55fe-9a71-8ac8-a8ae">
                       <constraints>
@@ -19919,7 +20005,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
                             <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-FLY 2+</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Fly 2+</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -19929,6 +20015,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="da64-84ed-f250-c0cb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="307d-7689-200f-e64f" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
@@ -20415,13 +20504,16 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                     <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
                     <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-FLY 2+</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Fly 2+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="426c-2677-9730-8036" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="b362-2c92-e4f4-15cc" targetId="4986-bf86-beb4-13ac" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -21802,6 +21894,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="5880-94fd-b559-70c0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="4961-f546-6a1c-f80d" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -22007,6 +22102,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="64db-1144-ca21-3615" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="6136-ceba-b6cb-aa96" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
@@ -22913,6 +23011,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="48c3-9335-a643-d67c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="b422-71bd-627a-bb88" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -23664,6 +23765,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                       </selectionEntryGroups>
                       <categoryLinks>
                         <categoryLink name="Ranged Weapon" hidden="false" id="7294-e778-4b9e-fd04" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                        <categoryLink name="Pistol Weapon" hidden="false" id="6abf-da35-fb99-b864" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
                       </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
@@ -24533,6 +24635,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="dcf3-8923-0209-78c1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="e76f-7e2b-b8ba-4a2f" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -24648,6 +24753,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="5a89-6744-e9e9-f09f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="04ee-f14f-4ce5-340e" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -24929,6 +25037,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="eea9-87c3-7c52-0e4e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="066a-9c71-fd4b-6469" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -25174,6 +25285,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="85e8-b86f-a9fc-ec30" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="3af8-7473-af5b-3b59" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -25753,6 +25867,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="8300-c5e3-19ae-0e62" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="3abf-32e9-e133-0619" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -25917,6 +26032,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="5d21-327d-2793-23cf" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="2a0a-71e7-5a90-627a" targetId="4986-bf86-beb4-13ac" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -26202,6 +26320,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="9743-ba95-f2f0-1e05" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="f4ba-dd3c-4f1c-c7d8" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -26964,6 +27085,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </profile>
                     <profile name="➤ Tauros grenade launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1c83-640-4135-7e5a">
                       <characteristics>
@@ -26975,6 +27103,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -27077,7 +27212,14 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tauros Venator [Legends]" hidden="false" id="a95f-9dd6-de66-fa59">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
+        <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
@@ -27551,6 +27693,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="8398-301c-f48d-9052" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="b6c8-b076-7200-63b0" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Twin battle cannon" hidden="false" id="ad2e-577d-c893-63b5">
               <profiles>
@@ -27780,6 +27925,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="➤ Grenade launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="fd81-e5f-683f-ef6c">
           <characteristics>
@@ -27791,6 +27943,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -27816,6 +27975,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <infoLink name="Melta" hidden="false" type="rule" id="896a-6485-f61d-b013" targetId="7cdb-fb99-44a9-8849"/>
       </infoLinks>
       <comment>BS3+</comment>
+      <categoryLinks>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="d00a-15a0-b12b-533d" targetId="4986-bf86-beb4-13ac" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="280a-959f-4c4f-aa28">
       <profiles>
@@ -27865,6 +28027,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <infoLinks>
         <infoLink name="Blast" hidden="false" type="rule" id="eaff-30e9-f71b-7864" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="510e-b550-7f37-0173" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hellstrike missiles" hidden="false" id="aa01-db41-40dc-17f5">
       <profiles>
@@ -27883,6 +28048,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <infoLinks>
         <infoLink name="Anti-" hidden="false" type="rule" id="7f30-def2-e469-2f05" targetId="4111-82e3-9444-e942"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="153d-7a32-9a84-3a4f" targetId="4986-bf86-beb4-13ac" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Armoured hull" hidden="false" id="b8fe-2f71-50b8-cf0b">
       <profiles>
@@ -27938,6 +28106,10 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
         <infoLink name="Pistol" hidden="false" type="rule" id="917a-ce0d-eaea-475e" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
       <comment>BS4+</comment>
+      <categoryLinks>
+        <categoryLink name="Pistol Weapon" hidden="false" id="099e-a0cc-3e6c-65ca" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
+        <categoryLink name="Ranged Weapon" hidden="false" id="cc86-5754-09ed-155b" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma cannon" hidden="false" id="f26-434a-79ef-40a5">
       <profiles>
@@ -27972,6 +28144,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <comment>BS4+</comment>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="f042-8043-edb6-86ed" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="fad1-e3c2-56bc-73a5" targetId="e993-e086-6de1-12af" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin heavy stubber" hidden="false" id="ea02-8862-eeb3-afe6">
@@ -28238,6 +28411,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <infoLinks>
         <infoLink name="Extra Attacks" hidden="false" type="rule" id="2c83-45ac-cbca-6fad" targetId="115b-79dc-f723-d761"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Extra Attacks Weapon" hidden="false" id="d017-a422-16fe-692a" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Armoured frame" hidden="false" id="bd41-7c1b-c091-7413">
       <constraints>
@@ -28279,6 +28455,10 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <infoLinks>
         <infoLink name="Pistol" hidden="false" type="rule" id="461c-cfe-f9d4-834e" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Ranged Weapon" hidden="false" id="3106-d069-2505-5937" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Pistol Weapon" hidden="false" id="d11e-6cfe-3601-091c" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin lascannon" hidden="false" id="6498-8d53-c446-ecaf">
       <infoLinks>
@@ -28581,6 +28761,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                         <infoLink name="Assault" id="f54a-78bc-ed63-a81e" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
                         <infoLink name="Melta" id="566c-2162-b9a2-554f" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849"/>
                       </infoLinks>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="e565-64f2-c6f8-881e" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -28727,6 +28910,13 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                           </characteristics>
+                          <modifiers>
+                            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
                         </profile>
                       </profiles>
                       <entryLinks>
@@ -28998,6 +29188,9 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="57d5-a230-bb80-a5a9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="ff53-348f-a1cb-f46e" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <modifiers>
@@ -29211,6 +29404,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <comment>BS3+</comment>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="dadf-d790-948a-f40a" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Pistol Weapon" hidden="false" id="b453-f32e-19df-55b7" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="2da9-abbd-3c4d-361a">
@@ -29244,6 +29438,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <comment>BS3+</comment>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="bddd-b94e-ee4d-d218" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Pistol Weapon" hidden="false" id="104e-0e12-64a5-b2fa" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="3117-5234-7ed4-8d7f">
@@ -29266,6 +29461,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <comment>BS3+</comment>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="4441-5917-4d20-7ad6" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Pistol Weapon" hidden="false" id="3f07-da30-b629-54ae" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="3d79-ea50-dfa0-af68">
@@ -29987,6 +30183,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           <infoLinks>
             <infoLink name="Extra Attacks" hidden="false" type="rule" id="ad23-2d63-4184-970a" targetId="115b-79dc-f723-d761"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Extra Attacks Weapon" hidden="false" id="5e4a-6d4b-fa07-132e" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -31602,13 +31801,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Pistol, Torrent</characteristic>
                                   </characteristics>
-                                  <modifiers>
-                                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                                      <conditions>
-                                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                                      </conditions>
-                                    </modifier>
-                                  </modifiers>
                                 </profile>
                               </profiles>
                               <infoLinks>
@@ -31619,6 +31811,10 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                               <entryLinks>
                                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="01f2-9b87-4d9e-1a3a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                               </entryLinks>
+                              <categoryLinks>
+                                <categoryLink name="Attacks Dx Weapon" hidden="false" id="2a88-10fa-13dd-dc39" targetId="e993-e086-6de1-12af" primary="false"/>
+                                <categoryLink name="Pistol Weapon" hidden="false" id="c961-e32d-d4ed-98c9" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
+                              </categoryLinks>
                             </selectionEntry>
                           </selectionEntries>
                         </selectionEntryGroup>
@@ -31780,6 +31976,10 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       <infoLinks>
         <infoLink name="Pistol" id="1544-c5e2-53db-61eb" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Ranged Weapon" hidden="false" id="ba2a-296b-bd70-8060" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Pistol Weapon" hidden="false" id="c85a-c33b-b85e-cee8" targetId="1db0-c6b5-19db-8d0c" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Trench club" hidden="false" id="d9c5-2d58-e38a-7a81">
       <profiles>
@@ -31813,6 +32013,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       <infoLinks>
         <infoLink name="Blast" id="3c55-c115-e1f8-9e78" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="5679-07c9-1f15-3427" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Laspistol" hidden="false" id="bf92-b949-693e-e9e0">
       <infoLinks>
@@ -32200,6 +32403,11 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the Fire Coordinator model is on the battlefield, each time a Heavy Weapons Gunner model is destroyed, roll one D6: one a 3+, do not remove it from play. The destroyed model can shoot after the attacking model&apos;s unit has finished making its attacks, and is then removed from play.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Embarking" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fbec-4a9f-afcc-dc83">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While embarked within a **^^Transport^^**, each Heavy Weapons Gunner model takes up the space of 2 models, and each weapon equipped by these models is considered to be 2 models&apos; weapons for the purposes of the Firing Deck ability.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="3 Heavy Weapons Gunners" id="55a3-9a75-c917-e922" hidden="false" defaultSelectionEntryId="0707-563e-2d7d-09b2" sortIndex="3">
@@ -32248,6 +32456,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                     <infoLink name="Ignores Cover" id="36f9-9c11-138e-2b44" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
                     <infoLink name="Torrent" id="af07-0791-4000-54ea" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="19a1-ec04-9252-fdd9" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
@@ -32379,9 +32590,6 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <infoLinks>
-        <infoLink name="Embarking" id="14ea-c60d-8c5c-6386" hidden="false" type="profile" targetId="5b59-38a0-a158-05b9"/>
-      </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="a7cd-ba00-aabf-9cf1" type="selectionEntryGroup" targetId="56e1-e9a8-6946-0518" sortIndex="1"/>
       </entryLinks>
@@ -32536,7 +32744,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Wargear Options" id="3027-ffa0-0a3f-d127" hidden="false" defaultSelectionEntryId="d655-af98-433c-91f9">
+            <selectionEntryGroup name="Heavy mortar" id="3027-ffa0-0a3f-d127" hidden="false" defaultSelectionEntryId="d655-af98-433c-91f9">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Heavy mortar" hidden="false" id="d655-af98-433c-91f9">
                   <profiles>
@@ -32583,6 +32791,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="74dd-83d8-74f9-2873" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="3519-8498-6fc7-62aa" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Multiple rocket launcher" hidden="false" id="da88-5b9a-29cc-3e6e">
                   <profiles>
@@ -32631,6 +32842,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="bfc4-3327-553a-4cae" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="3c9a-78b0-98da-f41a" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -32789,6 +33003,9 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       <infoLinks>
         <infoLink name="Lance" id="3d53-66ff-7f22-9fbb" hidden="false" type="rule" targetId="2ebc-abdf-8129-6c57"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="c4dc-190e-7815-5bca" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Death Rider lascarbine" hidden="false" id="3132-310d-5719-4570" collective="true">
       <profiles>
@@ -33397,6 +33614,13 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="➤ Missile launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f58f-c06d-294c-8baf">
           <characteristics>
@@ -33408,6 +33632,13 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -33471,6 +33702,7 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="53f2-d043-f904-9782" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="2fb0-1420-7daa-0151" targetId="e993-e086-6de1-12af" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Oppressor cannon" hidden="false" id="e0f9-9535-3a40-f234">
@@ -34463,6 +34695,19 @@ Onslaught - 4</characteristic>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
                 <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Legacy Sidearm" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" scope="model" affects="self.entries.recursive.e993-e086-6de1-12af.profiles.Ranged Weapons" arg="+0" join=""/>
+                    <modifier type="replace" field="3bb-c35f-f54-fb08" scope="model" affects="self.entries.recursive.6337-b83b-0d1e-5770.profiles.Ranged Weapons" arg="+0"/>
+                    <modifier type="increment" value="2" field="3bb-c35f-f54-fb08" scope="model" affects="self.entries.recursive.1db0-c6b5-19db-8d0c.profiles.Ranged Weapons" position="-1"/>
+                    <modifier type="decrement" value="1" field="3bb-c35f-f54-fb08" join=", " scope="model" affects="self.entries.recursive.84c4-6d1e-e724-bd6e.profiles.Ranged Weapons" position="-1"/>
+                    <modifier type="replace" field="3bb-c35f-f54-fb08" scope="model" affects="self.entries.recursive.profiles.Ranged Weapons" arg="+0"/>
+                    <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="model" arg="+0" affects="self.entries.e993-e086-6de1-12af"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -35267,7 +35512,6 @@ Onslaught - 4</characteristic>
         <entryLink import="true" name="Experience Points" hidden="false" id="0631-5cf6-40a6-5603" type="selectionEntry" targetId="2dbf-4d49-5d74-85c9" sortIndex="1"/>
         <entryLink import="true" name="Legendary Veterans" hidden="false" id="0a0b-7a59-2199-5511" type="selectionEntry" targetId="1511-18fe-f51e-7b9d" sortIndex="2"/>
         <entryLink import="true" name="Battle Scars" hidden="false" id="d74f-9a93-4579-7930" type="selectionEntryGroup" targetId="1576-e816-033f-828d" sortIndex="5" collapsible="true"/>
-        <entryLink import="true" name="Personal Commendations" hidden="false" id="3c46-3c55-7eb7-aedc" type="selectionEntryGroup" targetId="4e94-8963-9a76-7514" sortIndex="6" collapsible="true"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -35321,6 +35565,7 @@ Onslaught - 4</characteristic>
             </entryLink>
             <entryLink import="true" name="Tyrannic War Battle Honours" hidden="false" id="dd5f-cb11-c8e4-6d2a" type="selectionEntryGroup" targetId="1927-d905-041e-b914"/>
             <entryLink import="true" name="Pariah Nexus Blackstone Upgrades" hidden="false" id="23cc-f892-9846-c0ac" type="selectionEntryGroup" targetId="66c2-2a46-e7ed-a935"/>
+            <entryLink import="true" name="Personal Commendations" hidden="false" id="3c46-3c55-7eb7-aedc" type="selectionEntryGroup" targetId="4e94-8963-9a76-7514" collapsible="true"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -36099,16 +36344,8 @@ Onslaught - 4</characteristic>
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier type="append" value="Trench Fighters" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Ranged Weapons">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="d6c4-ffd7-35b6-0da6" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="Lethal Hits" field="7f1b-8591-2fcf-d01c" scope="model-or-unit" affects="self.entries.recursive.profiles.Ranged Weapons" join=", ">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="d6c4-ffd7-35b6-0da6" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="append" value="Trench Fighters" field="annotation" join=", " scope="root-entry" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                <modifier type="append" value="Lethal Hits" field="893f-9000-ccf7-648e" scope="root-entry" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -36385,7 +36622,7 @@ Onslaught - 4</characteristic>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fae1-ac00-6e4f-7ee5" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Sacrificus Tempestus" hidden="false" id="5a5e-9756-0265-a06e" sortIndex="16">
+        <selectionEntry type="upgrade" import="true" name="Sacrificus Tempestus" hidden="false" id="5a5e-9756-0265-a06e">
           <profiles>
             <profile name="Sacrificus Tempestus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d2bc-747c-327c-b6f9">
               <characteristics>
@@ -36399,22 +36636,28 @@ Onslaught - 4</characteristic>
                 <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9b26-c4c5-8af0-8ea4" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb13-ca7e-00bf-a146" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="1"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Steel Armorial" hidden="false" id="09ef-a9e4-baf1-37c3" sortIndex="18">
+        <selectionEntry type="upgrade" import="true" name="Steel Armorial" hidden="false" id="09ef-a9e4-baf1-37c3">
           <profiles>
             <profile name="Steel Armorial" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f988-24c1-3b94-b7e0">
               <characteristics>
@@ -36440,22 +36683,28 @@ Onslaught - 4</characteristic>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e134-9358-cadd-43cf" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="1"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Bastion Honour" hidden="false" id="e72c-2c1b-60c2-c3e2" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="Bastion Honour" hidden="false" id="e72c-2c1b-60c2-c3e2">
           <profiles>
             <profile name="Bastion Honour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="66f4-5ece-e381-69c0">
               <characteristics>
@@ -36469,6 +36718,11 @@ Onslaught - 4</characteristic>
                 <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c8a1-fef-5569-61c9" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <infoLinks>
             <infoLink name="Fights First" id="8907-5354-0480-ada7" hidden="false" type="rule" targetId="24-c886-e8ba-5a89"/>
@@ -36478,16 +36732,17 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="1"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Honourifica Imperialis" hidden="false" id="8eb5-5886-5dc1-bbfb" sortIndex="8">
+        <selectionEntry type="upgrade" import="true" name="Honourifica Imperialis" hidden="false" id="8eb5-5886-5dc1-bbfb">
           <profiles>
             <profile name="Honourifica Imperialis" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9fd1-7022-3053-08e4">
               <characteristics>
@@ -36500,16 +36755,24 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="2"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Celeris Heart" hidden="false" id="0471-9f3f-6aac-7f67" sortIndex="4">
+        <selectionEntry type="upgrade" import="true" name="Celeris Heart" hidden="false" id="0471-9f3f-6aac-7f67">
           <profiles>
             <profile name="Celeris Heart" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="03c2-df1d-a65e-73f5">
               <characteristics>
@@ -36523,22 +36786,28 @@ Onslaught - 4</characteristic>
                 <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c8a1-fef-5569-61c9" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2abb-7038-3b8a-175a" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="2"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Order of the Adamantine Chain" hidden="false" id="cad2-c231-5844-cc3f" sortIndex="15">
+        <selectionEntry type="upgrade" import="true" name="Order of the Adamantine Chain" hidden="false" id="cad2-c231-5844-cc3f">
           <profiles>
             <profile name="Order of the Adamantine Chain" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4762-d01c-f835-5755">
               <characteristics>
@@ -36551,16 +36820,24 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="2"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Merit of the Strategium" hidden="false" id="3d51-a315-6444-0432" sortIndex="13">
+        <selectionEntry type="upgrade" import="true" name="Merit of the Strategium" hidden="false" id="3d51-a315-6444-0432">
           <profiles>
             <profile name="Merit of the Strategium" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7498-5d8d-c660-f1b4">
               <characteristics>
@@ -36573,16 +36850,24 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="2"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Diamantine Star" hidden="false" id="a60d-6647-0966-044d" sortIndex="7">
+        <selectionEntry type="upgrade" import="true" name="Diamantine Star" hidden="false" id="a60d-6647-0966-044d">
           <profiles>
             <profile name="Diamantine Star" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8d3e-5d07-dc8c-913e">
               <characteristics>
@@ -36596,22 +36881,28 @@ Onslaught - 4</characteristic>
                 <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c8a1-fef-5569-61c9" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f459-4cbf-2f7d-979a" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="1"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Star of Fidelity" hidden="false" id="31e9-6d52-c5eb-3d43" sortIndex="17">
+        <selectionEntry type="upgrade" import="true" name="Star of Fidelity" hidden="false" id="31e9-6d52-c5eb-3d43">
           <profiles>
             <profile name="Star of Fidelity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e347-afe9-b39f-2764">
               <characteristics>
@@ -36624,16 +36915,24 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="2"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Decree of Dispensation" hidden="false" id="aac4-6b18-7c86-3d45" sortIndex="5">
+        <selectionEntry type="upgrade" import="true" name="Decree of Dispensation" hidden="false" id="aac4-6b18-7c86-3d45">
           <profiles>
             <profile name="Decree of Dispensation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="743e-e942-998a-f5ab">
               <characteristics>
@@ -36643,8 +36942,18 @@ Onslaught - 4</characteristic>
           </profiles>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="e4d8-c6a1-7c23-ae25" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -36653,16 +36962,17 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="3"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Auxila Golden Star" hidden="false" id="04f9-dcd7-2130-64bc" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Auxila Golden Star" hidden="false" id="04f9-dcd7-2130-64bc">
           <profiles>
             <profile name="Auxila Golden Star" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6f84-cd28-3d6d-b9bc">
               <characteristics>
@@ -36681,22 +36991,28 @@ Onslaught - 4</characteristic>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75fb-e634-4ad0-d33d" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="3"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Departmento Salvage Award" hidden="false" id="5cc4-f574-7fa1-8f9f" sortIndex="6">
+        <selectionEntry type="upgrade" import="true" name="Departmento Salvage Award" hidden="false" id="5cc4-f574-7fa1-8f9f">
           <profiles>
             <profile name="Departmento Salvage Award" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="df1a-01cf-69c2-a34b">
               <characteristics>
@@ -36715,22 +37031,28 @@ Onslaught - 4</characteristic>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bce-5375-6604-dc2f" includeChildSelections="false"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="3"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Laurels of Purity" hidden="false" id="019c-8e7d-5412-0716" sortIndex="9">
+        <selectionEntry type="upgrade" import="true" name="Laurels of Purity" hidden="false" id="019c-8e7d-5412-0716">
           <profiles>
             <profile name="Laurels of Purity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ebf4-1fd9-00b7-7369">
               <characteristics>
@@ -36745,9 +37067,16 @@ Onslaught - 4</characteristic>
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
                     <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="2be4-e270-fa7f-6d44" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="e4d8-c6a1-7c23-ae25" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="2be4-e270-fa7f-6d44" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <infoLinks>
@@ -36758,16 +37087,17 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="3"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Auramite Aquila" hidden="false" id="d0de-45ce-e737-b6be" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Auramite Aquila" hidden="false" id="d0de-45ce-e737-b6be">
           <profiles>
             <profile name="Auramite Aquila" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ca2f-4c94-d80e-2693">
               <characteristics>
@@ -36786,13 +37116,19 @@ Onslaught - 4</characteristic>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="5"/>
             <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
@@ -36801,7 +37137,7 @@ Onslaught - 4</characteristic>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94e1-e823-6dac-2ad3" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Lord Commander&apos;s Sigilum" hidden="false" id="29eb-06fd-59b7-3814" sortIndex="10">
+        <selectionEntry type="upgrade" import="true" name="Lord Commander&apos;s Sigilum" hidden="false" id="29eb-06fd-59b7-3814">
           <profiles>
             <profile name="Lord Commander&apos;s Sigilum" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f5bd-b8c5-a2cb-fd90">
               <characteristics>
@@ -36814,16 +37150,24 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="3"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Medal of Laudable Service" hidden="false" id="c252-fd00-a30b-892d" sortIndex="11">
+        <selectionEntry type="upgrade" import="true" name="Medal of Laudable Service" hidden="false" id="c252-fd00-a30b-892d">
           <profiles>
             <profile name="Medal of Laudable Service" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d569-18f8-d148-3244">
               <characteristics>
@@ -36836,16 +37180,24 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="3"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Oculus Laureate" hidden="false" id="f0c6-6a23-c9da-f5e0" sortIndex="14">
+        <selectionEntry type="upgrade" import="true" name="Oculus Laureate" hidden="false" id="f0c6-6a23-c9da-f5e0">
           <profiles>
             <profile name="Oculus Laureate" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9200-089d-a5eb-a046">
               <characteristics>
@@ -36855,8 +37207,18 @@ Onslaught - 4</characteristic>
           </profiles>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4d8-c6a1-7c23-ae25" shared="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="e4d8-c6a1-7c23-ae25" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c8a1-fef-5569-61c9" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -36865,16 +37227,17 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="4"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Medallion Resolute" hidden="false" id="7242-9b69-7c87-09eb" sortIndex="12">
+        <selectionEntry type="upgrade" import="true" name="Medallion Resolute" hidden="false" id="7242-9b69-7c87-09eb">
           <profiles>
             <profile name="Medallion Resolute" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5517-52c6-1f29-8ffd">
               <characteristics>
@@ -36887,14 +37250,22 @@ Onslaught - 4</characteristic>
           </constraints>
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
             <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
             <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
             <cost name="Logistics Points" typeId="04b1-67f7-48cb-4f1f" value="0"/>
-            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
             <cost name="Commendation Points" typeId="e969-59de-fdb7-7c4e" value="3"/>
+            <cost name="Commendation Points" typeId="46a1-6b58-ecdd-8087" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <modifiers>

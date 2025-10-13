@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c8da-e875-58f7-f6d6" name="Chaos - Chaos Space Marines" revision="132" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c8da-e875-58f7-f6d6" name="Chaos - Chaos Space Marines" revision="145" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <profileTypes>
     <profileType id="3084-68b8-1d20-2f26" name="Marks of Chaos">
       <characteristicTypes>
@@ -3217,6 +3217,9 @@ While this unit is within 9&quot; of one or more friendly ^^**Heretic Astartes D
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Extra Attacks Weapon" hidden="false" id="472c-a29d-a487-e02a" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="2c71-f941-5829-efa1" name="Herald&apos;s Talon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3887,12 +3890,12 @@ While this unit is within 9&quot; of one or more friendly ^^**Heretic Astartes D
         </profile>
         <profile id="3942-42f4-fc46-6b8e" name="Surgeon Acolyte" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, when an attack is allocated to a model in this unit, if this unit contains FABIUS BILE, you can change the Damage characteristic of that attack to 0.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, when an attack is allocated to a model in this unit, if this unit contains ^^**Fabius Bile**^^, you can change the Damage characteristic of that attack to 0.</characteristic>
           </characteristics>
         </profile>
         <profile id="8f97-ea59-d469-e0bc" name="Chirurgeon" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The first time this unit’s FABIUS BILE model is destroyed, roll one D6: on a 2+, set it back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with its full wounds remaining. If that model was attached to a unit when it was destroyed, it must be set up attached to that unit.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The first time this unit’s ^^**Fabius Bile^^** model is destroyed, at the end of the phase, roll one D6: on a 2+, set it back up on the battlefield, as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with its full wounds remaining. If that model was attached to a unit when it was destroyed, it must be set up attached to that unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3987,6 +3990,9 @@ While this unit is within 9&quot; of one or more friendly ^^**Heretic Astartes D
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="4caa-9942-63ce-bf28" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry id="65bc-26a9-f871-275f" name="Rod of Torment" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4198,6 +4204,9 @@ While this unit is within 9&quot; of one or more friendly ^^**Heretic Astartes D
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Extra Attacks Weapon" hidden="false" id="10de-4e7c-b41c-2931" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4318,27 +4327,6 @@ While this unit is within 9&quot; of one or more friendly ^^**Heretic Astartes D
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-PSYKER 2+, Pistol, Precision, Psychic</characteristic>
                   </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="append" value="Book of Fate" field="annotation" join=", ">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="decrement" value="1" field="9ead-8a10-520-de15">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
                 </profile>
                 <profile name="➤ Rite of Possession - focused witchfire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5cb7-b494-5863-78ae">
                   <characteristics>
@@ -4350,27 +4338,6 @@ While this unit is within 9&quot; of one or more friendly ^^**Heretic Astartes D
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-PSYKER 2+, Hazardous, Pistol, Precision, Psychic</characteristic>
                   </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="append" value="Book of Fate" field="annotation" join=", ">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="decrement" value="1" field="9ead-8a10-520-de15">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -4412,34 +4379,6 @@ While this unit is within 9&quot; of one or more friendly ^^**Heretic Astartes D
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">D3</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-PSYKER 2+, Psychic</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="append" value="Book of Fate" field="annotation" join=", ">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="decrement" value="1" field="9ead-8a10-520-de15">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -4452,6 +4391,7 @@ While this unit is within 9&quot; of one or more friendly ^^**Heretic Astartes D
               <categoryLinks>
                 <categoryLink name="Psychic Weapon" hidden="false" id="d23a-6f1e-29ea-0af7" targetId="4546-4a0c-b3be-e84c" primary="false"/>
                 <categoryLink name="Melee Weapon" hidden="false" id="3e95-f941-d07f-3881" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="2229-8538-1619-17a6" targetId="4986-bf86-beb4-13ac" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Upgrades" id="3f08-ab96-42bb-b063" hidden="false" flatten="true">
@@ -5707,6 +5647,7 @@ Penetration and Damage characteristics of melee weapons equipped by this model b
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="d408-736c-0596-2ef2" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="a095-f5a4-9ff9-4c53" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="f146-c276-d0bb-b971" collective="false">
@@ -5890,6 +5831,7 @@ Penetration and Damage characteristics of melee weapons equipped by this model b
                   </selectionEntryGroups>
                   <categoryLinks>
                     <categoryLink name="Melee Weapon" hidden="false" id="cc39-462e-d62f-c667" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                    <categoryLink name="Extra Attacks Weapon" hidden="false" id="5394-e8c8-5688-73e0" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Magma cutter" hidden="false" id="6272-39e1-57b1-487a" collective="false">
@@ -5904,13 +5846,6 @@ Penetration and Damage characteristics of melee weapons equipped by this model b
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -5929,6 +5864,7 @@ Penetration and Damage characteristics of melee weapons equipped by this model b
                   </selectionEntryGroups>
                   <categoryLinks>
                     <categoryLink name="Ranged Weapon" hidden="false" id="0546-5dba-773f-c3e9" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="68f5-c065-d603-3f98" targetId="4986-bf86-beb4-13ac" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -6093,13 +6029,6 @@ Penetration and Damage characteristics of melee weapons equipped by this model b
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Pistol, Torrent</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -6120,6 +6049,7 @@ Penetration and Damage characteristics of melee weapons equipped by this model b
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Ranged Weapon" hidden="false" id="40f1-5bbe-1e75-79be" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="e77a-6089-4c30-0aed" targetId="e993-e086-6de1-12af" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Forge weapon" hidden="false" id="9e5d-6700-e6d9-5719">
@@ -6171,13 +6101,6 @@ Penetration and Damage characteristics of melee weapons equipped by this model b
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 1, Pistol</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -6197,6 +6120,7 @@ Penetration and Damage characteristics of melee weapons equipped by this model b
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Ranged Weapon" hidden="false" id="4f31-b881-27af-7b8d" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="1c70-d2ae-85c0-9ddd" targetId="4986-bf86-beb4-13ac" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="bacb-33d5-dadc-2bf1" collective="false">
@@ -6837,6 +6761,10 @@ You can attach this model to one of the above units even if one other CHARACTER 
         <categoryLink id="4eeb-165a-ea8-4bcd" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
         <categoryLink targetId="4026-8a3e-9922-eec" id="f0e9-5f9a-f65d-9c07" primary="false" name="Damned"/>
         <categoryLink name="Faction: Heretic Astartes" hidden="false" id="afed-10ae-b10e-fd1a" targetId="1e42-dfae-cbdd-207d" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="70b8-2569-a442-2b05" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Grenades" hidden="false" id="bd46-fb1a-2756-9e52" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink name="Dark Commune" hidden="false" id="45ff-6c21-110f-2f4e" targetId="d56f-b456-5b8-8907" primary="false"/>
+        <categoryLink name="Chaos" hidden="false" id="1774-6655-3506-e4d4" targetId="4c00-2578-faf5-6918" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="cb0a-a62e-ad62-8a49" name="Mark of Chaos" hidden="false" collective="false" import="true" targetId="5581-5d38-90b8-f8cd" type="selectionEntryGroup" sortIndex="4"/>
@@ -6932,12 +6860,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink name="Infantry" hidden="false" id="faca-ed3a-ad0f-cdf4" targetId="cf47-a0d7-7207-29dc" primary="false"/>
-                <categoryLink name="Grenades" hidden="false" id="99b0-dd41-8b38-3eb3" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
-                <categoryLink name="Chaos" hidden="false" id="991f-1d9-1c96-96a" targetId="4c00-2578-faf5-6918" primary="false"/>
-                <categoryLink name="Dark Commune" hidden="false" id="f3d1-596e-b592-9037" targetId="d56f-b456-5b8-8907" primary="false"/>
-              </categoryLinks>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Commune blade" hidden="false" id="2feb-4328-b1c4-af3d" collective="true">
                   <constraints>
@@ -6983,12 +6905,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   </characteristics>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink name="Infantry" hidden="false" id="af5e-519-aeb7-78d7" targetId="cf47-a0d7-7207-29dc" primary="false"/>
-                <categoryLink name="Grenades" hidden="false" id="8f9c-983f-5782-6946" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
-                <categoryLink name="Chaos" hidden="false" id="8c90-b0ce-c732-571f" targetId="4c00-2578-faf5-6918" primary="false"/>
-                <categoryLink name="Dark Commune" hidden="false" id="3be-4554-8ec4-d552" targetId="d56f-b456-5b8-8907" primary="false"/>
-              </categoryLinks>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="5c28-6755-4396-1124" collective="false">
                   <constraints>
@@ -7067,11 +6983,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 </profile>
               </profiles>
               <categoryLinks>
-                <categoryLink name="Infantry" hidden="false" id="82f9-e48b-94a7-7476" targetId="cf47-a0d7-7207-29dc" primary="false"/>
                 <categoryLink name="Psyker" hidden="false" id="85b0-a9e8-1703-5aac" targetId="13bf-2bee-3ae0-b414" primary="false"/>
-                <categoryLink name="Grenades" hidden="false" id="4542-7710-dcb8-77e7" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
-                <categoryLink name="Chaos" hidden="false" id="f7eb-9498-4737-d7bc" targetId="4c00-2578-faf5-6918" primary="false"/>
-                <categoryLink name="Dark Commune" hidden="false" id="ff0b-ead1-22d7-4546" targetId="d56f-b456-5b8-8907" primary="false"/>
               </categoryLinks>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="9a1d-4814-24fc-7fc7" collective="false">
@@ -7164,11 +7076,8 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 </profile>
               </profiles>
               <categoryLinks>
-                <categoryLink name="Infantry" hidden="false" id="4647-5448-8324-aa19" targetId="cf47-a0d7-7207-29dc" primary="false"/>
                 <categoryLink name="Character" hidden="false" id="a2c3-9da8-7ec5-b7bd" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
-                <categoryLink name="Grenades" hidden="false" id="a2a9-234e-2090-79fb" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
-                <categoryLink name="Chaos" hidden="false" id="d252-5e94-d773-e9e8" targetId="4c00-2578-faf5-6918" primary="false"/>
-                <categoryLink name="Dark Commune" hidden="false" id="69ed-dfeb-75e5-d8e8" targetId="d56f-b456-5b8-8907" primary="false"/>
+                <categoryLink name="Cult Demagogue" hidden="false" id="f9a1-d21e-a423-8898" targetId="c675-ba2b-cd63-a9a4" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -7233,11 +7142,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
                           </characteristics>
                           <modifiers>
-                            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
                             <modifier type="append" value="Sustained Hits 1" field="893f-9000-ccf7-648e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join=", ">
                               <conditions>
                                 <condition type="atLeast" value="1" field="selections" scope="unit" childId="26be-2062-a96a-32fa" shared="true" includeChildSelections="true"/>
@@ -7267,6 +7171,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       </selectionEntryGroups>
                       <categoryLinks>
                         <categoryLink name="Melee Weapon" hidden="false" id="0ee8-1335-ca54-2090" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="e980-eb2b-2132-ff72" targetId="4986-bf86-beb4-13ac" primary="false"/>
                       </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
@@ -7732,6 +7637,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="c2e5-1007-0457-4df8" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry id="e9cb-69af-41c7-3e59" name="Havoc autocannon" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
@@ -7826,6 +7734,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="0c00-b04b-8784-b1a7" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry id="a015-477e-cd3b-6280" name="Missile launcher" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
@@ -7862,6 +7773,10 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="a5b0-b687-9a74-fbaa" targetId="e993-e086-6de1-12af" primary="false"/>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="94de-fde5-97f9-de15" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry id="b455-5fb4-7ce4-72dc" name="Plasma gun" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
@@ -8796,6 +8711,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="025f-6392-37f9-4d50" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry id="b246-7205-e04e-4386" name="Reaper autocannon" hidden="false" collective="false" import="true" type="upgrade">
                       <profiles>
@@ -10645,6 +10563,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="63ba-aa28-4fa0-5383" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <selectionEntryGroups>
@@ -10713,6 +10634,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="9236-e275-613e-849d" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <selectionEntryGroups>
@@ -11157,6 +11081,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="44a8-2989-04af-5726" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -11186,6 +11113,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="8d85-d576-9b3f-2004" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -11591,6 +11521,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="b1bf-884b-aea9-786e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="4cfc-2414-94d7-17a9" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="e139-b828-1a77-d4e6" collective="false">
                       <infoLinks>
@@ -11602,6 +11535,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="042a-7b47-43f6-964d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="2978-acce-40f1-8146" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="dc0b-cdb9-4123-782" collective="false">
                       <infoLinks>
@@ -11816,6 +11752,10 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                   </costs>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="30f9-a53e-9ec0-bf5e" targetId="e993-e086-6de1-12af" primary="false"/>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="faac-73b8-a1b3-cf5a" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -12045,7 +11985,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
       <profiles>
         <profile id="1d0e-bd07-97ab-6322" name="Warp Rift Firepower" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, during the Shooting phase this unit can use this ability. If it does, until the end of the phase, ranged weapons equipped by models in this unit have the [INDIRECT FIRE] ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, during the Shooting phase, this unit can use this ability. If it does, until the end of the phase, ranged weapons equipped by models in this unit have the [INDIRECT FIRE] ability.</characteristic>
           </characteristics>
         </profile>
         <profile id="54b2-a2e1-aea7-7662" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -12721,6 +12661,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="db61-a715-190b-1e41" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -12819,6 +12762,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="2314-87cc-bc0c-1215" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -12898,6 +12844,13 @@ You can attach this model to one of the above units even if one other CHARACTER 
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                           </characteristics>
+                          <modifiers>
+                            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
                         </profile>
                         <profile id="d64a-2151-c768-8e64" name="➤ Cultist grenade launcher - krak" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
                           <characteristics>
@@ -12909,6 +12862,13 @@ You can attach this model to one of the above units even if one other CHARACTER 
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                           </characteristics>
+                          <modifiers>
+                            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
                         </profile>
                       </profiles>
                       <infoLinks>
@@ -13352,6 +13312,8 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   </costs>
                   <categoryLinks>
                     <categoryLink name="Psychic Weapon" hidden="false" id="4afa-abef-c0a6-67ea" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="01b5-6da4-695b-1eff" targetId="e993-e086-6de1-12af" primary="false"/>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="291a-e691-4048-396a" targetId="4986-bf86-beb4-13ac" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
                 <selectionEntry id="7947-709d-87d2-28ac" name="Autopistol" hidden="false" collective="true" import="true" type="upgrade">
@@ -13950,13 +13912,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -13965,6 +13920,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="15d1-bf88-031b-adc7" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="b79-64e7-e1c5-491" name="Twin heavy bolter" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -14008,7 +13966,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
         </profile>
         <profile id="4c0f-1b93-e310-b2a8" name="Annihilator" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ranged attack made by this model is allocated to a MONSTER or VEHICLE model, you can re-roll the Damage roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a ranged attack made by this model is allocated to a **^^Monster^^** or **^^Vehicle^^** model, you can re-roll the Damage roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -14562,13 +14520,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -14580,6 +14531,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="2f2e-b823-d6a9-0f24" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="a7c8-bcc7-bef5-2aac" targetId="4986-bf86-beb4-13ac" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -14868,13 +14822,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent, Twin-linked</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -14888,6 +14835,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="b27e-0adb-30b8-ac0f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="4a24-4699-c929-1c92" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Defiler scourge" hidden="false" id="274d-be88-b1f-8577" collective="false">
                   <profiles>
@@ -14912,6 +14862,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="f590-923e-0a35-afb3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Extra Attacks Weapon" hidden="false" id="388d-645f-71dd-6c6a" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -15271,13 +15224,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -15286,6 +15232,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
       <infoLinks>
         <infoLink name="Blast" hidden="false" type="rule" id="a27b-e98-5a89-d23e" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="7304-4082-23d8-0923" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="1e75-3d88-8676-7c5b" name="Hades autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -15468,13 +15417,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                     <profile name="➤ Missile launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d137-8f12-7931-ae52">
                       <characteristics>
@@ -15486,13 +15428,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -15504,6 +15439,10 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="d357-2290-d389-0da6" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="76eb-bde5-7f24-9d31" targetId="e993-e086-6de1-12af" primary="false"/>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="5733-5d27-dd88-aaa5" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Helbrute hammer" hidden="false" id="809e-1365-93d9-1ae1" collective="false">
                   <profiles>
@@ -15587,13 +15526,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -15605,6 +15537,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="4f22-a6db-d3b0-7c99" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="3c1c-8b4f-3473-a4b4" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Twin autocannon" hidden="false" id="8150-a83e-7663-e0a1" collective="false">
                   <costs>
@@ -15684,13 +15619,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -15700,6 +15628,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="6f89-d044-76ef-1e18" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="c3a1-3c54-cf99-fad3" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -15814,6 +15745,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="b33a-0124-22b7-bfbb" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="79e5-a673-cca5-91a4" name="Heldrake" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -16118,18 +16052,14 @@ You can attach this model to one of the above units even if one other CHARACTER 
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
                           </characteristics>
-                          <modifiers>
-                            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
                         </profile>
                       </profiles>
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="f179-9356-8c55-6057" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="91bb-ad33-58ab-d2d6" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
@@ -16538,13 +16468,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <costs>
@@ -16553,6 +16476,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="675e-0855-ba9d-ab11" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="9052-5bcc-dda1-f6cf" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -16598,13 +16524,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+2</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -16616,6 +16535,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="7312-a79f-cd8e-ab75" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="e62b-c21b-a044-85e4" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Ichor cannon" hidden="false" id="2f9-55fe-ac10-f50c" collective="false">
                   <profiles>
@@ -16629,13 +16551,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -16647,6 +16562,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="4ea4-331f-7347-863f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="f2cf-5a00-de78-03e4" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -17297,13 +17215,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <characteristic name="D" typeId="3254-9fe6-d824-513e">D3</characteristic>
                         <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -17317,6 +17228,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   </entryLinks>
                   <categoryLinks>
                     <categoryLink name="Psychic Weapon" hidden="false" id="06b0-ded1-f58f-6561" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="93a2-4517-42a5-9b64" targetId="4986-bf86-beb4-13ac" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Malefic Curse" hidden="false" id="ed87-1ee0-ab1e-83d6" collective="false">
@@ -17569,6 +17481,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                   </costs>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="77db-2c49-66a4-dfee" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry id="c675-a81b-7c80-e046" name="Close combat weapon" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -18165,6 +18080,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ecf-a41c-330a-6c04-min" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ecf-a41c-330a-6c04-max" includeChildSelections="false"/>
                       </constraints>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="6d84-9c59-0c37-990a" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
@@ -19297,6 +19215,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="7a80-8ffe-089f-ab1c" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="d036-c87a-0ff1-58b7" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -19713,6 +19632,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="a289-bde4-f07f-98d0" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="bb52-7d0f-105e-690b" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -20793,6 +20713,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="728c-f68d-ca50-5992" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="8a0d-cc50-aaa4-86b8" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="fff9-6123-3e2b-bc63">
@@ -21395,6 +21316,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="d591-f106-04d1-0a59" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="7252-2e66-06a5-c3d2" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -21939,6 +21861,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="a42d-aa81-d507-e609" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="8022-a5d0-0e1a-dfe1" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -22376,13 +22299,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -22392,6 +22308,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="a247-d5b2-26ae-92ee" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="9ad6-8190-9996-0ca9" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -23156,13 +23075,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                     <profile name="➤ Missile launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b50a-1090-ffc-ebb5">
                       <characteristics>
@@ -23174,18 +23086,15 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="7f71-557d-ef7a-0e39" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="eccb-0ef4-aa6d-0257" targetId="e993-e086-6de1-12af" primary="false"/>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="a0bc-964f-2eeb-0ba9" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Mortar" hidden="false" id="6dd8-ebb0-49c1-a142">
                   <profiles>
@@ -23914,34 +23823,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">D3</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="append" value="Book of Fate" field="annotation" join=", ">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="decrement" value="1" field="9ead-8a10-520-de15">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
                 </profile>
               </profiles>
               <infoLinks>
@@ -23950,6 +23831,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
               <categoryLinks>
                 <categoryLink name="Psychic Weapon" hidden="false" id="3451-326a-12db-bdec" targetId="4546-4a0c-b3be-e84c" primary="false"/>
                 <categoryLink name="Melee Weapon" hidden="false" id="65a4-d72d-b212-2f33" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="146f-3dcc-0444-20cf" targetId="4986-bf86-beb4-13ac" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Upgrades" id="2570-0722-caa3-77cb" hidden="false" flatten="true">
@@ -24015,27 +23897,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Devastating Wounds, Hazardous, Psychic</characteristic>
                   </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="append" value="Book of Fate" field="annotation" join=", ">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="decrement" value="1" field="9ead-8a10-520-de15">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
                 </profile>
                 <profile name="➤ Psychic Strike - witchfire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1c18-1ff3-7acb-5997">
                   <characteristics>
@@ -24047,27 +23908,13 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Devastating Wounds, Psychic</characteristic>
                   </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="append" value="Book of Fate" field="annotation" join=", ">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="decrement" value="1" field="9ead-8a10-520-de15">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3">
-                          <conditions>
-                            <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
+                  <modifiers>
+                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <categoryLinks>
@@ -25588,6 +25435,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="0dbd-2793-09b9-e7ea" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="1f18-8ba1-090c-c871" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Conversion beam cannon" hidden="false" id="b4ee-99d5-ec63-8b9c">
                   <profiles>
@@ -25627,13 +25477,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 4</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -25642,6 +25485,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="003d-63cf-fc7a-648a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="e423-6de1-35fd-b0af" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Infernus cannon" hidden="false" id="49e8-44a8-9f5c-8aa9">
                   <profiles>
@@ -25664,6 +25510,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="e5ec-dd76-0dfd-72a9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="99a2-ff4e-5cbb-3d81" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -26629,6 +26478,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8618-3774-aa0d-2ac7-min"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8618-3774-aa0d-2ac7-max"/>
                   </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="b48f-fc82-c091-6ce3" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="705f-661e-4d30-ec8e" collective="true">
                   <infoLinks>
@@ -26677,6 +26529,13 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </profile>
                     <profile name="➤ Cultist grenade launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ddf2-abb3-fd69-993b">
                       <characteristics>
@@ -26688,6 +26547,13 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -27069,6 +26935,10 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="ef64-1fa6-168e-b7f1" targetId="e993-e086-6de1-12af" primary="false"/>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="9990-2df4-631b-a956" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -27121,6 +26991,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="dc4c-9153-65ed-e0f3" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="5a9b-115c-580c-2c14" collective="false">
                       <profiles>
@@ -27142,6 +27015,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
                       <costs>
                         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                       </costs>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="e357-20c7-33e7-d7f9" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="f7dc-a17d-aece-165a" collective="false">
                       <infoLinks>
@@ -27783,39 +27659,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier type="append" value="Book of Fate" field="annotation" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="1" field="9ead-8a10-520-de15">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
         </profile>
         <profile name="➤ Infernal Gaze - focused witchfire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="508e-f298-2cf3-c1fc">
           <characteristics>
@@ -27827,39 +27670,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Hazardous, Psychic</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier type="append" value="Book of Fate" field="annotation" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="1" field="9ead-8a10-520-de15">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -27873,6 +27683,8 @@ You can attach this model to one of the above units even if one other CHARACTER 
       <categoryLinks>
         <categoryLink name="Psychic Weapon" hidden="false" id="5c30-058d-01ad-19c7" targetId="4546-4a0c-b3be-e84c" primary="false"/>
         <categoryLink name="Ranged Weapon" hidden="false" id="7167-de6e-eefe-5ee3" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="a8a2-bd63-de25-6a3a" targetId="e993-e086-6de1-12af" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="1699-4eaa-7900-2c17" targetId="4986-bf86-beb4-13ac" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Force weapon" hidden="false" id="f9e1-0d72-a04a-dc6f" collective="false">
@@ -27887,34 +27699,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <characteristic name="D" typeId="3254-9fe6-d824-513e">D3</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Psychic</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <modifierGroups>
-            <modifierGroup type="and">
-              <modifiers>
-                <modifier type="append" value="Book of Fate" field="annotation" join=", ">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="1" field="9ead-8a10-520-de15">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="0072-051e-d943-6cce" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
         </profile>
       </profiles>
       <infoLinks>
@@ -27927,6 +27711,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
       <categoryLinks>
         <categoryLink name="Psychic Weapon" hidden="false" id="1b6a-b5ca-b3c3-451b" targetId="4546-4a0c-b3be-e84c" primary="false"/>
         <categoryLink name="Melee Weapon" hidden="false" id="8169-a263-60b4-cd8c" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="e6cd-f45b-8aa7-6788" targetId="4986-bf86-beb4-13ac" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Unholy Patronage upgrade" hidden="false" id="070c-664e-3e05-b8e9">
@@ -27959,26 +27744,15 @@ You can attach this model to one of the above units even if one other CHARACTER 
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
-            <modifier type="append" value="Unholy Patronage" field="annotation" join=", " affects="self.entries.recursive.profiles.Unit" scope="model">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="model" childId="070c-664e-3e05-b8e9" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="750a-a2ec-90d3-21fe" join=", " affects="self.entries.recursive.profiles.Unit" scope="model">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="070c-664e-3e05-b8e9" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="2337-daa1-6682-b110" join=", " affects="self.entries.recursive.profiles.Melee Weapons" scope="model">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model" childId="070c-664e-3e05-b8e9" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="Unholy Patronage" field="annotation" join=", " affects="self.entries.recursive.profiles.Melee Weapons" scope="model">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="model" childId="070c-664e-3e05-b8e9" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
+            <modifier type="append" value="Unholy Patronage" field="annotation" join=", " affects="self.entries.recursive.profiles.Unit" scope="model"/>
+            <modifier type="increment" value="1" field="750a-a2ec-90d3-21fe" join=", " affects="self.entries.recursive.profiles.Unit" scope="model"/>
+            <modifier type="append" value="Unholy Patronage" field="annotation" join=", " affects="self.entries.recursive.profiles.Melee Weapons" scope="model"/>
+            <modifier type="append" value="+0" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" join=""/>
+            <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
+            <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+            <modifier type="decrement" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.84c4-6d1e-e724-bd6e.profiles.Melee Weapons" position="-1"/>
+            <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" arg="+0"/>
+            <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="model" arg="+0" affects="self.entries.recursive.e993-e086-6de1-12af"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -28029,6 +27803,20 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
           </costs>
           <comment>Zealots</comment>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Talisman of Burning Blood" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                <modifier type="append" value="+0" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" join=""/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                <modifier type="decrement" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.84c4-6d1e-e724-bd6e.profiles.Melee Weapons" position="-1"/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="model" arg="+0" affects="self.entries.recursive.e993-e086-6de1-12af"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry id="6ba0-8b1e-9e0d-20fd" name="Eye of Tzeentch" hidden="false" collective="false" import="true" type="upgrade" sortIndex="25">
           <modifiers>
@@ -28134,7 +27922,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f429-4484-d800-2114" type="max"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="568e-6c76-8287-2745" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <profiles>
             <profile id="11f2-63db-2fdc-f92" name="Intoxicating Elixir" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -28147,6 +27934,13 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
           </costs>
           <comment>Zealots</comment>
+          <infoLinks>
+            <infoLink name="Feel No Pain" id="9069-1fcb-7462-bcd4" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+              <modifiers>
+                <modifier type="append" value="5+" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Warmaster&apos;s Gift" hidden="false" id="9a33-6b21-25e3-b5ac" sortIndex="40">
           <modifiers>
@@ -28344,6 +28138,8 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="append" value="Precision" field="893f-9000-ccf7-648e" scope="parent" affects="self.entries.profiles.Melee Weapons" join=", "/>
+            <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" affects="self.entries.profiles.Melee Weapons" scope="parent"/>
           </modifiers>
           <profiles>
             <profile name="Cursed Fang" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d14f-417-f02c-7ce6">
@@ -28359,6 +28155,9 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fe87-c819-3671-c756" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <comment>Deceptors</comment>
+          <infoLinks>
+            <infoLink name="Precision" id="f5f1-ed7e-6e5d-8687" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Shroud of Obfuscation" hidden="false" id="a469-ca0-3e09-ae0a" sortIndex="15">
           <modifiers>
@@ -28517,6 +28316,13 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9a94-17a-f411-3b77" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <comment>Raiders</comment>
+          <infoLinks>
+            <infoLink name="Scouts" id="f8ab-6ce3-d179-47b8" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+              <modifiers>
+                <modifier type="append" value="6&quot;" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Tyrant&apos;s Lash" hidden="false" id="8ee0-de8d-3895-b1ac" sortIndex="32">
           <modifiers>
@@ -28781,6 +28587,8 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="append" value="Anti-VEHICLE 4+, Anti-FORTIFICATION 4+" field="7f1b-8591-2fcf-d01c" affects="self.entries.profiles.Ranged Weapons" scope="parent" join=", "/>
+            <modifier type="append" value="Anti-VEHICLE 4+, Anti-FORTIFICATION 4+" field="893f-9000-ccf7-648e" affects="self.entries.profiles.Melee Weapons" scope="parent" join=", "/>
           </modifiers>
           <profiles>
             <profile name="Iron Artifice" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="552d-c1ce-b79b-54c4">
@@ -28945,6 +28753,13 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="5e33-5100-c42b-1708" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <comment>Chaos Cult</comment>
+          <infoLinks>
+            <infoLink name="Scouts" id="f027-d7e4-abab-49a9" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+              <modifiers>
+                <modifier type="append" value="6&quot;" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Warp-fuelled Thrusters" hidden="false" id="1b4d-d584-df1c-c158" sortIndex="19">
           <modifiers>
@@ -29000,6 +28815,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" value="4" field="e703-ecb6-5ce7-aec1" affects="self.entries.profiles.Unit" scope="parent"/>
           </modifiers>
           <profiles>
             <profile name="Invigorated Mechatendrils" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="69a6-310e-82c-13d2">
@@ -29215,7 +29031,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
           <profiles>
             <profile name="Prime Test Subject" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1a78-f1c2-6a28-b557">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">HERETIC ASTARTES INFANTRY model (excluding DAMNED models) only. Add 1 to the Damage characteristic of melee weapons equipped by the bearer. Each time the bearer makes a melee attack, you can re‑roll the Hit roll.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Heretic Astartes Infantry^^** model (excluding **^^Damned^^** models) only. Add 1 to the Damage characteristic of melee weapons equipped by the bearer. Each time the bearer makes a melee attack, you can re‑roll the Hit roll.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -29238,12 +29054,23 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="parent" affects="self.entries.profiles.Melee Weapons" position="-1"/>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="force" shared="true" id="f429-4484-d800-2114" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <comment>Creations</comment>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="Prime Test Subject" field="annotation" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join=", " arg="+0"/>
+                <modifier type="append" value="+0" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="model" join="" arg="+0" affects="self.entries.recursive.4986-bf86-beb4-13ac"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Touched by the Warp" hidden="false" id="db1e-9b35-bbf5-e5e0" sortIndex="4">
           <comment>Cabal of Chaos</comment>
@@ -30276,36 +30103,17 @@ You can attach this model to one of the above units even if one other CHARACTER 
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="append" value="Slaughterer&apos;s Helm" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit">
-                      <conditions>
-                        <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="7449-6d11-7b33-79b1" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" value="1" field="750a-a2ec-90d3-21fe" scope="model" affects="self.entries.recursive.profiles.Unit">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="7449-6d11-7b33-79b1" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" value="1" field="d29d-cf75-fc2d-34a4" scope="model" affects="self.entries.recursive.profiles.Unit">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="7449-6d11-7b33-79b1" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="append" value="Slaughterer&apos;s Helm" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons">
-                      <conditions>
-                        <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="7449-6d11-7b33-79b1" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" value="2" field="ab33-d393-96ce-ccba" scope="model" affects="self.entries.recursive.profiles.Melee Weapons">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="7449-6d11-7b33-79b1" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" value="2" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="7449-6d11-7b33-79b1" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
+                    <modifier type="append" value="Slaughterer&apos;s Helm" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="increment" value="1" field="750a-a2ec-90d3-21fe" scope="model" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="increment" value="1" field="d29d-cf75-fc2d-34a4" scope="model" affects="self.entries.recursive.profiles.Unit"/>
+                    <modifier type="append" value="Slaughterer&apos;s Helm" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                    <modifier type="increment" value="2" field="ab33-d393-96ce-ccba" scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                    <modifier type="append" value="+0" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" join=""/>
+                    <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
+                    <modifier type="increment" value="2" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                    <modifier type="decrement" value="2" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.84c4-6d1e-e724-bd6e.profiles.Melee Weapons" position="-1"/>
+                    <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" arg="+0"/>
+                    <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="model" arg="+0" affects="self.entries.recursive.e993-e086-6de1-12af"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
@@ -30356,6 +30164,25 @@ You can attach this model to one of the above units even if one other CHARACTER 
                 <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
                 <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Book of Fate" field="annotation" scope="model" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Melee Weapons" join=", " arg="+0"/>
+                    <modifier type="append" value="Book of Fate" field="annotation" scope="model" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons" join=", " arg="+0"/>
+                    <modifier type="increment" value="1" field="41a0-1301-112a-e2f2" scope="model" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Melee Weapons" join=", " arg="+0"/>
+                    <modifier type="increment" value="1" field="9ead-8a10-520-de15" scope="model" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons" join=", " arg="+0"/>
+                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Ranged Weapons" join="" arg="+0"/>
+                    <modifier type="replace" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Ranged Weapons" join="" arg="+0"/>
+                    <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Ranged Weapons" position="-1"/>
+                    <modifier type="replace" field="a354-c1c8-a745-f9e3" scope="model" affects="self.entries.recursive.profiles.Ranged Weapons" join="" arg="+0"/>
+                    <modifier type="append" value="+0" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.4546-4a0c-b3be-e84c.profiles.Melee Weapons" position="-1"/>
+                    <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="model" join="" arg="+0" affects="self.entries.recursive.4986-bf86-beb4-13ac"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Gurgling Doom" hidden="false" id="8c7a-0bc2-3939-b4af">
               <profiles>
@@ -30569,7 +30396,7 @@ You can attach this model to one of the above units even if one other CHARACTER 
                         </conditionGroup>
                       </conditionGroups>
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="c675-ba2b-cd63-a9a4" shared="true"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="root-entry" childId="d56f-b456-5b8-8907" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -30881,16 +30708,13 @@ You can attach this model to one of the above units even if one other CHARACTER 
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier type="append" value="Scorpion Tail" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Melee Weapons">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="92bf-e838-3659-54a9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="model-or-unit" affects="self.entries.recursive.profiles.Melee Weapons" join=", ">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="92bf-e838-3659-54a9" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="append" value="Scorpion Tail" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                <modifier type="append" value="+0" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" join=""/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                <modifier type="decrement" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.84c4-6d1e-e724-bd6e.profiles.Melee Weapons" position="-1"/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="model" arg="+0" affects="self.entries.recursive.e993-e086-6de1-12af"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -31636,13 +31460,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -31662,13 +31479,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="a55f-b7b3-6c65-a05f" name="Xenos - Orks" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="114" battleScribeVersion="2.03" type="catalogue" authorName="BSData Developers" authorContact="Dunamis55 &amp; AbonShell">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="a55f-b7b3-6c65-a05f" name="Xenos - Orks" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="127" battleScribeVersion="2.03" type="catalogue" authorName="BSData Developers" authorContact="Dunamis55 &amp; AbonShell">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Warlord" id="8b5-898c-f79b-5a9c">
       <categoryLinks>
@@ -393,6 +393,9 @@
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f948-afd0-90ac-a5e3"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9c43-2668-24c7-3fa6"/>
                   </constraints>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="67f3-88de-fc5e-2a1a" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <modifiers>
@@ -730,15 +733,16 @@
               <infoLinks>
                 <infoLink name="Anti-" id="99c5-4d34-fd6b-b567" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="6358-70ca-b9d7-cb5c" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
-                <entryLink import="true" name="Frazzle Field Generator upgrade" hidden="false" id="45e1-691d-b041-7b69" type="selectionEntry" targetId="d622-6793-ff35-518c"/>
-              </entryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Upgrades" id="0197-b272-85e4-92bc" hidden="false" flatten="true">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="e607-d07b-c920-1c17" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="38a3-a4d2-70be-f023" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="38a3-a4d2-70be-f023" type="selectionEntryGroup" targetId="b678-4a99-210e-931f">
+                      <entryLinks>
+                        <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="6358-70ca-b9d7-cb5c" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="b8e5-057f-63fb-6054" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -768,14 +772,12 @@
               <infoLinks>
                 <infoLink name="Rapid Fire" id="c121-6d1e-b482-c25a" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Da Shootiest Blasta upgrade" hidden="false" id="04c1-4510-3102-0ef7" type="selectionEntry" targetId="b7c8-c0cb-29ca-c1f8"/>
-              </entryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Upgrades" id="7604-c9bd-378d-2f19" hidden="false" flatten="true">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="e5b1-40f5-0fb5-7d69" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                     <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="da12-322c-a277-e7c0" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                    <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="dc4b-8b3f-686b-176f" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -790,15 +792,16 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a75e-d814-f5a5-ae04"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac51-39b6-cca3-f7b9"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="81d0-d5cc-1a42-38a2" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
-                <entryLink import="true" name="Frazzle Field Generator upgrade" hidden="false" id="3d9f-b757-2040-3924" type="selectionEntry" targetId="d622-6793-ff35-518c"/>
-              </entryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Upgrades" id="bc00-c0ff-eca0-048a" hidden="false" flatten="true">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="a1df-0d55-145b-b8f5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="7133-d341-1094-329c" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="7133-d341-1094-329c" type="selectionEntryGroup" targetId="b678-4a99-210e-931f">
+                      <entryLinks>
+                        <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="81d0-d5cc-1a42-38a2" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="b006-0ba7-43dd-413c" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -931,15 +934,16 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b56e-b7b8-bd82-f01c"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="498b-f7ad-cd3d-c6ad"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="800f-87a1-5117-8e13" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
-                <entryLink import="true" name="Frazzle Field Generator upgrade" hidden="false" id="2716-0f81-2f1d-4acb" type="selectionEntry" targetId="d622-6793-ff35-518c"/>
-              </entryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Upgrades" id="d55e-87ec-7783-9296" hidden="false" flatten="true">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="02e9-9b71-9386-0b7f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="cdf4-3bcd-1f00-2100" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="cdf4-3bcd-1f00-2100" type="selectionEntryGroup" targetId="b678-4a99-210e-931f">
+                      <entryLinks>
+                        <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="800f-87a1-5117-8e13" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="ef2e-dc33-9713-7267" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -949,14 +953,12 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ba1-1c79-399-9a1d"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c0-46e9-335f-c551"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Da Shootiest Blasta upgrade" hidden="false" id="ef97-177f-6659-37d6" type="selectionEntry" targetId="b7c8-c0cb-29ca-c1f8"/>
-              </entryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Upgrades" id="4d0c-4b9f-07c6-51f4" hidden="false" flatten="true">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="7ee6-2afd-bf3a-74ba" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                     <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="042a-a27d-0cf7-7d08" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                    <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="cf07-9172-eca0-255d" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -975,6 +977,13 @@
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds, Extra Attacks</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="Extra Attacks" field="893f-9000-ccf7-648e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="40fb-e485-dca0-cb12" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -995,6 +1004,7 @@
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="26ec-e5ec-2ad2-cacb" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="6c76-afd3-772c-3588" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -1002,20 +1012,15 @@
             <selectionEntryGroup name="Thump Gun" id="8329-c0ff-daf8-3fe9" hidden="false">
               <entryLinks>
                 <entryLink import="true" name="Thump gun" hidden="false" id="4909-436c-d89-94e9" type="selectionEntry" targetId="109a-db29-c4a5-f826">
-                  <entryLinks>
-                    <entryLink import="true" name="Da Shootiest Blasta upgrade" hidden="false" id="916f-365e-2ed7-0617" type="selectionEntry" targetId="b7c8-c0cb-29ca-c1f8"/>
-                  </entryLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Weapon Upgrades" id="3449-36d5-85b3-202d" hidden="false" flatten="true">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="d55f-73a6-908f-c1e0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="0793-34b1-9890-3202" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="dd8e-27d3-d923-45da" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
-                  <categoryLinks>
-                    <categoryLink name="Ranged Weapon" hidden="false" id="ff10-8ef5-3899-2900" targetId="eeda-8544-a2f3-3fab" primary="false"/>
-                  </categoryLinks>
                 </entryLink>
               </entryLinks>
               <constraints>
@@ -1149,6 +1154,10 @@
       <infoLinks>
         <infoLink name="Blast" hidden="false" type="rule" id="6e4-b1b-6258-40bf" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="6e7e-53d4-74d6-8307" targetId="e993-e086-6de1-12af" primary="false"/>
+        <categoryLink name="Ranged Weapon" hidden="false" id="f00e-db1e-0350-15fe" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Big Mek in Mega Armour" hidden="false" id="95e9-6da3-5e75-2566">
       <constraints>
@@ -1420,13 +1429,6 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -1435,6 +1437,7 @@ Designer’s Note: Place a Grot Oiler token next to the unit, removing it once t
       <comment>BS5+</comment>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="c78e-2fb6-719e-7be5" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="1a12-7789-3daa-bf28" targetId="4986-bf86-beb4-13ac" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kustom shoota" hidden="false" id="8bba-d0bf-1102-2131" collective="false">
@@ -3206,13 +3209,6 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -3221,6 +3217,7 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
       <comment>BS5+</comment>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="fb16-644e-2a91-380f" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="4cce-c760-4be9-b5fb" targetId="e993-e086-6de1-12af" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Burna" hidden="false" id="8f0e-a9ba-1cfd-3106" collective="true">
@@ -3241,6 +3238,9 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
         <infoLink name="Ignores Cover" hidden="false" type="rule" id="2fae-7b16-a9ed-fa08" targetId="4640-43e7-30b-215a"/>
         <infoLink name="Torrent" hidden="false" type="rule" id="b520-470f-7310-13cf" targetId="5edf-d619-23e0-9b56"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="484f-baf2-b17c-504b" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Burna-bommer" hidden="false" id="93a1-386a-e40f-472f">
       <profiles>
@@ -3336,13 +3336,6 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Ignores Cover</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -3352,6 +3345,9 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="06c9-1e35-ac88-0201" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="31f4-e057-1bcc-b8e5" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -3823,19 +3819,15 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Ignores Cover" hidden="false" type="rule" id="b8a4-b1a-db44-7fa7" targetId="4640-43e7-30b-215a"/>
         <infoLink name="Torrent" hidden="false" type="rule" id="cef9-2daf-af48-e3b2" targetId="5edf-d619-23e0-9b56"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="dcda-0fc2-f03f-49cc" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Deffkilla Wartrike" hidden="false" id="ca85-1d18-dc30-d64e">
       <profiles>
@@ -3933,9 +3925,6 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
               <infoLinks>
                 <infoLink name="Assault" id="66af-b9b5-4f85-dcc9" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Da Shootiest Blasta upgrade" hidden="false" id="e3cc-31af-8ccc-1947" type="selectionEntry" targetId="b7c8-c0cb-29ca-c1f8"/>
-              </entryLinks>
               <categoryLinks>
                 <categoryLink name="Ranged Weapon" hidden="false" id="6d29-c427-3db0-ca10" targetId="eeda-8544-a2f3-3fab" primary="false"/>
               </categoryLinks>
@@ -3944,6 +3933,7 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="3083-2ccf-2f14-c102" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                     <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="7e52-51b9-f38d-cf96" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                    <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="b5ca-3434-12f0-a4de" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -3996,14 +3986,12 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
                 <infoLink name="Melta" id="5b75-6726-37b8-150a" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849"/>
                 <infoLink name="Ignores Cover" id="b225-cfaf-9d76-601a" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Da Shootiest Blasta upgrade" hidden="false" id="4526-8456-a2d0-5861" type="selectionEntry" targetId="b7c8-c0cb-29ca-c1f8"/>
-              </entryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Upgrades" id="6ee9-f05b-a46c-b8cc" hidden="false" flatten="true">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="cf91-c5f0-c793-47c9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                     <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="8e67-0b1c-7c34-a021" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                    <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="8a1a-19d8-9bbf-e733" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -4029,15 +4017,16 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
                   </characteristics>
                 </profile>
               </profiles>
-              <entryLinks>
-                <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="65c8-41d2-fca7-c24c" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
-                <entryLink import="true" name="Frazzle Field Generator upgrade" hidden="false" id="4b72-b806-50ca-ff75" type="selectionEntry" targetId="d622-6793-ff35-518c"/>
-              </entryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Upgrades" id="8087-c9b5-274b-af9b" hidden="false" flatten="true">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="a044-2042-c921-bfd2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="5da0-cd7b-cd86-dc96" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="5da0-cd7b-cd86-dc96" type="selectionEntryGroup" targetId="b678-4a99-210e-931f">
+                      <entryLinks>
+                        <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="65c8-41d2-fca7-c24c" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="cba3-743a-b5c1-50f6" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -5341,19 +5330,15 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Indirect Fire</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Blast" hidden="false" type="rule" id="2f57-a1ee-eff6-c9c" targetId="6c1f-1cf7-ff25-c99e"/>
         <infoLink name="Indirect Fire" hidden="false" type="rule" id="aeb2-42cd-7708-8cee" targetId="4ddd-4e29-acdd-5e6d"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="04d5-9e90-c7e5-8802" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Stikka kannon" hidden="false" id="d571-b41b-3465-48b4">
       <profiles>
@@ -5396,6 +5381,9 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
         <infoLink name="Extra Attacks" hidden="false" type="rule" id="d9b4-f3b-5873-7948" targetId="115b-79dc-f723-d761"/>
         <infoLink name="Anti-" hidden="false" type="rule" id="4069-a76f-4fec-8e70" targetId="4111-82e3-9444-e942"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Extra Attacks Weapon" hidden="false" id="89f1-a199-9b22-df3a" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Savage horns and hooves" hidden="false" id="516b-2a21-d5f6-d774">
       <profiles>
@@ -5415,6 +5403,9 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
         <infoLink name="Extra Attacks" hidden="false" type="rule" id="c67e-e312-5dcd-5970" targetId="115b-79dc-f723-d761"/>
         <infoLink name="Lance" hidden="false" type="rule" id="96d4-5e36-2746-93d3" targetId="2ebc-abdf-8129-6c57"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Extra Attacks Weapon" hidden="false" id="768d-578d-0305-98e8" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Saw blades" hidden="false" id="b52d-d0e9-825d-e3a9">
       <comment>S10</comment>
@@ -5710,18 +5701,6 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Psychic, Torrent</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -5731,6 +5710,10 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="20c2-d8b6-5783-d467" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="6c71-b7bc-040e-4fdc" targetId="e993-e086-6de1-12af" primary="false"/>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="b6b6-64e7-2c61-f6d1" targetId="4986-bf86-beb4-13ac" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -6600,13 +6583,6 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent, Twin-linked</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <constraints>
@@ -6621,6 +6597,9 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="1580-3dc9-633b-51e4" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="c210-4bbd-2322-da6f" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Rivet kannon" hidden="false" id="3dbb-ec2d-abf9-6dbf">
               <constraints>
@@ -7901,13 +7880,6 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
                             <characteristic name="D" id="c83-cf6-61d8-5b43" hidden="false" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                             <characteristic name="Keywords" id="b72f-4cc5-47b-d11d" hidden="false" typeId="7f1b-8591-2fcf-d01c">Blast, Bubblechukka</characteristic>
                           </characteristics>
-                          <modifiers>
-                            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
                         </profile>
                         <profile name="3-4 Bubblechukka - wobbly bubble" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="94da-5d61-d679-eadb">
                           <characteristics>
@@ -7919,13 +7891,6 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
                             <characteristic name="D" id="4466-de61-7c5f-2a31" hidden="false" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                             <characteristic name="Keywords" id="4bdf-dccb-92e1-387e" hidden="false" typeId="7f1b-8591-2fcf-d01c">Blast, Bubblechukka</characteristic>
                           </characteristics>
-                          <modifiers>
-                            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
                         </profile>
                         <profile name="5-6 Bubblechukka - dense bubble" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6ab4-8bed-a247-ac13">
                           <characteristics>
@@ -7937,13 +7902,6 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
                             <characteristic name="D" id="cc56-5d9f-3417-54d4" hidden="false" typeId="a354-c1c8-a745-f9e3">D6+3</characteristic>
                             <characteristic name="Keywords" id="4cdb-cac2-7525-d568" hidden="false" typeId="7f1b-8591-2fcf-d01c">Blast, Bubblechukka</characteristic>
                           </characteristics>
-                          <modifiers>
-                            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
                         </profile>
                       </profiles>
                       <infoLinks>
@@ -7957,6 +7915,9 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="7e51-da70-6239-4315" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="c575-8123-e95f-318b" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -8028,18 +7989,6 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
                             <characteristic name="D" id="dc99-575a-a402-2262" hidden="false" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                             <characteristic name="Keywords" id="2631-e9d1-9ac7-7083" hidden="false" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous</characteristic>
                           </characteristics>
-                          <modifiers>
-                            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
                         </profile>
                       </profiles>
                       <infoLinks>
@@ -8049,6 +7998,10 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="9deb-cfa8-93ea-735e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="bb6f-3df2-888b-c7ff" targetId="e993-e086-6de1-12af" primary="false"/>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="2404-cadc-67c6-9b70" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -8354,6 +8307,9 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="9d55-c20e-18d8-8d87" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="ba37-720c-886f-c8c7" targetId="4986-bf86-beb4-13ac" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -8475,7 +8431,7 @@ Designer’s Note: Place a Grot Helper token next to the bearer, removing it onc
         </profile>
         <profile name="Da Bigger Dey Iz…" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2c6f-ba8c-f678-9517">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack that targets a MONSTER or VEHICLE unit, add 1 to the Damage characteristic of that attack. Each time this model makes an attack that targets a TITANIC unit, add 2 to the Damage characteristic of that attack instead.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack that targets a **^^Monster^^** or **^^Vehicle^^** unit, add 1 to the Damage characteristic of that attack. Each time this model makes an attack that targets a **^^Titanic^^** unit, add 2 to the Damage characteristic of that attack instead.</characteristic>
           </characteristics>
         </profile>
         <profile name="One Last Kill" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="21eb-cf3f-382-aae9">
@@ -10127,18 +10083,6 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -10147,6 +10091,10 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="f967-cecc-40a5-2fc1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="c8a8-211f-be10-ecc8" targetId="e993-e086-6de1-12af" primary="false"/>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="e4f1-fa95-655e-548e" targetId="4986-bf86-beb4-13ac" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Mega-choppa" hidden="false" id="dccf-9841-24d4-bc7b">
               <constraints>
@@ -10222,13 +10170,6 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+2</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -10237,6 +10178,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="0650-7738-e7ba-0d8b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="6b6b-6f48-ed54-d165" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -11414,14 +11358,12 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="604f-3247-be31-7495"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fbe-fdb4-af3a-ba80"/>
               </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Da Shootiest Blasta upgrade" hidden="false" id="cd52-a336-5627-1019" type="selectionEntry" targetId="b7c8-c0cb-29ca-c1f8"/>
-              </entryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Upgrades" id="907e-4d3e-83b5-e84f" hidden="false" flatten="true">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="e9e3-3733-ab64-6819" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                     <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="d54c-e9e3-df61-0271" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                    <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="fdee-f20e-37d2-03a1" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -11450,14 +11392,12 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                 <infoLink name="Pistol" id="f036-f7f2-6b1b-d9f8" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
                 <infoLink name="Twin-linked" id="4fb7-dcc3-a154-9f8b" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Da Shootiest Blasta upgrade" hidden="false" id="010d-0377-614a-dfe0" type="selectionEntry" targetId="b7c8-c0cb-29ca-c1f8"/>
-              </entryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Upgrades" id="7e84-1e7d-2261-1867" hidden="false" flatten="true">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="5198-8252-2a0a-f486" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                     <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="6a3e-7d24-97d1-005c" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                    <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="acea-aef2-0c8e-d454" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -11489,19 +11429,18 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                   <infoLinks>
                     <infoLink name="Extra Attacks" id="273c-3e5f-2685-a74f" hidden="false" type="rule" targetId="115b-79dc-f723-d761"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Frazzle Field Generator upgrade" hidden="false" id="ee1d-cf76-780d-6218" type="selectionEntry" targetId="d622-6793-ff35-518c"/>
-                  </entryLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Weapon Upgrades" id="fe1d-5899-6ab0-fb5d" hidden="false" flatten="true">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="8974-cc80-dae6-f974" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                         <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="e420-8a0f-43e3-d6c1" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="3e93-12e3-fcd1-85cc" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <categoryLinks>
                     <categoryLink name="Melee Weapon" hidden="false" id="0992-31c6-c176-8b8b" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                    <categoryLink name="Extra Attacks Weapon" hidden="false" id="2e0f-8841-c7f7-4c1d" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -11513,29 +11452,31 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Big choppa" hidden="false" id="446d-ce2c-1afc-c5fb" type="selectionEntry" targetId="614f-3d6b-88aa-9e15">
-                  <entryLinks>
-                    <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="96ed-df85-37ca-c339" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
-                    <entryLink import="true" name="Frazzle Field Generator upgrade" hidden="false" id="c471-7e7c-2ff8-b088" type="selectionEntry" targetId="d622-6793-ff35-518c"/>
-                  </entryLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Weapon Upgrades" id="7313-f355-32c7-9543" hidden="false" flatten="true">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="8af4-8bd9-324b-a5f3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="d547-1573-6b6f-374e" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="d547-1573-6b6f-374e" type="selectionEntryGroup" targetId="b678-4a99-210e-931f">
+                          <entryLinks>
+                            <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="96ed-df85-37ca-c339" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
+                          </entryLinks>
+                        </entryLink>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="20f3-a804-64c3-afe3" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Power klaw" hidden="false" id="9b81-c90b-705a-6af2" type="selectionEntry" targetId="edac-a910-975a-d4fd">
-                  <entryLinks>
-                    <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="f4b8-072a-9009-439e" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
-                    <entryLink import="true" name="Frazzle Field Generator upgrade" hidden="false" id="3158-8e0d-f156-5330" type="selectionEntry" targetId="d622-6793-ff35-518c"/>
-                  </entryLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Weapon Upgrades" id="d434-c315-e914-1279" hidden="false" flatten="true">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="46eb-fc17-8cc6-baeb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="7f31-f930-a76b-5ee1" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="7f31-f930-a76b-5ee1" type="selectionEntryGroup" targetId="b678-4a99-210e-931f">
+                          <entryLinks>
+                            <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="f4b8-072a-9009-439e" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
+                          </entryLinks>
+                        </entryLink>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="1ab0-c002-3c46-de64" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -11708,15 +11649,16 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                   </characteristics>
                 </profile>
               </profiles>
-              <entryLinks>
-                <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="49cd-c14f-15b5-696d" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
-                <entryLink import="true" name="Frazzle Field Generator upgrade" hidden="false" id="b1dd-d514-b843-23f7" type="selectionEntry" targetId="d622-6793-ff35-518c"/>
-              </entryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Upgrades" id="c198-55a2-90ac-6c6f" hidden="false" flatten="true">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="6f2f-f061-3c64-c8bf" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="6ace-aa65-dfea-7117" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                    <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="6ace-aa65-dfea-7117" type="selectionEntryGroup" targetId="b678-4a99-210e-931f">
+                      <entryLinks>
+                        <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="49cd-c14f-15b5-696d" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="e1a3-cf2b-8f3d-161d" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -11746,14 +11688,12 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <infoLinks>
                 <infoLink name="Rapid Fire" id="6314-92eb-dafe-d40" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink import="true" name="Da Shootiest Blasta upgrade" hidden="false" id="2dae-2e94-fa8b-ff24" type="selectionEntry" targetId="b7c8-c0cb-29ca-c1f8"/>
-              </entryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Upgrades" id="fe37-9ac9-3c70-2225" hidden="false" flatten="true">
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="7146-9a4f-4b95-b558" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                     <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="bca3-b1f8-fe6b-3b52" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                    <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="577e-ea74-89a1-ff0b" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -11899,6 +11839,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="e4e4-01b3-5076-3ce5" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="e53c-dd65-3056-b861" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -11920,18 +11863,6 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous, Twin-linked</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -11942,6 +11873,10 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="3312-8120-ed29-c213" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="42f9-53f0-4bd7-5c08" targetId="e993-e086-6de1-12af" primary="false"/>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="bc2d-a9d1-ba4f-1e80" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Twin tellyport mega-blasta" hidden="false" id="9043-7ba-74b7-51f3">
                   <profiles>
@@ -12257,6 +12192,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <categoryLinks>
                 <categoryLink name="Psychic Weapon" hidden="false" id="422c-41b4-f364-0216" targetId="4546-4a0c-b3be-e84c" primary="false"/>
                 <categoryLink name="Melee Weapon" hidden="false" id="add3-10f5-4b0b-fc6f" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="5e7c-2887-11db-7e91" targetId="4986-bf86-beb4-13ac" primary="false"/>
               </categoryLinks>
               <infoLinks>
                 <infoLink name="Psychic" id="ee00-6e75-5fac-546f" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
@@ -12359,7 +12295,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         </profile>
         <profile name="Roar of Mork (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="be60-8268-2c46-1fa7">
           <characteristics>
-            <characteristic name="Description" id="413b-7c70-fb6d-7372" hidden="false" typeId="9b8f-694b-e5e-b573">In your opponent’s Command phase, you can select one enemy unit within 18&quot; of and visible to this PSYKER and roll one D6: on a 1, this PSYKER’s unit suffers D3 mortal wounds; on a 2+, until the start of your opponent’s next Command phase, that enemy unit is confrazzled. While a unit is confrazzled, each time a Battle-shock or Leadership test is taken for it, subtract 2 from that test.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your opponent’s Command phase, you can select one enemy unit within 18&quot; of and visible to this **^^Psyker^^** and roll one D6: on a 1, this **^^Psyker^^**’s unit suffers D3 mortal wounds; on a 2+, until the start of your opponent’s next Command phase, that enemy unit is confrazzled. While a unit is confrazzled, each time a Battle-shock or Leadership test is taken for it, subtract 2 from that test.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -12443,6 +12379,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <categoryLinks>
                 <categoryLink name="Psychic Weapon" hidden="false" id="6616-bb50-adde-3c84" targetId="4546-4a0c-b3be-e84c" primary="false"/>
                 <categoryLink name="Ranged Weapon" hidden="false" id="f094-5b24-9cda-7963" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="4a19-2cfe-a7ea-6828" targetId="e993-e086-6de1-12af" primary="false"/>
               </categoryLinks>
               <infoLinks>
                 <infoLink name="Psychic" id="5721-e558-8605-6466" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
@@ -12750,21 +12687,6 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="a591-99fb-921b-b2f8"/>
               </constraints>
-              <profiles>
-                <profile name="Grot Tanks" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c25b-529f-948e-d571">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-                  </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
-                </profile>
-              </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Wargear" id="b334-b63c-77fa-3c76" hidden="false" sortIndex="2">
                   <entryLinks>
@@ -12789,6 +12711,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <infoLinks>
+                <infoLink targetId="c25b-529f-948e-d571" id="6c29-18a2-75c5-815e" type="profile" name="Grot Tanks" hidden="false"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Grot Tank w/ Grotzooka" hidden="false" id="448e-bb13-cf8e-78eb">
               <entryLinks>
@@ -12797,21 +12722,6 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="a591-99fb-921b-b2f8"/>
               </constraints>
-              <profiles>
-                <profile name="Grot Tanks" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1ee0-8992-17fc-c88d">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-                  </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
-                </profile>
-              </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Wargear" id="141e-9b20-3713-eb3a" hidden="false" sortIndex="2">
                   <entryLinks>
@@ -12836,6 +12746,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Grot Tanks" id="209a-ec38-af70-d876" hidden="false" targetId="c25b-529f-948e-d571" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Grot Tank w/ Kustom mega-blasta" hidden="false" id="53ab-c6b7-adcb-ec23">
               <entryLinks>
@@ -12844,21 +12757,6 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="a591-99fb-921b-b2f8"/>
               </constraints>
-              <profiles>
-                <profile name="Grot Tanks" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7b6e-302a-214a-7ab0">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-                  </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
-                </profile>
-              </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Wargear" id="9244-f374-c316-ca7a" hidden="false" sortIndex="2">
                   <entryLinks>
@@ -12883,6 +12781,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Grot Tanks" id="fcd3-82c5-71e1-31b4" hidden="false" targetId="c25b-529f-948e-d571" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Grot Tank w/ Rokkit launcha" hidden="false" id="77e9-c308-4411-57c0">
               <entryLinks>
@@ -12891,21 +12792,6 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="a591-99fb-921b-b2f8"/>
               </constraints>
-              <profiles>
-                <profile name="Grot Tanks" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="903e-ec41-f8c6-b69e">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-                  </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
-                </profile>
-              </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Wargear" id="1ad7-a9d6-a544-ecb4" hidden="false" sortIndex="2">
                   <entryLinks>
@@ -12930,6 +12816,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Grot Tanks" id="cfbb-b494-1948-9f10" hidden="false" targetId="c25b-529f-948e-d571" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Grot Tank w/ Skorcha" hidden="false" id="6aaa-5ee8-c2d6-9e59">
               <entryLinks>
@@ -12938,21 +12827,6 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <constraints>
                 <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="a591-99fb-921b-b2f8"/>
               </constraints>
-              <profiles>
-                <profile name="Grot Tanks" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="36c7-b65c-81d3-62f7">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-                  </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
-                </profile>
-              </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Wargear" id="dea8-7f71-3193-2926" hidden="false" sortIndex="2">
                   <entryLinks>
@@ -12977,6 +12851,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Grot Tanks" id="b497-4058-e02e-c10f" hidden="false" targetId="c25b-529f-948e-d571" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -13075,21 +12952,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <entryLinks>
                 <entryLink import="true" name="Totemic Presence upgrade" hidden="false" id="8871-7c1d-dc48-34e5" type="selectionEntry" targetId="6220-fe17-7c2a-8268" sortIndex="1"/>
               </entryLinks>
-              <profiles>
-                <profile name="Grot Tanks" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="2ea1-67ce-c8c8-418b">
-                  <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
-                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-                  </characteristics>
-                  <attributes>
-                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
-                  </attributes>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink name="Grot Tanks" id="6f42-e6ba-ea40-eb81" hidden="false" targetId="c25b-529f-948e-d571" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <modifiers>
@@ -13380,6 +13245,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="7810-8968-8075-0e92" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="c718-fa5e-734c-5945" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Twin rokkit launcha" hidden="false" id="ef28-3822-b537-22f2" collective="true">
                   <constraints>
@@ -13405,6 +13273,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="44a7-dd28-dc72-3ca3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="ed0f-3967-e027-05a4" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Twin skorcha" hidden="false" id="2ff-3362-a51f-a276" collective="true">
                   <constraints>
@@ -13421,13 +13292,6 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent, Twin-linked</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -13438,6 +13302,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="511a-55de-0dee-d0cb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="7abc-de7b-0dc5-52a9" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -13611,6 +13478,19 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">D6</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="3000-401c-cb1c-b4dd" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="model" childId="84a7-ad58-2a81-91b0" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <entryLinks>
@@ -13798,13 +13678,6 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -13813,6 +13686,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="c77d-2c93-81cf-6bfa" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="fed5-7f9c-2c94-6b88" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -14014,13 +13890,6 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -14029,6 +13898,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="2a1d-9695-056e-4b0a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="b640-d394-4b9f-16b3" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Giga shoota" hidden="false" id="489a-ed98-e89a-6687">
                   <profiles>
@@ -14254,13 +14126,6 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Torrent</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -14269,6 +14134,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="646c-9d35-e05a-df98" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="0c4e-e235-88f4-06b4" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -14822,10 +14690,6 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                       </characteristics>
                     </profile>
                   </profiles>
-                  <entryLinks>
-                    <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="08b3-85b5-75f2-2b8b" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
-                    <entryLink import="true" name="Frazzle Field Generator upgrade" hidden="false" id="fb43-ca5c-5aad-e1e6" type="selectionEntry" targetId="d622-6793-ff35-518c"/>
-                  </entryLinks>
                   <categoryLinks>
                     <categoryLink name="Melee Weapon" hidden="false" id="0985-d619-b118-3fed" targetId="ccdd-3987-11ed-90cd" primary="false"/>
                   </categoryLinks>
@@ -14833,7 +14697,12 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                     <selectionEntryGroup name="Weapon Upgrades" id="448e-a644-bb7a-c5b7" hidden="false" flatten="true">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="d6de-88a5-b41a-8c8e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="da57-3c31-9393-717b" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="da57-3c31-9393-717b" type="selectionEntryGroup" targetId="b678-4a99-210e-931f">
+                          <entryLinks>
+                            <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="08b3-85b5-75f2-2b8b" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
+                          </entryLinks>
+                        </entryLink>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="1bbd-b508-c3b7-842d" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -14841,29 +14710,31 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               </selectionEntries>
               <entryLinks>
                 <entryLink import="true" name="Big choppa" hidden="false" id="9144-7ad1-bbf2-9c81" type="selectionEntry" targetId="614f-3d6b-88aa-9e15">
-                  <entryLinks>
-                    <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="a1bd-8e19-6802-4798" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
-                    <entryLink import="true" name="Frazzle Field Generator upgrade" hidden="false" id="f551-e4af-0456-d2b9" type="selectionEntry" targetId="d622-6793-ff35-518c"/>
-                  </entryLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Weapon Upgrades" id="bc61-61b3-951d-84ee" hidden="false" flatten="true">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="69eb-cc63-ba6b-c1c7" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="083a-2de5-c9b1-07a8" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="083a-2de5-c9b1-07a8" type="selectionEntryGroup" targetId="b678-4a99-210e-931f">
+                          <entryLinks>
+                            <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="a1bd-8e19-6802-4798" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
+                          </entryLinks>
+                        </entryLink>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="8827-4897-9dfe-7486" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                 </entryLink>
                 <entryLink import="true" name="Power klaw" hidden="false" id="893c-a595-8f35-a8a6" type="selectionEntry" targetId="edac-a910-975a-d4fd">
-                  <entryLinks>
-                    <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="b3ff-d3f5-7a13-e97c" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
-                    <entryLink import="true" name="Frazzle Field Generator upgrade" hidden="false" id="79cb-ec88-684d-e0d0" type="selectionEntry" targetId="d622-6793-ff35-518c"/>
-                  </entryLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Weapon Upgrades" id="f119-c89f-0957-4f58" hidden="false" flatten="true">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="1ee2-f84a-f643-6331" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="10cf-bc26-9059-f4cf" type="selectionEntryGroup" targetId="b678-4a99-210e-931f"/>
+                        <entryLink import="true" name="Crusade Relic Upgrades" hidden="false" id="10cf-bc26-9059-f4cf" type="selectionEntryGroup" targetId="b678-4a99-210e-931f">
+                          <entryLinks>
+                            <entryLink import="true" name="Choppa of Da Great Waaagh! upgrade" hidden="false" id="b3ff-d3f5-7a13-e97c" type="selectionEntry" targetId="106c-02ce-13d0-a7b3"/>
+                          </entryLinks>
+                        </entryLink>
+                        <entryLink import="true" name="Enhancement Upgrades" hidden="false" id="d470-031c-6693-6094" type="selectionEntryGroup" targetId="71a3-fa79-fc49-ad9e"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -15775,6 +15646,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Melee Weapon" hidden="false" id="f234-79a9-fb76-d01c" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+        <categoryLink name="Extra Attacks Weapon" hidden="false" id="3ed7-69a8-bf25-f70f" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skorchas [Legends]" hidden="false" id="939f-63bc-4a63-4d93">
@@ -16477,6 +16349,10 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="e8e7-0d31-e67d-c15c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <comment>BS6+ variant</comment>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="ca90-f10f-f992-9bb1" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -16537,6 +16413,13 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Heavy</characteristic>
                           </characteristics>
+                          <modifiers>
+                            <modifier type="append" value="+0" field="2229-f494-25db-c5d3" join="">
+                              <conditions>
+                                <condition type="atLeast" value="1" field="selections" scope="self" childId="c5fb-58f5-2d2f-cc09" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
                         </profile>
                       </profiles>
                       <infoLinks>
@@ -17220,6 +17103,13 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                         <characteristic name="D" id="eabb-374a-b792-91ce" hidden="false" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                         <characteristic name="Keywords" id="955d-8714-c793-5d95" hidden="false" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
                       </characteristics>
+                      <modifiers>
+                        <modifier type="append" value="+0" field="2229-f494-25db-c5d3" join="">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="self" childId="c5fb-58f5-2d2f-cc09" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -17450,6 +17340,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         <infoLink name="Blast" hidden="false" type="rule" id="c583-4d9c-f471-245a" targetId="6c1f-1cf7-ff25-c99e"/>
         <infoLink name="Indirect Fire" hidden="false" type="rule" id="3062-15a6-1563-dd4" targetId="4ddd-4e29-acdd-5e6d"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="0588-7d51-93f3-1cb5" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Chinork Warkopta [Legends]" hidden="false" id="f6cb-323b-3c25-75f7">
       <constraints>
@@ -17811,6 +17704,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="dc18-13e9-e8b2-058a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="e812-7611-f3d2-3805" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
@@ -18394,6 +18290,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
       <infoLinks>
         <infoLink name="Extra Attacks" hidden="false" type="rule" id="61f-2a05-2321-516c" targetId="115b-79dc-f723-d761"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Extra Attacks Weapon" hidden="false" id="7cda-6900-0c59-98a0" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wreckin&apos; ball" hidden="false" id="3e1a-c27b-7ef-a2d6">
       <profiles>
@@ -18407,18 +18306,15 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
             <characteristic name="D" typeId="3254-9fe6-d824-513e">D6</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Extra Attacks" hidden="false" type="rule" id="fd26-fd07-ad3f-3a3f" targetId="115b-79dc-f723-d761"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Extra Attacks Weapon" hidden="false" id="a9d8-e1a4-48c9-6ecc" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="0d12-d7f9-727f-535c" targetId="4986-bf86-beb4-13ac" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Grot Bomm Launcha [Legends]" hidden="false" id="410e-7847-bcfc-1b62">
       <constraints>
@@ -18500,6 +18396,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="6588-5cca-df23-5c0c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="332b-028b-6a3e-d0ef" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -19144,7 +19043,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         </profile>
         <profile name="Gargantsmasha" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fd0b-c139-173f-26c4">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack that targets a TITANIC unit, you can re-roll the Hit roll and you can re-roll the Wound roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model makes an attack that targets a **^^Titanic^^* unit, you can re-roll the Hit roll and you can re-roll the Wound roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -19796,6 +19695,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
           <infoLinks>
             <infoLink name="Extra Attacks" id="39aa-f188-c137-3d1e" hidden="false" type="rule" targetId="115b-79dc-f723-d761"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Extra Attacks Weapon" hidden="false" id="5032-8f1e-4f4f-3ddc" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <profiles>
@@ -19855,6 +19757,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
           <entryLinks>
             <entryLink import="true" name="Weapon Modifications" hidden="false" id="4909-7114-bcc9-8233" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
           </entryLinks>
+          <categoryLinks>
+            <categoryLink name="Extra Attacks Weapon" hidden="false" id="ade1-f1ba-1327-3c09" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Big choppa" hidden="false" id="aecd-6ba5-5558-fee2" collective="true">
           <profiles>
@@ -19917,9 +19822,25 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
       </constraints>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="dfe4-1968-c6e4-0ed1" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="dfe4-1968-c6e4-0ed1" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="upgrade" childId="84c4-6d1e-e724-bd6e" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="upgrade" childId="ccdd-3987-11ed-90cd" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="71a3-fa79-fc49-ad9e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="f9da-852a-d7f0-92e9" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="106c-02ce-13d0-a7b3" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="106c-02ce-13d0-a7b3" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" value="1" field="a534-e190-29f7-c7e9">
           <conditions>
@@ -19931,91 +19852,9 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
         <modifierGroup type="and">
           <comment>Crusade Relic: Choppa of Da Great Waaagh!</comment>
           <modifiers>
-            <modifier type="append" value="Choppa of Da Great Waaagh!" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Melee Weapons">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="106c-02ce-13d0-a7b3" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="upgrade" affects="self.entries.profiles.Melee Weapons">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="106c-02ce-13d0-a7b3" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" affects="self.entries.profiles.Melee Weapons" scope="upgrade">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="106c-02ce-13d0-a7b3" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Frazzle Field Generator upgrade" hidden="false" id="d622-6793-ff35-518c">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ef5e-2c3e-eca1-eac9" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="selections" scope="model" shared="true" id="1d9d-6099-c80d-7d8b" includeChildSelections="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="model" childId="9200-0e4d-b243-3e70" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="1" field="1d9d-6099-c80d-7d8b">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="model" childId="9200-0e4d-b243-3e70" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Bestest Bossloot: Frazzle Field Generator</comment>
-          <modifiers>
-            <modifier type="append" value="Frazzle Field Generator" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Melee Weapons">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="d622-6793-ff35-518c" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="Devastating Wounds" field="893f-9000-ccf7-648e" join=", " scope="upgrade" affects="self.entries.profiles.Melee Weapons">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="d622-6793-ff35-518c" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Da Shootiest Blasta upgrade" hidden="false" id="b7c8-c0cb-29ca-c1f8">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ede7-92c3-167f-7f46" includeChildSelections="true"/>
-        <constraint type="min" value="0" field="selections" scope="model" shared="true" id="b67c-e301-d763-5694" includeChildSelections="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="model" childId="44c3-e092-00d3-024f" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" value="1" field="b67c-e301-d763-5694">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="model" childId="44c3-e092-00d3-024f" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <comment>Bestest Bossloot: Da Shootiest Blasta</comment>
-          <modifiers>
-            <modifier type="append" value="Da Shootiest Blasta" field="annotation" join=", " affects="self.entries.profiles.Ranged Weapons" scope="upgrade">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="upgrade" childId="b7c8-c0cb-29ca-c1f8" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="Melta 3" field="7f1b-8591-2fcf-d01c" join=", " affects="self.entries.profiles.Ranged Weapons" scope="upgrade">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="b7c8-c0cb-29ca-c1f8" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
+            <modifier type="append" value="Choppa of Da Great Waaagh!" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Melee Weapons"/>
+            <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="upgrade" affects="self.entries.profiles.Melee Weapons"/>
+            <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" affects="self.entries.profiles.Melee Weapons" scope="upgrade"/>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
@@ -20522,19 +20361,15 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Twin-linked</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Blast" id="14fd-ce18-c91f-4bef" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
         <infoLink name="Twin-linked" id="2aaa-917c-789f-e044" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="649a-bf24-4106-11c4" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rokkit launcha" hidden="false" id="8a55-0ff6-7e3d-1829" collective="false">
       <comment>BS4+</comment>
@@ -20549,18 +20384,15 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Blast" id="037c-6e5a-8114-2854" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="b125-ac54-fb6e-5a90" targetId="e993-e086-6de1-12af" primary="false"/>
+        <categoryLink name="Ranged Weapon" hidden="false" id="69e9-b3ca-fe68-af6f" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rack of rokkits" hidden="false" id="a92d-48a0-723b-1e6b" collective="true">
       <profiles>
@@ -20749,19 +20581,15 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Hazardous" id="8be0-923a-18d8-36d3" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
       </infoLinks>
       <comment>BS4+</comment>
+      <categoryLinks>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="7dc4-f374-4f6e-b2c8" targetId="4986-bf86-beb4-13ac" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kustom mega-slugga" hidden="false" id="45df-1f49-a53f-13eb">
       <profiles>
@@ -20775,18 +20603,6 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -20795,6 +20611,8 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="9a37-c42f-65e8-ee98" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="d104-96da-8a4e-8f8c" targetId="e993-e086-6de1-12af" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="e622-312d-b815-1561" targetId="4986-bf86-beb4-13ac" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kustom force field" hidden="false" id="ebb3-d5a4-0dbd-bca7">
@@ -20826,6 +20644,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="df96-8dce-d091-01c8" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="fcd3-fa7c-73ca-1e20" targetId="4986-bf86-beb4-13ac" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Grotzooka" hidden="false" id="d8de-b5ae-eece-da84" collective="true">
@@ -20944,6 +20763,121 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
       </profiles>
       <comment>A3 S6</comment>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Da Red Gobbo&apos;s A-bomb-inable Snowman [Legends]" hidden="false" id="6610-3cb7-dc72-8852">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6ade-8f17-74f6-8c8a"/>
+      </constraints>
+      <profiles>
+        <profile name="Da Red Gobbo" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4ea5-b9a1-c003-6b3e">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">2</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+          </attributes>
+        </profile>
+        <profile name="Explosive Snowballs" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e41d-a685-ccb8-2d24">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once in each of your Shooting phases, you can target this unit with the Grenades stratagem for 0CP. After resolving this stratagem, this unit can make a Normal move of up to 6&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="A-bomb-inable Snowman" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7eb7-313e-8a1b-5596">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this model is destroyed, its Deadly Demise ability inflicts mortal wounds on a D6 roll of 2+ instead of on a 6.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="064f-0ead-c36b-56a2" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="05cf-7f51-cc8c-3f14" primary="false" name="Character"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="44e3-0ef2-b6ae-34c4" primary="false" name="Infantry"/>
+        <categoryLink targetId="56cc-5f43-2403-8da0" id="2239-53a8-feda-35d3" primary="false" name="Faction: Orks"/>
+        <categoryLink name="Da Red Gobbo A-bomb-inable Snowman" hidden="false" id="21c4-b384-08d0-1b3b" targetId="eace-d325-834e-71dd" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Lone Operative" hidden="false" type="rule" id="c076-f3f3-7027-5142" targetId="a8a0-8fe7-898-e0f3"/>
+        <infoLink name="Invulnerable Save (5+)" id="7a16-78b0-ef2d-ba5c" hidden="false" type="profile" targetId="bc64-b2f5-f074-67d8"/>
+        <infoLink name="Scouts" hidden="false" type="rule" id="58ed-7560-9ec5-af29" targetId="ada6-bac1-ffe0-d6f7">
+          <modifiers>
+            <modifier type="append" value="6&quot;" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Waaagh!" hidden="false" type="rule" id="589e-4759-ca74-597c" targetId="37c-6ef9-277-9091"/>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="42d6-b97c-259d-77b7" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D6" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="f7d5-d2bb-249a-9493" targetId="8b5-898c-f79b-5a9c" sortIndex="2"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Kustom grot blasta" hidden="false" id="ce56-a139-ac70-ac65">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b58f-f555-9fe8-5614"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a821-1290-9cd4-603a"/>
+          </constraints>
+          <profiles>
+            <profile name="Kustom grot blasta" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="67bf-b512-550a-8d61">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Pistol" hidden="false" type="rule" id="55f6-a360-46b9-74ac" targetId="8bf7-8812-923d-29e4"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="1d15-6f62-f2d4-9c10">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b7c8-ba35-7e7e-771d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="365f-302f-9009-fb99"/>
+          </constraints>
+          <profiles>
+            <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5d4d-2225-fcb7-367f">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="b42a-0d72-14e3-617b" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="5fbb-502c-d8b7-1fb0" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <rules>
     <rule name="Waaagh!" hidden="false" id="37c-6ef9-277-9091">
@@ -21005,26 +20939,35 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
                   </conditionGroups>
                 </modifier>
               </modifiers>
-              <infoGroups>
-                <infoGroup name="Headwoppa’s Killchoppa" id="10bd-8f1b-7177-ebe4" hidden="false">
-                  <profiles>
-                    <profile name="Headwoppa’s Killchoppa" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a2fd-5087-db42-4a00">
-                      <characteristics>
-                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Orks^^** model only. Melee weapons equipped by the bearer (excluding Extra Attacks weapons) have the **[DEVASTATING WOUNDS]** ability.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Devastating Wounds" id="14d6-1f6f-4ce0-208e" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-                  </infoLinks>
-                </infoGroup>
-              </infoGroups>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7c77-a762-b006-5234" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Devastating Wounds" id="14d6-1f6f-4ce0-208e" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Headwoppa’s Killchoppa" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a2fd-5087-db42-4a00">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Orks^^** model only. Melee weapons equipped by the bearer (excluding Extra Attacks weapons) have the **[DEVASTATING WOUNDS]** ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Headwoppa’s Killchoppa" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                    <modifier type="append" value="Devastating Wounds" field="893f-9000-ccf7-648e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
+                    <modifier type="replace" field="893f-9000-ccf7-648e" scope="model" affects="self.entries.recursive.84c4-6d1e-e724-bd6e.profiles.Melee Weapons" arg="Devastating Wounds">
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6b40-8456-36cb-ece2" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Kunnin’ But Brutal" hidden="false" id="e201-253f-1f52-e389">
               <profiles>
@@ -21171,7 +21114,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <profiles>
                 <profile name="Proper Killy" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e6d3-5f10-eeb2-e889">
                   <characteristics>
-                    <characteristic name="Description" id="4a5d-9b47-6224-7fd8" hidden="false" typeId="9b8f-694b-e5e-b573">BEAST SNAGGA model only. Add 1 to the Damage characteristic of melee weapons equipped by the bearer.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Beast Snagga^^** model only. Add 1 to the Damage characteristic of melee weapons equipped by the bearer.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -21200,6 +21143,18 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Proper Killy" field="annotation" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join=", " arg="+0"/>
+                    <modifier type="append" value="+0" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                    <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="model" join="" arg="+0" affects="self.entries.recursive.4986-bf86-beb4-13ac"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Glory Hog" hidden="false" id="3fee-786-514d-b129">
               <profiles>
@@ -21314,7 +21269,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <profiles>
                 <profile name="Press It Fasta!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b189-598-858c-49fe">
                   <characteristics>
-                    <characteristic name="Description" id="4f33-b815-950b-b68d" hidden="false" typeId="9b8f-694b-e5e-b573">MEK model only. Each time the bearer&apos;s unit is selected to shoot, when rolling to determine which ability that unit&apos;s weapons gain from the Try Dat Button! Detachment rule, roll one additional D6; until the end of the phase, ranged weapons equipped by models in that unit gain both Button Effects generated by those rolls. If a duplicate Button Effect is rolled, it has no additional effect.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Mek^^** model only. Each time the bearer&apos;s unit is selected to shoot, when rolling to determine which ability that unit&apos;s weapons gain from the Try Dat Button! Detachment rule, roll one additional D6; until the end of the phase, ranged weapons equipped by models in that unit gain both Button Effects generated by those rolls. If a duplicate Button Effect is rolled, it has no additional effect.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -21329,7 +21284,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <profiles>
                 <profile name="Supa-glowy Fing" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ab48-3318-964a-12ba">
                   <characteristics>
-                    <characteristic name="Description" id="c5ea-21c-3028-8608" hidden="false" typeId="9b8f-694b-e5e-b573">MEK model only. In your Command phase, select one enemy unit within 18&quot; and visible to the bearer, then roll one D6: on a 1-2, that enemy unit must take a Battle-shock test; on a 3-4, that enemy unit suffers D3 mortal wounds; on a 5-6, until the start of your next Command phase, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Mek^^** model only. In your Command phase, select one enemy unit within 18&quot; and visible to the bearer, then roll one D6: on a 1-2, that enemy unit must take a Battle-shock test; on a 3-4, that enemy unit suffers D3 mortal wounds; on a 5-6, until the start of your next Command phase, each time a model in that enemy unit makes an attack, subtract 1 from the Hit roll.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -21650,7 +21605,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <profiles>
                 <profile name="Big Gob" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5f33-6400-5a1d-274a">
                   <characteristics>
-                    <characteristic name="Description" id="e974-bf11-e49f-5294" hidden="false" typeId="9b8f-694b-e5e-b573">INFANTRY WARBOSS model only. At the start of the Fight phase, select one enemy unit within Engagement range of the bearer. That unit must take a Battle-shock test, and when doing so, subtract 1 from the result.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Infantry Warboss^^** model only. At the start of the Fight phase, select one enemy unit within Engagement range of the bearer. That unit must take a Battle-shock test, and when doing so, subtract 1 from the result.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -21853,7 +21808,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <profiles>
                 <profile name="Wazblasta" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d84c-a22f-ef3-126c">
                   <characteristics>
-                    <characteristic name="Description" id="54e4-e7c4-7cf4-8377" hidden="false" typeId="9b8f-694b-e5e-b573">DEFFKILLA WARTRIKE model only. In your Shooting phase, after the bearer&apos;s unit has shot, if it is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6&quot;. If it does, until the end of the turn, it is not eligible to declare a charge.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Deffkilla Wartrike^^** model only. In your Shooting phase, after the bearer&apos;s unit has shot, if it is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 6&quot;. If it does, until the end of the turn, it is not eligible to declare a charge.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -21969,7 +21924,7 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
               <profiles>
                 <profile name="Mork&apos;s Kunnin&apos;" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3811-59fc-7f42-e99e">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ORKS model only. After both players have deployed their armies, select up to three ORKS units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Orks^^** model only. After both players have deployed their armies, select up to three **^^Orks^^** units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -22369,14 +22324,16 @@ While the Waaagh! is active for your army, during your Shooting phase, ranged we
               <profiles>
                 <profile name="Glowy Gizmo Upgrade" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a552-7050-74da-c344">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">■ Add 1 to the Ballistic Skill and Strength characteristics of the bearer&apos;s ranged weapons.
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Mek^^** model only.
+
+■ Add 1 to the Ballistic Skill and Strength characteristics of the bearer&apos;s ranged weapons.
 ■ Add 6&quot; to the Range characteristic of the bearer&apos;s ranged weapons.
 
 Each time the bearer&apos;s unit is selected to shoot, if that unit is not within Engagement Range of one or more enemy units, the bearer can use this Crusade Relic. If it does, roll one D6:
 
 ■ On a 1, the bearer&apos;s unit cannot make ranged attacks this phase.
-■ On a 2-3, until the end of the phase, the bearer&apos;s ranged weapons have the [HAZARDOUS] ability.
-■ On a 4+, until the end of the phase, the bearer&apos;s ranged weapons have the [SUSTAINED HITS 1] ability, and ranged attacks made by the bearer score a Critical Hit on a successful unmodified Hit roll of 5+.</characteristic>
+■ On a 2-3, until the end of the phase, the bearer&apos;s ranged weapons have the **[HAZARDOUS]** ability.
+■ On a 4+, until the end of the phase, the bearer&apos;s ranged weapons have the **[SUSTAINED HITS 1]** ability, and ranged attacks made by the bearer score a Critical Hit on a successful unmodified Hit roll of 5+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -22402,26 +22359,10 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-                <modifier type="increment" value="6" field="9896-9419-16a1-92fc" affects="self.entries.recursive.profiles.Ranged Weapons" scope="model">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="9821-e683-6019-6f70" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="1" field="94d-8a98-cf90-183e" affects="self.entries.recursive.profiles.Ranged Weapons" scope="model">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="9821-e683-6019-6f70" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="2229-f494-25db-c5d3" affects="self.entries.recursive.profiles.Ranged Weapons" scope="model">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model" childId="9821-e683-6019-6f70" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" value="Glowy Gizmo Upgrade" field="annotation" join=", " affects="self.entries.recursive.profiles.Ranged Weapons" scope="model">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="model" childId="9821-e683-6019-6f70" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="increment" value="6" field="9896-9419-16a1-92fc" affects="self.entries.recursive.profiles.Ranged Weapons" scope="model"/>
+                <modifier type="decrement" value="1" field="94d-8a98-cf90-183e" affects="self.entries.recursive.profiles.Ranged Weapons" scope="model"/>
+                <modifier type="increment" value="1" field="2229-f494-25db-c5d3" affects="self.entries.recursive.profiles.Ranged Weapons" scope="model"/>
+                <modifier type="append" value="Glowy Gizmo Upgrade" field="annotation" join=", " affects="self.entries.recursive.profiles.Ranged Weapons" scope="model"/>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
@@ -22444,7 +22385,7 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
               <profiles>
                 <profile name="Wazgit&apos;s Kopper Skullkap" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ccea-127f-9229-d8ee">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time the bearer makes a Psychic Attack, add 1 to the Hit roll and if that attack destroys one or more enemy models, the bearer regains up to 2 lost wounds.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Weirdboy^^** or **^^Wurrboy^^** model only. Each time the bearer makes a Psychic Attack, add 1 to the Hit roll and if that attack destroys one or more enemy models, the bearer regains up to 2 lost wounds.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -22504,7 +22445,7 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
               <profiles>
                 <profile name="Choppa of Da Great Waaagh!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a983-8edb-d6ae-96ab">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Select one melee weapon equipped by the bearer (excluding Extra Attacks weapons). Add 1 to the Strength and Armour Penetration characteristics of that weapon. In addition, each time you call a Waaagh!, if the bearer is on the battlefield, melee weapons equipped by friendly **^^Orks^^** models have the **[LETHAL HITS]** ability.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Infantry Waaagh!boss**^^ or **^^Mounted Waaagh!boss**^^ model only. Select one melee weapon equipped by the bearer (excluding Extra Attacks weapons). Add 1 to the Strength and Armour Penetration characteristics of that weapon. In addition, each time you call a Waaagh!, if the bearer is on the battlefield, melee weapons equipped by friendly **^^Orks^^** models have the **[LETHAL HITS]** ability.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -22602,12 +22543,12 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
                     </profile>
                   </profiles>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8e1-f6ea-d139-e26c" includeChildSelections="false"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b8e1-f6ea-d139-e26c" includeChildSelections="false"/>
                   </constraints>
                   <modifiers>
-                    <modifier type="set" value="0" field="b8e1-f6ea-d139-e26c">
+                    <modifier type="set" value="1" field="b8e1-f6ea-d139-e26c">
                       <conditions>
-                        <condition type="lessThan" value="3" field="selections" scope="parent" childId="dc0a-e2b1-4771-536e" shared="true"/>
+                        <condition type="atLeast" value="3" field="selections" scope="parent" childId="dc0a-e2b1-4771-536e" shared="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -22627,7 +22568,9 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
               <profiles>
                 <profile name="Ded &apos;Ard Armour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="65c9-f13a-0fb9-8c27">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">■ Add 1 to the bearer&apos;s Wounds characteristic.
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Infantry^^* or **^^Mounted^^** model only.
+
+■ Add 1 to the bearer&apos;s Wounds characteristic.
 ■ Each time an attack is allocated to the bearer, worsen the Armour Penetration of that attack by 1.</characteristic>
                   </characteristics>
                 </profile>
@@ -22672,16 +22615,8 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="append" value="Ded &apos;Ard Armour" field="annotation" join=", " affects="self.entries.profiles.Unit" scope="model-or-unit">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="2275-f03d-2dc5-6efe" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" value="1" field="750a-a2ec-90d3-21fe" affects="self.entries.profiles.Unit" scope="model-or-unit">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="model-or-unit" childId="2275-f03d-2dc5-6efe" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
+                    <modifier type="append" value="Ded &apos;Ard Armour" field="annotation" join=", " affects="self.entries.profiles.Unit" scope="model"/>
+                    <modifier type="increment" value="1" field="750a-a2ec-90d3-21fe" affects="self.entries.profiles.Unit" scope="model"/>
                   </modifiers>
                   <comment>Crusade Relic: Ded &apos;Ard Armour</comment>
                 </modifierGroup>
@@ -22724,7 +22659,7 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
           <profiles>
             <profile name="Rezmekka&apos;s Redder Paint" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b4f5-2b11-3d55-07a9">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 2&quot; to the Move characteristic of models in the bearer&apos;s unit, and models in the bearer&apos;s unit have the Fights First ability.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Mounted Waaagh!boss**^^ model only. Add 2&quot; to the Move characteristic of models in the bearer&apos;s unit, and models in the bearer&apos;s unit have the Fights First ability.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -22755,7 +22690,7 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
           <profiles>
             <profile name="Da Irongob" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5295-8de9-91af-0fbd">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Fight phase, you can select one enemy INFANTRY unit within Engagement Rage of the bearer and roll one D6: on a 2+, that enemy unit suffers 3 mortal wounds and must take a Battle-shock test.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the Fight phase, you can select one enemy **^^Infantry^^** unit within Engagement Rage of the bearer and roll one D6: on a 2+, that enemy unit suffers 3 mortal wounds and must take a Battle-shock test.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -22778,7 +22713,7 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
           <profiles>
             <profile name="Frazzle Field Generator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6700-6765-282f-f548">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Select one melee weapon equipped by the bearer. That weapon gains the [DEVASTATING WOUNDS] ability.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Select one melee weapon equipped by the bearer. That weapon gains the **[DEVASTATING WOUNDS]** ability.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -22820,16 +22755,8 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier type="append" value="Da Krushin&apos; Armour" field="annotation" join=", " affects="self.entries.profiles.Unit" scope="model-or-unit">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="7851-53b3-a375-32e0" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="750a-a2ec-90d3-21fe" affects="profiles.Unit" scope="model-or-unit">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="self" childId="7851-53b3-a375-32e0" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="append" value="Da Krushin&apos; Armour" field="annotation" join=", " affects="self.entries.profiles.Unit" scope="model-or-unit"/>
+                <modifier type="increment" value="1" field="750a-a2ec-90d3-21fe" affects="profiles.Unit" scope="model-or-unit"/>
               </modifiers>
               <comment>Bestest Bossloot: Da Krushin&apos; Armour</comment>
             </modifierGroup>
@@ -23323,6 +23250,11 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Fungus-fuel Injecta" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f4ba-c082-7b3a-4ae4">
@@ -23338,16 +23270,8 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="increment" value="2" field="e703-ecb6-5ce7-aec1" affects="self.entries.profiles.Unit" scope="model-or-unit">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="5c81-0c3a-79c0-155e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="append" value="Fungus-fuel Injecta" field="annotation" join=", " affects="self.entries.profiles.Unit" scope="model-or-unit">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="5c81-0c3a-79c0-155e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
+                    <modifier type="increment" value="2" field="e703-ecb6-5ce7-aec1" affects="self.entries.profiles.Unit" scope="model-or-unit"/>
+                    <modifier type="append" value="Fungus-fuel Injecta" field="annotation" join=", " affects="self.entries.profiles.Unit" scope="model-or-unit"/>
                   </modifiers>
                   <comment>Kustom Job: Fungus-fuel Injecta</comment>
                 </modifierGroup>
@@ -23377,11 +23301,16 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Fortress on Wheels" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="32aa-c6cb-524c-8d03">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Toughness characteristic of this model, and this model has a 5+ invulnerable save.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Trukk^^** or **^^Battlewagon^^** model only. Add 1 to the Toughness characteristic of this model, and this model has a 5+ invulnerable save.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -23391,16 +23320,8 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="increment" value="1" field="d29d-cf75-fc2d-34a4" affects="self.entries.profiles.Unit" scope="model-or-unit">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="5259-d3ab-6b3a-6d56" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="append" value="Fortress on Wheels" field="annotation" join=", " affects="self.entries.profiles.Unit" scope="model-or-unit">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="5259-d3ab-6b3a-6d56" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
+                    <modifier type="increment" value="1" field="d29d-cf75-fc2d-34a4" affects="self.entries.profiles.Unit" scope="model-or-unit"/>
+                    <modifier type="append" value="Fortress on Wheels" field="annotation" join=", " affects="self.entries.profiles.Unit" scope="model-or-unit"/>
                   </modifiers>
                   <comment>Kustom Job: Fortress on Wheels</comment>
                 </modifierGroup>
@@ -23422,6 +23343,11 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -23456,6 +23382,11 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="dbd4-63-af05-998" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -23500,11 +23431,18 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Stompamatic Pistons" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fff9-8a37-787d-2344">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">- Add 2&quot; to this model&apos;s Move characteristic.
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Walker^^** model only (excluding **^^Killa Kans^^**).
+
+- Add 2&quot; to this model&apos;s Move characteristic.
 - Add 1 to Advance and Charge rolls made for this model.</characteristic>
                   </characteristics>
                 </profile>
@@ -23515,16 +23453,8 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="increment" value="2" field="e703-ecb6-5ce7-aec1" affects="self.entries.profiles.Unit" scope="model-or-unit">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="6c88-9de7-9fa1-befe" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="append" value="Stompamatic Pistons" field="annotation" join=", " affects="self.entries.profiles.Unit" scope="model-or-unit">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="6c88-9de7-9fa1-befe" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
+                    <modifier type="increment" value="2" field="e703-ecb6-5ce7-aec1" affects="self.entries.profiles.Unit" scope="model-or-unit"/>
+                    <modifier type="append" value="Stompamatic Pistons" field="annotation" join=", " affects="self.entries.profiles.Unit" scope="model-or-unit"/>
                   </modifiers>
                   <comment>Kustom Job: Stompamatic Pistons</comment>
                 </modifierGroup>
@@ -23583,6 +23513,91 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Enhancement Upgrades" id="71a3-fa79-fc49-ad9e" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Frazzle Field Generator upgrade" hidden="false" id="d622-6793-ff35-518c">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ef5e-2c3e-eca1-eac9" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="model" shared="true" id="1d9d-6099-c80d-7d8b" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="model" childId="9200-0e4d-b243-3e70" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="b678-4a99-210e-931f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="d622-6793-ff35-518c" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="d622-6793-ff35-518c" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="1d9d-6099-c80d-7d8b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="9200-0e4d-b243-3e70" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Bestest Bossloot: Frazzle Field Generator</comment>
+              <modifiers>
+                <modifier type="append" value="Frazzle Field Generator" field="annotation" join=", " scope="upgrade" affects="self.entries.profiles.Melee Weapons"/>
+                <modifier type="append" value="Devastating Wounds" field="893f-9000-ccf7-648e" join=", " scope="upgrade" affects="self.entries.profiles.Melee Weapons"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Da Shootiest Blasta upgrade" hidden="false" id="b7c8-c0cb-29ca-c1f8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ede7-92c3-167f-7f46" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="model" shared="true" id="b67c-e301-d763-5694" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="model" childId="44c3-e092-00d3-024f" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="b678-4a99-210e-931f" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="upgrade" childId="eeda-8544-a2f3-3fab" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="b7c8-c0cb-29ca-c1f8" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="b7c8-c0cb-29ca-c1f8" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="b67c-e301-d763-5694">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="44c3-e092-00d3-024f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <comment>Bestest Bossloot: Da Shootiest Blasta</comment>
+              <modifiers>
+                <modifier type="append" value="Da Shootiest Blasta" field="annotation" join=", " affects="self.entries.profiles.Ranged Weapons" scope="upgrade"/>
+                <modifier type="append" value="Melta 3" field="7f1b-8591-2fcf-d01c" join=", " affects="self.entries.profiles.Ranged Weapons" scope="upgrade"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <categoryEntries>
@@ -23689,6 +23704,7 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
       </constraints>
     </categoryEntry>
     <categoryEntry name="Breaka Boyz" id="adc9-f342-6988-d184" hidden="false"/>
+    <categoryEntry name="Da Red Gobbo A-bomb-inable Snowman" hidden="false" id="eace-d325-834e-71dd"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Big Mek in Mega Armour" hidden="false" type="selectionEntry" id="f552-367d-f8b5-d220" targetId="95e9-6da3-5e75-2566"/>
@@ -23784,6 +23800,7 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
     <entryLink import="true" name="Battlewagon" hidden="false" type="selectionEntry" id="9af5-6820-1ff2-6c01" targetId="306a-b2ac-aaf1-9a7c"/>
     <entryLink import="true" name="Beast Snagga Boyz" hidden="false" type="selectionEntry" id="fd9d-87f3-1895-3470" targetId="b7c3-d00e-daf2-76fb"/>
     <entryLink import="true" name="Beastboss" hidden="false" type="selectionEntry" id="2f80-26a6-9486-b348" targetId="5a5d-c5a4-39b8-4a3f"/>
+    <entryLink import="true" name="Da Red Gobbo&apos;s A-bomb-inable Snowman [Legends]" hidden="false" type="selectionEntry" id="b7bb-3da3-d2f2-ed0f" targetId="6610-3cb7-dc72-8852"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Damaged: 1-5 Wounds Remaining" hidden="false" id="2be6-f2b9-f73c-82b1" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
@@ -23834,6 +23851,19 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, for each bomb squig this unit has, after this unit ends a Normal move, you can use one Bomb Squig. If you do, select one enemy unit within 12&quot; and visible to this unit and roll one D6: on a 3+, that enemy unit suffers D3 mortal wounds.</characteristic>
       </characteristics>
+    </profile>
+    <profile name="Grot Tanks" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c25b-529f-948e-d571">
+      <characteristics>
+        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+        <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
+        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">8+</characteristic>
+        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+      </attributes>
     </profile>
   </sharedProfiles>
   <catalogueLinks>

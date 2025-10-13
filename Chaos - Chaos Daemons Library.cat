@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b45c-af22-788a-dfd6" name="Chaos - Daemons Library" revision="74" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b45c-af22-788a-dfd6" name="Chaos - Daemons Library" revision="81" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="e3ec-7a32-ae62-8727" name="Index - Chaos Daemons"/>
   </publications>
@@ -506,6 +506,9 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Attacks Dx Weapon" hidden="false" id="b797-ec61-1691-fc9b" targetId="e993-e086-6de1-12af" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="d231-290d-7de8-bc49" name="Slaughter and Carnage" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -651,13 +654,6 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -677,6 +673,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Ranged Weapon" hidden="false" id="9c07-1f39-01fc-39bb" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="688c-16dc-71b6-54c8" targetId="e993-e086-6de1-12af" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -1424,6 +1421,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
       </costs>
       <categoryLinks>
         <categoryLink name="Melee Weapon" hidden="false" id="4121-c2d2-e28c-4f45" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+        <categoryLink name="Extra Attacks Weapon" hidden="false" id="3258-23c7-67e2-6805" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="d1cc-e17a-f1a1-4349" name="Rendmaster on Blood Throne" hidden="false" collective="false" import="true" type="model">
@@ -1538,6 +1536,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="01fa-0e32-46bd-58d0" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="377c-d900-11e2-671d" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -2289,13 +2288,6 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -2308,6 +2300,9 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="9748-e48a-c3d2-3ad9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="f0d4-21d7-feee-2245" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -2542,6 +2537,9 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="b32f-dca5-5980-4b39" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="592e-b142-b334-2112" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Biting maw" hidden="false" id="c245-c736-9e3-62c9" collective="false">
               <constraints>
@@ -3018,13 +3016,6 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3037,6 +3028,9 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="e9a1-6953-6dd1-b90f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="6fab-52d4-12c2-d312" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3198,13 +3192,6 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+2</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -3216,6 +3203,9 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="a448-850f-da3f-249c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="230e-dead-d708-0050" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4425,6 +4415,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
           </costs>
           <categoryLinks>
             <categoryLink name="Psychic Weapon" hidden="false" id="e673-ee60-472e-d614" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+            <categoryLink name="Damage Dx Weapon" hidden="false" id="14da-9f93-0da9-8b3e" targetId="4986-bf86-beb4-13ac" primary="false"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry id="6d7d-2763-378d-54de" name="Infernal Gateway" hidden="false" collective="false" import="true" type="upgrade">
@@ -4467,6 +4458,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
           </costs>
           <categoryLinks>
             <categoryLink name="Psychic Weapon" hidden="false" id="7d05-6fcf-460d-0e62" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+            <categoryLink name="Damage Dx Weapon" hidden="false" id="402e-420b-b7b6-7818" targetId="4986-bf86-beb4-13ac" primary="false"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -4671,13 +4663,6 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <infoLinks>
@@ -4689,6 +4674,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
                   <categoryLinks>
                     <categoryLink name="Psychic Weapon" hidden="false" id="7910-18f7-d306-343a" targetId="4546-4a0c-b3be-e84c" primary="false"/>
                     <categoryLink name="Ranged Weapon" hidden="false" id="11a1-f2dc-f2f9-f36d" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="d8b1-a609-b258-bc71" targetId="4986-bf86-beb4-13ac" primary="false"/>
                   </categoryLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Weapon Upgrades" id="4c71-c2f6-35c3-727d" hidden="false" flatten="true">
@@ -4729,6 +4715,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
                   </selectionEntryGroups>
                   <categoryLinks>
                     <categoryLink name="Melee Weapon" hidden="false" id="158a-df30-01fc-8ca8" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                    <categoryLink name="Extra Attacks Weapon" hidden="false" id="c752-a542-41ed-d530" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -5119,6 +5106,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="f94b-e84d-fc8b-bbdd" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="7cc0-1e53-766f-0500" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -5676,13 +5664,6 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
         <profile id="9526-df5a-a4a5-61f4" name="➤ Arcane Fireball - focused witchfire" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
           <characteristics>
@@ -5694,13 +5675,6 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Hazardous, Psychic</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -5714,6 +5688,7 @@ In your Command phase, if your opponent has one or more Flux tokens, you gain on
       <categoryLinks>
         <categoryLink name="Psychic Weapon" hidden="false" id="74d8-a029-30f7-edff" targetId="4546-4a0c-b3be-e84c" primary="false"/>
         <categoryLink name="Ranged Weapon" hidden="false" id="e5bc-392e-8749-1bd0" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="bdb5-d69e-c3ff-cd3e" targetId="4986-bf86-beb4-13ac" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="b795-b936-ad61-e407" name="Blue Horrors" hidden="false" collective="false" import="true" type="unit">
@@ -6408,13 +6383,6 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Psychic, Torrent</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -6430,6 +6398,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               </entryLinks>
               <categoryLinks>
                 <categoryLink name="Psychic Weapon" hidden="false" id="6888-bfcd-f3fa-8770" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="93b6-76f2-6070-9904" targetId="e993-e086-6de1-12af" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -7020,6 +6989,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="eac7-1bc0-aec3-0fef" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="025c-5fa2-fa80-e05c" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7566,6 +7538,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
                   </selectionEntryGroups>
                   <categoryLinks>
                     <categoryLink name="Melee Weapon" hidden="false" id="fa85-852c-c358-7141" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                    <categoryLink name="Extra Attacks Weapon" hidden="false" id="b881-2ee1-3798-0bd8" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -7946,13 +7919,6 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -7972,6 +7938,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Ranged Weapon" hidden="false" id="f320-c1e9-9bf5-e633" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="e2d3-9b68-7a32-feae" targetId="e993-e086-6de1-12af" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plaguesword and distended maw" hidden="false" id="5abd-1e9c-becb-2d4d" collective="false">
@@ -8452,6 +8419,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Extra Attacks Weapon" hidden="false" id="3250-9640-b23f-6a73" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="8b15-f5-5111-f890" name="Lopping shears" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -9194,6 +9164,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="6d5c-f775-969a-0e83" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry id="9699-ae25-a6ab-e82d" name="Foul mouthparts" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
@@ -9220,6 +9193,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="4ae6-79ce-63b3-0fab" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry id="b217-c5b1-1bce-54c5" name="Plaguesword" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
@@ -9273,13 +9249,6 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Lethal Hits</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -9292,6 +9261,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="ad12-38e5-a774-ccb3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="796f-e99e-a87f-363c" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Foul mouthparts" hidden="false" id="079d-855c-775a-6c0f" collective="true">
               <constraints>
@@ -9321,6 +9293,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="fa3c-b014-d19c-305c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="56e6-0ec6-f1c8-51be" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Plaguesword" hidden="false" id="2227-4cd9-af64-0935" collective="true">
               <constraints>
@@ -9648,6 +9623,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Extra Attacks Weapon" hidden="false" id="b110-80b4-b6ff-647c" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="bddb-93c6-348a-a2be" name="Soulpiercer" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -9863,6 +9841,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="d2e5-a306-6ff8-e37a" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="2f20-5714-b6b7-e7cc" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Witstealer sword" hidden="false" id="333c-78e7-ed7c-4553" collective="false">
@@ -9967,6 +9946,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
                   </selectionEntryGroups>
                   <categoryLinks>
                     <categoryLink name="Melee Weapon" hidden="false" id="5bae-f228-c235-f4bf" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                    <categoryLink name="Extra Attacks Weapon" hidden="false" id="2139-c2db-0760-e52d" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
                   </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Shining aegis" hidden="false" id="6f63-3cb4-6395-e6e6" collective="false">
@@ -10537,6 +10517,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink name="Extra Attacks Weapon" hidden="false" id="7495-9db9-92e6-2410" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="ee05-5bae-382d-8ad5" name="Cacophonic choir" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -10717,13 +10700,6 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
                     <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
                     <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -10742,6 +10718,8 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="a33f-ab07-04be-bce7" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="2850-60f3-7f17-aac9" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="83b0-dec4-d146-c1e4" targetId="e993-e086-6de1-12af" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Ravaging claws" hidden="false" id="dcae-96ce-cb39-7691" collective="false">
@@ -10979,6 +10957,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="e760-7314-ef9b-55c4" targetId="ccdd-3987-11ed-90cd" primary="false"/>
                 <categoryLink name="Ranged Weapon" hidden="false" id="b2be-f714-6dc4-3ab9" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="b9cd-2a02-e19a-6c20" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Seeker tongues" hidden="false" id="96fd-cab1-c43f-5c49" collective="false">
@@ -11016,6 +10995,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="4e6b-e69d-fc4a-512d" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="03f8-1237-d4a8-c526" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Slashing claws" hidden="false" id="d5d4-e425-88a4-f0ec" collective="false">
@@ -11821,6 +11801,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="457b-ded8-a6a1-24a0" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry id="15b6-f40d-3bf0-1d17" name="Slashing claws" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
@@ -11898,6 +11881,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="80b2-6a72-1c5a-4bac" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="a508-95f9-fb9e-877a" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Slashing claws" hidden="false" id="aaf9-cc79-8b53-280c" collective="true">
               <constraints>
@@ -12111,6 +12097,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="5717-e341-4983-eb4a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="0df3-c387-4215-620b" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry id="332c-33a-3e8d-2c83" name="Seeker tongues" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
@@ -12140,6 +12129,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="2986-0400-df75-6554" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="7e30-3d70-8e3b-ebaa" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry id="6610-6dcb-81e0-593a" name="Slashing claws" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
@@ -12372,6 +12364,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="8b62-0d4e-eb1c-3b98" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="ef19-2399-bffc-b265" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry id="a96b-4f8c-c9d2-349b" name="Slashing claws" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
@@ -12645,6 +12640,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="b73c-2436-cafd-d928" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="cf98-f197-f622-11fb" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Slashing claws" hidden="false" id="b0b8-6b71-4256-38bf" collective="false">
               <constraints>
@@ -13450,6 +13448,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="efe3-d8b7-6c45-1a32" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="22f4-5273-94a8-6490" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Pox rider plaguesword" hidden="false" id="2b96-d964-34a9-4f17" collective="true">
               <constraints>
@@ -13476,6 +13477,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="3f6e-4d92-357f-b3ab" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="7429-6736-882f-7090" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Yawning maw" hidden="false" id="3996-2f96-d833-234f" collective="true">
               <constraints>
@@ -13673,6 +13677,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="481d-2964-d2e1-24a3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="1ba1-b065-e42d-182d" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Yawning maw" hidden="false" id="89c5-652b-8409-a4f2" collective="true">
               <constraints>
@@ -14360,6 +14367,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <infoLink name="Devastating Wounds" hidden="false" type="rule" id="1c9-4fd1-919c-5ec0" targetId="be1e-ac8e-1e2c-3528"/>
             <infoLink name="Extra Attacks" hidden="false" type="rule" id="8887-8876-c05-6de4" targetId="115b-79dc-f723-d761"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Extra Attacks Weapon" hidden="false" id="d424-8bec-c3e1-c772" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Souleater blade" hidden="false" id="459-d687-3b01-6846">
           <constraints>
@@ -14569,6 +14579,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="1ff5-8ab3-609f-4795" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="b3e2-5c05-6891-3841" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Ravaging claws" hidden="false" id="3446-53ef-f1f3-8dfa">
@@ -15095,7 +15106,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
           <profiles>
             <profile id="d782-840c-d76b-38c4" name="A&apos;rgath, the King of Blades" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">KHORNE LEGIONES DAEMONICA model only. Add 1 to the Attacks and Strength characteristics of the bearer’s melee weapons. While the bearer is within your army’s Shadow of Chaos, add 2 to the Attacks and Strength characteristics of the bearer’s melee weapons instead.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Khorne Legiones Daemonica^^** model only. Add 1 to the Attacks and Strength characteristics of the bearer’s melee weapons. While the bearer is within your army’s Shadow of Chaos, add 2 to the Attacks and Strength characteristics of the bearer’s melee weapons instead.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15103,6 +15114,20 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
             <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
           </costs>
           <comment>Daemonic Incursion</comment>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="append" value="A&apos;rgath, the King of Blades" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                <modifier type="append" value="+0" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" join=""/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                <modifier type="decrement" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.84c4-6d1e-e724-bd6e.profiles.Melee Weapons" position="-1"/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="model" arg="+0" affects="self.entries.recursive.e993-e086-6de1-12af"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry id="a80f-8b38-42e7-5ab6" name="The Everstave" publicationId="e3ec-7a32-ae62-8727" page="5" hidden="false" collective="false" import="true" type="upgrade" sortIndex="8">
           <modifiers>
@@ -15597,7 +15622,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
           <profiles>
             <profile name="Improbable Shield (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1698-cded-3890-3f7e">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">LEGIONES DAEMONICA TZEENTCH model only. While a friendly LEGIONES DAEMONICA TZEENTCH unit is within 6&quot; of the bearer, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks and mortal wounds.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Legiones Daemonica Tzeentch^^** model only. While a friendly **^^Legiones Daemonica Tzeentch^^** unit is within 6&quot; of the bearer, models in that unit have the Feel No Pain 4+ ability against Psychic Attacks and mortal wounds.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15683,8 +15708,13 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
               <modifiers>
                 <modifier type="append" value="Neverblade" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
                 <modifier type="increment" value="2" field="ab33-d393-96ce-ccba" scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
-                <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
                 <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                <modifier type="append" value="+0" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" join=""/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                <modifier type="decrement" value="1" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.84c4-6d1e-e724-bd6e.profiles.Melee Weapons" position="-1"/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="model" arg="+0" affects="self.entries.recursive.e993-e086-6de1-12af"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -16199,6 +16229,9 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
           <entryLinks>
             <entryLink import="true" name="Weapon Modifications" hidden="false" id="52e2-e3b4-c323-e414" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
           </entryLinks>
+          <categoryLinks>
+            <categoryLink name="Extra Attacks Weapon" hidden="false" id="aaa0-79c8-171b-899d" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="b289-f2a3-2509-8439" name="Warpsword" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -16212,13 +16245,6 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
                 <characteristic name="D" typeId="3254-9fe6-d824-513e">D6</characteristic>
                 <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <infoLinks>
@@ -16230,6 +16256,10 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
           <entryLinks>
             <entryLink import="true" name="Weapon Modifications" hidden="false" id="dcf2-ef81-82dd-c504" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
           </entryLinks>
+          <categoryLinks>
+            <categoryLink name="Extra Attacks Weapon" hidden="false" id="d553-5792-7341-1df5" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+            <categoryLink name="Damage Dx Weapon" hidden="false" id="79f1-5d75-abb8-431e" targetId="4986-bf86-beb4-13ac" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

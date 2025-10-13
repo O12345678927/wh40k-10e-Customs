@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="3bdf-a114-5035-c6ac" name="Xenos - Genestealer Cults" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="96" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="3bdf-a114-5035-c6ac" name="Xenos - Genestealer Cults" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="100" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="false" name="Detachment" hidden="false" id="b96c-3fb6-1ee9-15ae">
       <constraints>
@@ -932,6 +932,7 @@
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af9a-b2ba-617e-f65e"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c19-85de-e959-b33d"/>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="23dd-e5cb-2f9c-c62b" includeChildSelections="true"/>
                   </constraints>
                   <profiles>
                     <profile name="Demolition charge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8429-4679-97cf-4b05">
@@ -956,6 +957,26 @@
                     <infoLink name="Hazardous" id="ffd0-9331-4496-9840" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
                     <infoLink name="Assault" id="d270-7ee4-2ce3-4e5c" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="70a7-501f-b6f0-7148" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
+                  <modifiers>
+                    <modifier type="increment" value="2" field="23dd-e5cb-2f9c-c62b">
+                      <repeats>
+                        <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false" id="2a72-f72c-cd19-2c37" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="add" value="Can only take 2 Demolition charges per 5 models" field="error">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="3" field="selections" scope="unit" childId="36a8-d8a9-c4a1-4d3e" shared="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="10" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
               <infoLinks>
@@ -970,15 +991,8 @@
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d156-22fa-ee8-4cb0" includeChildSelections="true"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="d156-22fa-ee8-4cb0" includeChildSelections="true"/>
               </constraints>
-              <modifiers>
-                <modifier type="increment" value="2" field="d156-22fa-ee8-4cb0">
-                  <repeats>
-                    <repeat value="5" repeats="1" field="selections" scope="a197-f6c3-5d4a-5326" childId="model" shared="true" roundUp="false" id="2a72-f72c-cd19-2c37" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1839,13 +1853,6 @@
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
                           </characteristics>
-                          <modifiers>
-                            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
                         </profile>
                       </profiles>
                       <infoLinks>
@@ -1868,6 +1875,9 @@
                           </modifiers>
                         </entryLink>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="6f33-427c-a69c-a86c" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>
@@ -2202,6 +2212,7 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="023b-59c2-a4ed-4f7d" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="4b99-0923-efff-788e" targetId="4986-bf86-beb4-13ac" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Alchemicus familiar" hidden="false" id="2302-2c37-c52e-ad0a">
@@ -2527,13 +2538,6 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
                       </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                     </profile>
                   </profiles>
                   <entryLinks>
@@ -2552,6 +2556,9 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
                       </modifiers>
                     </entryLink>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="31dc-5bd0-62af-c081" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Heavy seismic cannon" hidden="false" id="7cf-3e0a-5eb-900">
                   <profiles>
@@ -2586,6 +2593,9 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
                       </modifiers>
                     </entryLink>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="70ce-074b-c97f-c4df" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -4151,13 +4161,13 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="df31-1906-987b-a355" hidden="false" sortIndex="4">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Magus stave" hidden="false" id="5f9d-aaaa-81b4-3192">
+            <selectionEntry type="upgrade" import="true" name="Force stave" hidden="false" id="5f9d-aaaa-81b4-3192">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="19d1-6f5-10fb-d1e1"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="946e-8327-f515-c4c8"/>
               </constraints>
               <profiles>
-                <profile name="Magus stave" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="93e8-179c-3878-14d3">
+                <profile name="Force stave" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="93e8-179c-3878-14d3">
                   <characteristics>
                     <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                     <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
@@ -4172,6 +4182,7 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
               <categoryLinks>
                 <categoryLink name="Psychic Weapon" hidden="false" id="e4da-4f6d-9901-27d8" targetId="4546-4a0c-b3be-e84c" primary="false"/>
                 <categoryLink name="Melee Weapon" hidden="false" id="033c-2523-3954-3c5c" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="4940-cea7-43ff-83f8" targetId="4986-bf86-beb4-13ac" primary="false"/>
               </categoryLinks>
               <infoLinks>
                 <infoLink name="Psychic" id="37b2-ee77-39f4-564b" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
@@ -4413,6 +4424,9 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
                           </conditions>
                         </modifier>
                       </modifiers>
+                      <categoryLinks>
+                        <categoryLink name="Damage Dx Weapon" hidden="false" id="8a91-0bd0-948c-fb61" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -4504,6 +4518,9 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
                           </conditions>
                         </modifier>
                       </modifiers>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="514a-4a52-5e6e-04b3" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Webber" hidden="false" id="7710-1a0c-dc5f-f945">
                       <infoLinks>
@@ -4533,6 +4550,9 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
                           </conditions>
                         </modifier>
                       </modifiers>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="efbe-b975-b2e1-cf9f" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -5533,6 +5553,8 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Melee Weapon" hidden="false" id="ca49-bc19-79f8-2ad2" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+                <categoryLink name="Extra Attacks Weapon" hidden="false" id="f02d-e5d7-dc49-48c1" targetId="84c4-6d1e-e724-bd6e" primary="false"/>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="4bf2-4757-6107-2a52" targetId="4986-bf86-beb4-13ac" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Scoped needle pistol" hidden="false" id="2337-ead7-99a4-72ab">
@@ -5568,6 +5590,7 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Ranged Weapon" hidden="false" id="cfe0-b749-07d8-23f9" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="c6e6-8223-d06d-c2cc" targetId="4986-bf86-beb4-13ac" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Cult bonesword" hidden="false" id="9b0d-6cb-c1c7-22b2">
@@ -6001,6 +6024,7 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Ranged Weapon" hidden="false" id="92e2-da72-703f-483f" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="9b39-1cbe-8390-c709" targetId="e993-e086-6de1-12af" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Remote explosives" hidden="false" id="e1fd-13a4-18de-34cd">
@@ -6289,6 +6313,13 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
         <profile name="➤ Grenade launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f16-d4b5-befc-8fd7">
           <characteristics>
@@ -6300,6 +6331,13 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -6371,13 +6409,6 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Pistol, Torrent</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -6385,6 +6416,9 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
         <infoLink name="Torrent" hidden="false" type="rule" id="ea56-dbf2-44bf-2f3b" targetId="5edf-d619-23e0-9b56"/>
         <infoLink name="Pistol" hidden="false" type="rule" id="7128-f9fd-ee13-7672" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="5b30-9e38-21bc-8380" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="2665-129e-3c44-1270">
       <categoryLinks>
@@ -6463,6 +6497,9 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
         <infoLink name="Blast" id="7a38-be03-6f15-ba6c" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
         <infoLink name="Hazardous" id="7e5d-067f-f869-88a9" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="887d-659b-cbfe-64d8" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy stubber" hidden="false" id="2edb-110e-e4f8-b6da">
       <profiles>
@@ -6499,6 +6536,9 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
       <infoLinks>
         <infoLink name="Blast" hidden="false" type="rule" id="bf79-cb2-b88a-7b15" targetId="6c1f-1cf7-ff25-c99e"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="e271-5972-03f6-32a0" targetId="e993-e086-6de1-12af" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cult icon" hidden="false" id="3338-b9a2-7d75-33e6" collective="true">
       <profiles>
@@ -9227,7 +9267,7 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
               <profiles>
                 <profile name="Biomorph Adaption" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b629-d896-a9a8-0c82">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ABOMINANT or PATRIARCH model only. Improve the Armour Penetration and Damage characteristics of melee weapon equipped by the bearer by 1.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Abominant ^^** or **^^Patriarch^^** model only. Improve the Armour Penetration and Damage characteristics of melee weapons equipped by the bearer by 1.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9249,6 +9289,19 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="append" value="Biomorph Adaption" field="annotation" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join=", " arg="+0"/>
+                    <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join=", " arg="+0"/>
+                    <modifier type="append" value="+0" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                    <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="model" join="" arg="+0" affects="self.entries.recursive.4986-bf86-beb4-13ac"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Mutagenic Regeneration" hidden="false" id="f560-221b-afe7-5d77">
               <profiles>
@@ -9696,7 +9749,7 @@ You can attach this model to an ACOLYTE HYBRIDS or NEOPHYTE HYBRID unit, even if
         <selectionEntry type="upgrade" import="true" name="Biosanctic Broodsurge" hidden="false" id="ff11-0fa4-2950-380e">
           <rules>
             <rule name="Hypermorphic Fury" id="0a4d-88d1-161e-213b" hidden="false">
-              <description>Add 1 to Charge rolls made for ABERRANTS, BIOPHAGUS and PURESTRAIN GENESTEALERS units from your army. In addition, each time such a unit is selected to fight, if it made a Charge move this turn, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by the models in that unit.</description>
+              <description>Add 1 to Charge rolls made for **^^Aberrants^^**, **^^Biophagus^^** and **^^Purestrain Genestealers^^** units from your army. In addition, each time such a unit is selected to fight, if it made a Charge move this turn, until the end of the phase, add 1 to the Attacks characteristic of melee weapons equipped by the models in that unit.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -10431,21 +10484,13 @@ Catalyst (Aura): While an enemy unit is within 6&quot; of this unit, each time a
               <modifierGroups>
                 <modifierGroup type="and">
                   <modifiers>
-                    <modifier type="append" value="Vector Talon" field="annotation" join=", " scope="model-or-unit" affects="self.entries.recursive.profiles.Melee Weapons">
-                      <conditions>
-                        <condition type="greaterThan" value="0" field="selections" scope="model-or-unit" childId="a931-03f9-fe26-b62c" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="model-or-unit" affects="self.entries.recursive.profiles.Melee Weapons">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a931-03f9-fe26-b62c" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model-or-unit" affects="self.entries.recursive.profiles.Melee Weapons">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a931-03f9-fe26-b62c" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
+                    <modifier type="append" value="Vector Talon" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                    <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
+                    <modifier type="append" value="+0" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                    <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join="" arg="+0"/>
+                    <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="model" join="" arg="+0" affects="self.entries.recursive.4986-bf86-beb4-13ac"/>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>

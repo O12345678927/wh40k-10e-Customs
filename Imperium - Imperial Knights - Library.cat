@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="1b6d-dc06-5db9-c7d1" name="Imperium - Imperial Knights - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="58" battleScribeVersion="2.03" authorName="BSData Developers" type="catalogue" authorContact="Dunamis55 &amp; AbonShell">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="1b6d-dc06-5db9-c7d1" name="Imperium - Imperial Knights - Library" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="69" battleScribeVersion="2.03" authorName="BSData Developers" type="catalogue" authorContact="Dunamis55 &amp; AbonShell">
   <rules>
     <rule name="Code Chivalric" id="cbd-943-bc7b-20ec">
-      <description>If your Army Faction is **^^Imperial Knights^^**, at the end of the Read Mission Objectives step, you must determine your army&apos;s Oath for the coming battle. An Oath consists of two parts - one Deed and one Quality. There are three options for each part, shown below.
+      <description>If your Army Faction is **^^Imperial Knights^^**, at the end of the Read Mission Objectives step, you must determine your army&apos;s Oath for the coming battle. An Oath consists of two parts - one Deed and one Quality. There are three options for each part.
 
-To determine your army&apos;s Deed, you can either select one Deed or you can randomly select one Deed by rolling a D6 and consulting the relevant table below. The selected Deed will describe what needs to be achieved in order to complete that Deed.
+To determine your army&apos;s Deed, you can either select one Deed or you can randomly select one Deed by rolling a D6 and consulting the relevant table. The selected Deed will describe what needs to be achieved in order to complete that Deed.
 
-To determine your army&apos;s Quality, you can either select one Quality or you can randomly select one Quality by rolling a D6 and consulting the relevant table below. Until the end of the battle, the ability described in the Quality selected applies to all models in your army with this ability.
+To determine your army&apos;s Quality, you can either select one Quality or you can randomly select one Quality by rolling a D6 and consulting the relevant table. Until the end of the battle, the ability described in the Quality selected applies to all models in your army with this ability.
 
 The first time your selected Deed is completed your Oath is fulfilled and, until the end of the battle, your army becomes Honoured and you gain 2CP, or 3CP if you randomly selected your Deed and/or Quality (CP gained in this way are an exemption to the Core Rules that limit the maximum number of CP you can gain per battle round to 1).</description>
       <modifiers>
@@ -240,7 +240,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         <categoryLink targetId="4f3a-f0f7-6647-348d" id="6986-ed62-5414-fde9" primary="true" name="Epic Hero"/>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="b29a-6d04-1d2e-3bd6" primary="false" name="Character"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="2048-5edf-ccf7-13a1" primary="false" name="Imperium"/>
-        <categoryLink targetId="b5e4-3253-c157-54fd" id="e4b0-fa8e-84e-b735" primary="false" name="Faction: Imperial Knights"/>
+        <categoryLink name="Faction: Imperial Knights" hidden="false" id="9f2b-ebde-216d-c968" targetId="b5e4-3253-c157-54fd" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4882-bc3c-55bc-7e14"/>
@@ -265,7 +265,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                 <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                 <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">5+</characteristic>
-                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
               </characteristics>
             </profile>
             <profile name="Chainbreaker" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="7f8-ef35-95d5-6fc7">
@@ -700,13 +700,6 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 4</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -715,6 +708,9 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="5faf-2618-51dd-315c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Damage Dx Weapon" hidden="false" id="701a-41ce-2b81-d0ab" targetId="4986-bf86-beb4-13ac" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -755,7 +751,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </profile>
         <profile name="Suppression Protocols" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="1d28-343b-c471-4427">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit (excluding **^^Monsters^^** and **^^Vehicles^^**) hit by one or more of those attacks made with an Armiger autocannon. Until the start of your next turn, that enemy unit is suppressed. While that unit is suppressed, each time a model in that unit makes an attack, subtract from the Hit roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, select one enemy unit (excluding **^^Monsters^^** and **^^Vehicles^^**) hit by one or more of those attacks made with an Armiger autocannon. Until the start of your next turn, that enemy unit is suppressed. While that unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -951,7 +947,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Seasoned Noble" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="c8eb-db13-de01-b988">
@@ -1159,7 +1155,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Aggressive Assault" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="be43-2d11-65f8-aedb">
@@ -1330,7 +1326,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Martial Pride" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="aa56-4384-8f12-cc31">
@@ -1579,7 +1575,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Thin Their Ranks" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="51ae-c850-5c2a-761f">
@@ -1766,7 +1762,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Punishing Salvoes" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f3ec-bea-7d9f-df98">
@@ -2018,7 +2014,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Exemplar of the Code" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="e11c-1932-dd04-c55f">
@@ -2064,13 +2060,6 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">4</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
                 <profile name="➤ Las-impulsor - low intensity" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6205-84d2-cab4-8894">
                   <characteristics>
@@ -2082,13 +2071,6 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <constraints>
@@ -2108,6 +2090,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Ranged Weapon" hidden="false" id="4a41-4b76-161f-822e" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="3725-5932-d0a7-8fe8" targetId="e993-e086-6de1-12af" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -2291,7 +2274,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">28</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Titan Hunter" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="1b2e-aac4-ebfe-3c7">
@@ -2314,7 +2297,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </infoLink>
         <infoLink name="Super-Heavy Walker" type="rule" id="a27e-e57a-72d-f1cb" targetId="5e13-1624-d280-418d"/>
         <infoLink name="Invulnerable Save (5+*)" type="profile" id="208e-37cd-517b-80e1" targetId="8552-862d-6a49-4879"/>
-        <infoLink name="Damaged: 1-10 Wounds Remaining" type="profile" id="3a46-4765-60ee-4a29" targetId="79dc-ea0c-c3b8-21d8"/>
+        <infoLink name="Damaged: 1-10 Wounds Remaining" type="profile" id="3a46-4765-60ee-4a29" targetId="1934-9c67-78e2-4fd9"/>
         <infoLink name="Code Chivalric" id="31ae-dda1-0e86-6291" hidden="false" type="rule" targetId="cbd-943-bc7b-20ec"/>
         <infoLink name="Ion Aegis (Aura)" id="6e34-9212-5567-3842" hidden="false" type="profile" targetId="0cc9-e726-c0fa-c4f3"/>
       </infoLinks>
@@ -2464,13 +2447,6 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+8</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -2490,6 +2466,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Ranged Weapon" hidden="false" id="1325-74cd-9695-0e81" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="261c-331e-2c12-5d24" targetId="e993-e086-6de1-12af" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -2553,7 +2530,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">28</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Thundershock" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="c930-deaf-6267-1e1e">
@@ -2576,7 +2553,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </infoLink>
         <infoLink name="Super-Heavy Walker" type="rule" id="45eb-bf5f-be2e-e1cb" targetId="5e13-1624-d280-418d"/>
         <infoLink name="Invulnerable Save (5+*)" type="profile" id="efea-ee0c-d65c-b49" targetId="8552-862d-6a49-4879"/>
-        <infoLink name="Damaged: 1-10 Wounds Remaining" type="profile" id="a880-3073-f96d-57c0" targetId="79dc-ea0c-c3b8-21d8"/>
+        <infoLink name="Damaged: 1-10 Wounds Remaining" type="profile" id="a880-3073-f96d-57c0" targetId="1934-9c67-78e2-4fd9"/>
         <infoLink name="Code Chivalric" id="b337-35a2-eb0b-dce1" hidden="false" type="rule" targetId="cbd-943-bc7b-20ec"/>
         <infoLink name="Ion Aegis (Aura)" id="1393-12f9-2f40-1b53" hidden="false" type="profile" targetId="0cc9-e726-c0fa-c4f3"/>
       </infoLinks>
@@ -2681,13 +2658,6 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -2708,6 +2678,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Ranged Weapon" hidden="false" id="fdb8-1bc9-99ef-efdb" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="86a1-9935-a8b0-f080" targetId="e993-e086-6de1-12af" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Thundercoil harpoon" hidden="false" id="9a45-74ba-e166-9692">
@@ -2722,13 +2693,6 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">10</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Devastating Wounds</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <constraints>
@@ -2749,6 +2713,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Ranged Weapon" hidden="false" id="5eb5-d685-254f-e324" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="1414-c8f2-7b94-79cc" targetId="e993-e086-6de1-12af" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -2816,17 +2781,11 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="e9ba-1a06-71d4-8a8c" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="6821-3a3f-9070-102e" targetId="4986-bf86-beb4-13ac" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Questoris heavy stubber" id="eedf-6059-a15-3c86" collective="false">
@@ -2862,13 +2821,6 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2, Twin-Linked</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -2877,6 +2829,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="d252-b5af-aa4d-9382" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="f38e-a47a-d77b-73ff" targetId="4986-bf86-beb4-13ac" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Titanic feet" id="288c-1cbc-8340-9c0a">
@@ -2950,18 +2903,6 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Melta 6</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -2970,6 +2911,8 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="1f98-f45c-68e5-5c22" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="f19e-781c-59ae-c8e4" targetId="e993-e086-6de1-12af" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="eb87-dc14-b0db-f6e8" targetId="4986-bf86-beb4-13ac" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Shieldbreaker missile launcher" id="58a1-cee7-82ae-f860">
@@ -3010,17 +2953,11 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Twin-Linked</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="7ad8-faef-8c88-c8b5" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="49e1-c80a-506b-78d1" targetId="e993-e086-6de1-12af" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy flamer" id="ca02-db54-10e6-f20e">
@@ -3035,13 +2972,6 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -3050,6 +2980,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="d75d-cdbe-8881-affc" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="acf7-4992-0b1d-3e07" targetId="e993-e086-6de1-12af" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="Detachment" hidden="false" id="5a84-ea91-b707-1656">
@@ -3382,6 +3313,9 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
               <entryLinks>
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="77c3-4785-bda5-f695" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="87cd-f034-17d6-187f" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -3539,6 +3473,9 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="ebd8-834f-6a36-ceed" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Damage Dx Weapon" hidden="false" id="b6ba-6fa9-e85b-919f" targetId="4986-bf86-beb4-13ac" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -4296,13 +4233,6 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Torrent, Ignores Cover</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -4319,6 +4249,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Ranged Weapon" hidden="false" id="7094-8f87-0a26-df3b" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="0f2b-82e4-4a5f-33fb" targetId="e993-e086-6de1-12af" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Reaper chainfist" hidden="false" id="1bbe-fc7c-926e-4181">
@@ -4618,6 +4549,13 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">4</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
                 <profile name="➤ Atrapos lascutter - low intensity (ranged)" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="c9f0-76bb-4602-e4f7">
                   <characteristics>
@@ -4629,6 +4567,13 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <selectionEntryGroups>
@@ -4688,6 +4633,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
               </selectionEntryGroups>
               <categoryLinks>
                 <categoryLink name="Ranged Weapon" hidden="false" id="b83b-db2a-45c0-977a" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="1765-f4aa-4e15-caa3" targetId="e993-e086-6de1-12af" primary="false"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -4731,7 +4677,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </infoLink>
         <infoLink name="Super-Heavy Walker" hidden="false" type="rule" id="6970-3ccd-4775-7249" targetId="5e13-1624-d280-418d"/>
         <infoLink name="Code Chivalric" hidden="false" type="rule" id="cf6a-9ee8-57e7-6a2c" targetId="cbd-943-bc7b-20ec"/>
-        <infoLink name="Damaged: 1-9 Wounds Remaining" type="profile" id="9789-fe34-e915-2548" targetId="75b7-f99a-8812-a55f"/>
+        <infoLink name="Damaged: 1-9 Wounds Remaining" type="profile" id="9789-fe34-e915-2548" targetId="a274-b647-186a-54ee"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="e712-7bf0-ec80-394e" primary="true" name="Character"/>
@@ -5025,7 +4971,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         </infoLink>
         <infoLink name="Code Chivalric" hidden="false" type="rule" id="e6a6-f6c5-d56a-a02b" targetId="cbd-943-bc7b-20ec"/>
         <infoLink name="Super-Heavy Walker" hidden="false" type="rule" id="ffdc-a560-b3e1-cb3" targetId="5e13-1624-d280-418d"/>
-        <infoLink name="Damaged: 1-9 Wounds Remaining" type="profile" id="4956-c695-a318-9c82" targetId="75b7-f99a-8812-a55f"/>
+        <infoLink name="Damaged: 1-9 Wounds Remaining" type="profile" id="4956-c695-a318-9c82" targetId="a274-b647-186a-54ee"/>
       </infoLinks>
       <infoGroups>
         <infoGroup name="Styrix’s Duty (Bondsman)" id="3e3e-cdb2-b95-6e6a">
@@ -5292,13 +5238,6 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Torrent, Ignores Cover, Anti-Infantry 2+, Twin-linked</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -5309,6 +5248,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Ranged Weapon" hidden="false" id="a1b0-f96d-e1fa-17c7" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="cecb-547e-fa0f-a3ba" targetId="e993-e086-6de1-12af" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Armiger Moirax" hidden="false" id="e3dd-7e90-140a-b3ab">
@@ -5419,6 +5359,9 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                   <entryLinks>
                     <entryLink import="true" name="Weapon Modifications" hidden="false" id="4495-accf-655e-2e3e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
+                  <categoryLinks>
+                    <categoryLink name="Attacks Dx Weapon" hidden="false" id="8dc6-9d2a-0775-51ab" targetId="e993-e086-6de1-12af" primary="false"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Lightning lock" hidden="false" id="b7c9-95ee-4488-9de8">
                   <constraints>
@@ -5517,13 +5460,6 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 2+, Ignores Cover, Torrent</characteristic>
                           </characteristics>
-                          <modifiers>
-                            <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                              <conditions>
-                                <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
                         </profile>
                       </profiles>
                       <infoLinks>
@@ -5534,6 +5470,9 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="3547-b91d-bd96-5acb" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
+                      <categoryLinks>
+                        <categoryLink name="Attacks Dx Weapon" hidden="false" id="3221-31e2-226c-2b23" targetId="e993-e086-6de1-12af" primary="false"/>
+                      </categoryLinks>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
@@ -5731,122 +5670,76 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="0fc8-fbf6-2056-29a1" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Deed" id="9d2e-8009-7163-1e6d" hidden="false" defaultSelectionEntryId="none">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="We vow to lay low the tyrant..." hidden="false" id="debd-979f-02da-62f7" sortIndex="1">
-              <profiles>
-                <profile name="We vow to lay low the tyrant..." typeId="83f0-0039-f52e-a3b4" typeName="Deed" hidden="false" id="90b3-6f39-b179-ba18">
-                  <characteristics>
-                    <characteristic name="Description" typeId="90fb-29ef-31df-1720">At the start of the battle, select one **^^Character^^** model in your opponent&apos;s army. This Deed is completed at the end of a turn if that **^^Character^^** is destroyed.</characteristic>
-                    <characteristic name="D6" typeId="2b47-80ec-51a5-3002">1 or 2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="We pledge to reap a great tally..." hidden="false" id="5849-fc54-299e-544f" sortIndex="3">
-              <profiles>
-                <profile name="We pledge to reap a great tally..." typeId="83f0-0039-f52e-a3b4" typeName="Deed" hidden="false" id="a1dc-8b19-46a1-a1cd">
-                  <characteristics>
-                    <characteristic name="Description" typeId="90fb-29ef-31df-1720">This deed is completed at the end of a turn if the number of destroyed enemy units is greater than the battle round number even if those units subsequently returned to the battlefield (for example, two destroyed enemy units in the first battle round).</characteristic>
-                    <characteristic name="D6" typeId="2b47-80ec-51a5-3002">5 or 6</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="We swear to reclaim the realm..." hidden="false" id="a072-bdbb-15e6-161f" sortIndex="2">
-              <profiles>
-                <profile name="We swear to reclaim the realm..." typeId="83f0-0039-f52e-a3b4" typeName="Deed" hidden="false" id="6358-9ff9-fa0e-2e68">
-                  <characteristics>
-                    <characteristic name="Description" typeId="90fb-29ef-31df-1720">This deed is completed at the end of your opponent&apos;s turn if you control more objective markers than your opponent.</characteristic>
-                    <characteristic name="D6" typeId="2b47-80ec-51a5-3002">3 or 4</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cfb-0528-eafe-6d0e" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d44e-33a2-259f-31a3" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="-1" field="0cfb-0528-eafe-6d0e">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="a692-b024-09d9-b79f" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Quality" id="6974-1b57-b545-50ee" hidden="false" defaultSelectionEntryId="none">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="...with our martial valour risen over all." hidden="false" id="4f29-30bc-3fea-0ddb" sortIndex="1">
-              <profiles>
-                <profile name="...with our martial valour risen over all." typeId="3dbd-8296-99ea-d555" typeName="Quality" hidden="false" id="1098-c61e-9c92-0714">
-                  <characteristics>
-                    <characteristic name="Description" typeId="f262-34f4-0217-8bdd">Each time this model is selected to shoot or fight, you can re-roll one Hit roll and you can re-roll one Wound roll.</characteristic>
-                    <characteristic name="D6" typeId="abc7-ec7f-1f21-d074">1 or 2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="...yet shall our legacy be unsullied." hidden="false" id="0cda-47bd-5446-4b48" sortIndex="3">
-              <profiles>
-                <profile name="...yet shall our legacy be unsullied." typeId="3dbd-8296-99ea-d555" typeName="Quality" hidden="false" id="85f4-ab86-07ca-3af0">
-                  <characteristics>
-                    <characteristic name="Description" typeId="f262-34f4-0217-8bdd">Improve this model&apos;s Objective Control characteristic by 2 and its Leadership characteristic by 1.</characteristic>
-                    <characteristic name="D6" typeId="abc7-ec7f-1f21-d074">5 or 6</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="append" value="Code Chivalric" field="annotation" join=", " scope="roster" affects="self.entries.forces.recursive.b5e4-3253-c157-54fd.profiles.Unit"/>
-                    <modifier type="increment" value="2" field="bef7-942a-1a23-59f8" scope="roster" affects="self.entries.forces.recursive.b5e4-3253-c157-54fd.profiles.Unit" join=", "/>
-                    <modifier type="decrement" value="1" field="58d2-b879-49c7-43bc" scope="roster" affects="self.entries.forces.recursive.b5e4-3253-c157-54fd.profiles.Unit" join=", "/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="...and we are eager for the challenge." hidden="false" id="a251-f271-35b4-55ff" sortIndex="2">
-              <profiles>
-                <profile name="...and we are eager for the challenge." typeId="3dbd-8296-99ea-d555" typeName="Quality" hidden="false" id="352c-1be3-2f8b-19be">
-                  <characteristics>
-                    <characteristic name="Description" typeId="f262-34f4-0217-8bdd">Add 2&quot; to this model&apos;s Move characteristic and add 1 to Advance and Charge rolls made for this model.</characteristic>
-                    <characteristic name="D6" typeId="abc7-ec7f-1f21-d074">3 or 4</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier type="append" value="Code Chivalric" field="annotation" join=", " scope="roster" affects="self.entries.forces.recursive.b5e4-3253-c157-54fd.profiles.Unit"/>
-                    <modifier type="increment" value="2" field="e703-ecb6-5ce7-aec1" scope="roster" affects="self.entries.forces.recursive.b5e4-3253-c157-54fd.profiles.Unit" join=", "/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30e9-a513-f1c5-afc1" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7545-2870-5075-2a7e" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="-1" field="30e9-a513-f1c5-afc1">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="a692-b024-09d9-b79f" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="6930-e742-4edb-3ce7" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2cae-d8a4-8e54-8269" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Deed" hidden="false" id="35d6-ec47-0b46-bce5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4392-5bc9-64dc-6d0c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0574-95e8-0051-0a2c" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="We pledge to reap a great tally..." typeId="83f0-0039-f52e-a3b4" typeName="Deed" hidden="false" id="a1dc-8b19-46a1-a1cd">
+              <characteristics>
+                <characteristic name="Description" typeId="90fb-29ef-31df-1720">This deed is completed at the end of a turn if the number of destroyed enemy units is greater than the battle round number even if those units subsequently returned to the battlefield (for example, two destroyed enemy units in the first battle round).</characteristic>
+                <characteristic name="D6" typeId="2b47-80ec-51a5-3002">5 or 6</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="We swear to reclaim the realm..." typeId="83f0-0039-f52e-a3b4" typeName="Deed" hidden="false" id="6358-9ff9-fa0e-2e68">
+              <characteristics>
+                <characteristic name="Description" typeId="90fb-29ef-31df-1720">This deed is completed at the end of your opponent&apos;s turn if you control more objective markers than your opponent.</characteristic>
+                <characteristic name="D6" typeId="2b47-80ec-51a5-3002">3 or 4</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="We vow to lay low the tyrant..." typeId="83f0-0039-f52e-a3b4" typeName="Deed" hidden="false" id="90b3-6f39-b179-ba18">
+              <characteristics>
+                <characteristic name="Description" typeId="90fb-29ef-31df-1720">At the start of the battle, select one **^^Character^^** model in your opponent&apos;s army. This Deed is completed at the end of a turn if that **^^Character^^** is destroyed.</characteristic>
+                <characteristic name="D6" typeId="2b47-80ec-51a5-3002">1 or 2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Quality" hidden="false" id="36a1-1871-451c-0405">
+          <profiles>
+            <profile name="...and we are eager for the challenge." typeId="3dbd-8296-99ea-d555" typeName="Quality" hidden="false" id="352c-1be3-2f8b-19be">
+              <characteristics>
+                <characteristic name="Description" typeId="f262-34f4-0217-8bdd">Add 2&quot; to this model&apos;s Move characteristic and add 1 to Advance and Charge rolls made for this model.</characteristic>
+                <characteristic name="D6" typeId="abc7-ec7f-1f21-d074">3 or 4</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="...with our martial valour risen over all." typeId="3dbd-8296-99ea-d555" typeName="Quality" hidden="false" id="1098-c61e-9c92-0714">
+              <characteristics>
+                <characteristic name="Description" typeId="f262-34f4-0217-8bdd">Each time this model is selected to shoot or fight, you can re-roll one Hit roll and you can re-roll one Wound roll.</characteristic>
+                <characteristic name="D6" typeId="abc7-ec7f-1f21-d074">1 or 2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="...yet shall our legacy be unsullied." typeId="3dbd-8296-99ea-d555" typeName="Quality" hidden="false" id="85f4-ab86-07ca-3af0">
+              <characteristics>
+                <characteristic name="Description" typeId="f262-34f4-0217-8bdd">Improve this model&apos;s Objective Control characteristic by 2 and its Leadership characteristic by 1.</characteristic>
+                <characteristic name="D6" typeId="abc7-ec7f-1f21-d074">5 or 6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="304c-3810-47b2-5e28" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d60-16e5-a73c-0ab2" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Knight Defender" id="f12b-ca2a-9c87-79bb">
       <categoryLinks>
@@ -5868,7 +5761,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">26</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">8</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">10</characteristic>
           </characteristics>
         </profile>
         <profile name="Selfless Protector" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="af51-9630-82a3-172d">
@@ -6042,13 +5935,6 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                     <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent, Twin-linked</characteristic>
                   </characteristics>
-                  <modifiers>
-                    <modifier type="append" value="+0" field="3bb-c35f-f54-fb08" join="">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="2801-9f1c-645d-cb3d" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <infoLinks>
@@ -6056,6 +5942,9 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                 <infoLink name="Ignores Cover" id="e028-5329-43d7-deeb" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
                 <infoLink name="Torrent" id="ec5f-96b4-ba86-2398" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink name="Attacks Dx Weapon" hidden="false" id="a2e3-684d-8c66-7350" targetId="e993-e086-6de1-12af" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Conversion beam obliterator" hidden="false" id="d956-a7af-5c96-2577">
               <selectionEntryGroups>
@@ -6325,13 +6214,6 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <selectionEntryGroups>
@@ -6344,6 +6226,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink name="Ranged Weapon" hidden="false" id="9129-d573-9bb6-f327" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+            <categoryLink name="Damage Dx Weapon" hidden="false" id="fdb6-a952-5fb4-d842" targetId="4986-bf86-beb4-13ac" primary="false"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -6427,7 +6310,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
     </selectionEntryGroup>
     <selectionEntryGroup name="Enhancements" id="f77c-b744-c82a-a3cd" collapsible="true">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Valourstrike Lance Enhancements" id="1223-782e-cce2-bdfd" hidden="false" collapsible="true">
+        <selectionEntryGroup name="Valourstrike Lance Enhancements" id="1223-782e-cce2-bdfd" hidden="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Bearer of the Iron Chalice" hidden="false" id="56fc-6e31-3aec-9b74">
               <profiles>
@@ -6548,121 +6431,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Questor Forgepact Enhancements" id="c6b4-5090-67be-ea17" hidden="false" collapsible="true">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Vocifer Magnificat (Aura)" hidden="false" id="7385-ce64-2f90-3115">
-              <profiles>
-                <profile name="Vocifer Magnificat (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2870-c3d4-ed26-94f1">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">IMPERIAL KNIGHTS model only. While an enemy unit is within 6&quot; of the bearer, worsen the Leadership characteristic of models in that unit by 1. While a friendly ADEPTUS MECHANICUS unit is within 6&quot; of the bearer, improve the Leadership characteristic of 1 models in that ADEPTUS MECHANICUS unit by 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="b5e4-3253-c157-54fd" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Magos Questoris" hidden="false" id="0f43-39c6-8a98-6817">
-              <profiles>
-                <profile name="Magos Questoris" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5031-2795-5f01-0c68">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">TECH‑PRIEST model only. While the bearer is within 3&quot; of one or more friendly IMPERIAL KNIGHTS units, it has the Lone Operative ability. In your Command phase, select one friendly IMPERIAL KNIGHTS model within 3&quot; of the bearer. That model regains up to 2 lost wounds.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="5418-f86b-6e76-c5a" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-              <infoLinks>
-                <infoLink name="Lone Operative" id="92d3-21b1-1097-9dbf" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
-              </infoLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Knight of the Opus Machina" hidden="false" id="19ae-50d7-bfa6-1e5b">
-              <profiles>
-                <profile name="Knight of the Opus Machina" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="efb4-f7d7-d10d-f31a">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">IMPERIAL KNIGHTS model only. Each time the bearer makes a ranged attack, if the bearer is within 6&quot; of one or more friendly ADEPTUS MECHANICUS units, re‑roll a Hit roll of 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="b5e4-3253-c157-54fd" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Omnissian Champion" hidden="false" id="917e-6609-8abe-504e">
-              <profiles>
-                <profile name="Omnissian Champion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="464b-bf8b-311c-754b">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">IMPERIAL KNIGHTS model only. Add 4 to the bearer’s Wounds characteristic.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="b5e4-3253-c157-54fd" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60d0-8946-43e0-79c5" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="9a4a-a4c8-a16a-c969" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Gate Warden Lance Enhancements" id="5a97-88a5-44ed-46e9" hidden="false" collapsible="true">
+        <selectionEntryGroup name="Gate Warden Lance Enhancements" id="5a97-88a5-44ed-46e9" hidden="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Vengeful Tread" hidden="false" id="3af2-8a70-176e-7a21">
               <profiles>
@@ -6780,7 +6549,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Questoris Companions Enhancements" id="6d4d-f498-365e-35e7" hidden="false" collapsible="true">
+        <selectionEntryGroup name="Questoris Companions Enhancements" id="6d4d-f498-365e-35e7" hidden="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Crushing Condemnation" hidden="false" id="8dbe-ae93-0e32-a88e">
               <profiles>
@@ -6898,7 +6667,7 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
             </modifier>
           </modifiers>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Spearhead-at-Arms Enhancements" id="3494-40e6-e1f5-18d6" hidden="false" collapsible="true">
+        <selectionEntryGroup name="Spearhead-at-Arms Enhancements" id="3494-40e6-e1f5-18d6" hidden="false">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Martial Tuition" hidden="false" id="ca5f-beba-df87-6775">
               <profiles>
@@ -7033,6 +6802,9 @@ The first time your selected Deed is completed your Oath is fulfilled and, until
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="aff1-9a43-882b-f046" includeChildForces="true" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="self" shared="true" id="d44d-e4f5-ce79-5d7d" includeChildSelections="true" includeChildForces="false"/>
       </constraints>
+      <entryLinks>
+        <entryLink targetId="c6b4-5090-67be-ea17" id="4a54-eb79-421e-190b" type="selectionEntryGroup" name="Questor Forgepact Enhancements" hidden="false"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Detachment" id="d793-8964-e815-3bb8" defaultSelectionEntryId="none">
       <selectionEntries>
@@ -7184,6 +6956,120 @@ The Qualities from Oaths you have fulfilled continue to apply to all models in y
       </modifiers>
       <comment>Crusade content</comment>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Questor Forgepact Enhancements" id="c6b4-5090-67be-ea17" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Vocifer Magnificat (Aura)" hidden="false" id="7385-ce64-2f90-3115">
+          <profiles>
+            <profile name="Vocifer Magnificat (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2870-c3d4-ed26-94f1">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Imperial Knights^^** model only. While an enemy unit is within 6&quot; of the bearer, worsen the Leadership characteristic of models in that unit by 1. While a friendly **^^Adeptus Mechanicus^^** unit is within 6&quot; of the bearer, improve the Leadership characteristic of 1 models in that **^^Adeptus Mechanicus^^** unit by 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="b5e4-3253-c157-54fd" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Magos Questoris" hidden="false" id="0f43-39c6-8a98-6817">
+          <profiles>
+            <profile name="Magos Questoris" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5031-2795-5f01-0c68">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Tech‑Priest^^** model only. While the bearer is within 3&quot; of one or more friendly **^^Imperial Knights^^** units, it has the Lone Operative ability. In your Command phase, select one friendly **^^Imperial Knights^^** model within 3&quot; of the bearer. That model regains up to 2 lost wounds.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="59a9-b5cc-7c11-aaad" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Lone Operative" id="92d3-21b1-1097-9dbf" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Knight of the Opus Machina" hidden="false" id="19ae-50d7-bfa6-1e5b">
+          <profiles>
+            <profile name="Knight of the Opus Machina" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="efb4-f7d7-d10d-f31a">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Imperial Knights^^** model only. Each time the bearer makes a ranged attack, if the bearer is within 6&quot; of one or more friendly ADEPTUS MECHANICUS units, re‑roll a Hit roll of 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="b5e4-3253-c157-54fd" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Omnissian Champion" hidden="false" id="917e-6609-8abe-504e">
+          <profiles>
+            <profile name="Omnissian Champion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="464b-bf8b-311c-754b">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">**^^Imperial Knights^^** model only. Add 4 to the bearer’s Wounds characteristic.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="b5e4-3253-c157-54fd" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60d0-8946-43e0-79c5" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="9a4a-a4c8-a16a-c969" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile name="Invulnerable Save (5+*)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="8552-862d-6a49-4879">
@@ -7194,9 +7080,8 @@ The Qualities from Oaths you have fulfilled continue to apply to all models in y
     </profile>
     <profile name="Damaged: 1-9 Wounds Remaining" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="a274-b647-186a-54ee">
       <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-9 wounds remaining, subtract 4 from this models Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-9 wounds remaining, subtract 5 from this models Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
       </characteristics>
-      <comment>-4OC</comment>
     </profile>
     <profile name="Damaged: 1-5 Wounds Remaining" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="b9a3-9db8-fd2f-7e43">
       <characteristics>
@@ -7207,24 +7092,11 @@ The Qualities from Oaths you have fulfilled continue to apply to all models in y
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-10 wounds remaining, subtract 5 from this model&apos;s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
       </characteristics>
-      <comment>-5OC</comment>
-    </profile>
-    <profile name="Damaged: 1-10 Wounds Remaining" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="79dc-ea0c-c3b8-21d8">
-      <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-10 wounds remaining, subtract 4 from this model&apos;s Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
-      </characteristics>
-      <comment>-4OC</comment>
     </profile>
     <profile name="Ion Aegis (Aura)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0cc9-e726-c0fa-c4f3">
       <characteristics>
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly **^^Armiger^^** model is within 6&quot; of this model, each time a ranged attack targets that model, it has the Benefit of Cover against that attack.</characteristic>
       </characteristics>
-    </profile>
-    <profile name="Damaged: 1-9 Wounds Remaining" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" id="75b7-f99a-8812-a55f">
-      <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-9 wounds remaining, subtract 5 from this models Objective Control characteristic and each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
-      </characteristics>
-      <comment>-5OC</comment>
     </profile>
   </sharedProfiles>
   <profileTypes>
