@@ -37981,6 +37981,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
       <categoryLinks>
         <categoryLink name="Melee Weapon" hidden="false" id="2977-2d66-177d-dfc8" targetId="ccdd-3987-11ed-90cd" primary="false"/>
       </categoryLinks>
+      <comment>A4 WS3+</comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sun Killer Squad" hidden="false" id="0bc8-2e50-e5af-3518">
       <costs>
@@ -40983,7 +40984,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c822-9595-7006-fc0b-max"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Power Axe" hidden="false" id="0c3f-0400-c24f-bc80" type="selectionEntry" targetId="3f8e-c1f5-c62b-6deb">
+                <entryLink import="true" name="Power Axe" hidden="false" id="0c3f-0400-c24f-bc80" type="selectionEntry" targetId="1224-8679-d620-24d5">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a90-f23a-159c-b600-min"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a90-f23a-159c-b600-max"/>
@@ -41027,7 +41028,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c014-1fa2-efad-c1c4-max"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Power Axe" hidden="false" id="6ccc-51f7-3ad3-d95a" type="selectionEntry" targetId="3f8e-c1f5-c62b-6deb">
+                <entryLink import="true" name="Power Axe" hidden="false" id="6ccc-51f7-3ad3-d95a" type="selectionEntry" targetId="1224-8679-d620-24d5">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3b4-405a-ab9c-6fc5-min"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3b4-405a-ab9c-6fc5-max"/>
@@ -46758,6 +46759,26 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
         <infoLink name="Twin-linked" id="335f-8978-1921-e965" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
       </infoLinks>
       <comment>A7 WS3+</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Power Axe" hidden="false" id="1224-8679-d620-24d5">
+      <profiles>
+        <profile name="Power Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7ace-f254-be9f-ba0a">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+          <comment>A2 WS3</comment>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Melee Weapon" hidden="false" id="6e76-3a40-a6f4-4e29" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+      </categoryLinks>
+      <comment>A2 WS3+</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
