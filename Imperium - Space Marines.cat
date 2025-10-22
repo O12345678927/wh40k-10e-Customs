@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="167" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="168" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -39303,9 +39303,9 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Power Glaive" hidden="false" id="a057-f7da-394e-20c3">
+    <selectionEntry type="upgrade" import="true" name="Guandao" hidden="false" id="a057-f7da-394e-20c3">
       <profiles>
-        <profile name="Power Glaive" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4cd3-5efd-27a7-22ec">
+        <profile name="Guandao" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4cd3-5efd-27a7-22ec">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
@@ -39532,7 +39532,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
                 <entryLink import="true" name="Weapon Upgrades" hidden="false" id="ddba-7106-9179-12f8" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
               </entryLinks>
             </entryLink>
-            <entryLink import="true" name="Power Glaive" hidden="false" id="472a-95ba-87ec-f7e8" type="selectionEntry" targetId="46f4-8f15-38c6-1a74">
+            <entryLink import="true" name="Power Guandao" hidden="false" id="472a-95ba-87ec-f7e8" type="selectionEntry" targetId="46f4-8f15-38c6-1a74">
               <entryLinks>
                 <entryLink import="true" name="Weapon Upgrades" hidden="false" id="d3d9-89fd-c275-1334" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
               </entryLinks>
@@ -39575,11 +39575,6 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="8c00-48e6-f171-a4c3" includeChildSelections="true"/>
       </constraints>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" id="4276-ba99-6521-56d1" includeChildSelections="true" includeChildForces="true"/>
-          </conditions>
-        </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
             <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
@@ -39654,9 +39649,9 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Power Glaive" hidden="false" id="46f4-8f15-38c6-1a74">
+    <selectionEntry type="upgrade" import="true" name="Guandao" hidden="false" id="46f4-8f15-38c6-1a74">
       <profiles>
-        <profile name="Power Glaive" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9783-f8ac-a0fe-3da6">
+        <profile name="Guandao" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9783-f8ac-a0fe-3da6">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
             <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
