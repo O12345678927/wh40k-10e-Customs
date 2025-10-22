@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Heresy Customs" revision="76" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Heresy Customs Update" revision="78" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -488,18 +488,41 @@
     <categoryEntry name="Melee Weapon" id="ccdd-3987-11ed-90cd" hidden="true">
       <comment>Used for Enhancement / Crusade Relic upgrades</comment>
     </categoryEntry>
-    <categoryEntry name="Enhancement / Crusade Relic" id="c13c-1717-f8a8-a8df" hidden="true">
+    <categoryEntry name="Crusade Relic" id="c13c-1717-f8a8-a8df" hidden="true">
       <comment>Category to be used to ignore characteristic changes by other upgrades</comment>
     </categoryEntry>
     <categoryEntry name="Pistol Weapon" id="1db0-c6b5-19db-8d0c" hidden="true"/>
-    <categoryEntry id="54ae-4ac6-8776-9b5e" name="Faction: Iron Warriors" hidden="false"/>
-    <categoryEntry id="233a-aaf1-392d-6313" name="Faction: Night Lords" hidden="false"/>
-    <categoryEntry id="cce6-0071-67df-c4e7" name="Faction: Black Legion" hidden="false"/>
-    <categoryEntry id="292d-727a-ecee-c0d4" name="Faction: Alpha Legion" hidden="false"/>
-    <categoryEntry id="ff4e-e9f5-ed72-9272" name="Faction: Word Bearers" hidden="false"/>
-    <categoryEntry id="3c13-9a7b-4fc5-ab91" name="Faction: Emperor&apos;s Children" hidden="false"/>
-    <categoryEntry id="e169-ce70-ee9d-cecc" name="CUSTOM" hidden="false"/>
-    <categoryEntry id="5f2d-a178-e358-9c9f" name="Breacher" hidden="false"/>
+    <categoryEntry name="Death Company" id="7278-781b-ce6c-d23c" hidden="false"/>
+    <categoryEntry name="Attacks Dx Weapon" id="e993-e086-6de1-12af" hidden="true">
+      <comment>Weapons that have D3/D6 but no &quot;+x&quot; in their Attacks characteristic - used for logic calculations</comment>
+    </categoryEntry>
+    <categoryEntry name="Damage Dx Weapon" id="4986-bf86-beb4-13ac" hidden="true">
+      <comment>Weapons that have D3/D6 but no &quot;+x&quot; in their Damage characteristic - used for logic calculations</comment>
+    </categoryEntry>
+    <categoryEntry name="Attacks Dx+0 Modifier" id="6337-b83b-0d1e-5770" hidden="true">
+      <comment>Flags a weapon that has had a +0 added to a D3/D6 Attacks characteristic - used for logic calculations</comment>
+    </categoryEntry>
+    <categoryEntry name="Damage Dx+0 Modifier" id="982b-de77-dd2d-d9bd" hidden="true">
+      <comment>Flags a weapon that has had a +0 added to a D3/D6 Damage characteristic - used for logic calculations</comment>
+    </categoryEntry>
+    <categoryEntry id="59a9-b5cc-7c11-aaad" name="Tech-Priest" hidden="false"/>
+    <categoryEntry name="Ministorum Priest" hidden="false" id="cc88-9467-86ac-4ca2">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="9ad1-8aef-0d46-3b1b" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry name="Sanctifiers" id="9d4f-4beb-107d-3175" hidden="false">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="3b97-07bb-1241-9cc6" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry name="CUSTOM" id="e169-ce70-ee9d-cecc" hidden="false"/>
+    <categoryEntry name="Faction: Alpha Legion" id="292d-727a-ecee-c0d4" hidden="false"/>
+    <categoryEntry name="Faction: Black Legion" id="cce6-0071-67df-c4e7" hidden="false"/>
+    <categoryEntry name="Faction: Emperor&apos;s Children" id="3c13-9a7b-4fc5-ab91" hidden="false"/>
+    <categoryEntry name="Faction: Iron Warriors" id="54ae-4ac6-8776-9b5e" hidden="false"/>
+    <categoryEntry name="Faction: Night Lords" id="233a-aaf1-392d-6313" hidden="false"/>
+    <categoryEntry name="Faction: Word Bearers" id="ff4e-e9f5-ed72-9272" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
@@ -779,6 +802,79 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade Options" id="e7cc-312b-6c80-450d" hidden="false">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="cac3-71d1-ea4b-795d" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Show Nachmund Gauntlet content" hidden="false" id="c9b3-8039-f1e9-c975">
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="4650-5005-ee33-9136" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="force" shared="true" id="64f8-b8da-3c1b-6cf6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e1a-3e2f-d5cc-ddaa"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3afb-a4a6-df71-c656"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="64f8-b8da-3c1b-6cf6"/>
+                <modifier type="set" value="0" field="7e1a-3e2f-d5cc-ddaa"/>
+                <modifier type="set" value="Nachmund Gauntlet content is enabled" field="name"/>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Show Pariah Nexus content" hidden="false" id="41bc-337c-cae2-eb21">
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="83e3-b7a8-b906-91b8" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="force" shared="true" id="f6b6-2c31-2873-5b81" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c705-cac0-b570-bffd"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e7f-6333-8785-c524"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="f6b6-2c31-2873-5b81"/>
+                <modifier type="set" value="0" field="c705-cac0-b570-bffd"/>
+                <modifier type="set" value="Pariah Nexus content is enabled" field="name"/>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Show Tyrannic War content" hidden="false" id="c566-c14f-c589-5375">
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="0d1d-84f9-e9fc-7564" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="force" shared="true" id="2173-f2a6-397c-8fbf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d147-319b-3d28-53cb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6d9-d4e8-59d5-5a35"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="2173-f2a6-397c-8fbf"/>
+                <modifier type="set" value="0" field="d147-319b-3d28-53cb"/>
+                <modifier type="set" value="Tyrannic War content is enabled" field="name"/>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Show Armageddon content" hidden="false" id="5700-66f7-a020-7386">
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="ad09-2744-4123-e5e3" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="force" shared="true" id="44e6-438f-81a1-612e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="396c-cc07-a31f-fc0c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8aa0-b655-2f64-12c5"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="44e6-438f-81a1-612e"/>
+                <modifier type="set" value="0" field="396c-cc07-a31f-fc0c"/>
+                <modifier type="set" value="Armageddon content is enabled" field="name"/>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Order of Battle" hidden="false" id="eda7-8b4b-3719-af36">
       <categoryLinks>
@@ -909,7 +1005,7 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="8199-2676-9f51-f430" includeChildSelections="false"/>
       </constraints>
-      <comment>Crusade content</comment>
+      <comment>Pariah Nexus Crusade content</comment>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -937,6 +1033,19 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Damned Souls" hidden="false" id="e66d-3831-dd6d-5f88">
+      <comment>Blood Angels Crusade content</comment>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="7278-781b-ce6c-d23c" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="977c-2d1e-aa65-6364" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -1069,15 +1178,15 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
     <rule id="cd26-1611-860a-91e4" name="One Shot" hidden="false">
       <description>The bearer can only shoot with this weapon once per battle.</description>
     </rule>
-    <rule id="d737-55a6-e8c8-ea02" name="Pinning [X]" publicationId="48fc-15aa-b307-9443" page="Custom" hidden="false">
+    <rule name="Bulky [X]" id="0d78-1b42-e281-1e0a" hidden="false" publicationId="48fc-15aa-b307-9443" page="28">
+      <description>Models with the Bulky [X] Ability take up X spaces when inside a transport and each weapon equipped by these models is considered to be X models&apos; weapons for the purposes of the Firing Deck ability.</description>
+    </rule>
+    <rule name="Fear [X]" id="8012-1f19-b0b7-c525" hidden="false" publicationId="48fc-15aa-b307-9443" page="32">
+      <description>Units with this Ability provide a negative modifier to Leadership Tests equal to X to Enemy Units within 6&quot;</description>
+    </rule>
+    <rule name="Pinning [X]" id="d737-55a6-e8c8-ea02" hidden="false" publicationId="48fc-15aa-b307-9443" page="Custom">
       <description>After a Unit  makes a Ranged Attack with a Pinning Weapon, select one Enemy Unit hit by that Pinning Weapon (excluding MONSTERS and VEHICLES); That Unit must succeed on a Leadership test or become Pinned.
 While a Unit is Pinned subtract X&quot; from their Move characteristic and subtract X from Charge rolls made for it until the end of your Opponent&apos;s next Turn.</description>
-    </rule>
-    <rule id="0d78-1b42-e281-1e0a" name="Bulky [X]" publicationId="48fc-15aa-b307-9443" page="28" hidden="false">
-      <description>Models with the Bulky [X] Ability take up X spaces when inside a transport</description>
-    </rule>
-    <rule id="8012-1f19-b0b7-c525" name="Fear [X]" publicationId="48fc-15aa-b307-9443" page="32" hidden="false">
-      <description>Units with this ability provide a negative modifier to leadership tests equal to X to enemy Units within 6&quot;</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -1093,11 +1202,6 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time your opponent targets a unit from their army with a Stratagem, if that unit is within 12&quot; of this model, increase the cost of that use of that Stratagem by 1CP.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Bulky [X]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6db6-046f-eed9-ec0d">
-      <characteristics>
-        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
-      </characteristics>
-    </profile>
   </sharedProfiles>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapon Modifications" id="f9da-852a-d7f0-92e9" hidden="false">
@@ -1109,6 +1213,7 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                 <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
                 <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="d1a5-4297-168b-11cd" shared="true" includeChildSelections="true" includeChildForces="false"/>
                 <condition type="atLeast" value="1" field="selections" scope="upgrade" childId="b678-4a99-210e-931f" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="upgrade" childId="c13c-1717-f8a8-a8df" shared="true" includeChildSelections="true"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
@@ -1301,14 +1406,26 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
               <comment>Heirloom</comment>
               <modifiers>
                 <modifier type="append" value="Heirloom" field="annotation" join=", " scope="upgrade" affects="profiles.Ranged Weapons"/>
+                <modifier type="append" value="Heirloom" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
+                <modifier type="append" field="3bb-c35f-f54-fb08" scope="upgrade" affects="e993-e086-6de1-12af.profiles.Ranged Weapons" arg="+0" value="+0" join=""/>
+                <modifier type="append" field="2337-daa1-6682-b110" scope="upgrade" affects="e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" value="+0" join=""/>
+                <modifier type="replace" field="3bb-c35f-f54-fb08" scope="upgrade" affects="6337-b83b-0d1e-5770.profiles.Ranged Weapons" arg="+0"/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="upgrade" affects="6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
                 <modifier type="increment" value="1" field="3bb-c35f-f54-fb08" scope="upgrade" affects="profiles.Ranged Weapons" position="-1"/>
                 <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="upgrade" affects="profiles.Melee Weapons" position="-1"/>
-                <modifier type="append" value="Heirloom" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
                 <modifier type="replace" field="3bb-c35f-f54-fb08" scope="upgrade" affects="profiles.Ranged Weapons" arg="+0"/>
                 <modifier type="replace" field="2337-daa1-6682-b110" scope="upgrade" affects="profiles.Melee Weapons" arg="+0"/>
+                <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="upgrade" arg="+0" affects="e993-e086-6de1-12af"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="upgrade" childId="84c4-6d1e-e724-bd6e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Master-worked (D+1)" hidden="false" id="584b-5fa7-a3c3-942e">
           <constraints>
@@ -1325,11 +1442,16 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
               <comment>Master-worked</comment>
               <modifiers>
                 <modifier type="append" value="Master-worked" field="annotation" join=", " scope="upgrade" affects="profiles.Ranged Weapons"/>
-                <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="profiles.Ranged Weapons" position="-1"/>
                 <modifier type="append" value="Master-worked" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
+                <modifier type="append" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="4986-bf86-beb4-13ac.profiles.Ranged Weapons" join="" arg="+0" value="+0"/>
+                <modifier type="append" field="3254-9fe6-d824-513e" scope="upgrade" affects="4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0" value="+0"/>
+                <modifier type="replace" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="982b-de77-dd2d-d9bd.profiles.Ranged Weapons" join="" arg="+0"/>
+                <modifier type="replace" field="3254-9fe6-d824-513e" scope="upgrade" affects="982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="increment" value="1" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="profiles.Ranged Weapons" position="-1"/>
                 <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="upgrade" affects="profiles.Melee Weapons" position="-1"/>
                 <modifier type="replace" field="a354-c1c8-a745-f9e3" scope="upgrade" affects="profiles.Ranged Weapons" join="" arg="+0"/>
                 <modifier type="replace" field="3254-9fe6-d824-513e" scope="upgrade" affects="profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="upgrade" join="" arg="+0" affects="4986-bf86-beb4-13ac"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
@@ -1562,6 +1684,19 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="e66d-3831-dd6d-5f88" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7278-781b-ce6c-d23c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <comment>Crusade content</comment>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
@@ -2534,6 +2669,13 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="c566-c14f-c589-5375" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Pariah Nexus Battle Traits" id="0272-ff62-2b5b-7390" hidden="false" collapsible="true">
           <selectionEntries>
@@ -3533,6 +3675,13 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="41bc-337c-cae2-eb21" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Nachmund Gauntlet Battle Traits" id="5370-0734-ffdb-9fdf" hidden="false" collapsible="true">
           <selectionEntries>
@@ -4366,6 +4515,13 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="c9b3-8039-f1e9-c975" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armageddon Battle Traits" id="9c28-2876-4721-62f5" hidden="false" collapsible="true">
           <selectionEntries>
@@ -5251,6 +5407,13 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
               </profiles>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="5700-66f7-a020-7386" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
@@ -5544,8 +5707,12 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                       <modifiers>
                         <modifier type="append" value="Blade of the Dynast" field="annotation" join=", " scope="model" affects="self.entries.recursive.profiles.Melee Weapons"/>
                         <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
-                        <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join=", " position="-1"/>
                         <modifier type="decrement" value="1" field="41a0-1301-112a-e2f2" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join=", "/>
+                        <modifier type="append" value="+0" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0"/>
+                        <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
+                        <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" position="-1"/>
+                        <modifier type="replace" field="3254-9fe6-d824-513e" scope="model" affects="self.entries.recursive.profiles.Melee Weapons" join="" arg="+0"/>
+                        <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="model" join="" arg="+0" affects="self.entries.recursive.4986-bf86-beb4-13ac"/>
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
@@ -5779,6 +5946,13 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
             </selectionEntryGroup>
           </selectionEntryGroups>
           <comment>Crusade content</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="41bc-337c-cae2-eb21" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Tyrannic War Crusade Relics" id="5a5c-df7d-ba6b-5441" hidden="false" collapsible="true">
           <selectionEntryGroups>
@@ -6396,6 +6570,13 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
             </selectionEntryGroup>
           </selectionEntryGroups>
           <comment>Crusade content</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="c566-c14f-c589-5375" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Nachmund Gauntlet Crusade Relics" id="2910-0a1e-8c87-584f" hidden="false" collapsible="true">
           <selectionEntryGroups>
@@ -6902,6 +7083,13 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
             </selectionEntryGroup>
           </selectionEntryGroups>
           <comment>Crusade content</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="c9b3-8039-f1e9-c975" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armageddon Crusade Relics" id="7e29-d0e8-4322-2063" hidden="false" collapsible="true">
           <selectionEntryGroups>
@@ -7467,6 +7655,13 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
             </selectionEntryGroup>
           </selectionEntryGroups>
           <comment>Crusade content</comment>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="5700-66f7-a020-7386" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
@@ -7579,23 +7774,6 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="faa2-8145-18a4-34c1" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="79d5-885d-8cc2-f885" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Painful Lessons" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0443-b9f5-0690-1c6a">
@@ -7622,23 +7800,6 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="8791-d292-d3df-69a2" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="79d5-885d-8cc2-f885" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -7667,23 +7828,6 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4556-4f10-f8fe-640c" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="8791-d292-d3df-69a2" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Hamstringing Attacks" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c2be-b94d-d4cb-f914">
@@ -7710,31 +7854,6 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="d441-8e0d-f984-52ee" shared="true" includeChildSelections="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="ab52-bc6a-1099-5000" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8791-d292-d3df-69a2" shared="true"/>
-                                <condition type="lessThan" value="1" field="selections" scope="parent" childId="faa2-8145-18a4-34c1" shared="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -7776,23 +7895,6 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4556-4f10-f8fe-640c" shared="true" includeChildSelections="true"/>
-                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="faa2-8145-18a4-34c1" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Nimble Defence" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="38ac-2ed6-0bd7-e628">
@@ -7818,14 +7920,9 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
               </conditionGroups>
             </modifier>
             <modifier type="set" value="1" field="8937-5c60-e52d-dd07">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="7767-9b46-61a3-c62a" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a4cc-8fae-4ffa-828a" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
             <modifier type="set" value="1" field="a18f-126f-0697-e5df">
               <conditions>
@@ -7885,17 +7982,6 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="8b22-21b7-9d42-ed41" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="d241-419d-402c-8a4c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="31bd-ce57-db23-cd21" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Indomitable Stature" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3e8f-093a-1795-a68a">
@@ -7922,17 +8008,6 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="0631-30ea-dc30-6668" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="d241-419d-402c-8a4c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="31bd-ce57-db23-cd21" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -7963,17 +8038,6 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="0631-30ea-dc30-6668" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="d241-419d-402c-8a4c" shared="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="8b22-21b7-9d42-ed41" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Prey Taker" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="99ff-4ba1-2488-7c2f">
@@ -8000,16 +8064,6 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="1473-e060-09f0-2261" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="0631-30ea-dc30-6668" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -8038,16 +8092,6 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a2b9-1412-57b8-d6f8" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="0631-30ea-dc30-6668" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Sweeping Blow" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="38e1-9c82-18ed-4bf0">
@@ -8074,16 +8118,6 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="a4b0-aae0-e3b9-d952" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="31bd-ce57-db23-cd21" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -8114,16 +8148,6 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="14d4-1e97-4302-1654" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="31bd-ce57-db23-cd21" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </modifier>
               </modifiers>
               <profiles>
@@ -8163,16 +8187,6 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="702d-9520-9430-7269" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="8b22-21b7-9d42-ed41" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Unstoppable Advance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="acc3-e888-1539-0b15">
@@ -8200,16 +8214,6 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="ee3c-b45a-e693-96f5" shared="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="8b22-21b7-9d42-ed41" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
               </modifiers>
               <profiles>
                 <profile name="Massive Stomp" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="459d-1377-d4a2-a93c">
@@ -8226,14 +8230,8 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
                 <condition type="lessThan" value="1" field="selections" scope="model-or-unit" childId="fe0b-a773-b244-d6a3" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="1" field="2255-b8fc-34ba-43b6">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="fe0b-a773-b244-d6a3" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
           </modifiers>
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2255-b8fc-34ba-43b6" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d674-520e-d71b-1586" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
@@ -8250,6 +8248,11 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="c566-c14f-c589-5375" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <comment>Tyrannic War Crusade content</comment>
@@ -8490,9 +8493,14 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
       </selectionEntryGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="41bc-337c-cae2-eb21" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <comment>Pariah Nexus Crusade content</comment>
@@ -9113,9 +9121,18 @@ While a Unit is Pinned subtract X&quot; from their Move characteristic and subtr
             <modifierGroup type="and">
               <modifiers>
                 <modifier type="append" value="Warp-touched Weapon" field="annotation" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
-                <modifier type="increment" value="1" field="2337-daa1-6682-b110" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
                 <modifier type="increment" value="1" field="ab33-d393-96ce-ccba" join=", " scope="upgrade" affects="profiles.Melee Weapons"/>
-                <modifier type="increment" value="1" field="3254-9fe6-d824-513e" join=", " scope="upgrade" affects="profiles.Melee Weapons" position="-1"/>
+                <modifier type="append" value="+0" field="2337-daa1-6682-b110" scope="upgrade" affects="e993-e086-6de1-12af.profiles.Melee Weapons" arg="+0" join=""/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="upgrade" affects="6337-b83b-0d1e-5770.profiles.Melee Weapons" arg="+0"/>
+                <modifier type="increment" value="1" field="2337-daa1-6682-b110" scope="upgrade" affects="profiles.Melee Weapons" position="-1"/>
+                <modifier type="decrement" value="1" field="2337-daa1-6682-b110" scope="upgrade" affects="84c4-6d1e-e724-bd6e.profiles.Melee Weapons" position="-1"/>
+                <modifier type="replace" field="2337-daa1-6682-b110" scope="upgrade" affects="profiles.Melee Weapons" arg="+0"/>
+                <modifier type="add" value="6337-b83b-0d1e-5770" field="category" scope="upgrade" arg="+0" affects="e993-e086-6de1-12af"/>
+                <modifier type="append" value="+0" field="3254-9fe6-d824-513e" scope="upgrade" affects="4986-bf86-beb4-13ac.profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="replace" field="3254-9fe6-d824-513e" scope="upgrade" affects="982b-de77-dd2d-d9bd.profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="increment" value="1" field="3254-9fe6-d824-513e" scope="upgrade" affects="profiles.Melee Weapons" position="-1"/>
+                <modifier type="replace" field="3254-9fe6-d824-513e" scope="upgrade" affects="profiles.Melee Weapons" join="" arg="+0"/>
+                <modifier type="add" value="982b-de77-dd2d-d9bd" field="category" scope="upgrade" join="" arg="+0" affects="4986-bf86-beb4-13ac"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>
