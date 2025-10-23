@@ -2737,6 +2737,7 @@
     <entryLink import="true" name="Tyrant Siege Terminators" hidden="false" id="9868-0b00-56fc-ae14" type="selectionEntry" targetId="e418-2b92-9011-3ed1"/>
     <entryLink import="true" name="Golden Keshig Squadron" hidden="false" id="75ba-d8c7-fdbb-d80b" type="selectionEntry" targetId="9bdb-3443-b996-8dde"/>
     <entryLink import="true" name="Castellax-Achea Automata" hidden="false" id="b2ec-59c6-0541-39dd" type="selectionEntry" targetId="997a-3c52-f8a9-7695"/>
+    <entryLink import="true" name="Dreadwing Interemptor Squad" hidden="false" id="6df7-87ab-3749-8b48" type="selectionEntry" targetId="c72b-65b1-a2ff-b41c"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">

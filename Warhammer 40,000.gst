@@ -1185,8 +1185,9 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
       <description>Units with this Ability provide a negative modifier to Leadership Tests equal to X to Enemy Units within 6&quot;</description>
     </rule>
     <rule name="Pinning [X]" id="d737-55a6-e8c8-ea02" hidden="false" publicationId="48fc-15aa-b307-9443" page="Custom">
-      <description>After a Unit  makes a Ranged Attack with a Pinning Weapon, select one Enemy Unit hit by that Pinning Weapon (excluding MONSTERS and VEHICLES); That Unit must succeed on a Leadership test or become Pinned.
-While a Unit is Pinned subtract X&quot; from their Move characteristic and subtract X from Charge rolls made for it until the end of your Opponent&apos;s next Turn.</description>
+      <description>Weapons with **[PINNING]** in their profile are known as Pinning weapons. After a Unit makes a Ranged Attack with a Pinning Weapon, select one Enemy Unit hit by that Pinning Weapon (excluding MONSTERS and VEHICLES); That Unit must succeed on a Leadership test or become Pinned until the end of your Opponent&apos;s Turn.
+
+While a Unit is Pinned subtract X&quot; from their Move characteristic and subtract X from Charge rolls made for it</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
