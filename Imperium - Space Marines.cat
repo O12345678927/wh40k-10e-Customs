@@ -40797,19 +40797,14 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
 ■ Tactical Squad</characteristic>
           </characteristics>
         </profile>
-        <profile name="The Better Part of Valour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6778-3003-4b9c-6220">
+        <profile name="Cloaked in Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6778-3003-4b9c-6220">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per Battle, at the start of your Charge Phase; this Unit may immediately make a Normal Move of D6&quot;</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Better Part of Valour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8dad-03aa-c431-8a80">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per Battle, when this Unit is selected as the target of a Charge; You may immediately make a Fallback Move</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Talent For Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e6e0-0503-59f0-b68c">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this Unit makes an attack, if that attack targets a Battleshocked Unit, Pinned Unit **OR** a Unit with less current Wounds than this unit; add 1 to the Wound Roll.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Bloody Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="617c-0135-5e89-9ccc">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this Unit declares a Charge targeting a unit that is Battleshocked or Pinned; Add 1 to the charge roll and if the Charge is successful then all Melee Weapons equipped by models in this unit increase the A Characteristic by 1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -40968,17 +40963,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         </profile>
         <profile name="Flaymaster" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e6c8-6bc5-e559-db95">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an enemy unit (excluding MONSTERS and VEHICLES) within engagement range of this unit Falls Back; all models in that enemy unit must take a Desperate Escape test. When doing so, if that enemy unit is Battle-shocked, subtract 2 from each of those tests.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Talent For Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="be9a-68f3-2df6-5dd8">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this Unit makes an attack, if that attack targets a Battleshocked Unit, Pinned Unit **OR** a Unit with less current Wounds than this unit; add 1 to the Wound Roll.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Bloody Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cf71-9c88-dfb8-a88c">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this Unit declares a Charge targeting a unit that is Battleshocked or Pinned; Add 1 to the charge roll and if the Charge is successful then all Melee Weapons equipped by models in this unit increase the A Characteristic by 1</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an Enemy Model (excluding MONSTERS and VEHICLES) within Engagement Range of this Model makes a Fall Back Move roll one D6, adding 1 if the Unit is Battleshocked; on a 3+ this Model can make one Melee Attack targeting that Model</characteristic>
           </characteristics>
         </profile>
         <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b444-2431-412e-acd4">
@@ -42668,17 +42653,13 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an enemy Unit is within 6&quot; of this Unit; Subtract X from leadership tests made for that Unit</characteristic>
           </characteristics>
         </profile>
-        <profile name="Talent For Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7285-5b36-d081-4cde">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this Unit makes an attack, if that attack targets a Battleshocked Unit, Pinned Unit **OR** a Unit with less current Wounds than this unit; add 1 to the Wound Roll.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Oath of Moment" id="de91-d1d3-6f5e-6cd3" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
         <infoLink name="Templar Vows" id="3094-af94-6e50-bbe5" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
         <infoLink name="Deep Strike" id="402b-d89d-6f65-2e88" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
         <infoLink name="Bulky [X]" id="2271-6deb-26c6-f7ec" hidden="false" type="rule" targetId="0d78-1b42-e281-1e0a"/>
+        <infoLink name="Bulky [2]" id="0285-6ae3-3809-e91c" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Infantry" hidden="false" id="7e2d-79df-76da-8fc9" targetId="cf47-a0d7-7207-29dc" primary="true"/>
