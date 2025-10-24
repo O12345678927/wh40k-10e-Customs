@@ -39058,7 +39058,7 @@ Each time this Model is selected as the Target of a Charge; subtract 2 from the 
         <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="260" field="51b2-306e-1021-d207">
+        <modifier type="set" value="270" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="4" field="selections" scope="9bdb-3443-b996-8dde" childId="cd71-55bb-b615-bb04" shared="true" id="a5ec-4369-c263-3641"/>
           </conditions>
@@ -41297,9 +41297,9 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
             </modifier>
           </modifiers>
         </profile>
-        <profile name="Furious Charge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c723-77ae-ea0e-1913">
+        <profile name="Born to the Saddle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c723-77ae-ea0e-1913">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time that unit ends a Charge Move, until the end of the Turn; Increase the D Characteristic of Kontos Power Lances equipped by models in that unit by 1</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time that unit ends a Charge Move, until the end of the Turn; Increase the D Characteristic of Kontos Power Lances equipped by models in that unit by 2</characteristic>
           </characteristics>
         </profile>
         <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0ce5-7c63-4464-500e">
@@ -41311,11 +41311,12 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Leader" id="56aa-575c-0c3a-81de" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+        <infoLink name="Deep Strike" id="56aa-575c-0c3a-81de" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
         <infoLink name="Rites of Battle" id="0d19-f751-b31d-9d5a" hidden="false" targetId="90c7-c55c-21e2-2232" type="profile"/>
         <infoLink name="Invulnerable Save" id="3c16-f2dd-081a-df6e" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
         <infoLink name="Oath of Moment" id="e2cf-4048-b923-484a" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
         <infoLink name="Templar Vows" id="1222-23bc-1092-98fd" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
+        <infoLink name="Leader" id="86e8-e64e-134f-be49" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="c11e-f224-2fcc-b9b8" hidden="false" sortIndex="4">
