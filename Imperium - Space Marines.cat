@@ -47710,9 +47710,9 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
         <categoryLink targetId="c619-2086-bbcf-69c9" id="f833-6d38-bdf0-213c" primary="false" name="Fly"/>
         <categoryLink targetId="dda2-bb0a-215e-ad9c" id="5fbe-d449-0e27-52d2" primary="false" name="Jump Pack"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="20ae-b0d2-7087-39da" primary="false" name="Imperium"/>
-        <categoryLink targetId="81f0-f40e-c36c-5a30" id="f624-33d2-5979-19be" primary="false" name="Gravis"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="8894-d928-1fe6-ebdf" primary="false" name="Faction: Adeptus Astartes"/>
-        <categoryLink targetId="7e38-c06b-1b3b-6b0b" id="45ad-f7be-b885-a10f" primary="false" name="Inceptor Squad"/>
+        <categoryLink targetId="ff4e-e9f5-ed72-9272" id="43d4-889b-3c9c-88a4" primary="false" name="Faction: Word Bearers"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="3bba-3c1f-8ef2-0eb8" primary="false" name="CUSTOM"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Ashen Circle" hidden="false" id="32d8-0581-e4be-a616" sortIndex="2">
@@ -47796,7 +47796,7 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="e54d-6bda-de51-5190" targetId="3b76-4053-ece9-6e7d"/>
         <infoLink name="Templar Vows" id="060d-1dc5-012b-50ba" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
         <infoLink name="Bulky [X]" id="9f25-9f74-599c-93d1" hidden="false" type="rule" targetId="0d78-1b42-e281-1e0a"/>
-        <infoLink name="Bulky [2]" id="1cca-88a5-d79c-9b60" hidden="false" type="profile" targetId="7209-8260-92e0-f3fd"/>
+        <infoLink name="Bulky [2]" id="1cca-88a5-d79c-9b60" hidden="false" type="profile" targetId="bb0d-6fe1-d68a-62e2"/>
       </infoLinks>
       <profiles>
         <profile name="Scorched Earth" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bb1e-9a43-29b7-06d0">
@@ -47808,7 +47808,7 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
       <modifiers>
         <modifier type="set" value="240" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="4" field="selections" scope="7605-a923-1993-3fd9" childId="32d8-0581-e4be-a616" shared="true" id="678b-1b80-714d-c490"/>
+            <condition type="atLeast" value="6" field="selections" scope="7605-a923-1993-3fd9" childId="32d8-0581-e4be-a616" shared="true" id="678b-1b80-714d-c490"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -47979,7 +47979,6 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
       <infoLinks>
         <infoLink name="Oath of Moment" hidden="false" type="rule" id="ff2d-5833-a4b2-eeaf" targetId="3b76-4053-ece9-6e7d"/>
         <infoLink name="Templar Vows" id="0c4c-84d6-d7f2-9ef0" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
-        <infoLink name="Invulnerable Save (5+)" id="152b-af6a-708a-9278" hidden="false" type="profile" targetId="30d6-3998-8498-5c22"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="b993-f79a-796f-641e" hidden="false" sortIndex="2">
