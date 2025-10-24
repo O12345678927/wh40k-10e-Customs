@@ -44685,7 +44685,7 @@ Each Unit may only use this Ability once per Battle</characteristic>
         <profile name="Ravening Madmen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9fbc-9986-f25e-7724">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a Melee Attack targets this Unit; Improve the WS of that Melee Attack to 3+ (this has no effect on attacks that are WS2+)
-The first time each Phase a Wound is allocated to a Model in this Unit; change the Damage characteristic of that attack to 0.</characteristic>
+The first time each Phase a Model in this Unit would have Damage Inflicted to it by an Attack; change the Damage characteristic of that attack to 0.</characteristic>
           </characteristics>
         </profile>
         <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6810-0672-097f-b478">
