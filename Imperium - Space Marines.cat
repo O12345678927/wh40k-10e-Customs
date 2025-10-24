@@ -40644,12 +40644,17 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         </profile>
         <profile name="Battlesmith" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4183-6b58-f4b0-c375">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start and end of your Movement Phase, you can select one friendly Adeptus Astartes Vehicle within 3&quot; of this model; That model regains up to D3 lost wounds. Each model can only be selected for this ability, or the Blessing of the Omnissiah ability, once per turn.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the Start and End of your Movement Phase, you can select one Friendly ADEPTUS ASTARTES VEHICLE within 3&quot; of this model; that Model regains up to D3 lost Wounds and, until the start of your next Command phase, each time that Vehicle model makes an attack, add 1 to the Hit roll. Each Model can only be selected for this ability, or the Blessing of the Omnissiah ability, once per turn.</characteristic>
           </characteristics>
         </profile>
         <profile name="Cyber-Familiar" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2488-5d1d-87c3-646d">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A model with a cyber-familiar improves its Invulnerable Save by 1 (to a maximum of 3+) or an Invulnerable Save of 6+ if they do not already possess one.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Techmarine" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9bc3-fdce-c2ab-a6b0">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within 3&quot; of one or more friendly Adeptus Astartes Vehicle units, this model has the Lone Operative ability</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -46987,7 +46992,7 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
 ■ **Icons of Resolve** - Add 1 to the Leadership Characteristic of Models in this Unit
 ■ **Slayers of Kings** - Each time a Model in this Unit makes a Melee Attack targeting a CHARACTER Unit; you can reroll Hit Rolls of 1
 ■ **Hunters of Beasts** - Each time a Model in this Unit makes a Melee Attack targeting a MONSTER Unit; you can reroll the Wound Roll
-■ **Reapers of Hosts** - At the start of the Fight Phase; each Model in this Unit that is in Base Contact with more than 1 Enemy Model may add 1 to the Attacks Characteristic of its Melee Weapons
+■ **Reapers of Hosts** - At the start of the Fight Phase; each Model in this Unit that is in Base Contact with more than 1 Enemy Model may add 1 to the Attacks Characteristic of its Melee Weapons for each Enemy Model in Base Contact
 ■ **Breakers of Witches** - Each time a Model in this Unit makes a Melee Attack targeting a PSYKER or DAEMON Unit; you can reroll the Hit and Wound Rolls</characteristic>
           </characteristics>
         </profile>
@@ -47002,8 +47007,8 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
         <categoryLink name="Imperium" hidden="false" id="370f-9056-54d9-5675" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Terminator" hidden="false" id="2177-bcf9-4c05-4dd8" targetId="740a-892c-8958-defa" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="542b-582f-a06b-5fdd" targetId="6e7-40c-58d9-e402" primary="false"/>
-        <categoryLink name="Faction: World Eaters" hidden="false" id="3bff-48c7-e402-e03f" targetId="bd1d-c1a5-6ca2-c791" primary="false"/>
         <categoryLink name="CUSTOM" hidden="false" id="a07d-cca2-6751-9b5e" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink targetId="aab1-4f05-fabe-5ba5" id="cff5-dc45-bbea-0657" primary="false" name="Faction: Dark Angels"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="073e-2f0a-4b11-7098"/>
