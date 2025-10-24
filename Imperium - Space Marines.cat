@@ -47036,7 +47036,8 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="7918-10cb-bd07-728a"/>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="2db5-f999-af0d-ec0f"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="482a-6f6d-8287-921b" includeChildSelections="false"/>
               </constraints>
               <profiles>
                 <profile name="Order Cenobite" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7785-f3d2-bd4a-6ffc">
@@ -47086,8 +47087,7 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="2db5-f999-af0d-ec0f"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="482a-6f6d-8287-921b" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="8b42-ed5f-dc6e-cc48"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -47274,8 +47274,7 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
 
 ■ Wolf Guard Headtakers
 ■ Grey Hunters
-■ Blood Claws
-</characteristic>
+■ Blood Claws</characteristic>
           </characteristics>
         </profile>
       </profiles>
