@@ -2739,6 +2739,7 @@
     <entryLink import="true" name="Castellax-Achea Automata" hidden="false" id="b2ec-59c6-0541-39dd" type="selectionEntry" targetId="997a-3c52-f8a9-7695"/>
     <entryLink import="true" name="Dreadwing Interemptor Squad" hidden="false" id="6df7-87ab-3749-8b48" type="selectionEntry" targetId="c72b-65b1-a2ff-b41c"/>
     <entryLink import="true" name="Inner Circle Knights Cenobium" hidden="false" id="770e-ee24-50cf-1b3a" type="selectionEntry" targetId="7543-cf78-fe7d-d317"/>
+    <entryLink import="true" name="Rune Priest" hidden="false" id="1886-edb1-394a-2fd8" type="selectionEntry" targetId="0113-dca9-a25a-62ff"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
@@ -47035,7 +47036,7 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="7918-10cb-bd07-728a"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="7918-10cb-bd07-728a"/>
               </constraints>
               <profiles>
                 <profile name="Order Cenobite" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7785-f3d2-bd4a-6ffc">
@@ -47214,6 +47215,241 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
         <infoLink name="Lethal Hits" id="9ffb-422f-28d7-cb81" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
       </infoLinks>
       <comment>Cpt</comment>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Rune Priest" hidden="false" id="0113-dca9-a25a-62ff">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="7e84-6188-47af-63b4" primary="true" name="Character"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="5155-1224-5480-a42e" primary="false" name="Infantry"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="9140-7eba-4837-eda3" primary="false" name="Grenades"/>
+        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="e9db-08d1-1fb8-4de9" primary="false" name="Imperium"/>
+        <categoryLink targetId="13bf-2bee-3ae0-b414" id="6551-d488-2ce6-ef5e" primary="false" name="Psyker"/>
+        <categoryLink targetId="6e7-40c-58d9-e402" id="6dac-0c4a-6198-524b" primary="false" name="Faction: Adeptus Astartes"/>
+        <categoryLink targetId="5179-8ede-45e3-49a2" id="25a1-7053-4122-0867" primary="false" name="Tacticus"/>
+        <categoryLink targetId="2c02-e616-7038-bcd7" id="4f9d-ae8c-6f9b-83d6" primary="false" name="Librarian"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="3d96-af8d-8bd2-95e7" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="a0d9-c115-2a-8330" id="4f71-bbcb-04db-0a57" primary="false" name="Faction: Space Wolves"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Leader" type="rule" id="16e3-2370-e0f7-ee95" targetId="b4dd-3e1f-41cb-218f"/>
+        <infoLink name="Psychic Hood" hidden="false" type="profile" id="4ad4-0ace-814f-b81f" targetId="116b-b23c-4ea4-30ed"/>
+        <infoLink name="Oath of Moment" hidden="false" type="rule" id="037e-1e0d-2566-410e" targetId="3b76-4053-ece9-6e7d"/>
+      </infoLinks>
+      <constraints>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad13-969e-097a-cdde" type="max"/>
+        <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="3683-49e9-5eeb-d1c0" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="e895-db07-c94c-7fe8" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="a3f8-a160-8a68-0d61" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="0c92-8d50-fdde-fa2d" name="Warlord" hidden="false" collective="false" import="true" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d899-8e31-b353-64c3" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="3300-28e3-3153-5930" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="03c4-2f41-083e-482d" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Rune Priest" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f102-c595-d834-1bff">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Winds of Fenris [Psychic]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8a1d-01a3-d506-cc65">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, you can select one Friendly Unit within 12&quot; of and visible to this PSYKER and roll one D6: on a 1, this PSYKER Model suffers 1 mortal wound; on a 2-5, that Friendly Unit gains the Stealth Ability, on a 6, that Friendly Unit also gains the Feel No Pain 6+ Ability (if a Model already has the Feel No Pain Ability, improve the value of that Feel No Pain Ability by 1)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f81e-c21c-0276-d69d">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+
+■ Wolf Guard Headtakers
+■ Grey Hunters
+■ Blood Claws
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="increment" value="2" field="e895-db07-c94c-7fe8">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="a3f8-a160-8a68-0d61">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="3683-49e9-5eeb-d1c0">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="8dbe-9f09-d44d-07d6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="b56c-4dda-368c-82a0" hidden="false" sortIndex="4">
+          <entryLinks>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="a644-5f8d-77c9-d76c" type="selectionEntry" targetId="18b0-8c2-173f-5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="476d-38d4-85bf-6195"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04cc-b44e-3acc-0d02"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="bacd-7362-5ae9-6807" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="304e-71dc-d87b-6cd5" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Force Weapon" hidden="false" id="b156-b1e2-284e-f147" type="selectionEntry" targetId="905d-bd38-f44c-9eef">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c665-3855-3974-7734"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4539-bc7a-a7e4-cc83"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="e09b-018c-dda7-8df1" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Wrath of the Death Wolf" hidden="false" id="4115-12c1-7e20-58a9" type="selectionEntry" targetId="22a6-c755-e006-966d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="648e-012d-5eb4-ff29"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca14-8819-3f7e-6450"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="541a-0190-426c-7ca4" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="79e3-93a6-15a5-455a" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wrath of the Death Wolf" hidden="false" id="22a6-c755-e006-966d">
+      <profiles>
+        <profile name="➤ Wrath of the Death Wolf - Witchfire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ec21-2387-5258-de16">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic, Torrent</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value="Sustained Hits 2" field="7f1b-8591-2fcf-d01c" join=", ">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4ff4-4a4a-ec01-c18d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Storm Speaker" field="annotation" join=", ">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4ff4-4a4a-ec01-c18d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="➤ Wrath of the Death Wolf - Focused Witchfire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="60f4-0c21-b919-756f">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Hazardous, Psychic, Torrent</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value="Sustained Hits 2" field="7f1b-8591-2fcf-d01c" join=", ">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4ff4-4a4a-ec01-c18d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Storm Speaker" field="annotation" join=", ">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4ff4-4a4a-ec01-c18d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Hazardous" hidden="false" type="rule" id="18a6-99ce-43a1-9dc0" targetId="8367-374c-f87-c627"/>
+        <infoLink name="Torrent" hidden="false" type="rule" id="92b6-ab63-a0e2-65fa" targetId="5edf-d619-23e0-9b56"/>
+        <infoLink name="Devastating Wounds" hidden="false" type="rule" id="0720-5879-6009-f280" targetId="be1e-ac8e-1e2c-3528"/>
+        <infoLink name="Psychic" hidden="false" type="rule" id="6a0c-bf94-fddc-88a0" targetId="e9c4-2bb8-12ee-cd1b"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Psychic Weapon" hidden="false" id="19b6-1d50-2387-8c75" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+        <categoryLink name="Ranged Weapon" hidden="false" id="e439-b3ea-babf-e882" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="d80a-1a03-0db4-fcc5" targetId="e993-e086-6de1-12af" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="aab2-c04f-be1a-8194" targetId="4986-bf86-beb4-13ac" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
