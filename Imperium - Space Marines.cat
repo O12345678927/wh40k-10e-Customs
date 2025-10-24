@@ -44363,7 +44363,7 @@ Each Unit may only use this Ability once per Battle</characteristic>
       <profiles>
         <profile name="Furious Charge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a484-3bbd-09c5-e558">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit ends a Charge move; Improve the S and D Characteristic of Melee Weapons equipped by Models in this Unit by 1 until the end of the Fight Phase</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit ends a Charge move; each Model in this Unit can make one Melee Attack as if it was the Fight Phase</characteristic>
           </characteristics>
         </profile>
         <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7f25-966f-9d76-9686">
@@ -44400,89 +44400,16 @@ Each Unit may only use this Ability once per Battle</characteristic>
               </constraints>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Caedere Weapon" id="4dfa-e373-63b7-836d" hidden="false" defaultSelectionEntryId="fcfb-fd68-abbc-3ed3">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Barb-Hook Lash" hidden="false" id="bbe3-e389-1cac-1918">
-                      <profiles>
-                        <profile name="Barb-Hook Lash" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="38a4-eaa9-2055-58ae">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-Infantry 2+</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Anti-" id="cfb7-637f-66dd-8660" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
-                      </infoLinks>
-                      <comment>A4 WS3+</comment>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Excoriator Chainaxe" hidden="false" id="80ef-b892-a271-a623">
-                      <profiles>
-                        <profile name="Excoriator Chainaxe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1475-fceb-393a-b258">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Twin-linked" id="2395-f68f-8337-9dbc" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
-                      </infoLinks>
-                      <comment>A6 WS3+</comment>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Meteor Hammer" hidden="false" id="fe83-e780-a5ef-bb83">
-                      <profiles>
-                        <profile name="Meteor Hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6201-ed9c-3535-7383">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked, Devastating Wounds</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Devastating Wounds" id="0337-2c4a-27d9-dbb7" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-                        <infoLink name="Twin-linked" id="5c65-7162-dc33-44fd" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
-                      </infoLinks>
-                      <comment>A3 WS3+</comment>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Paired Falax Blades" hidden="false" id="8b5a-011c-099d-7f32">
-                      <profiles>
-                        <profile name="Paired Falax Blades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="b298-fae5-5831-49fd">
-                          <characteristics>
-                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                            <characteristic name="A" typeId="2337-daa1-6682-b110">7</characteristic>
-                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked, Anti-Infantry 4+</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Twin-linked" id="d647-0b79-0a2c-10f3" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
-                      </infoLinks>
-                      <comment>A7 WS3+</comment>
-                    </selectionEntry>
-                  </selectionEntries>
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="438a-6c7e-2dd2-f6fb"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ba0-67ca-ac78-101c"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Barb-Hook Lash" hidden="false" id="8a50-8bee-c534-007e" type="selectionEntry" targetId="960e-2668-afe7-f9cb"/>
+                    <entryLink import="true" name="Excoriator Chainaxe" hidden="false" id="6ccf-e5a7-b114-8357" type="selectionEntry" targetId="2acd-7f97-cea1-afb7"/>
+                    <entryLink import="true" name="Meteor Hammer" hidden="false" id="db82-90b6-4664-2626" type="selectionEntry" targetId="b5fd-273d-a8c5-fb2b"/>
+                    <entryLink import="true" name="Paired Falax Blades" hidden="false" id="22b1-94dd-27c1-cd5e" type="selectionEntry" targetId="bfbc-69c2-bf49-3471"/>
+                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <profiles>
@@ -44604,6 +44531,7 @@ Each Unit may only use this Ability once per Battle</characteristic>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="8656-c2e4-9b57-16fb" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Leaders - Jump Squads" hidden="false" id="fe3b-906b-41e6-d8a8" type="selectionEntry" targetId="6599-e23e-ef3c-1475"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -44806,6 +44734,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="55be-a525-e897-be00" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Leaders - Termi Squads" hidden="false" id="3051-fa8e-f57a-dec0" type="selectionEntry" targetId="66de-ca54-9e49-3799"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
