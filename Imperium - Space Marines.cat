@@ -2738,6 +2738,7 @@
     <entryLink import="true" name="Golden Keshig Squadron" hidden="false" id="75ba-d8c7-fdbb-d80b" type="selectionEntry" targetId="9bdb-3443-b996-8dde"/>
     <entryLink import="true" name="Castellax-Achea Automata" hidden="false" id="b2ec-59c6-0541-39dd" type="selectionEntry" targetId="997a-3c52-f8a9-7695"/>
     <entryLink import="true" name="Dreadwing Interemptor Squad" hidden="false" id="6df7-87ab-3749-8b48" type="selectionEntry" targetId="c72b-65b1-a2ff-b41c"/>
+    <entryLink import="true" name="Inner Circle Knights Cenobium" hidden="false" id="770e-ee24-50cf-1b3a" type="selectionEntry" targetId="7543-cf78-fe7d-d317"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
@@ -44683,9 +44684,14 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
           </characteristics>
         </profile>
-        <profile name="The Nails Bite" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="915e-6e87-b376-e065">
+        <profile name="Feel No Pain 5+" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="915e-6e87-b376-e065">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a Wound is allocated to a Model in this Unit; Increase the A Characteristic of Weapons equipped by Models in this Unit by 1 until the end of the Fight Phase</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+          </characteristics>
+        </profile>
+        <profile name="The Nails Bite" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f3f8-b926-c350-58ae">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a Saving throw is failed by a Model in this Unit; Increase the A Characteristic of Weapons equipped by Models in this Unit by 1 until the end of the Fight Phase</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -44786,8 +44792,8 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
         <infoLink name="Deep Strike" id="b049-8f10-079b-3bc7" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
         <infoLink name="Oath of Moment" id="16cf-3691-49ff-d18b" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
         <infoLink name="Templar Vows" id="8350-8ddd-def1-bd49" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
-        <infoLink name="Invulnerable Save" id="0f6a-dbd2-dd03-79a5" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
         <infoLink name="Feel No Pain" id="e7b9-2d44-920f-de55" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb"/>
+        <infoLink name="Invulnerable Save" id="5428-379d-4a49-d27a" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="55be-a525-e897-be00" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
@@ -46748,7 +46754,7 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dreadwing Interemptor Squad" hidden="false" id="c72b-65b1-a2ff-b41c">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -46769,7 +46775,7 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Interemptors" hidden="false" id="e816-53d4-c2c1-0d7a">
               <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0a28-967e-2f69-ad03"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="0a28-967e-2f69-ad03"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Plasma Burner" hidden="false" type="selectionEntry" id="102b-19c2-c19a-912c" targetId="7dc4-c33d-f49e-869c">
@@ -46800,8 +46806,8 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="1217-311e-3e77-df0f"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="a63c-423b-b6d5-d179"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1217-311e-3e77-df0f"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="a63c-423b-b6d5-d179"/>
           </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Interemptor Praefectus" id="32cc-88b2-02c8-9065" hidden="false" sortIndex="2">
@@ -46867,14 +46873,14 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Signum" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="01f5-9c6b-f141-2db6">
+        <profile name="Eskaton Imperative" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="01f5-9c6b-f141-2db6">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this unit Remains Stationary, until the start of your next Movement phase, ranged weapons equipped by models in this unit have the [IGNORES COVER] ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When a Model in this Unit makes an Attack that targets a Unit that has the Benefit of Cover; add 1 to the Wound Roll</characteristic>
           </characteristics>
         </profile>
-        <profile name="Armorium Cherub" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2e58-3e83-a6aa-1566">
+        <profile name="Rad Grenades" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2e58-3e83-a6aa-1566">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, after making a Hit roll for a model in this unit, you can change that roll to an unmodified 6.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If you target this Unit for the **GRENADE** Stratagem, after that Stratagem has resolved; reduce the T Characteristic of the Enemy Unit targeted by 1 until the end of the Turn</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -46958,6 +46964,251 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <rules>
+        <rule name="Leaders" id="46b9-fd3a-8009-55dc" hidden="false">
+          <description>If a Model can be Attached to an INFERNUS SQUAD Unit; it can be Attached to this Unit instead</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Inner Circle Knights Cenobium" hidden="false" id="7543-cf78-fe7d-d317">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Order Exemplars" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1a4e-308f-613c-2bec">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the Start of the Battle select one of the following Orders of the Hekatonystika to be active for this Unit until the End of the Battle;
+
+■ **Augurs of Weakness** - Each time a Model in this Unit makes an Attack targeting a VEHICLE Model; add 1 to the Wound Roll
+■ **Icons of Resolve** - Add 1 to the Leadership Characteristic of Models in this Unit
+■ **Slayers of Kings** - Each time a Model in this Unit makes a Melee Attack targeting a CHARACTER Unit; you can reroll Hit Rolls of 1
+■ **Hunters of Beasts** - Each time a Model in this Unit makes a Melee Attack targeting a MONSTER Unit; you can reroll the Wound Roll
+■ **Reapers of Hosts** - At the start of the Fight Phase; each Model in this Unit that is in Base Contact with more than 1 Enemy Model may add 1 to the Attacks Characteristic of its Melee Weapons
+■ **Breakers of Witches** - Each time a Model in this Unit makes a Melee Attack targeting a PSYKER or DAEMON Unit; you can reroll the Hit and Wound Rolls</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bulky [2]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="787d-acc6-4af2-66ab">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models with the Bulky [X] Ability take up X spaces when inside a transport</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="489c-043d-e159-0857" targetId="cf47-a0d7-7207-29dc" primary="true"/>
+        <categoryLink name="Imperium" hidden="false" id="370f-9056-54d9-5675" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Terminator" hidden="false" id="2177-bcf9-4c05-4dd8" targetId="740a-892c-8958-defa" primary="false"/>
+        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="542b-582f-a06b-5fdd" targetId="6e7-40c-58d9-e402" primary="false"/>
+        <categoryLink name="Faction: World Eaters" hidden="false" id="3bff-48c7-e402-e03f" targetId="bd1d-c1a5-6ca2-c791" primary="false"/>
+        <categoryLink name="CUSTOM" hidden="false" id="a07d-cca2-6751-9b5e" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="073e-2f0a-4b11-7098"/>
+        <constraint type="max" value="3" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="682e-1a86-5b48-2e3f" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="87a0-af30-3c77-3bcc" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="e5e1-b69e-ec99-04aa" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Knights Cenobium" id="9737-53a7-2645-bcf1" hidden="false" defaultSelectionEntryId="f5e2-f383-5061-9393" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Order Cenobites" hidden="false" id="e328-aad2-d9f2-b618" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Terranic Greatsword" hidden="false" id="165e-4024-5afa-d242" type="selectionEntry" targetId="24b7-f685-8d88-7c65" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb25-7500-0afc-8b9d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d4c-1984-0973-972d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Plasma Burner" hidden="false" id="7f91-3fab-41e8-5c08" type="selectionEntry" targetId="7dc4-c33d-f49e-869c" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f35-8556-a14e-aa97"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e51-accf-21e5-3633"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="7918-10cb-bd07-728a"/>
+              </constraints>
+              <profiles>
+                <profile name="Order Cenobite" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="7785-f3d2-bd4a-6ffc">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Order Preceptor" hidden="false" id="15aa-86d7-0e1b-8aca" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aeea-5114-7557-ee6f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4319-3270-e299-4f09"/>
+              </constraints>
+              <profiles>
+                <profile name="Order Preceptor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="cd68-fca0-9c5f-942f">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="6429-4568-c34c-7201" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587" sortIndex="1"/>
+                <entryLink import="true" name="Plasma Burner" hidden="false" id="c8e9-e57e-8f09-a9d3" type="selectionEntry" targetId="7dc4-c33d-f49e-869c" sortIndex="3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3258-138e-cb43-4a1b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73ff-7ed0-087a-2256"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Terranic Greatsword" hidden="false" id="544d-b41b-b47b-3550" type="selectionEntry" targetId="24b7-f685-8d88-7c65" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9ed-d14b-2e26-15ff"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc62-bcb9-9c82-cd83"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="2db5-f999-af0d-ec0f"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="482a-6f6d-8287-921b" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="360" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="atLeast" value="6" field="selections" scope="7543-cf78-fe7d-d317" childId="9737-53a7-2645-bcf1" shared="true" id="aa0f-718a-cad7-2904"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="23e8-3638-9d7a-1583" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Oath of Moment" id="9b40-0a3b-963f-f4e2" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
+        <infoLink name="Templar Vows" id="3baf-5a0d-87c2-edc5" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
+        <infoLink name="Invulnerable Save" id="cc7e-2870-c117-f3c8" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="5817-2870-7dd4-e387" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+      </entryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="6" field="682e-1a86-5b48-2e3f">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="1511-18fe-f51e-7b9d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="87a0-af30-3c77-3bcc">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="e5e1-b69e-ec99-04aa">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Terranic Greatsword" hidden="false" id="24b7-f685-8d88-7c65">
+      <profiles>
+        <profile name="➤ Terranic Greatsword - Sweep" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6fa3-9f1a-014d-e6c3">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Terranic Greatsword - Strike" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="6795-3ec7-8d26-787c">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Sustained Hits" id="b57a-5e92-fa2f-044b" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+        <infoLink name="Lethal Hits" id="9ffb-422f-28d7-cb81" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
+      </infoLinks>
+      <comment>Cpt</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
