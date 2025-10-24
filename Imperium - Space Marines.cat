@@ -38300,7 +38300,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
             <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
-            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
             <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Twin-linked</characteristic>
           </characteristics>
@@ -42304,8 +42304,8 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <profile name="Meteor Hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3123-1033-825a-9dff">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
@@ -42317,7 +42317,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <infoLink name="Devastating Wounds" id="e791-eab0-9ab2-15fe" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
         <infoLink name="Twin-linked" id="38c5-c668-19dd-acb5" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
       </infoLinks>
-      <comment>A3 WS3+</comment>
+      <comment>A1 WS4+</comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Mor Deythan Squad" hidden="false" id="3832-5a91-54b9-05eb">
       <costs>
@@ -44603,11 +44603,14 @@ Each Unit may only use this Ability once per Battle</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Red Butchers" hidden="false" id="b3a0-3c43-72d2-582b">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <profiles>
         <profile name="Ravening Madmen" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9fbc-9986-f25e-7724">
@@ -44659,7 +44662,8 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="262e-4370-5c32-8e29"/>
+                <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="262e-4370-5c32-8e29"/>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="16c8-25bd-adab-1411"/>
               </constraints>
               <profiles>
                 <profile name="Red Butcher" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="ba59-8966-7a6e-4fd4">
@@ -44703,15 +44707,15 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="64e5-656f-699a-d3f8"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="526c-7476-9f2a-016b" includeChildSelections="false"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="64e5-656f-699a-d3f8"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="526c-7476-9f2a-016b" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="360" field="51b2-306e-1021-d207">
+        <modifier type="set" value="400" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="6" field="selections" scope="b3a0-3c43-72d2-582b" childId="9c1e-cff6-3cc9-5e80" shared="true" id="de31-f8ea-7373-100e"/>
+            <condition type="atLeast" value="5" field="selections" scope="b3a0-3c43-72d2-582b" childId="9c1e-cff6-3cc9-5e80" shared="true" id="de31-f8ea-7373-100e"/>
           </conditions>
         </modifier>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
