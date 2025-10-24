@@ -47120,6 +47120,7 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="5817-2870-7dd4-e387" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Leaders - Termi Squads" hidden="false" id="a991-ff9e-8535-5cd2" type="selectionEntry" targetId="66de-ca54-9e49-3799"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -47820,6 +47821,7 @@ The first time each Phase a Wound is allocated to a Model in this Unit; change t
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="5a88-18ab-25af-aa26" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Leaders - Jump Squads" hidden="false" id="9f63-1b24-ac9c-b90c" type="selectionEntry" targetId="6599-e23e-ef3c-1475"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
