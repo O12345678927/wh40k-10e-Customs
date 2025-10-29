@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="168" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="169" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -43329,7 +43329,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c277-2b79-678b-e8f9-max"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Boltgun" hidden="false" id="ce7a-a565-5dac-3dab" type="selectionEntry" targetId="beac-9df8-7247-c8ab">
+                <entryLink import="true" name="Bolt Rifle" hidden="false" id="ce7a-a565-5dac-3dab" type="selectionEntry" targetId="6155-c404-a228-cb72">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c822-9595-7006-fc0b-min"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c822-9595-7006-fc0b-max"/>
@@ -43373,7 +43373,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="060a-6245-901a-bd7d"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Boltgun" hidden="false" id="f488-81a6-ff35-05ba" type="selectionEntry" targetId="beac-9df8-7247-c8ab">
+                <entryLink import="true" name="Bolt Rifle" hidden="false" id="f488-81a6-ff35-05ba" type="selectionEntry" targetId="6155-c404-a228-cb72">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c014-1fa2-efad-c1c4-min"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c014-1fa2-efad-c1c4-max"/>
@@ -44631,7 +44631,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         </profile>
         <profile name="The Nails Bite" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f3f8-b926-c350-58ae">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a Saving throw is failed by a Model in this Unit; Increase the A Characteristic of Weapons equipped by Models in this Unit by 1 until the end of the Fight Phase</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Up to thrice per Turn, each time a Saving throw is failed by a Model in this Unit; Increase the A Characteristic of Weapons equipped by Models in this Unit by 1 until the end of the Fight Phase</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -46212,7 +46212,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         <profile name="Twin Power Axe" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="480e-d096-d4f0-62bc">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-            <characteristic name="A" typeId="2337-daa1-6682-b110">7</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
             <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
