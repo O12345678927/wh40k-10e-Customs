@@ -37689,11 +37689,11 @@ per turn.</characteristic>
         <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <categoryLinks>
-        <categoryLink name="Infantry" hidden="false" id="f61d-9fa7-f8dd-8548" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="f61d-9fa7-f8dd-8548" targetId="cf47-a0d7-7207-29dc" primary="true"/>
         <categoryLink name="Grenades" hidden="false" id="e381-7622-0c26-cd6a" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="d551-c51a-18fd-c84b" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="b2ff-cb17-8569-1831" targetId="6e7-40c-58d9-e402" primary="false"/>
-        <categoryLink name="Jump Pack" hidden="false" id="6c93-56a8-348d-5e3e" targetId="dda2-bb0a-215e-ad9c" primary="true"/>
+        <categoryLink name="Jump Pack" hidden="false" id="6c93-56a8-348d-5e3e" targetId="dda2-bb0a-215e-ad9c" primary="false"/>
         <categoryLink name="Fly" hidden="false" id="5525-0b36-6f9e-c244" targetId="c619-2086-bbcf-69c9" primary="false"/>
         <categoryLink name="Faction: Raven Guard" hidden="false" id="7a34-9a72-4283-ac55" targetId="84b7-7194-3b84-1b0c" primary="false"/>
         <categoryLink name="CUSTOM" hidden="false" id="c5cc-e433-79b0-d0c8" targetId="e169-ce70-ee9d-cecc" primary="false"/>
