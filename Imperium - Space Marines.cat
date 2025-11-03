@@ -39965,6 +39965,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="3978-279d-c2f0-42e2" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Leaders - Stealthy" hidden="false" id="1d4d-9904-c878-c4f9" type="selectionEntry" targetId="deca-c1ea-dc09-b26d"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -41876,7 +41877,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
-                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
                     <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
                     <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
@@ -41950,6 +41951,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="f2a6-d350-f4b8-1557" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Leaders - Termi Squads" hidden="false" id="7e0d-babe-842b-faaa" type="selectionEntry" targetId="66de-ca54-9e49-3799"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -47402,7 +47404,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Gal Vorbak" hidden="false" id="7158-b66b-d4ec-d2c0" defaultSelectionEntryId="deb4-6018-b8cf-1d66" sortIndex="2">
+        <selectionEntryGroup name="Vakrah Jal" hidden="false" id="7158-b66b-d4ec-d2c0" defaultSelectionEntryId="deb4-6018-b8cf-1d66" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Dark Brethren" hidden="false" id="e2d0-767f-e03b-9b57" sortIndex="2">
               <constraints>
@@ -47431,7 +47433,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
                     <characteristic name="W" typeId="750a-a2ec-90d3-21fe">5</characteristic>
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -47483,8 +47485,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="385a-d42b-4946-35c0" primary="false" name="Infantry"/>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="8e4e-e3c8-6825-0297" primary="true" name="Battleline"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="385a-d42b-4946-35c0" primary="true" name="Infantry"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="9ae8-bf16-0b8e-5d0f" primary="false" name="Grenades"/>
         <categoryLink targetId="e169-ce70-ee9d-cecc" id="33d8-4cea-a025-2f9d" primary="false" name="CUSTOM"/>
         <categoryLink targetId="ff4e-e9f5-ed72-9272" id="a490-6376-8e5d-6411" primary="false" name="Faction: Word Bearers"/>
