@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3ce" name="Xenos - T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="126" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="d81a-61dd-6d27-a3ce" name="Xenos - T&apos;au Empire" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="129" battleScribeVersion="2.03" authorContact="Dunamis55 &amp; AbonShell" authorName="BSData Developers" type="catalogue">
   <rules>
     <rule name="For The Greater Good" hidden="false" id="eeb6-c42-48f7-cc21">
       <description>If your Army Faction is **^^T’au Empire^^**, at the start of your Shooting phase you can select units from your army with this ability to become Observer units.
@@ -68,6 +68,13 @@ Until the end of the phase, each time a model from your army in a Guided unit m
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="76ec-55b5-1805-5855" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Commander Shadowsun" hidden="false" id="4d0d-af9d-53c2-bc31">
       <categoryLinks>
@@ -3979,6 +3986,8 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <categoryLink targetId="7288-48b3-c4df-66c6" id="570-f85b-1daf-c925" primary="false" name="Battlesuit"/>
         <categoryLink targetId="76ec-55b5-1805-5855" id="58ff-5c4b-2872-699c" primary="false" name="Stealth"/>
         <categoryLink targetId="3d58-2655-391e-ecc" id="e439-38ac-fd0-1d24" primary="false" name="Faction: T&apos;au Empire"/>
+        <categoryLink name="Grenades" hidden="false" id="8fee-4d53-4a2e-ccfa" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink name="Markerlight" hidden="false" id="7cbd-f73d-d2c0-4f80" targetId="1685-dd28-8e90-e10d" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Forward Observers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c5b0-2214-2987-d0de">
@@ -3999,11 +4008,12 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="5599-8d97-b9a4-9e91" includeChildSelections="true"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Stealth Shas&apos;ui (2-5)" hidden="false" id="a463-a329-d423-f948" defaultSelectionEntryId="40a5-647f-cdd8-9cf6" sortIndex="3">
+        <selectionEntryGroup name="Stealth Shas&apos;ui" hidden="false" id="a463-a329-d423-f948" defaultSelectionEntryId="40a5-647f-cdd8-9cf6" sortIndex="3">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Stealth Shas&apos;ui w/ burst cannon" hidden="false" id="40a5-647f-cdd8-9cf6" defaultAmount="1,1">
               <constraints>
-                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="a12f-e569-a9f-3417"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="eb06-d81d-4d38-e622" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8d74-a25b-c760-3bb5"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Battlesuit fists" hidden="false" type="selectionEntry" id="8e62-9c84-5dfc-ead6" targetId="6cf1-5611-ba26-a9b1" collective="false">
@@ -4011,19 +4021,6 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a650-7187-238c-e237"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1ff-8abd-2267-3c87"/>
                   </constraints>
-                </entryLink>
-                <entryLink import="true" name="Battlesuit support system" hidden="false" id="7ccb-965d-72e1-6b2b" type="selectionEntry" targetId="d00f-7725-16e3-c8ad">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b01-6f63-eddc-5dbb" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="8520-86b2-7c2e-5f4a" includeChildSelections="true"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="1" field="8520-86b2-7c2e-5f4a">
-                      <conditions>
-                        <condition type="lessThan" value="6" field="selections" scope="unit" childId="model" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Burst cannon" hidden="false" id="8917-7370-2d88-cfc4" type="selectionEntry" targetId="1790-25b7-8264-f6ba" collective="true">
                   <constraints>
@@ -4063,28 +4060,8 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ed5-dd96-2e8a-506"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="189f-7e32-30eb-8034"/>
-                    <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="bf75-664b-6625-643c" includeChildSelections="true"/>
+                    <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="bf75-664b-6625-643c" includeChildSelections="true"/>
                   </constraints>
-                  <modifiers>
-                    <modifier type="set" value="2" field="bf75-664b-6625-643c">
-                      <conditions>
-                        <condition type="atLeast" value="6" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink import="true" name="Battlesuit support system" hidden="false" id="7f83-cf1a-7e9d-b453" type="selectionEntry" targetId="d00f-7725-16e3-c8ad">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3795-fb4a-e770-1bc7" includeChildSelections="false"/>
-                    <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="c770-49af-9c32-4699" includeChildSelections="true"/>
-                  </constraints>
-                  <modifiers>
-                    <modifier type="set" value="1" field="c770-49af-9c32-4699">
-                      <conditions>
-                        <condition type="lessThan" value="6" field="selections" scope="unit" childId="model" shared="true"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </entryLink>
               </entryLinks>
               <profiles>
@@ -4105,8 +4082,8 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a0b8-9389-c08e-129e"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="40e3-8997-795f-d404"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="a0b8-9389-c08e-129e"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="40e3-8997-795f-d404"/>
           </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Stealth Shas&apos;vre" id="63b1-cf27-e34a-b8e8" hidden="false" sortIndex="2">
@@ -4135,15 +4112,8 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
                             <entryLink import="true" name="Weapon Modifications" hidden="false" id="6b65-3a99-b164-82dd" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                           </entryLinks>
                           <constraints>
-                            <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="ac5d-96dd-be09-4a87" includeChildSelections="true"/>
+                            <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="ac5d-96dd-be09-4a87" includeChildSelections="true"/>
                           </constraints>
-                          <modifiers>
-                            <modifier type="set" value="2" field="ac5d-96dd-be09-4a87">
-                              <conditions>
-                                <condition type="atLeast" value="6" field="selections" scope="unit" childId="model" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
                         </entryLink>
                       </entryLinks>
                     </selectionEntryGroup>
@@ -4158,26 +4128,13 @@ Designer’s Note: Place a Support Turret token next to this unit to remind you.
                         <profile name="Homing Beacon" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1333-60c8-37d2-1a4d">
                           <characteristics>
                             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, you can use the Rapid Ingress Stratagem for 0CP. The target must be set up within 3&quot; of the bearer’s unit and not within 9&quot; of any enemy units.
-Designer’s Note: Place a Homing Beacon token next to this unit, removing it once this ability is used.</characteristic>
+**Designer’s Note:** *Place a Homing Beacon token next to this unit, removing it once this ability is used.*</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
-                    <entryLink import="true" name="Battlesuit support system" hidden="false" id="93be-8b0e-b529-8b23" type="selectionEntry" targetId="d00f-7725-16e3-c8ad">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="unit" shared="true" id="ef45-9ad6-4471-2366" includeChildSelections="true"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cf6-06c3-5a95-3b18" includeChildSelections="false"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="decrement" value="1" field="ef45-9ad6-4471-2366">
-                          <conditions>
-                            <condition type="lessThan" value="6" field="selections" scope="unit" childId="model" shared="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </entryLink>
                     <entryLink import="true" name="Battlesuit fists" hidden="false" id="329a-10c5-2661-7ba3" type="selectionEntry" targetId="6cf1-5611-ba26-a9b1">
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="78e3-b0c6-592a-e288" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
@@ -4188,6 +4145,14 @@ Designer’s Note: Place a Homing Beacon token next to this unit, removing it on
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Drones (0-2)" hidden="false" id="15f3-e055-4fce-f77e" type="selectionEntryGroup" targetId="de95-b481-fb09-1bce"/>
+                    <entryLink import="true" name="Pulse pistol" hidden="false" id="2c55-cf25-c27a-4eb4" type="selectionEntry" targetId="4310-a1ce-dde7-70e3">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="3a3b-ee2c-e726-eed0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebd7-d1e3-c495-f6c6" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -4211,21 +4176,15 @@ Designer’s Note: Place a Homing Beacon token next to this unit, removing it on
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
         <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
         <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="120" field="51b2-306e-1021-d207">
-          <conditions>
-            <condition type="greaterThan" value="3" field="selections" scope="5d3a-803e-7cbc-b2f1" childId="model" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="6961-9ee4-2d3a-dfca" type="selectionEntryGroup" targetId="bc88-2f42-15bd-1714" sortIndex="1"/>
       </entryLinks>
@@ -4343,6 +4302,7 @@ Designer’s Note: Place two Stealth Drone tokens next to the unit, removing one
         <categoryLink targetId="6df-937-16bc-8c1a" id="3354-a841-e4c0-e675" primary="false" name="Smoke"/>
         <categoryLink targetId="7288-48b3-c4df-66c6" id="8403-8c1b-1533-294d" primary="false" name="Battlesuit"/>
         <categoryLink targetId="ca95-5f2a-e510-7dbb" id="4a98-57a-d14c-6f5a" primary="false" name="Ghostkeel"/>
+        <categoryLink name="Faction: T&apos;au Empire" hidden="false" id="f2f2-1bcb-283d-0313" targetId="3d58-2655-391e-ecc" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a80a-623d-10a-155c"/>
@@ -17762,14 +17722,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="c2e6-c428-b9e8-9313">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="c2e6-c428-b9e8-9313" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53d9-902f-c50f-115e" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="563b-ecd2-6c40-b740" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0758-7a01-8038-ae7c" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="edd4-f2a7-c222-66e5" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="edd4-f2a7-c222-66e5" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="e1a6-d896-8dbd-14a2" defaultAmount="5">
                               <costs>
@@ -17799,7 +17764,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="c611-1cb8-04c3-ad92" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="c611-1cb8-04c3-ad92" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="d32a-5d0b-3d5e-b7e6" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="0a2d-35b0-3ecd-9534" includeChildSelections="true"/>
@@ -17834,14 +17799,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="9643-5115-fc0a-4056">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="9643-5115-fc0a-4056" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72d6-710e-7ec0-15e8" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="2f54-3a21-1b46-1457" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21b8-e918-1397-cf3c" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="4832-ef9c-e5c7-08a1" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="4832-ef9c-e5c7-08a1" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="9ac2-31a8-2617-d1a3" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="1aed-8973-0ac2-079f" includeChildSelections="true"/>
@@ -17861,7 +17831,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="f0ea-7d8d-28db-1a14" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="f0ea-7d8d-28db-1a14" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="4924-b37b-5cd5-6c7f" defaultAmount="4">
                               <costs>
@@ -17901,14 +17871,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="0eff-a32c-92cb-eaf5">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="0eff-a32c-92cb-eaf5" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ba0-ea55-dd39-aa00" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="0719-210f-329d-9ab9" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c26c-0248-1140-0b0c" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="b7fe-1a9d-f2ab-fb70" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="b7fe-1a9d-f2ab-fb70" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="6c18-a207-8ae7-40a8" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="81ff-a6b6-7122-0966" includeChildSelections="true"/>
@@ -17933,7 +17908,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="5a9e-ece3-c674-96d1" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="5a9e-ece3-c674-96d1" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="a18a-369a-3859-c3d3" defaultAmount="3">
                               <costs>
@@ -17973,14 +17948,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="2e6b-d582-2b10-c7e4">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="2e6b-d582-2b10-c7e4" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e26-4397-bd44-9a4a" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="6bd5-df86-5fde-11f2" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf73-0df7-3701-d733" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="6cbe-d41c-6054-2d1b" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="6cbe-d41c-6054-2d1b" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="f0aa-a17d-9fb6-4c08" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="d2c8-88ff-f329-0632" includeChildSelections="true"/>
@@ -18005,7 +17985,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="ff66-7128-1335-2f96" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="ff66-7128-1335-2f96" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="d64a-ad7f-b098-74f3" defaultAmount="3">
                               <costs>
@@ -18045,14 +18025,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="1c5b-3f50-4b7d-fe98">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="1c5b-3f50-4b7d-fe98" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4607-f1ff-c28a-02fd" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="aea3-4402-9f3f-486d" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56b4-311e-527f-cfe4" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="e3d9-2f54-6741-a33d" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="e3d9-2f54-6741-a33d" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="45ca-08e6-cec7-7671" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="1012-8603-97e8-712e" includeChildSelections="true"/>
@@ -18077,7 +18062,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="1701-4b49-529d-2455" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="1701-4b49-529d-2455" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="8426-b4a3-b560-72c0" defaultAmount="4">
                               <costs>
@@ -18117,14 +18102,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="256d-c21d-3d79-ce1e">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="256d-c21d-3d79-ce1e" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4af6-6bbf-b0b5-062e" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="780d-8ff1-2bf4-2989" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cfa-77e8-38c8-dee6" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="e83a-8434-9b9f-dd42" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="e83a-8434-9b9f-dd42" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="6c76-426b-3094-9d75" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="57c7-e5d1-24da-f1ba" includeChildSelections="true"/>
@@ -18149,7 +18139,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="3170-3a76-47f3-188f" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="3170-3a76-47f3-188f" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="abc8-cde8-0f67-ee17" defaultAmount="4">
                               <costs>
@@ -18189,14 +18179,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="f605-bd44-f447-dce5">
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="f605-bd44-f447-dce5" sortIndex="3">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01c2-67d4-9463-4683" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="8cb1-b818-18a8-4882" sortIndex="4">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5696-1ed4-6d10-7025" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="7199-8e93-3cbe-d27e" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="7199-8e93-3cbe-d27e" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="993f-1e72-69d1-c168" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="1a8f-8501-a47b-ef89" includeChildSelections="true"/>
@@ -18221,7 +18216,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="1aee-4aeb-0a5c-9339" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="1aee-4aeb-0a5c-9339" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="df31-3193-e879-03d6" defaultAmount="2">
                               <costs>
@@ -18261,14 +18256,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="5fac-92de-38de-ced4">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="5fac-92de-38de-ced4" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a67-3d93-20be-8594" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="518a-1902-6803-a8dd" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d41f-01db-31ad-b5d1" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="4f69-9dfe-651d-02a0" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="4f69-9dfe-651d-02a0" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="b1ee-8dd2-6946-946a" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="6d69-e0b8-968b-b40e" includeChildSelections="true"/>
@@ -18293,7 +18293,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="9e2e-d76c-c991-0e00" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="9e2e-d76c-c991-0e00" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="2b58-60f9-766b-ce67" defaultAmount="6">
                               <costs>
@@ -18333,14 +18333,19 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                       </costs>
                       <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="23e7-6c15-33c6-d8e2">
+                        <selectionEntry type="upgrade" import="true" name="Razed by Conflict" hidden="false" id="23e7-6c15-33c6-d8e2" sortIndex="4">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79e1-509a-b721-135d" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Conquered" hidden="false" id="f602-9c12-f494-8e13" sortIndex="3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b99-4a64-c8b9-20da" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
-                        <entryLink import="true" name="Core World" hidden="false" id="c266-0931-e2b3-70f1" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a">
+                        <entryLink import="true" name="Core World" hidden="false" id="c266-0931-e2b3-70f1" type="selectionEntry" targetId="1b84-2f37-a5e7-f74a" sortIndex="1">
                           <constraints>
                             <constraint type="min" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="d9cd-8d44-da06-b85a" includeChildSelections="true"/>
                             <constraint type="max" value="1" field="selections" scope="35dd-5f48-71f4-ced7" shared="true" id="b131-1715-dc76-38d6" includeChildSelections="true"/>
@@ -18360,7 +18365,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                         </profile>
                       </profiles>
                       <selectionEntryGroups>
-                        <selectionEntryGroup name="Planet Power" id="ca83-ec31-d9ed-9668" hidden="false" collapsible="false">
+                        <selectionEntryGroup name="Planet Power" id="ca83-ec31-d9ed-9668" hidden="false" collapsible="false" sortIndex="2">
                           <selectionEntries>
                             <selectionEntry type="upgrade" import="true" name="Diplomatic Power" hidden="false" id="eb60-e8f2-c1c8-71c1" defaultAmount="4">
                               <costs>
@@ -18734,6 +18739,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cd97-19b6-3957-4c78" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="205d-dcad-4d0-ccae" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d372-6d2c-2df2-8e91" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="76ec-55b5-1805-5855" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -18806,6 +18812,7 @@ Localised Stealth Projectors (Aura): While a friendly KROOT or VESPID STINGWINGS
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cd97-19b6-3957-4c78" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="205d-dcad-4d0-ccae" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d372-6d2c-2df2-8e91" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="76ec-55b5-1805-5855" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>

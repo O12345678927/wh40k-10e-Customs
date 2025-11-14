@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Heresy Customs Update" revision="78" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Horus Heresy Customs" revision="79" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -516,13 +516,22 @@
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="3b97-07bb-1241-9cc6" includeChildSelections="true"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry name="CUSTOM" id="e169-ce70-ee9d-cecc" hidden="false"/>
-    <categoryEntry name="Faction: Alpha Legion" id="292d-727a-ecee-c0d4" hidden="false"/>
-    <categoryEntry name="Faction: Black Legion" id="cce6-0071-67df-c4e7" hidden="false"/>
-    <categoryEntry name="Faction: Emperor&apos;s Children" id="3c13-9a7b-4fc5-ab91" hidden="false"/>
-    <categoryEntry name="Faction: Iron Warriors" id="54ae-4ac6-8776-9b5e" hidden="false"/>
-    <categoryEntry name="Faction: Night Lords" id="233a-aaf1-392d-6313" hidden="false"/>
-    <categoryEntry name="Faction: Word Bearers" id="ff4e-e9f5-ed72-9272" hidden="false"/>
+    <categoryEntry name="Pilot" id="5b15-724e-2eeb-8cb7" hidden="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="upgrade" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry id="3c13-9a7b-4fc5-ab91" name="Faction: Emperor&apos;s Children" hidden="false"/>
+    <categoryEntry id="54ae-4ac6-8776-9b5e" name="Faction: Iron Warriors" hidden="false"/>
+    <categoryEntry id="cce6-0071-67df-c4e7" name="Faction: Black Legion" hidden="false"/>
+    <categoryEntry id="ff4e-e9f5-ed72-9272" name="Faction: Word Bearers" hidden="false"/>
+    <categoryEntry id="292d-727a-ecee-c0d4" name="Faction: Alpha Legion" hidden="false"/>
+    <categoryEntry id="e169-ce70-ee9d-cecc" name="Custom" hidden="false"/>
+    <categoryEntry id="233a-aaf1-392d-6313" name="Faction: Night Lords" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
@@ -648,6 +657,7 @@
         <categoryLink name="Dedicated Transport" hidden="false" id="8ef9-4038-9434-2ed0" targetId="ba07-411c-2832-1f79" primary="false"/>
         <categoryLink name="Fortification" hidden="false" id="9521-ccd2-1cb5-eef5" targetId="19d7-9c74-2140-5851" primary="false"/>
         <categoryLink name="Unit" hidden="false" id="4657-058c-657b-3d14" targetId="1160-70ae-a862-b1a8" primary="false"/>
+        <categoryLink name="Pilot" hidden="false" id="3577-efe1-f844-d1e0" targetId="5b15-724e-2eeb-8cb7"/>
         <categoryLink name="Allied Units" hidden="false" id="8d77-c7df-e1a3-0680" targetId="887b-ab87-92a2-20f5"/>
       </categoryLinks>
       <modifiers>
@@ -1178,16 +1188,16 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
     <rule id="cd26-1611-860a-91e4" name="One Shot" hidden="false">
       <description>The bearer can only shoot with this weapon once per battle.</description>
     </rule>
-    <rule name="Bulky [X]" id="0d78-1b42-e281-1e0a" hidden="false" publicationId="48fc-15aa-b307-9443" page="28">
-      <description>Models with the Bulky [X] Ability take up X spaces when inside a transport and each weapon equipped by these models is considered to be X models&apos; weapons for the purposes of the Firing Deck ability.</description>
-    </rule>
-    <rule name="Fear [X]" id="8012-1f19-b0b7-c525" hidden="false" publicationId="48fc-15aa-b307-9443" page="32">
-      <description>Units with this Ability provide a negative modifier to Leadership Tests equal to X to Enemy Units within 6&quot;</description>
-    </rule>
-    <rule name="Pinning [X]" id="d737-55a6-e8c8-ea02" hidden="false" publicationId="48fc-15aa-b307-9443" page="Custom">
-      <description>Weapons with **[PINNING]** in their profile are known as Pinning weapons. After a Unit makes a Ranged Attack with a Pinning Weapon, select one Enemy Unit hit by that Pinning Weapon (excluding MONSTERS and VEHICLES); That Enemy Unit must succeed on a Leadership test or become Pinned until the end of your Opponent&apos;s Turn.
+    <rule id="0d78-1b42-e281-1e0a" name="Bulky [X]" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
+      <description>
 
-While a Unit is Pinned subtract X&quot; from their Move characteristic and subtract X from Charge rolls made for it</description>
+
+
+While embarked within a Transport, each model takes up the space of X models, and each weapon equipped by these models is considered to be X models&apos; weapons for the purposes of the Firing Deck ability.</description>
+    </rule>
+    <rule id="d737-55a6-e8c8-ea02" name="Pinning [X]" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
+      <description>Weapons with **[PINNING]** in their profile are known as Pinning Weapons. After a Unit makes an Attack with a Pinning Weapon, select one Enemy Unit hit by that Pinning Weapon (excluding MONSTERS and VEHICLES); that Unit must succeed on a Leadership Test or become Pinned until the End of your Opponent&apos;s Turn.
+While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract [X] from Charge Rolls Made for it</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
