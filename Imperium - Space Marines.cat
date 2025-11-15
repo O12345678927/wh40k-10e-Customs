@@ -2745,6 +2745,8 @@
     <entryLink import="true" name="Ashen Circle Squad" hidden="false" id="f506-9542-81d3-f488" type="selectionEntry" targetId="7605-a923-1993-3fd9"/>
     <entryLink import="true" name="Medusan Immortals" hidden="false" id="5a02-1d30-c3f8-8c65" type="selectionEntry" targetId="1c1d-e73e-1a39-f1bf"/>
     <entryLink import="true" name="Invictarus Suzerain Squad" hidden="false" id="8f50-5798-754d-582a" type="selectionEntry" targetId="818a-4c2a-c2e4-c68f"/>
+    <entryLink import="true" name="Gorgon Terminator Squad" hidden="false" id="0aa5-6a1a-448b-d6ca" type="selectionEntry" targetId="00cc-be13-fbc2-8124"/>
+    <entryLink import="true" name="Iron Father" hidden="false" id="8d49-8dca-98b6-7ef8" type="selectionEntry" targetId="6e5e-ba72-2cc9-f722"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
