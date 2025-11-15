@@ -42217,7 +42217,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="105"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -42227,7 +42227,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <modifiers>
-        <modifier type="set" value="210" field="51b2-306e-1021-d207">
+        <modifier type="set" value="240" field="51b2-306e-1021-d207">
           <conditions>
             <condition type="atLeast" value="6" field="selections" scope="1c1d-e73e-1a39-f1bf" childId="1967-976a-64bf-f851" shared="true" id="d330-276f-9dd0-96c6" includeChildSelections="true"/>
           </conditions>
