@@ -39209,7 +39209,7 @@ Each time this Model is selected as the Target of a Charge; subtract 2 from the 
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="3d53-9f9c-84a5-808b" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
-                <entryLink import="true" name="Thunder Hammer" hidden="false" id="6491-a521-8ab1-4f45" type="selectionEntry" targetId="b637-5b1c-59f5-d463">
+                <entryLink import="true" name="Thunder Hammer" hidden="false" id="6491-a521-8ab1-4f45" type="selectionEntry" targetId="a4bf-7a75-de7e-2605">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49f8-7346-f3c6-1952"/>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fde5-9117-4861-74d0"/>
@@ -40609,7 +40609,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Iron Father" hidden="false" id="6e5e-ba72-2cc9-f722">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="185"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="165"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -42033,6 +42033,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="36a2-8921-8b4f-8e32" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Faction: Iron Hands" hidden="false" id="d323-3840-6159-4eff" targetId="b88e-1b0c-b79f-5cdf" primary="false"/>
         <categoryLink targetId="230e-efff-1638-ee50" id="3f91-e26e-d1b2-616e" primary="false" name="Breacher"/>
+        <categoryLink targetId="81f0-f40e-c36c-5a30" id="3385-3f29-bf2c-f2b8" primary="false" name="Gravis"/>
       </categoryLinks>
       <profiles>
         <profile name="The Flesh is Weak" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9e8b-c3db-fba2-a811">
@@ -42133,10 +42134,8 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
                 </entryLink>
                 <entryLink import="true" name="Close combat weapon" hidden="false" id="6eb9-a085-013c-cafb" type="selectionEntry" targetId="b3b-a615-f023-94ef">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f41-4d85-16e4-dc17-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f41-4d85-16e4-dc17-max"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fa6-37a9-74ba-6b33-min"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fa6-37a9-74ba-6b33-max"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fa6-37a9-74ba-6b33-max-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fa6-37a9-74ba-6b33-max-max"/>
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Boarding Shield" hidden="false" id="7a2d-83f0-38a5-8f79" type="selectionEntry" targetId="2150-cce0-774f-c6da">
@@ -42149,12 +42148,12 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
               <profiles>
                 <profile name="Immortal Sergeant" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fd0e-3b59-a86d-0649">
                   <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -42171,7 +42170,12 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08e2-21c9-b170-17dd"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Close combat weapon" hidden="false" id="d932-dbbf-9e15-1957" type="selectionEntry" targetId="b3b-a615-f023-94ef"/>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="d932-dbbf-9e15-1957" type="selectionEntry" targetId="b3b-a615-f023-94ef">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="662b-ee79-7182-b964-min"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="662b-ee79-7182-b964-max"/>
+                  </constraints>
+                </entryLink>
                 <entryLink import="true" name="Boarding Shield" hidden="false" id="e15c-33cb-c97e-2da3" type="selectionEntry" targetId="2150-cce0-774f-c6da">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98fc-da20-f3ab-928b-min"/>
@@ -42182,12 +42186,12 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
               <profiles>
                 <profile name="Immortal" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="829a-9be2-cad0-9c47">
                   <characteristics>
-                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
                     <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
                     <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -42235,7 +42239,6 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="2f8a-5e8a-0b89-fcbb" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
-        <entryLink import="true" name="Leaders - Breacher Squads" hidden="false" id="3204-29c4-2d18-bf7f" type="selectionEntry" targetId="0601-ee4c-ad86-c28a" sortIndex="2"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -42304,6 +42307,21 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
           <comment>Crusade modifiers</comment>
         </modifierGroup>
       </modifierGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Leaders - Gravis" hidden="false" id="1f0b-4993-f52d-5518">
+          <profiles>
+            <profile name="Leaders" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="214c-b3de-9a1e-5760">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a Model from your army with the Leader Ability can be attached to an Gravis Unit, it can be attached to this Unit instead</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6b3-5190-2570-9346-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6b3-5190-2570-9346-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Meteor Hammer" hidden="false" id="b5fd-273d-a8c5-fb2b">
       <profiles>
@@ -48168,6 +48186,28 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
       <categoryLinks>
         <categoryLink name="Attacks Dx Weapon" hidden="false" id="19ee-45ef-bf2f-a3b2" targetId="e993-e086-6de1-12af" primary="false"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Thunder Hammer" hidden="false" id="a4bf-7a75-de7e-2605">
+      <profiles>
+        <profile name="Thunder Hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="8b54-5a87-1f8d-4efa">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Melee Weapon" hidden="false" id="0b8a-486b-3258-a30d" targetId="ccdd-3987-11ed-90cd" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Devastating Wounds" id="6a4a-fb2c-2849-316f" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+      </infoLinks>
+      <comment>A4 WS4+</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
