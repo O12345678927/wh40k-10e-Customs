@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="169" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e0af-67df-9d63-8fb7" name="Imperium - Adeptus Astartes - Space Marines" revision="170" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue" authorName="Acebaur">
   <categoryEntries>
     <categoryEntry id="5179-8ede-45e3-49a2" name="Tacticus" hidden="false"/>
     <categoryEntry id="930d-2875-125b-a65e" name="Bladeguard Veteran Squad" hidden="false"/>
@@ -2743,6 +2743,8 @@
     <entryLink import="true" name="Vakrah Jal Squad" hidden="false" id="398f-2c04-7c56-6058" type="selectionEntry" targetId="9606-2879-6ffa-4d66"/>
     <entryLink import="true" name="Mhara Gal Dreadnought" hidden="false" id="d49b-5257-3330-97f7" type="selectionEntry" targetId="098b-8cb7-58a6-b5a6"/>
     <entryLink import="true" name="Ashen Circle Squad" hidden="false" id="f506-9542-81d3-f488" type="selectionEntry" targetId="7605-a923-1993-3fd9"/>
+    <entryLink import="true" name="Medusan Immortals" hidden="false" id="5a02-1d30-c3f8-8c65" type="selectionEntry" targetId="1c1d-e73e-1a39-f1bf"/>
+    <entryLink import="true" name="Invictarus Suzerain Squad" hidden="false" id="8f50-5798-754d-582a" type="selectionEntry" targetId="818a-4c2a-c2e4-c68f"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="caa-f869-3cbd-b48e" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
@@ -36835,7 +36837,7 @@ per turn.</characteristic>
         <categoryLink name="Terminator" hidden="false" id="db2d-e7ab-dd85-5f2c" targetId="740a-892c-8958-defa" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="4dd1-449f-fd9f-359e" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Faction: Night Lords" hidden="false" id="e4c0-5788-be79-9f14" targetId="233a-aaf1-392d-6313" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="d85a-9ad5-b19c-5b6a" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="d85a-9ad5-b19c-5b6a" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Talent For Murder" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="edb5-5add-0767-884d">
@@ -37185,7 +37187,7 @@ per turn.</characteristic>
         <categoryLink name="Grenades" hidden="false" id="d88a-7b7f-6e93-ed9b" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="77b7-a9c6-7b97-f38c" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="c143-3773-4875-834b" targetId="6e7-40c-58d9-e402" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="06f1-8ce5-88ba-a327" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="06f1-8ce5-88ba-a327" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink targetId="230e-efff-1638-ee50" id="40ef-8ae9-fade-54ba" primary="false" name="Breacher"/>
       </categoryLinks>
       <profiles>
@@ -37513,7 +37515,7 @@ per turn.</characteristic>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="f93e-d354-bd16-cef7" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Psyker" hidden="false" id="088a-7768-58bd-3b3d" targetId="13bf-2bee-3ae0-b414" primary="false"/>
         <categoryLink name="Faction: Thousand Sons" hidden="false" id="a957-cfed-1b99-fa1a" targetId="7002-1fbb-7571-e8e7" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="ef55-2303-fc0f-3984" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="ef55-2303-fc0f-3984" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Deadly Demise" id="20c8-87b5-2ab0-64ca" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
@@ -37696,7 +37698,7 @@ per turn.</characteristic>
         <categoryLink name="Jump Pack" hidden="false" id="6c93-56a8-348d-5e3e" targetId="dda2-bb0a-215e-ad9c" primary="false"/>
         <categoryLink name="Fly" hidden="false" id="5525-0b36-6f9e-c244" targetId="c619-2086-bbcf-69c9" primary="false"/>
         <categoryLink name="Faction: Raven Guard" hidden="false" id="7a34-9a72-4283-ac55" targetId="84b7-7194-3b84-1b0c" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="c5cc-e433-79b0-d0c8" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="c5cc-e433-79b0-d0c8" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Choosers of the Slain" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7e43-1e08-526e-5f0e">
@@ -37889,7 +37891,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <categoryLink name="Grenades" hidden="false" id="4df8-dc48-541a-a6a6" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="60b6-9447-1c22-c97b" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="f274-cc5b-25bc-3661" targetId="6e7-40c-58d9-e402" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="005d-8d78-f3ee-8a0d" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="005d-8d78-f3ee-8a0d" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink name="Faction: Ultramarines" hidden="false" id="4065-37e8-08a9-a75b" targetId="1a2d-2f00-c054-4dcb" primary="false"/>
       </categoryLinks>
       <infoLinks>
@@ -38071,7 +38073,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <categoryLink name="Terminator" hidden="false" id="593e-be9b-e8df-403e" targetId="740a-892c-8958-defa" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="4150-007d-9974-a3b2" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Faction: White Scars" hidden="false" id="0789-a631-a6f7-57a5" targetId="5c0e-2250-dd3a-1df9" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="5761-40db-c3be-378a" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="5761-40db-c3be-378a" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="ce8b-17b0-b58e-dc51"/>
@@ -38324,7 +38326,7 @@ Each time a Model in this Unit makes an attack that targets a Sentenced Unit; th
         <categoryLink name="Grenades" hidden="false" id="423e-71e8-93a1-5830" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="fc3f-5e62-06ea-4c76" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Phobos" hidden="false" id="7bff-2208-3a23-1660" targetId="7295-ed65-8ff4-7a5f" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="f15c-7d2a-c605-5b75" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="f15c-7d2a-c605-5b75" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink name="Faction: Alpha Legion" hidden="false" id="48d4-34fa-0672-d39f" targetId="292d-727a-ecee-c0d4" primary="false"/>
         <categoryLink name="Epic Hero" hidden="false" id="ce0a-aede-f6da-6d0a" targetId="4f3a-f0f7-6647-348d" primary="true"/>
       </categoryLinks>
@@ -38476,7 +38478,7 @@ Each time this Model is selected as the Target of a Charge; subtract 2 from the 
         <categoryLink name="Terminator" hidden="false" id="dca9-5459-a9f0-ce77" targetId="740a-892c-8958-defa" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="dda9-89d5-c59b-a757" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Faction: Salamanders" hidden="false" id="adc1-ecad-2716-4ba9" targetId="65e4-13-4fa8-b36c" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="a067-7d45-053c-d0ce" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="a067-7d45-053c-d0ce" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Forge-Craft of Nocturne" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="da89-7b71-af98-e78e">
@@ -38715,7 +38717,7 @@ Each time this Model is selected as the Target of a Charge; subtract 2 from the 
         <categoryLink name="Terminator" hidden="false" id="2eea-52bb-74be-8211" targetId="740a-892c-8958-defa" primary="false"/>
         <categoryLink name="Terminator Squad" hidden="false" id="4e63-225e-9c0b-f8ad" targetId="6179-3533-ba6-9593" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="2932-fcae-12bd-3b03" targetId="6e7-40c-58d9-e402" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="77c9-7cea-ec30-73c1" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="77c9-7cea-ec30-73c1" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink name="Faction: Ultramarines" hidden="false" id="1454-9979-e5d9-0dfc" targetId="1a2d-2f00-c054-4dcb" primary="false"/>
       </categoryLinks>
       <infoLinks>
@@ -39050,7 +39052,7 @@ Each time this Model is selected as the Target of a Charge; subtract 2 from the 
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="6e62-7be5-983d-6274" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Fly" hidden="false" id="8ec7-5d5d-7332-211a" targetId="c619-2086-bbcf-69c9" primary="false"/>
         <categoryLink name="Faction: White Scars" hidden="false" id="7548-2e5b-3f42-77b4" targetId="5c0e-2250-dd3a-1df9" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="abb4-952d-6733-b462" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="abb4-952d-6733-b462" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
@@ -39481,7 +39483,7 @@ Each time this Model is selected as the Target of a Charge; subtract 2 from the 
         <categoryLink name="Captain" hidden="false" id="e53d-8fca-9a8c-8856" targetId="2d7f-1892-2fd0-e29c" primary="false"/>
         <categoryLink name="Grenades" hidden="false" id="27b3-0b1f-5b51-15db" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Faction: Alpha Legion" hidden="false" id="ee68-e943-b9c5-5c24" targetId="292d-727a-ecee-c0d4" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="04c0-ce2b-e8e5-1f30" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="04c0-ce2b-e8e5-1f30" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink name="Phobos" hidden="false" id="9854-9e3e-62cf-557e" targetId="7295-ed65-8ff4-7a5f" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -39812,7 +39814,7 @@ During Army Creation you may select a single variant of the Astartes (X) special
         <categoryLink name="Imperium" hidden="false" id="f631-8836-e45e-33f2" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Smoke" hidden="false" id="310a-2d32-8f29-5855" targetId="6df-937-16bc-8c1a" primary="false"/>
         <categoryLink name="Phobos" hidden="false" id="220b-39b7-2c1d-d7a0" targetId="7295-ed65-8ff4-7a5f" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="25c9-c5e1-f571-3aff" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="25c9-c5e1-f571-3aff" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink name="Faction: Alpha Legion" hidden="false" id="6eb3-a034-309d-db21" targetId="292d-727a-ecee-c0d4" primary="false"/>
       </categoryLinks>
       <profiles>
@@ -40041,7 +40043,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <categoryLink name="Imperium" hidden="false" id="7c7d-4b34-f757-1c8e" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Terminator" hidden="false" id="1aba-81b5-b619-a48d" targetId="740a-892c-8958-defa" primary="false"/>
         <categoryLink name="Faction: Imperial Fists" hidden="false" id="3e3f-f6b2-2c15-38de" targetId="97aa-d0e4-71c7-96c3" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="b7cf-b8cd-a25c-4f1e" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="b7cf-b8cd-a25c-4f1e" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Unflinching Bulwark" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="742b-b29d-7689-9684">
@@ -40415,7 +40417,7 @@ Each Unit may only use this Ability once per Battle</characteristic>
       <categoryLinks>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="dac1-6d1c-f560-7004" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Faction: Iron Warriors" hidden="false" id="323f-7b36-97e0-597a" targetId="54ae-4ac6-8776-9b5e" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="d9a7-afa7-6bbf-8723" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="d9a7-afa7-6bbf-8723" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink name="Infantry" hidden="false" id="0c6c-8947-7a0c-2f92" targetId="cf47-a0d7-7207-29dc" primary="true"/>
       </categoryLinks>
       <constraints>
@@ -40767,7 +40769,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <categoryLink name="Imperium" hidden="false" id="6548-b192-c40c-90a0" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="92a6-e69e-b999-4e7d" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Faction: Night Lords" hidden="false" id="b41a-2596-c206-5ee3" targetId="233a-aaf1-392d-6313" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="ef8e-b34b-5243-54b4" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="ef8e-b34b-5243-54b4" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Enhancements" hidden="false" id="a88a-647b-ac7c-aa7d" type="selectionEntryGroup" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
@@ -40934,7 +40936,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <categoryLink name="Imperium" hidden="false" id="b521-6f97-2357-1312" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="0ecb-c255-f5f8-e4f3" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Faction: Night Lords" hidden="false" id="14e7-60df-abf5-c4a3" targetId="233a-aaf1-392d-6313" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="121e-9dec-7210-5ff7" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="121e-9dec-7210-5ff7" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink name="Fly" hidden="false" id="3873-66cf-bcfc-b01f" targetId="c619-2086-bbcf-69c9" primary="false"/>
         <categoryLink name="Jump Pack" hidden="false" id="365f-a5b8-ed15-87b0" targetId="dda2-bb0a-215e-ad9c" primary="false"/>
       </categoryLinks>
@@ -41101,7 +41103,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <categoryLink name="Infantry" hidden="false" id="201a-f154-2cf6-f270" targetId="cf47-a0d7-7207-29dc" primary="true"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="c862-896b-c67c-719f" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Terminator" hidden="false" id="9cb1-70e2-01e1-a681" targetId="740a-892c-8958-defa" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="ebdb-eb7d-25a8-83d3" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="ebdb-eb7d-25a8-83d3" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink name="Faction: Black Legion" hidden="false" id="9516-252e-9fe1-f73d" targetId="cce6-0071-67df-c4e7" primary="false"/>
       </categoryLinks>
       <constraints>
@@ -41288,7 +41290,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="228a-6b69-fc90-d034" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Mounted" hidden="false" id="879d-8f2d-1280-406a" targetId="14a0-40c9-2748-ae6e" primary="false"/>
         <categoryLink name="Faction: White Scars" hidden="false" id="0b9c-1c26-bf72-5df9" targetId="5c0e-2250-dd3a-1df9" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="8757-b5a0-b409-ee7d" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="8757-b5a0-b409-ee7d" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Khan on Shamshir Jetbike" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b4f6-ed5b-15be-1d00">
@@ -41468,7 +41470,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <categoryLink name="Bladeguard Veteran Squad" hidden="false" id="07cf-9696-5052-0506" targetId="930d-2875-125b-a65e" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="6d24-9696-b627-fd8b" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Faction: Thousand Sons" hidden="false" id="56aa-b434-74a0-6816" targetId="7002-1fbb-7571-e8e7" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="8f32-9a06-c1a9-a9d3" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="8f32-9a06-c1a9-a9d3" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink name="Psyker" hidden="false" id="f87a-5055-b238-0687" targetId="13bf-2bee-3ae0-b414" primary="false"/>
       </categoryLinks>
       <profiles>
@@ -41813,7 +41815,7 @@ At the start of the battle; this unit must be attached to one WARLORD, WARPSMITH
         <categoryLink name="Imperium" hidden="false" id="fa16-32ea-9c9d-fa2b" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Terminator" hidden="false" id="0fdf-7cbb-5218-c636" targetId="740a-892c-8958-defa" primary="false"/>
         <categoryLink name="Faction: Alpha Legion" hidden="false" id="4da7-73da-d166-f718" targetId="292d-727a-ecee-c0d4" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="0247-24f7-4b01-31f1" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="0247-24f7-4b01-31f1" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Lies and Obfuscation" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="283b-e3fb-4b6d-c731">
@@ -42441,7 +42443,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <categoryLink name="Grenades" hidden="false" id="db60-303c-2f9b-6684" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Phobos" hidden="false" id="972b-8da1-7134-decd" targetId="7295-ed65-8ff4-7a5f" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="d506-6677-7be5-f33b" targetId="6e7-40c-58d9-e402" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="b12c-f833-80bc-0a63" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="b12c-f833-80bc-0a63" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink name="Faction: Raven Guard" hidden="false" id="e654-4176-d589-aece" targetId="84b7-7194-3b84-1b0c" primary="false"/>
       </categoryLinks>
       <constraints>
@@ -42681,7 +42683,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <categoryLink name="Imperium" hidden="false" id="ee9f-1bf9-36ce-4f2f" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Fly" hidden="false" id="bfa3-04e6-932e-0053" targetId="c619-2086-bbcf-69c9" primary="false"/>
         <categoryLink name="Jump Pack" hidden="false" id="3dbb-2730-b9d0-cbe7" targetId="dda2-bb0a-215e-ad9c" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="f7a6-3dbf-ff33-2d50" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="f7a6-3dbf-ff33-2d50" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink name="Faction: Night Lords" hidden="false" id="3686-fccc-cd01-8d27" targetId="233a-aaf1-392d-6313" primary="false"/>
       </categoryLinks>
       <costs>
@@ -42870,7 +42872,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <categoryLink name="Grenades" hidden="false" id="0d6d-6268-0d8c-3618" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="b3c0-c2e8-66a5-e94f" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="36a2-690d-1830-0e6c" targetId="6e7-40c-58d9-e402" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="1567-edb5-f5ab-0c69" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="1567-edb5-f5ab-0c69" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink name="Faction: Iron Warriors" hidden="false" id="09a3-2020-25a3-29ec" targetId="54ae-4ac6-8776-9b5e" primary="false"/>
       </categoryLinks>
       <profiles>
@@ -43150,7 +43152,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="86de-7467-9976-953c" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Character" hidden="false" id="c36f-740a-65e5-4ccf" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
         <categoryLink name="Faction: Thousand Sons" hidden="false" id="cf80-f007-cd77-6f92" targetId="7002-1fbb-7571-e8e7" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="bb63-186f-418d-d810" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="bb63-186f-418d-d810" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink name="Psyker" hidden="false" id="c3ba-8928-e77d-9458" targetId="13bf-2bee-3ae0-b414" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -43285,7 +43287,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <categoryLink name="Imperium" hidden="false" id="2f7e-4cd9-2189-e00a" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="2f32-a7d5-7b7b-9a84" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Faction: Imperial Fists" hidden="false" id="f1b3-ed84-8ff6-71a7" targetId="97aa-d0e4-71c7-96c3" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="a53c-0b11-2011-4cc0" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="a53c-0b11-2011-4cc0" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink targetId="230e-efff-1638-ee50" id="67de-6d4b-fef4-0bf1" primary="false" name="Breacher"/>
       </categoryLinks>
       <profiles>
@@ -43533,7 +43535,7 @@ Each time this Unit is selected as the target of a Charge; subtract 2 from the C
         <categoryLink name="Terminator" hidden="false" id="d279-b172-c31e-5b53" targetId="740a-892c-8958-defa" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="654a-1833-8733-fa9d" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Faction: Emperor&apos;s Children" hidden="false" id="f6da-63f4-2134-6718" targetId="3c13-9a7b-4fc5-ab91" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="bb22-c76e-6127-2d68" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="bb22-c76e-6127-2d68" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Skill Unmatched" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5694-0075-b491-ff76">
@@ -44247,7 +44249,7 @@ Each Unit may only use this Ability once per Battle</characteristic>
         <categoryLink name="Imperium" hidden="false" id="e363-8dbf-c0f6-85e5" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="2147-179b-87f1-75e1" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Faction: Salamanders" hidden="false" id="3889-b51e-0454-95c5" targetId="65e4-13-4fa8-b36c" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="9e58-62c7-2add-06c5" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="9e58-62c7-2add-06c5" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
@@ -44360,7 +44362,7 @@ Each Unit may only use this Ability once per Battle</characteristic>
         <categoryLink name="Jump Pack" hidden="false" id="9470-13f2-504d-95b2" targetId="dda2-bb0a-215e-ad9c" primary="false"/>
         <categoryLink name="Fly" hidden="false" id="fce8-d009-d938-bf65" targetId="c619-2086-bbcf-69c9" primary="false"/>
         <categoryLink name="Faction: World Eaters" hidden="false" id="5753-4730-195c-2bc5" targetId="bd1d-c1a5-6ca2-c791" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="fcbb-1792-f9a0-ae8b" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="fcbb-1792-f9a0-ae8b" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Furious Charge" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a484-3bbd-09c5-e558">
@@ -44643,7 +44645,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         <categoryLink name="Terminator" hidden="false" id="c90e-240d-8055-38f7" targetId="740a-892c-8958-defa" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="71f1-23af-5269-2e00" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Faction: World Eaters" hidden="false" id="100a-d31b-2992-c7d2" targetId="bd1d-c1a5-6ca2-c791" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="4df4-953d-081d-556e" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="4df4-953d-081d-556e" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="3731-4abd-cb52-9de1"/>
@@ -44844,7 +44846,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="4723-fa89-0d8a-7e02" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Psyker" hidden="false" id="3358-9820-b502-8347" targetId="13bf-2bee-3ae0-b414" primary="false"/>
         <categoryLink name="Faction: Thousand Sons" hidden="false" id="6e3b-318e-2238-9d41" targetId="7002-1fbb-7571-e8e7" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="6f67-32d6-147e-bbad" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="6f67-32d6-147e-bbad" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Metjari" id="809c-dd7c-b2a0-69f1" hidden="false" defaultSelectionEntryId="624c-c49c-b0a5-9cd4" sortIndex="2">
@@ -45148,7 +45150,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         <categoryLink name="Imperium" hidden="false" id="054c-d751-e0c8-14bd" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Terminator" hidden="false" id="24f7-c3f5-a925-2967" targetId="740a-892c-8958-defa" primary="false"/>
         <categoryLink name="Faction: White Scars" hidden="false" id="e9e0-0fb5-d8e3-6542" targetId="5c0e-2250-dd3a-1df9" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="04e7-ac3b-83a3-69a5" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="04e7-ac3b-83a3-69a5" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Enhancements" hidden="false" id="8f58-5df1-2e5b-c89a" type="selectionEntryGroup" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
@@ -45417,7 +45419,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         <categoryLink name="Psyker" hidden="false" id="cdf9-ca83-c2b1-a584" targetId="13bf-2bee-3ae0-b414" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="0bae-99d3-b1c6-6a9f" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Faction: White Scars" hidden="false" id="8a6b-7032-d6f3-a0e8" targetId="5c0e-2250-dd3a-1df9" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="9a0e-e40c-65ef-f660" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="9a0e-e40c-65ef-f660" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Leader" id="a192-0f1e-4d74-fcc0" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
@@ -45673,7 +45675,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="e1d2-7e93-b418-e19f" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="2071-5792-21ee-c35e" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Faction: Emperor&apos;s Children" hidden="false" id="8ef6-cca6-e2ac-ca70" targetId="3c13-9a7b-4fc5-ab91" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="3af6-f92f-0aff-75ad" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="3af6-f92f-0aff-75ad" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Sun Killers" id="51db-bbf2-3007-8c78" hidden="false" defaultSelectionEntryId="624c-c49c-b0a5-9cd4" sortIndex="2">
@@ -45910,7 +45912,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         <categoryLink name="Grenades" hidden="false" id="13c2-be92-9b54-2475" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="eeb9-0b0f-a6f6-9338" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="626a-aa59-f281-8c15" targetId="6e7-40c-58d9-e402" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="f0fc-55bd-4c52-d3b7" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="f0fc-55bd-4c52-d3b7" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink name="Faction: Night Lords" hidden="false" id="13c5-5886-01f6-1e73" targetId="233a-aaf1-392d-6313" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -46311,7 +46313,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         <categoryLink name="Terminator Squad" hidden="false" id="3fee-2fc5-cb90-e4a9" targetId="6179-3533-ba6-9593" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="447c-2868-c07f-54b3" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Faction: Iron Warriors" hidden="false" id="e5fe-816c-da31-aadd" targetId="54ae-4ac6-8776-9b5e" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="3c69-5e15-ca59-7c3e" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="3c69-5e15-ca59-7c3e" targetId="e169-ce70-ee9d-cecc" primary="false"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Deep Strike" id="d86c-19a6-bc5e-1df7" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
@@ -46712,7 +46714,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="efb5-e6d2-0b99-36bd" primary="false" name="Grenades"/>
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="9987-52d4-10ae-b72e" primary="false" name="Imperium"/>
         <categoryLink targetId="aab1-4f05-fabe-5ba5" id="c7af-4ce1-ebac-9354" primary="false" name="Faction: Dark Angels"/>
-        <categoryLink targetId="e169-ce70-ee9d-cecc" id="3047-ade1-ca02-6105" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="3047-ade1-ca02-6105" primary="false" name="Custom"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Interemptors" hidden="false" id="55a4-5134-684c-bd57" defaultSelectionEntryId="624c-c49c-b0a5-9cd4" sortIndex="3">
@@ -46947,7 +46949,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         <categoryLink name="Imperium" hidden="false" id="370f-9056-54d9-5675" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Terminator" hidden="false" id="2177-bcf9-4c05-4dd8" targetId="740a-892c-8958-defa" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="542b-582f-a06b-5fdd" targetId="6e7-40c-58d9-e402" primary="false"/>
-        <categoryLink name="CUSTOM" hidden="false" id="a07d-cca2-6751-9b5e" targetId="e169-ce70-ee9d-cecc" primary="false"/>
+        <categoryLink name="Custom" hidden="false" id="a07d-cca2-6751-9b5e" targetId="e169-ce70-ee9d-cecc" primary="false"/>
         <categoryLink targetId="aab1-4f05-fabe-5ba5" id="cff5-dc45-bbea-0657" primary="false" name="Faction: Dark Angels"/>
       </categoryLinks>
       <constraints>
@@ -47169,7 +47171,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         <categoryLink targetId="6e7-40c-58d9-e402" id="6dac-0c4a-6198-524b" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="5179-8ede-45e3-49a2" id="25a1-7053-4122-0867" primary="false" name="Tacticus"/>
         <categoryLink targetId="2c02-e616-7038-bcd7" id="4f9d-ae8c-6f9b-83d6" primary="false" name="Librarian"/>
-        <categoryLink targetId="e169-ce70-ee9d-cecc" id="3d96-af8d-8bd2-95e7" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="3d96-af8d-8bd2-95e7" primary="false" name="Custom"/>
         <categoryLink targetId="a0d9-c115-2a-8330" id="4f71-bbcb-04db-0a57" primary="false" name="Faction: Space Wolves"/>
       </categoryLinks>
       <infoLinks>
@@ -47487,7 +47489,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="385a-d42b-4946-35c0" primary="true" name="Infantry"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="9ae8-bf16-0b8e-5d0f" primary="false" name="Grenades"/>
-        <categoryLink targetId="e169-ce70-ee9d-cecc" id="33d8-4cea-a025-2f9d" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="33d8-4cea-a025-2f9d" primary="false" name="Custom"/>
         <categoryLink targetId="ff4e-e9f5-ed72-9272" id="a490-6376-8e5d-6411" primary="false" name="Faction: Word Bearers"/>
         <categoryLink targetId="1e42-dfae-cbdd-207d" id="1885-e884-5925-f9df" primary="false" name="Faction: Heretic Astartes"/>
         <categoryLink targetId="9c0e-7e25-4580-e439" id="64a4-0a15-37ad-2e8a" primary="false" name="Daemon"/>
@@ -47647,7 +47649,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="20ae-b0d2-7087-39da" primary="false" name="Imperium"/>
         <categoryLink targetId="6e7-40c-58d9-e402" id="8894-d928-1fe6-ebdf" primary="false" name="Faction: Adeptus Astartes"/>
         <categoryLink targetId="ff4e-e9f5-ed72-9272" id="43d4-889b-3c9c-88a4" primary="false" name="Faction: Word Bearers"/>
-        <categoryLink targetId="e169-ce70-ee9d-cecc" id="3bba-3c1f-8ef2-0eb8" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="3bba-3c1f-8ef2-0eb8" primary="false" name="Custom"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Ashen Circle" hidden="false" id="32d8-0581-e4be-a616" sortIndex="2">
@@ -47893,7 +47895,7 @@ The first time each Phase a Model in this Unit would have Damage Inflicted to it
         <categoryLink targetId="aff3-d6a3-2a95-9dc" id="3cee-d4f8-2a7e-8333" primary="false" name="Imperium"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="6574-b088-310e-d0ef" primary="false" name="Walker"/>
         <categoryLink targetId="ff4e-e9f5-ed72-9272" id="66ab-f285-0c85-0f67" primary="false" name="Faction: Word Bearers"/>
-        <categoryLink targetId="e169-ce70-ee9d-cecc" id="1b74-acc8-5378-ed23" primary="false" name="CUSTOM"/>
+        <categoryLink targetId="e169-ce70-ee9d-cecc" id="1b74-acc8-5378-ed23" primary="false" name="Custom"/>
       </categoryLinks>
       <profiles>
         <profile name="Mhara Gal Dreadnought" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="40c4-2a83-45c9-e803">
