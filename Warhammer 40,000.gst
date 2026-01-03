@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Horus Heresy Customs" revision="79" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-352e-adc2-7639-d6a9" name="Warhammer 40,000 10th Edition - Horus Heresy Customs" revision="85" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication id="48fc-15aa-b307-9443" name="10th Edition Core Rules" shortName="10th Ed Core"/>
     <publication name="Github" hidden="false" id="8db3-575d-91b-47f8" shortName="BSData/wh40k-10e" publisherUrl="https://github.com/BSData/wh40k-10e"/>
@@ -525,13 +525,7 @@
         </modifier>
       </modifiers>
     </categoryEntry>
-    <categoryEntry id="3c13-9a7b-4fc5-ab91" name="Faction: Emperor&apos;s Children" hidden="false"/>
-    <categoryEntry id="54ae-4ac6-8776-9b5e" name="Faction: Iron Warriors" hidden="false"/>
-    <categoryEntry id="cce6-0071-67df-c4e7" name="Faction: Black Legion" hidden="false"/>
-    <categoryEntry id="ff4e-e9f5-ed72-9272" name="Faction: Word Bearers" hidden="false"/>
-    <categoryEntry id="292d-727a-ecee-c0d4" name="Faction: Alpha Legion" hidden="false"/>
-    <categoryEntry id="e169-ce70-ee9d-cecc" name="Custom" hidden="false"/>
-    <categoryEntry id="233a-aaf1-392d-6313" name="Faction: Night Lords" hidden="false"/>
+    <categoryEntry name="Assault Weapon" id="e106-0758-7137-2432" hidden="true"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="bb9d-299a-ed60-2d8a" name="Army Roster" hidden="false">
@@ -882,6 +876,21 @@
                 <modifier type="set" value="Armageddon content is enabled" field="name"/>
               </modifiers>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Show White Dwarf content" hidden="false" id="c00c-b9d6-e0f7-4c37">
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="f600-543f-cadc-0f0b" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="force" shared="true" id="6b90-ed5c-2319-a854" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4846-14da-105b-0ef6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d0f-fae4-fcdd-d2c7"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="6b90-ed5c-2319-a854"/>
+                <modifier type="set" value="0" field="4846-14da-105b-0ef6"/>
+                <modifier type="set" value="White Dwarf content is enabled" field="name"/>
+              </modifiers>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -933,13 +942,15 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Current Campaign" id="41a3-8e07-1e16-db1d" hidden="false" sortIndex="1" defaultSelectionEntryId="none" collapsible="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Tyrannic War" hidden="false" id="11ab-9c3e-c756-9602"/>
-            <selectionEntry type="upgrade" import="true" name="Nachmund Gauntlet" hidden="false" id="a1e8-4bda-9200-f7c7"/>
-            <selectionEntry type="upgrade" import="true" name="Armageddon" hidden="false" id="fd80-17e3-3c1a-6570"/>
-            <selectionEntry type="upgrade" import="true" name="Pariah Nexus" hidden="false" id="0e83-84fd-f2a7-223c"/>
+            <selectionEntry type="upgrade" import="true" name="Tyrannic War" hidden="false" id="11ab-9c3e-c756-9602" sortIndex="5"/>
+            <selectionEntry type="upgrade" import="true" name="Nachmund Gauntlet" hidden="false" id="a1e8-4bda-9200-f7c7" sortIndex="3"/>
+            <selectionEntry type="upgrade" import="true" name="Armageddon" hidden="false" id="fd80-17e3-3c1a-6570" sortIndex="2"/>
+            <selectionEntry type="upgrade" import="true" name="Pariah Nexus" hidden="false" id="0e83-84fd-f2a7-223c" sortIndex="4"/>
+            <selectionEntry type="upgrade" import="true" name="No GW Campaign" hidden="false" id="bce6-d51c-3e40-4fcd" sortIndex="1"/>
           </selectionEntries>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18fa-8059-6bde-4166" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c60-f014-b8f0-6eae-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c60-f014-b8f0-6eae-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1187,17 +1198,6 @@ If a model is in Hover mode, then until the end of the battle, its Move characte
     </rule>
     <rule id="cd26-1611-860a-91e4" name="One Shot" hidden="false">
       <description>The bearer can only shoot with this weapon once per battle.</description>
-    </rule>
-    <rule id="0d78-1b42-e281-1e0a" name="Bulky [X]" publicationId="48fc-15aa-b307-9443" page="25" hidden="false">
-      <description>
-
-
-
-While embarked within a Transport, each model takes up the space of X models, and each weapon equipped by these models is considered to be X models&apos; weapons for the purposes of the Firing Deck ability.</description>
-    </rule>
-    <rule id="d737-55a6-e8c8-ea02" name="Pinning [X]" publicationId="48fc-15aa-b307-9443" page="26" hidden="false">
-      <description>Weapons with **[PINNING]** in their profile are known as Pinning Weapons. After a Unit makes an Attack with a Pinning Weapon, select one Enemy Unit hit by that Pinning Weapon (excluding MONSTERS and VEHICLES); that Unit must succeed on a Leadership Test or become Pinned until the End of your Opponent&apos;s Turn.
-While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract [X] from Charge Rolls Made for it</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -2249,7 +2249,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -2288,7 +2288,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -2327,7 +2327,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -2367,7 +2367,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -2399,7 +2399,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -2431,7 +2431,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -3234,8 +3234,8 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3278,8 +3278,8 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3318,8 +3318,8 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3332,43 +3332,6 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               </modifiers>
               <profiles>
                 <profile name="United By Adversity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ce60-226f-407f-96d5">
-                  <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="United By Adversity" hidden="false" id="cb8b-d76c-2668-6a96">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09d2-6ebe-9f2e-d369" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
-                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
-                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
-                <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="2" field="b03b-c239-15a5-da55">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="United By Adversity" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="552b-9bd7-2c13-f2bf">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.</characteristic>
                   </characteristics>
@@ -3392,8 +3355,8 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3429,8 +3392,8 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3469,8 +3432,8 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3978,7 +3941,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4013,7 +3976,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4045,7 +4008,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4077,7 +4040,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4109,7 +4072,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4141,7 +4104,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4372,7 +4335,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4404,7 +4367,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4439,7 +4402,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4588,7 +4551,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4620,7 +4583,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4652,7 +4615,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4687,7 +4650,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4719,7 +4682,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -4759,7 +4722,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -5138,7 +5101,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -5170,7 +5133,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -5202,7 +5165,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4c3e-9310-a516-3590" shared="true" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="2" field="b03b-c239-15a5-da55">
@@ -5952,6 +5915,129 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
                     <infoLink name="Sustained Hits" id="128d-cc2b-de55-f91c" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
                     <infoLink name="Precision" id="9925-0721-d889-af63" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
                   </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Nameless Tome" hidden="false" id="8c3a-a64e-ce1b-446d">
+                  <profiles>
+                    <profile name="Nameless Tome" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dd14-2e6f-1274-d2b0">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is on the battlefield, you can use the New Orders Stratagem for 0CP.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="23ff-f4bd-8177-d334" includeChildForces="true" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="8c3a-a64e-ce1b-446d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="8c3a-a64e-ce1b-446d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="c00c-b9d6-e0f7-4c37" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Rod of Command" hidden="false" id="c34c-bad4-f04a-9cce">
+                  <profiles>
+                    <profile name="Rod of Command" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1f5e-dbbc-b14a-9478">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, before drawing cards from your Secondary Mission deck, if the bearer is on the battlefield, you can look at the top card of your Secondary Mission deck, then you can return that card to the bottom of your Secondary Mission deck.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9076-2ca6-faa7-190f" includeChildForces="true" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c34c-bad4-f04a-9cce" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="c34c-bad4-f04a-9cce" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="c00c-b9d6-e0f7-4c37" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Shard of Shattered Futures" hidden="false" id="4d30-7d18-aed5-214b">
+                  <profiles>
+                    <profile name="Shard of Shattered Futures" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9bf2-831a-62c4-dea8">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the first battle round, if the bearer is in your Crusade army, you can remove up to three Secondary Mission cards from your Secondary Mission deck and discard them, If you do, you can must then reshuffle your Secondary Mission deck.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="621c-8981-4d73-0703" includeChildForces="true" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4d30-7d18-aed5-214b" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="4d30-7d18-aed5-214b" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="2" field="b03b-c239-15a5-da55">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5929-ad51-d006-e008" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="c00c-b9d6-e0f7-4c37" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+                    <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="1"/>
+                    <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="1"/>
+                    <cost name="Diplomatic Power" typeId="4d7c-04b6-8a79-837f" value="0"/>
+                    <cost name="Military Power" typeId="1cbe-d9c9-86a8-2d41" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -8252,10 +8338,10 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="9693-cf84-fe69-37a9" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="14a0-40c9-2748-ae6e" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9693-cf84-fe69-37a9" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="6dda-e157-334d-e93a" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="14a0-40c9-2748-ae6e" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8586,7 +8672,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <profiles>
                 <profile name="Inspirational Champions" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c358-6a5e-8ae9-f95e">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an **^^Epic Hero^^** model with this Crusade ability is leading a unit, you can ignore and and/or all Battle Scars that Bodyguard unit has. In addition, if your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, at the end of the battle you can select one additional unit from your Crusade army to be Marked for Greatness.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an **^^Epic Hero^^** model with this Crusade ability is leading a unit, you can ignore any and/or all Battle Scars that Bodyguard unit has. In addition, if your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, at the end of the battle you can select one additional unit from your Crusade army to be Marked for Greatness.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8716,7 +8802,7 @@ While a Unit is Pinned; Subtract [X] from their move characteristic and Subtract
               <profiles>
                 <profile name="Inspirational Champions" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7255-2c06-ecb5-7913">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an **^^Epic Hero^^** model with this Crusade ability is leading a unit, you can ignore and and/or all Battle Scars that Bodyguard unit has. If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, at the end of the battle, you can select one additional unit from your Crusade army to be Marked for Greatness.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While an **^^Epic Hero^^** model with this Crusade ability is leading a unit, you can ignore any and/or all Battle Scars that Bodyguard unit has. If your Crusade army includes one or more **^^Epic Hero^^** models with this Crusade Ability, at the end of the battle, you can select one additional unit from your Crusade army to be Marked for Greatness.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

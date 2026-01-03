@@ -108,7 +108,14 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
+        <cost name="Relic Fragments" typeId="0ece-6541-4662-ece2" value="0"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Crusade" id="0b64-3c44-90c7-e26c" hidden="false" sortIndex="1">
@@ -302,21 +309,21 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Ebon Keshig" id="ce5f-9801-a919-69f3" hidden="false" defaultSelectionEntryId="f5e2-f383-5061-9393" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Ebon Keshig" hidden="false" id="9644-f046-b50e-6d55">
+            <selectionEntry type="model" import="true" name="Ebon Keshig" hidden="false" id="20c5-3e99-f8f2-06de">
               <entryLinks>
-                <entryLink import="true" name="Guandao" hidden="false" id="ccea-bef8-9a92-148e" type="selectionEntry" targetId="00ef-2926-d841-9b06">
+                <entryLink import="true" name="Guandao" hidden="false" id="1b01-c0cd-e27f-db51" type="selectionEntry" targetId="00ef-2926-d841-9b06">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba85-bd30-42fc-61a5"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8fd-1619-734b-0643"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f20b-6a9a-4af8-6025"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48bd-f607-56eb-b9fb"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e550-9df4-5d28-906b"/>
-                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="1cfe-79dc-56ef-f715"/>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="add4-5b83-09d7-d85d"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="bcf7-fc65-9372-7f92"/>
               </constraints>
               <profiles>
-                <profile name="Ebon Keshig" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="973e-0ed6-f560-339e">
+                <profile name="Ebon Keshig" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b54b-da29-a824-a233">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
@@ -328,13 +335,13 @@
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Ebon Keshig Champion" hidden="false" id="49f2-4e71-9fa9-2d95">
+            <selectionEntry type="model" import="true" name="Ebon Keshig Champion" hidden="false" id="bc80-253a-8c08-7008">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f73-146a-8f9e-ccfa"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bb7-5447-4210-ed5a"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c546-0574-3a21-d17b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="189e-5f04-ecfc-6df1"/>
               </constraints>
               <profiles>
-                <profile name="Ebon Keshig Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="28ba-0dc9-e8ee-30ac">
+                <profile name="Ebon Keshig Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5856-48f0-a8e9-eeb5">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
@@ -346,26 +353,26 @@
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="ff5b-3aee-3146-aaa1" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
-                <entryLink import="true" name="Guandao" hidden="false" id="37b0-35fe-b7aa-c9e7" type="selectionEntry" targetId="00ef-2926-d841-9b06">
+                <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="fbf3-5701-19ce-0755" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587"/>
+                <entryLink import="true" name="Guandao" hidden="false" id="1bcc-504d-66dd-19b2" type="selectionEntry" targetId="00ef-2926-d841-9b06">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9870-06b0-c4a3-aed1"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b07-d747-1925-da07"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a22-bc23-4a65-9b9f"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2764-71b2-2bd7-ab8f"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="105b-4ae8-f911-4d73"/>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="343b-56ca-5915-6042" includeChildSelections="false"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="cc9b-d822-6143-0d4c"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="3efb-0994-e654-6c7d" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
         <modifier type="set" value="360" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="6" field="selections" scope="628c-c53a-fed0-2c17" childId="ce5f-9801-a919-69f3" shared="true" id="171f-f7a7-f52e-a685"/>
+            <condition type="atLeast" value="6" field="selections" scope="628c-c53a-fed0-2c17" childId="ce5f-9801-a919-69f3" shared="true" id="8246-48b7-b648-ded0"/>
           </conditions>
         </modifier>
         <modifier type="add" value="e21f-8e64-c5d-7df0" field="category">
@@ -373,20 +380,15 @@
             <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f89b-84e0-6e3b-f1e2" shared="true"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Deep Strike" id="5f24-528b-b6aa-dde6" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
-        <infoLink name="Invulnerable Save" id="0134-835d-e6c4-481f" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
-        <infoLink name="Oath of Moment" id="2c39-f458-753d-de8c" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
-        <infoLink name="Templar Vows" id="bcef-1e3f-5fe4-6041" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
+        <infoLink name="Deep Strike" id="4919-793a-65a0-e792" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Invulnerable Save" id="562a-a8ca-9b53-65a7" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
+        <infoLink name="Oath of Moment" id="1adc-a961-1c58-1a51" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
+        <infoLink name="Templar Vows" id="55ea-f362-5bf1-2ad4" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="4da5-7f97-ccb6-ee0b" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="b693-3dc1-4bb6-e377" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -473,44 +475,44 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Golden Keshig Squadron" id="5cd4-2988-38a2-697e" hidden="false" defaultSelectionEntryId="48aa-6991-b817-11ac" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Golden Keshig Champion" hidden="false" id="679d-f760-f477-429c">
+            <selectionEntry type="model" import="true" name="Golden Keshig Champion" hidden="false" id="4646-75b2-5aa1-fef3">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="799b-5d62-08d2-0a75"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c63-4831-45d1-f96e"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c27-ded0-da13-429c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="484d-c7d9-bfd4-1987"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Kontos Power Lance" hidden="false" id="112b-7082-36ad-4eeb" type="selectionEntry" targetId="03ac-c130-a25e-763c">
+                <entryLink import="true" name="Kontos Power Lance" hidden="false" id="43c7-ac95-4210-be91" type="selectionEntry" targetId="03ac-c130-a25e-763c">
                   <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="87f2-88a2-aff1-551a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="70d1-03fb-51af-627d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a8a-7528-5d84-a21b"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29d6-3d74-6a04-d070"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3e0-793c-8d20-b6fd"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e56b-9b15-34e6-389c"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="d72c-b33f-bb3e-7f95" type="selectionEntry" targetId="2b6b-56b9-13a8-3320">
+                <entryLink import="true" name="Master-crafted Power Weapon" hidden="false" id="d122-d334-b619-6028" type="selectionEntry" targetId="2b6b-56b9-13a8-3320">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="28ec-c60a-d61b-b8cb"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ca8-4c3c-a2af-5bc3"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fef-71f2-8920-8f6f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7924-545a-7898-7bbb"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="22a4-e418-7408-9b92" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="9c54-1d48-7bdf-e50e" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
-                <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="bdc2-f671-6145-7023" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587">
+                <entryLink import="true" name="Terminator Honours upgrade" hidden="false" id="c664-349f-c4a7-b9ba" type="selectionEntry" targetId="e7f9-66f5-9b9e-c587">
                   <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="ce57-6953-c409-d06b" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="7869-250f-bb49-a6d9" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                   </entryLinks>
                 </entryLink>
-                <entryLink import="true" name="Scatterbolt Launcher" hidden="false" id="45cb-f72b-93ce-c8b9" type="selectionEntry" targetId="9a5d-491f-7a0d-ca02">
+                <entryLink import="true" name="Scatterbolt Launcher" hidden="false" id="915d-a751-57c6-cd69" type="selectionEntry" targetId="9a5d-491f-7a0d-ca02">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4b4-fa42-f545-4f15"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b67-61e3-bbb0-c05f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1f0-56c4-5d89-d93d"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae11-446d-ca3a-64f9"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <profiles>
-                <profile name="Golden Keshig Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b546-6134-1143-254d">
+                <profile name="Golden Keshig Champion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b9b9-f53d-f735-8e9e">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">15&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
@@ -522,33 +524,33 @@
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Golden Keshig Rider" hidden="false" id="1696-2b99-fba2-57dc">
+            <selectionEntry type="model" import="true" name="Golden Keshig Rider" hidden="false" id="f769-22fd-9634-49d8">
               <entryLinks>
-                <entryLink import="true" name="Kontos Power Lance" hidden="false" id="97e1-de59-5bd7-8cb0" type="selectionEntry" targetId="03ac-c130-a25e-763c">
+                <entryLink import="true" name="Kontos Power Lance" hidden="false" id="4061-473b-79b6-f215" type="selectionEntry" targetId="03ac-c130-a25e-763c">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb83-ac70-1592-d002"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa5b-7427-301c-b25f"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6ee-89e5-c905-444e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe94-76a6-ad1e-e766"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Scatterbolt Launcher" hidden="false" id="c54c-dace-ab73-2ef2" type="selectionEntry" targetId="9a5d-491f-7a0d-ca02">
+                <entryLink import="true" name="Scatterbolt Launcher" hidden="false" id="c288-5d62-e33d-51ae" type="selectionEntry" targetId="9a5d-491f-7a0d-ca02">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e29-84a1-8094-8c06"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7582-3b70-7df6-d3b8"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="349f-7572-90a8-3a54"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f08-0995-1c72-0d9c"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Power Weapon" hidden="false" id="dc2e-2b90-5713-af84" type="selectionEntry" targetId="a7b6-eeb7-d0e4-b84c">
+                <entryLink import="true" name="Power Weapon" hidden="false" id="d8c6-cc56-8467-7340" type="selectionEntry" targetId="a7b6-eeb7-d0e4-b84c">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c09-465d-0999-f583" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5873-e142-f9ec-60f7" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="13ac-04e0-1b15-0621" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1be2-9011-cb4d-afc0" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0bac-6555-2018-53aa"/>
-                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="2e20-7bbc-1fe6-ed19"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7c10-4b53-0460-1954"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="050f-312b-a25c-739d"/>
               </constraints>
               <profiles>
-                <profile name="Golden Keshig Rider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="05d7-58d3-5398-04bd">
+                <profile name="Golden Keshig Rider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="11b2-3018-da1e-7d7c">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">15&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
@@ -562,18 +564,18 @@
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="bcd5-c83d-2374-b074"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="f6fa-ca69-b91d-616a"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7863-cc6b-95fd-ed42"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="1364-bd76-aa89-a3e5"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <categoryLinks>
-        <categoryLink name="Mounted" hidden="false" id="7223-8a96-48af-9c13" targetId="14a0-40c9-2748-ae6e" primary="true"/>
-        <categoryLink name="Grenades" hidden="false" id="2046-efe0-0c7f-494f" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
-        <categoryLink name="Imperium" hidden="false" id="95c4-49f4-04a7-7b28" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
-        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="7f64-6585-5a15-b9ed" targetId="6e7-40c-58d9-e402" primary="false"/>
-        <categoryLink name="Fly" hidden="false" id="630a-9ba4-fb4b-bd12" targetId="c619-2086-bbcf-69c9" primary="false"/>
-        <categoryLink name="Faction: White Scars" hidden="false" id="96f3-f85f-d5c5-e96d" targetId="5c0e-2250-dd3a-1df9" primary="false"/>
+        <categoryLink name="Mounted" hidden="false" id="fa95-72e1-7490-bb89" targetId="14a0-40c9-2748-ae6e" primary="true"/>
+        <categoryLink name="Grenades" hidden="false" id="1726-1296-f2fe-aa44" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="db34-7e3f-75d8-5227" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="97f6-87ee-c580-5657" targetId="6e7-40c-58d9-e402" primary="false"/>
+        <categoryLink name="Fly" hidden="false" id="850c-1818-ba10-2a8f" targetId="c619-2086-bbcf-69c9" primary="false"/>
+        <categoryLink name="Faction: White Scars" hidden="false" id="c27d-5d9a-71e7-eb62" targetId="5c0e-2250-dd3a-1df9" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
@@ -588,7 +590,7 @@
       <modifiers>
         <modifier type="set" value="270" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="4" field="selections" scope="248c-988f-04bd-2fda" childId="5cd4-2988-38a2-697e" shared="true" id="1228-0bbb-07ea-69ac"/>
+            <condition type="atLeast" value="4" field="selections" scope="248c-988f-04bd-2fda" childId="5cd4-2988-38a2-697e" shared="true" id="131f-f950-b70c-7544"/>
           </conditions>
         </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
@@ -598,12 +600,12 @@
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Oath of Moment" id="124a-5e06-6f53-fbbd" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
-        <infoLink name="Templar Vows" id="7f27-71ce-233c-2c4e" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
-        <infoLink name="Deep Strike" id="b82b-3aac-e784-899a" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Oath of Moment" id="143b-9d45-186b-6ab4" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
+        <infoLink name="Templar Vows" id="6087-709f-093f-8064" hidden="false" type="rule" targetId="f26c-4b28-aaea-40cf"/>
+        <infoLink name="Deep Strike" id="d256-a0d3-7f42-f8d9" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Crusade" hidden="false" id="d204-cfcc-e594-0ecd" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="56d1-a56a-8a17-3da8" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -1165,11 +1167,7 @@
         </profile>
       </profiles>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
-          </conditions>
-        </modifier>
+        <modifier type="set" value="true" field="hidden"/>
       </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
@@ -1337,11 +1335,10 @@
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Kor&apos;sarro Khan" hidden="false" type="selectionEntry" id="ed84-3c2a-5346-ca97" targetId="63f3-6aeb-c9ed-abfc"/>
-    <entryLink import="true" name="Ebon Keshig" hidden="false" id="8960-af71-0dcb-747e" type="selectionEntry" targetId="628c-c53a-fed0-2c17"/>
-    <entryLink import="true" name="Suboden Khan" hidden="false" id="bf84-6f8d-d8b7-712a" type="selectionEntry" targetId="d72d-b930-9849-924e"/>
-    <entryLink import="true" name="Khan on Shamshir Jetbike" hidden="false" id="9cbf-0f1d-cae3-6b9d" type="selectionEntry" targetId="694b-3811-8f2e-9dc2"/>
-    <entryLink import="true" name="Sagyar Mazan Khan" hidden="false" id="4bf0-79b7-9978-3110" type="selectionEntry" targetId="254f-134a-c181-1d2b"/>
-    <entryLink import="true" name="Stormseer" hidden="false" id="6b69-f28a-41bd-ce1e" type="selectionEntry" targetId="2069-5528-b1be-f0f4"/>
-    <entryLink import="true" name="Golden Keshig Squadron" hidden="false" id="af7a-a12b-7443-96ab" type="selectionEntry" targetId="248c-988f-04bd-2fda"/>
+    <entryLink import="true" name="Stormseer" hidden="false" id="8960-af71-0dcb-747e" type="selectionEntry" targetId="2069-5528-b1be-f0f4"/>
+    <entryLink import="true" name="Ebon Keshig" hidden="false" id="3f62-a7f0-7034-d7ae" type="selectionEntry" targetId="628c-c53a-fed0-2c17"/>
+    <entryLink import="true" name="Khan on Shamshir Jetbike" hidden="false" id="0b4e-2a71-6563-ec28" type="selectionEntry" targetId="694b-3811-8f2e-9dc2"/>
+    <entryLink import="true" name="Suboden Khan" hidden="false" id="43e6-5ced-94f5-6476" type="selectionEntry" targetId="d72d-b930-9849-924e"/>
+    <entryLink import="true" name="Sagyar Mazan Khan" hidden="false" id="4988-5a63-8444-1486" type="selectionEntry" targetId="254f-134a-c181-1d2b"/>
   </entryLinks>
 </catalogue>

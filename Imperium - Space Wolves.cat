@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="94bb-3284-ee14-57a1" name="Imperium - Adeptus Astartes - Space Wolves" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="72" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur/Mad Spy">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="94bb-3284-ee14-57a1" name="Imperium - Adeptus Astartes - Space Wolves" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="73" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur/Mad Spy">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="cb5b-3605-7522-c561" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="2e06-13ae-6789-b591" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
@@ -11280,6 +11280,239 @@ Wound roll.</characteristic>
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Rune Priest" hidden="false" id="0113-dca9-a25a-62ff">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="7e84-6188-47af-63b4" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+        <categoryLink name="Infantry" hidden="false" id="5155-1224-5480-a42e" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Grenades" hidden="false" id="9140-7eba-4837-eda3" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="e9db-08d1-1fb8-4de9" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Psyker" hidden="false" id="6551-d488-2ce6-ef5e" targetId="13bf-2bee-3ae0-b414" primary="false"/>
+        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="6dac-0c4a-6198-524b" targetId="6e7-40c-58d9-e402" primary="false"/>
+        <categoryLink name="Tacticus" hidden="false" id="25a1-7053-4122-0867" targetId="5179-8ede-45e3-49a2" primary="false"/>
+        <categoryLink name="Librarian" hidden="false" id="4f9d-ae8c-6f9b-83d6" targetId="2c02-e616-7038-bcd7" primary="false"/>
+        <categoryLink name="Faction: Space Wolves" hidden="false" id="4f71-bbcb-04db-0a57" targetId="a0d9-c115-2a-8330" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Leader" id="16e3-2370-e0f7-ee95" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
+        <infoLink name="Psychic Hood" id="4ad4-0ace-814f-b81f" hidden="false" type="profile" targetId="116b-b23c-4ea4-30ed"/>
+        <infoLink name="Oath of Moment" id="037e-1e0d-2566-410e" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="ad13-969e-097a-cdde" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="6" field="75bb-ded1-c86d-bdf0" scope="self" shared="true" id="3683-49e9-5eeb-d1c0" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="e895-db07-c94c-7fe8" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="a3f8-a160-8a68-0d61" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="0c92-8d50-fdde-fa2d" collective="false" targetId="caa-f869-3cbd-b48e" type="selectionEntry" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d899-8e31-b353-64c3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Enhancements" hidden="false" id="3300-28e3-3153-5930" type="selectionEntryGroup" targetId="9e5d-de4c-c5d1-1d3e" sortIndex="3"/>
+        <entryLink import="true" name="Crusade" hidden="false" id="03c4-2f41-083e-482d" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Rune Priest" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f102-c595-d834-1bff">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Winds of Fenris [Psychic]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8a1d-01a3-d506-cc65">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, you can select one Friendly Unit within 12&quot; of and visible to this PSYKER and roll one D6: on a 1, this PSYKER Model suffers 1 mortal wound; on a 2-5, that Friendly Unit gains the Stealth Ability, on a 6, that Friendly Unit also gains the Feel No Pain 6+ Ability (if a Model already has the Feel No Pain Ability, improve the value of that Feel No Pain Ability by 1)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f81e-c21c-0276-d69d">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+
+■ Wolf Guard Headtakers
+■ Grey Hunters
+■ Blood Claws</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="increment" value="2" field="e895-db07-c94c-7fe8">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="a3f8-a160-8a68-0d61">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="self" childId="d1a5-4297-168b-11cd" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="append" value="(Battle-ready)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atMost" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Blooded)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="5" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Battle-hardened)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="15" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Heroic)" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="greaterThan" value="30" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                    <condition type="atMost" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="(Legendary)" field="name">
+              <conditions>
+                <condition type="greaterThan" value="50" field="selections" scope="self" childId="2dbf-4d49-5d74-85c9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="3683-49e9-5eeb-d1c0">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="8dbe-9f09-d44d-07d6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Crusade modifiers</comment>
+        </modifierGroup>
+      </modifierGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" id="b56c-4dda-368c-82a0" hidden="false" sortIndex="4">
+          <entryLinks>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="a644-5f8d-77c9-d76c" type="selectionEntry" targetId="18b0-8c2-173f-5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="476d-38d4-85bf-6195"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04cc-b44e-3acc-0d02"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="bacd-7362-5ae9-6807" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="304e-71dc-d87b-6cd5" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Force Weapon" hidden="false" id="b156-b1e2-284e-f147" type="selectionEntry" targetId="905d-bd38-f44c-9eef">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c665-3855-3974-7734"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4539-bc7a-a7e4-cc83"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="e09b-018c-dda7-8df1" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Wrath of the Death Wolf" hidden="false" id="4115-12c1-7e20-58a9" type="selectionEntry" targetId="22a6-c755-e006-966d">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="648e-012d-5eb4-ff29"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca14-8819-3f7e-6450"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Archeotech Armament upgrade" hidden="false" id="541a-0190-426c-7ca4" type="selectionEntry" targetId="4485-e8e3-43a0-6c02"/>
+                <entryLink import="true" name="Weapon Upgrades" hidden="false" id="79e3-93a6-15a5-455a" type="selectionEntryGroup" targetId="8cf2-a48c-58d2-cb4e"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wrath of the Death Wolf" hidden="false" id="22a6-c755-e006-966d">
+      <profiles>
+        <profile name="➤ Wrath of the Death Wolf - Witchfire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ec21-2387-5258-de16">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic, Torrent</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value="Sustained Hits 2" field="7f1b-8591-2fcf-d01c" join=", ">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4ff4-4a4a-ec01-c18d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Storm Speaker" field="annotation" join=", ">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4ff4-4a4a-ec01-c18d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+        <profile name="➤ Wrath of the Death Wolf - Focused Witchfire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="60f4-0c21-b919-756f">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Hazardous, Psychic, Torrent</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value="Sustained Hits 2" field="7f1b-8591-2fcf-d01c" join=", ">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4ff4-4a4a-ec01-c18d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Storm Speaker" field="annotation" join=", ">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model-or-unit" childId="4ff4-4a4a-ec01-c18d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Hazardous" id="18a6-99ce-43a1-9dc0" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
+        <infoLink name="Torrent" id="92b6-ab63-a0e2-65fa" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+        <infoLink name="Devastating Wounds" id="0720-5879-6009-f280" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+        <infoLink name="Psychic" id="6a0c-bf94-fddc-88a0" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Psychic Weapon" hidden="false" id="19b6-1d50-2387-8c75" targetId="4546-4a0c-b3be-e84c" primary="false"/>
+        <categoryLink name="Ranged Weapon" hidden="false" id="e439-b3ea-babf-e882" targetId="eeda-8544-a2f3-3fab" primary="false"/>
+        <categoryLink name="Attacks Dx Weapon" hidden="false" id="d80a-1a03-0db4-fcc5" targetId="e993-e086-6de1-12af" primary="false"/>
+        <categoryLink name="Damage Dx Weapon" hidden="false" id="aab2-c04f-be1a-8194" targetId="4986-bf86-beb4-13ac" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Logan Grimnar" hidden="false" id="48a0-9386-4930-6a62">
@@ -11455,7 +11688,7 @@ Wound roll.</characteristic>
     <entryLink import="true" name="Logan Grimnar on Stormrider [Legends]" hidden="false" type="selectionEntry" id="5f20-f7c6-ac3b-189d" targetId="54e3-9fb6-416-8a90"/>
     <entryLink import="true" name="Njal Stormcaller" hidden="false" type="selectionEntry" id="ab79-1972-8d44-553f" targetId="bd47-a00a-e70-abd6"/>
     <entryLink import="true" name="Bjorn the Fell-Handed" hidden="false" type="selectionEntry" id="ab8-5df0-71b-e93d" targetId="c35a-6d78-2169-3d23"/>
-    <entryLink import="true" name="Arjac Rockfist" hidden="false" type="selectionEntry" id="6c92-db55-3bde-cfbf" targetId="a9c8-1a6-a0e1-7698"/>
+    <entryLink import="true" name="Rune Priest" hidden="false" type="selectionEntry" id="6c92-db55-3bde-cfbf" targetId="0113-dca9-a25a-62ff"/>
     <entryLink import="true" name="Ulrik the Slayer" hidden="false" type="selectionEntry" id="960a-a2d8-2c96-5c24" targetId="fc7c-83a5-7106-41ab"/>
     <entryLink import="true" name="Ragnar Blackmane" hidden="false" type="selectionEntry" id="6c2c-c843-40c-eb60" targetId="23d2-ea9a-cc45-476"/>
     <entryLink import="true" name="Krom Dragongaze [Legends]" hidden="false" type="selectionEntry" id="67e8-1fd4-ceff-2375" targetId="af71-2b1b-2eee-d2be"/>
@@ -11495,6 +11728,7 @@ Wound roll.</characteristic>
       <comment>Crusade variant</comment>
     </entryLink>
     <entryLink import="true" name="Wolf Scouts" hidden="false" id="1058-f2e6-8f32-7483" type="selectionEntry" targetId="ee6b-3815-3a1a-6458"/>
+    <entryLink import="true" name="Arjac Rockfist" hidden="false" type="selectionEntry" id="fe1b-ac08-cb99-a94c" targetId="a9c8-1a6-a0e1-7698"/>
   </entryLinks>
   <sharedInfoGroups>
     <infoGroup name="Logan" hidden="false" id="976-2d16-9324-f92">
